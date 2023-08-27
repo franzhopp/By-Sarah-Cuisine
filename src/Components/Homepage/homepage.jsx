@@ -22,7 +22,7 @@ const Homepage = () => {
           href=""
           className="bg-pink-500 rounded-md shadw flex items-center justify-center w-32 md:w-40 mr-3 px-8 py-3 text-sm sm:text-base font-medium text-white md:py-4 md:text-ld md:px-10"
         >
-         Découvrir 
+        Contacter
         </a>
 
         <a
