@@ -3,7 +3,7 @@ import Image from "../../assets/cuisine.png";
 
 const Section = () => {
   return (
-    <section className="relative flex flex-col border-gray-200 lg:flex-row">
+    <section id="about" className="flex flex-col border-gray-200 lg:flex-row">
       <div className="px-10 pb-16 pt-10 w-full order-2 text-center md:py-32 lg:w-1/2 lg:order-1">
         <h2 className="font-extrabold text-gray-900 text-5xl">
           <span>CUISINE DE QUALITÉ</span>
@@ -23,13 +23,13 @@ const Section = () => {
       </div>
 
       <div className="h-96 w-full relative overflow-hidden order-1 lg:static lg:w-1/2 lg:h-full lg:order-2">
-        {/* <div className="z-10">
-          <img
+        <div className="z-10">
+          {/* <img
             src={Image}
             alt="Femme en cuisine"
             className="absolute z-50 w-full h-full object-cover object-center lg:w-1/2"
-          />
-        </div> */}
+          /> */}
+        </div>
       </div>
     </section>
   );

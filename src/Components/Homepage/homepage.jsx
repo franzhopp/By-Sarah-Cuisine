@@ -1,10 +1,19 @@
-import React from "react";
+import "../Contact/contact.jsx";
+import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
+  
+  const SectionToScroll = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="mt-32 px-4 text-center sm:mt-28">
       <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-        <span className="block xl:inline mr-3">LA MEILLEURE CUISINE C'EST</span>
+        <span className="block xl:inline mr-3">{`LA MEILLEURE CUISINE C'EST`}</span>
         <span className="block text-pink-600 xl:inline">
           CHEZ BY_SARAH_CUISINE
         </span>
@@ -18,19 +27,21 @@ const Homepage = () => {
       </p>
 
       <div className="mt-5 max-w-md mx-auto flex justify-center md:mt-8">
-        <a
-          href=""
+        <NavLink
+          to="/"
+          href="contact"
+          onClick={SectionToScroll}
           className="bg-pink-500 rounded-md shadw flex items-center justify-center w-32 md:w-40 mr-3 px-8 py-3 text-sm sm:text-base font-medium text-white md:py-4 md:text-ld md:px-10"
         >
-        Contacter
-        </a>
+          Contacter
+        </NavLink>
 
-        <a
-          href=""
+        <NavLink
+          to="/devis-gratuit"
           className="bg-gray-500 rounded-md shadw flex items-center justify-center w-32 md:w-40 mr-3 px-8 py-3 text-sm sm:text-base font-medium text-white md:py-4 md:text-ld md:px-10"
         >
-         Devis
-        </a>
+          Devis
+        </NavLink>
       </div>
     </div>
   );

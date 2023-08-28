@@ -1,8 +1,6 @@
-import React from "react";
-
 const Form = () => {
   return (
-    <section className="bg-white-100">
+    <section id="contact" className="bg-white-100">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <h1 className="text-5xl font-extrabold text-black-900 text-center pt-8">
        Contact
@@ -27,9 +25,9 @@ const Form = () => {
           </div>
 
           <div className="rounded-lg bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
-            <form action="" class="space-y-4">
+            <form action="" className="space-y-4">
               <div>
-                <label className="sr-only" for="name">
+                <label className="sr-only" htmlFor="name">
                   Nom
                 </label>
                 <input
@@ -42,7 +40,7 @@ const Form = () => {
 
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div>
-                  <label class="sr-only" for="email">
+                  <label className="sr-only" htmlFor="email">
                     Email
                   </label>
                   <input
@@ -54,7 +52,7 @@ const Form = () => {
                 </div>
 
                 <div>
-                  <label className="sr-only" for="phone">
+                  <label className="sr-only" htmlFor="phone">
                     Téléphone
                   </label>
                   <input
@@ -69,7 +67,7 @@ const Form = () => {
            
 
               <div>
-                <label className="sr-only" for="message">
+                <label className="sr-only" htmlFor="message">
                   Message
                 </label>
 
