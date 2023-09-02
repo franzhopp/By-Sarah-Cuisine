@@ -12,7 +12,7 @@ const Cards = () => {
 
       <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
-        <div className="homepage min-h-500 w-80 border border-gray-200 rounded-lg mt-5">
+        <div className="bg-gray-500 min-h-500 w-80 border border-gray-200 rounded-lg mt-5">
           <div className="p-6">
             <div className="text-2xl font-bold text-white">Couscous</div>
             <p className="mt-2 text-medium text-white">
@@ -39,7 +39,7 @@ const Cards = () => {
         </div>
 
         {/* Step 2 */}
-        <div className="homepage min-h-500 w-80 border border-gray-200 rounded-lg mt-5">
+        <div className="bg-gray-500 min-h-500 w-80 border border-gray-200 rounded-lg mt-5">
           <div className="p-6">
             <div className="text-2xl font-bold text-white">Couscous</div>
             <p className="mt-2 text-medium text-white">
@@ -66,7 +66,7 @@ const Cards = () => {
         </div>
 
         {/* Step 3 */}
-        <div className="homepage min-h-500 w-80 border border-gray-200 rounded-lg mt-5">
+        <div className="bg-gray-500 min-h-500 w-80 border border-gray-200 rounded-lg mt-5">
           <div className="p-6">
             <div className="text-2xl font-bold text-white">Couscous</div>
             <p className="mt-2 text-medium text-white">

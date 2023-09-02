@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useTheme } from "../context/ThemeProvider";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
 

@@ -34,11 +34,7 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">
@@ -51,11 +47,7 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">
@@ -77,11 +69,7 @@ const Proposal = () => {
       <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">
@@ -94,11 +82,7 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">
@@ -111,11 +95,7 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">
@@ -134,14 +114,10 @@ const Proposal = () => {
         </h1>
       </div>
 
-      <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+      <div className="mt-8 mb-20 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">
@@ -154,11 +130,7 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">
@@ -171,11 +143,7 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div className="max-w-sm rounded overflow-hidden shadow-lg pt-5 pb-5">
-          {/* <img
-            className="w-full"
-            src="/img/card-top.jpg"
-            alt="Sunset in the mountains"
-          ></img>  */}
+        <img className="w-full" src={Image} alt="Sunset in the mountains" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
             <p className="text-gray-700 text-base">

@@ -39,7 +39,7 @@ const App = () => {
               <Route path="/devis-gratuit" element={<Devis />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
-            <Footer/> 
+            <Footer />
           </Router>
         </ThemeProvider>
       </div>
