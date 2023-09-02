@@ -304,7 +304,7 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <div className="ml-2">
+            <div className="ml-2 mb-5 mt-5">
               <DarkLightThemes className="hidden sm:block" />
             </div>
           </li>

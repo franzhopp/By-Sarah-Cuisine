@@ -1,7 +1,7 @@
 const Cards = () => {
   return (
     <section className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-5xl font-extrabold text-color-gray-pastel text-center">
+      <h1 className="text-3xl sm:text-5xl font-extrabold text-color-gray-pastel text-center">
         Choisissez votre pack
       </h1>
 

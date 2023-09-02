@@ -10,10 +10,12 @@ const Form = () => {
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:py-12">
             <p className="max-w-xl text-lg text-color-gray-pastel font-extralight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illo
-              nihil porro reprehenderit temporibus, ipsa odio mollitia quasi
-              tempore neque at sit impedit, distinctio reiciendis harum,
-              consequatur provident doloribus voluptatum.
+              Nous sommes ravis de vous accueillir sur notre site dédié à la
+              cuisine passionnante et créative. Nous sommes là pour répondre à
+              toutes vos questions, commentaires ou besoins. Votre avis compte
+              énormément pour nous, que ce soit pour des suggestions de
+              recettes, des demandes de conseils culinaires, ou simplement pour
+              discuter de votre passion pour la cuisine.
             </p>
 
             <div className="mt-8">
