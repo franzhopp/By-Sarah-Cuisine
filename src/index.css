@@ -16,11 +16,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #EEEEEE;
+    background: #f2f1f2;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 40, 172);
+    background: #d5a4a5;
 }
 
 /* BG */
@@ -48,4 +48,16 @@ body {
 select {
     color: gray;
     background-color: white;
+}
+
+.pink-pastel {
+    background-color: #d5a4a5;
+}
+
+.z-max {
+    z-index: 50 !important;
+}
+
+.gray {
+    background-color: #d2d4d5;
 }

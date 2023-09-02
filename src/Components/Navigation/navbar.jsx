@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Image from "../../assets/haaat-1.png";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
 
@@ -73,20 +74,20 @@ const Navbar = () => {
     <div className="homepage pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
       <nav
         className={`${
-          scrollNavbar ? "bg-white" : ""
-        } bg-transparent transition duration-300 ease-in-out fixed w-full top-0 left-0 shadow-md`}
+          scrollNavbar ? "gray" : ""
+        } fixed bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
               <NavLink href="/" className="text-gray-900 text-lg font-semibold">
-                By_sarah_cuisine
+                <img className="w-full h-24 pt-2" src={Image} alt="Icône de Sarah" />
               </NavLink>
             </div>
             <div className="flex items-center">
               <NavLink
                 to="/"
-                className="text-gray-700 hover:text-gray-900 px-4 py-2 text-base font-extrabold uppercase"
+                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 text-base font-extrabold uppercase"
               >
                 Accueil
               </NavLink>
@@ -94,30 +95,30 @@ const Navbar = () => {
                 to="/"
                 href="about"
                 onClick={SectionToScrollAbout}
-                className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-md text-base font-extrabold uppercase"
+                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
               >
                 À propos
               </NavLink>
               <NavLink
                 to="/nos-services"
-                className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-md text-base font-extrabold"
+                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold"
               >
                 <li className="relative group list-none">
                   <NavLink
                     to="/nos-services"
-                    className="block px-3 py-2 rounded-md text-base font-extrabold hover:text-blue-400"
+                    className="block px-3 py-2 rounded-md text-base font-extrabold hover:text-color-beige-pastel"
                   >
                     <p className="uppercase">Services</p>
                   </NavLink>
 
                   {/* Sous-liste */}
-                  <ul className="absolute hidden group-hover:block bg-white border border-gray-300 mt-2 py-2 rounded-md">
+                  <ul className="absolute hidden group-hover:block bg-bgcolor-white-pastel border border-gray-300 mt-2 py-2 rounded-md">
                     <li>
                       <NavLink
                         to="/plats"
                         onMouseEnter={handleMouseEnterSubmenu}
                         onMouseLeave={handleMouseLeaveParent}
-                        className="block px-4 py-2 hover:text-blue-400"
+                        className="block px-4 py-2 hover:text-color-beige-pastel"
                       >
                         Plats
                       </NavLink>
@@ -125,7 +126,7 @@ const Navbar = () => {
                     <li>
                       <NavLink
                         to="/desserts"
-                        className="block px-4 py-2 hover:text-blue-400"
+                        className="block px-4 py-2 hover:text-color-beige-pastel"
                       >
                         Desserts
                       </NavLink>
@@ -133,7 +134,7 @@ const Navbar = () => {
                     <li>
                       <NavLink
                         to="/events"
-                        className="block px-4 py-2 hover:text-blue-400"
+                        className="block px-4 py-2 hover:text-color-beige-pastel"
                       >
                         Évènements
                       </NavLink>
@@ -141,7 +142,7 @@ const Navbar = () => {
                     <li>
                       <a
                         to="/events"
-                        className="block px-4 py-2 hover:text-blue-400 underline"
+                        className="block px-4 py-2 hover:text-color-beige-pastel underline"
                       >
                         Tous les services
                       </a>
@@ -151,7 +152,7 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/nos-valeurs"
-                className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-md text-base font-extrabold uppercase"
+                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
               >
                 Nos valeurs
               </NavLink>
@@ -159,13 +160,13 @@ const Navbar = () => {
                 to="/"
                 href="contact"
                 onClick={SectionToScroll}
-                className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-md text-base font-extrabold uppercase"
+                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
               >
                 Contact
               </NavLink>
               <NavLink
                 to="/devis-gratuit"
-                className="text-gray-700 hover:text-gray-900 px-4 py-2 rounded-md text-base font-extrabold uppercase"
+                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
               >
                 Devis gratuit
               </NavLink>
@@ -176,20 +177,19 @@ const Navbar = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav className="fixed w-full top-0 left-0 shadow-md md:hidden bg-white">
+      <nav className="fixed w-full top-0 left-0 shadow-md md:hidden bg-bgcolor-gray-pastel z-max">
         {/* 2 items */}
         <div className="px-5 h-24 flex items-center justify-between">
           <a href="">
-            {/* <img src="" alt="" className="h-8 w-auto sm:h-10" /> */}
-            <p className="h-8 w-auto sm:h-10">By_sarah_cuisine</p>
+            <img className="w-full h-24 pt-2" src={Image} alt="Icône de Sarah" />
           </a>
 
           <div className="-mr-2">
             <button
               onClick={toggleMenuMobile}
-              className="icon-toggle bg-white rounded-md p-2 inline-flex items-center justify-center ring-1 ring-black ring-opacity-20"
+              className="icon-toggle bg-bgcolor-pink-pastel border border-l-color-white-pastel rounded-md p-2 inline-flex items-center justify-center ring-1 ring-black ring-opacity-20"
             >
-              <HiOutlineMenuAlt1 className="h-6 w-6" />
+              <HiOutlineMenuAlt1 className="h-6 w-6 text-color-white-pastel" />
             </button>
           </div>
         </div>
@@ -199,7 +199,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/"
-              className="block px-3 py-2 rounded-md text-base font-extrabold text-black hover:text-blue-400"
+              className="block px-3 py-2 rounded-md text-base font-extrabold text-color-white-pastel hover:text-color-beige-pastel"
             >
               Accueil
             </NavLink>
@@ -209,7 +209,7 @@ const Navbar = () => {
               to="/"
               href="about"
               onClick={SectionToScrollAbout}
-              className="block px-3 py-2 rounded-md text-base font-extrabold text-black hover:text-blue-400"
+              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
             >
               À propos
             </NavLink>
@@ -217,7 +217,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/nos-services"
-              className="block px-1 py-2 rounded-md text-base font-extrabold text-black  translate-x-2 duration-100"
+              className="block px-1 py-2 rounded-md text-base font-extrabold  text-color-white-pastel translate-x-2 duration-100"
             >
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
@@ -232,22 +232,34 @@ const Navbar = () => {
                 } p-2`}
               >
                 <li>
-                  <NavLink to="/plats" className="hover:text-blue-400">
+                  <NavLink
+                    to="/plats"
+                    className="hover:text-color-beige-pastel"
+                  >
                     Plats
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/desserts" className="hover:text-blue-400">
+                  <NavLink
+                    to="/desserts"
+                    className="hover:text-color-beige-pastel"
+                  >
                     Desserts
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/events" className="hover:text-blue-400">
+                  <NavLink
+                    to="/events"
+                    className="hover:text-color-beige-pastel"
+                  >
                     Évènements
                   </NavLink>
                 </li>
                 <li>
-                  <a to="/events" className=" hover:text-blue-400 underline">
+                  <a
+                    to="/events"
+                    className=" hover:text-color-beige-pastel underline"
+                  >
                     Tous les services
                   </a>
                 </li>
@@ -259,7 +271,7 @@ const Navbar = () => {
               to="/"
               href="contact"
               onClick={SectionToScroll}
-              className="block px-3 py-2 rounded-md text-base font-extrabold text-black hover:text-blue-400"
+              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
             >
               Contact
             </NavLink>
@@ -267,7 +279,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/nos-valeurs"
-              className="block px-3 py-2 rounded-md text-base font-extrabold text-black hover:text-blue-400"
+              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
             >
               Nos valeurs
             </NavLink>
@@ -275,7 +287,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/devis-gratuit"
-              className="block px-3 py-2 rounded-md text-base font-extrabold text-black hover:text-blue-400"
+              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
             >
               Devis gratuit
             </NavLink>

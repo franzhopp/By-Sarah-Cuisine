@@ -19,10 +19,20 @@ export default {
                 'sans': ['Poppins', 'sans-serif'],
             },
 
-            // utiliser une couleur :
-            // colors: {
-            //     bigColors: 'blue',
-            // }
+            backgroundColor: {
+                'dark-mode-pastel': '#121824',
+                'bgcolor-gray-pastel': '#d2d4d5',
+                'bgcolor-pink-pastel': '#d5a4a5',
+                'bgcolor-beige-pastel': '#e2d3bf',
+                'bgcolor-white-pastel': '#f2f1f2',
+            },
+
+            colors: {
+                'color-gray-pastel': '#d2d4d5',
+                'color-pink-pastel': '#d5a4a5',
+                'color-beige-pastel': '#e2d3bf',
+                'color-white-pastel': '#f2f1f2',
+            }
         },
         // breakpoints :
         screens: {

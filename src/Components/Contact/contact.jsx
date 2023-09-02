@@ -2,29 +2,32 @@ const Form = () => {
   return (
     <section id="contact" className="bg-white-100">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <h1 className="text-5xl font-extrabold text-black-900 text-center pt-32">
-       Contact
-      </h1>
+        <h1 className="text-5xl font-extrabold text-color-gray-pastel text-center pt-32">
+          Contact
+        </h1>
 
-      <hr className="mt-5 mx-auto w-1/4 pb-8" />
+        <hr className="mt-5 mx-auto w-1/4 pb-8" />
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:py-12">
-            <p className="max-w-xl text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illo nihil porro reprehenderit temporibus, ipsa odio mollitia quasi tempore neque at sit impedit, distinctio reiciendis harum, consequatur provident doloribus voluptatum.
+            <p className="max-w-xl text-lg text-color-gray-pastel font-extralight">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illo
+              nihil porro reprehenderit temporibus, ipsa odio mollitia quasi
+              tempore neque at sit impedit, distinctio reiciendis harum,
+              consequatur provident doloribus voluptatum.
             </p>
 
             <div className="mt-8">
-              <a href="" className="text-2xl font-bold text-pink-600">
+              <a href="" className="text-2xl font-bold text-color-pink-pastel">
                 01 03 40 30 23
               </a>
 
-              <address className="mt-2 not-italic">
+              <address className="mt-2 not-italic text-color-gray-pastel">
                 Paris, Île-de-France
               </address>
             </div>
           </div>
 
-          <div className="rounded-lg bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <div className="rounded-lg bg-bgcolor-beige-pastel p-8 shadow-lg lg:col-span-3 lg:p-12">
             <form action="" className="space-y-4">
               <div>
                 <label className="sr-only" htmlFor="name">
@@ -64,8 +67,6 @@ const Form = () => {
                 </div>
               </div>
 
-           
-
               <div>
                 <label className="sr-only" htmlFor="message">
                   Message
@@ -81,8 +82,9 @@ const Form = () => {
 
               <div className="mt-4">
                 <button
+                  data-aos="fade-right"
                   type="submit"
-                  className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                  className="inline-block w-full rounded-lg bg-bgcolor-pink-pastel px-5 py-3 font-extrabold text-color-white-pastel sm:w-auto"
                 >
                   Envoyer
                 </button>

@@ -1,10 +1,15 @@
 const DevisFree = () => {
   return (
     <section id="contact" className="bg-white-100">
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <h1 className="text-5xl font-extrabold text-black-900 text-center pt-20">
+      <div className="mx-auto max-w-screen-xl px-4 py-52 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-extrabold text-color-gray-pastel text-center">
           Demande de devis gratuit
         </h1>
+
+        <div className="p mt-5 text-base text-color-gray-pastel font-extrabold text-center">
+          Faites un devis gratuitement afin de pouvoir faire votre première
+          commande !
+        </div>
 
         <hr className="mt-5 mx-auto w-1/4 pb-8" />
         <div className="">
@@ -92,18 +97,18 @@ const DevisFree = () => {
               </div>
 
               <div>
-              <select
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Service choisi"
-                    type="email"
-                    id="email"
-                  >
-                    <option selected>{`Comment m'avez-vous connu ?`}</option>
-                    <option>Par un proche</option>
-                    <option>Sur internet</option>
-                    <option>Les réseaux sociaux</option>
-                    <option>Client régulier</option>
-                  </select>
+                <select
+                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Service choisi"
+                  type="email"
+                  id="email"
+                >
+                  <option selected>{`Comment m'avez-vous connu ?`}</option>
+                  <option>Par un proche</option>
+                  <option>Sur internet</option>
+                  <option>Les réseaux sociaux</option>
+                  <option>Client régulier</option>
+                </select>
               </div>
 
               {/* Message */}
@@ -122,8 +127,9 @@ const DevisFree = () => {
 
               <div className="flex justify-center items-center mt-4">
                 <button
+                  data-aos="fade-left"
                   type="submit"
-                  className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                  className="inline-block w-full rounded-lg bg-bgcolor-beige-pastel px-5 py-3 font-extrabold text-white sm:w-auto"
                 >
                   Envoyer
                 </button>
