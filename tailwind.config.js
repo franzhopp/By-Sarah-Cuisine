@@ -16,7 +16,7 @@ export default {
             },
 
             fontFamily: {
-                'sans': ['Poppins', 'sans-serif'],
+                'sans': ['Helvetica', 'sans-serif'],
             },
 
             backgroundColor: {

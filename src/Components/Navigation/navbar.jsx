@@ -40,6 +40,10 @@ const Navbar = () => {
     }
   };
 
+  const closeMobileMenu = () => {
+    setToggleMenu(false);
+  };
+
   const SectionToScroll = () => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
@@ -81,7 +85,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
               <NavLink href="/" className="text-gray-900 text-lg font-semibold">
-                <img className="w-full h-24 pt-2" src={Image} alt="Icône de Sarah" />
+                <img
+                  className="w-full h-24 pt-2"
+                  src={Image}
+                  alt="Icône de Sarah"
+                />
               </NavLink>
             </div>
             <div className="flex items-center">
@@ -181,7 +189,7 @@ const Navbar = () => {
         {/* 2 items */}
         <div className="px-5 h-24 flex items-center justify-between">
           <a href="">
-            <img className="w-full h-24 pt-2" src={Image} alt="Icône de Sarah" />
+            {/* <img className="w-full h-24 pt-2" src={Image} alt="Icône de Sarah" /> */}
           </a>
 
           <div className="-mr-2">
@@ -199,6 +207,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/"
+              onClick={closeMobileMenu}
               className="block px-3 py-2 rounded-md text-base font-extrabold text-color-white-pastel hover:text-color-beige-pastel"
             >
               Accueil
@@ -279,6 +288,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/nos-valeurs"
+              onClick={closeMobileMenu}
               className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
             >
               Nos valeurs
@@ -287,6 +297,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/devis-gratuit"
+              onClick={closeMobileMenu}
               className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
             >
               Devis gratuit
