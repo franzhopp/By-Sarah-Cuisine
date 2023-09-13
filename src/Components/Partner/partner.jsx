@@ -1,10 +1,12 @@
+import Image from "../../assets/avis-client.png";
+
 const Partner = () => {
   return (
-    <div className="bg-bgcolor-pink-pastel">
-      <div className="max-w-4xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-        <h2 className="text-3xl tracking-tight font-extrabold text-white text-center">
-            Clientèle satisfaite, vous ne serez pas déçus
-        </h2>
+    <div className="image-client-by-sarah-cuisine py-28 ">
+      <div className="max-w-4xl mx-auto px-4 sm:py-20 sm:px-6 lg:px-8">
+        <span className="flex justify-center">
+          <img src={Image} alt="" />
+        </span>
       </div>
     </div>
   );

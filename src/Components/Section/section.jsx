@@ -2,49 +2,34 @@
 
 const Section = () => {
   return (
-    <section
-      id="about"
-      className="flex flex-col items-center pb-32 pt-32 border-gray-200 lg:flex-row"
-    >
-      <div
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        className="px-10 w-full order-2 text-left md:py-32 lg:w-1/2 lg:order-1"
-      >
-        <h2 className="font-extrabold text-color-gray-pastel text-2xl">
-          <span>
-            Chez By_sarah_cuisine, nous sommes dédiés à fournir des informations
-            fiables et des conseils de haute qualité pour votre commande.
-          </span>
-          <br />
+    <section className="mb-12">
+      
+      <div className="flex justify-center mt-12">
+        <h2 className="font-extrabold text-2xl sm:text-4xl">
+          <span className="font-section">{`Traiteur de tous types d'évènements`}</span>
         </h2>
       </div>
-
-      <div
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        className="px-10 pb-16 pt-20 w-full order-2 text-left md:py-32 lg:w-1/2 lg:order-1"
-      >
-        <p className="mt-3 text-lg mx-auto text-color-gray-pastel sm:text-xl md:mt-5 md:max-w-md">
-          Toutes nos publications sont soigneusement rédigées par des experts
-          culinaires passionnés. Nous nous efforçons de vous offrir{" "}
-          <span className="font-extrabold">
-            une expérience informative, divertissante et enrichissante à chaque
-            visite
-          </span>
-          .
-        </p>
+      <div className="flex justify-center">
+        <p className="text-sm sm:text-xl">INGRÉDIENTS BIO OU DE QUALITÉS</p>
       </div>
 
-      <div
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        className="px-10 pb-16 pt-20 w-full order-2 text-left md:py-32 lg:w-1/2 lg:order-1"
-      >
-        <p className="mt-3 text-lg mx-auto text-color-gray-pastel sm:text-xl md:mt-5 md:max-w-md">
-          Rejoignez notre communauté de passionnés de la cuisine et explorez
-          tout ce que le monde culinaire a à offrir.
-        </p>
+      <div className="flex justify-center">
+        <div className="flex justify-center flex-col sm:flex-row mt-5">
+          <p className="font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            {`Votre site internet, votre vision. Chez nous, chaque site est conçu
+            avec votre marque à l'esprit. Notre équipe experte en conception web
+            crée des expériences uniques qui reflètent votre identité et vos
+            objectifs. Obtenez un site qui se démarque dans un monde en ligne
+            saturé.`}
+          </p>
+          <p className="font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            {`Votre site internet, votre vision. Chez nous, chaque site est conçu
+            avec votre marque à l'esprit. Notre équipe experte en conception web
+            crée des expériences uniques qui reflètent votre identité et vos
+            objectifs. Obtenez un site qui se démarque dans un monde en ligne
+            saturé.`}
+          </p>
+        </div>
       </div>
     </section>
   );

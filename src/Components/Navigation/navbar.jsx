@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import Image from "../../assets/haaat-1.png";
+// import Image from "../../assets/haaat-1.png";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
 
@@ -75,27 +75,30 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="homepage pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
+    <div className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
       <nav
         className={`${
-          scrollNavbar ? "gray" : ""
+          scrollNavbar ? " bg-white " : ""
         } fixed bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-24">
-            <div className="flex items-center">
+          <div className="flex items-center justify-center h-24">
+            <div className="md:left-0 md:inline md:absolute">
               <NavLink href="/" className="text-gray-900 text-lg font-semibold">
-                <img
+                {/* <img
                   className="w-full h-24 pt-2"
                   src={Image}
                   alt="Icône de Sarah"
-                />
+                /> */}
+                {/* <p>Logo</p> */}
               </NavLink>
             </div>
             <div className="flex items-center">
               <NavLink
                 to="/"
-                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 text-base font-extrabold uppercase"
+                className={`${
+                  scrollNavbar ? "text-pink " : ""
+                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
               >
                 Accueil
               </NavLink>
@@ -103,13 +106,17 @@ const Navbar = () => {
                 to="/"
                 href="about"
                 onClick={SectionToScrollAbout}
-                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
+                className={`${
+                  scrollNavbar ? "text-pink " : ""
+                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
               >
                 À propos
               </NavLink>
               <NavLink
                 to="/nos-services"
-                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold"
+                className={`${
+                  scrollNavbar ? "text-pink " : ""
+                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
               >
                 <li className="relative group list-none">
                   <NavLink
@@ -158,34 +165,38 @@ const Navbar = () => {
                   </ul>
                 </li>
               </NavLink>
-              <NavLink
-                to="/nos-valeurs"
-                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
-              >
-                Nos valeurs
-              </NavLink>
+
               <NavLink
                 to="/"
                 href="contact"
                 onClick={SectionToScroll}
-                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
+                className={`${
+                  scrollNavbar ? "text-pink " : ""
+                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
               >
                 Contact
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/devis-gratuit"
                 className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
               >
                 Devis gratuit
-              </NavLink>
-              <DarkLightThemes className="hidden sm:block" />
+              </NavLink> */}
+              {/* <DarkLightThemes className="hidden sm:block test" /> */}
             </div>
+
+            <a
+              href="#"
+              className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
+            >
+              <p className="font-extrabold">DEVIS GRATUIT</p>
+            </a>
           </div>
         </div>
       </nav>
 
       {/* Navigation mobile */}
-      <nav className="fixed w-full top-0 left-0 shadow-md md:hidden bg-bgcolor-gray-pastel z-max">
+      <nav className="fixed w-full top-0 left-0 shadow-md xl:hidden bg-white z-max">
         {/* 2 items */}
         <div className="px-5 h-24 flex items-center justify-between">
           <a href="">
@@ -195,9 +206,9 @@ const Navbar = () => {
           <div className="-mr-2">
             <button
               onClick={toggleMenuMobile}
-              className="icon-toggle bg-bgcolor-pink-pastel border border-l-color-white-pastel rounded-md p-2 inline-flex items-center justify-center ring-1 ring-black ring-opacity-20"
+              className="icon-toggle bg-e9c2c2 border border-white rounded-md p-2 inline-flex items-center justify-center ring-1 ring-black ring-opacity-20"
             >
-              <HiOutlineMenuAlt1 className="h-6 w-6 text-color-white-pastel" />
+              <HiOutlineMenuAlt1 className="h-6 w-6 text-white" />
             </button>
           </div>
         </div>

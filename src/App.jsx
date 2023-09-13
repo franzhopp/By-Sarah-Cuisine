@@ -12,7 +12,7 @@ import Section from "./Components/Section/section";
 import SectionDuplicate from "./Components/Section/section_duplicate.jsx";
 import Cards from "./Components/Cards/cards.jsx";
 import Partner from "./Components/Partner/partner.jsx";
-import Form from "./Components/Contact/contact.jsx";
+// import Form from "./Components/Contact/contact.jsx";
 import Footer from "./Components/Footer/footer.jsx";
 
 // Segmentation 2 //
@@ -28,7 +28,7 @@ import DevisFree from "./Pages/Devis/devis.jsx";
 const App = () => {
   return (
     <>
-      <div className="fade-in">
+      <div>
         <ThemeProvider>
           <Router>
             <Header />
@@ -55,7 +55,7 @@ const Homepage = () => {
       <SectionDuplicate />
       <Cards />
       <Partner />
-      <Form />
+      {/* <Form /> */}
     </div>
   );
 };

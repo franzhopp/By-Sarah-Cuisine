@@ -10,6 +10,10 @@ export default {
     theme: {
         extend: {
 
+            height: {
+                '400' : '496px',
+            },
+
             minHeight: {
                 500: "500px",
                 600: "650px"
@@ -17,21 +21,20 @@ export default {
 
             fontFamily: {
                 'sans': ['Helvetica', 'sans-serif'],
+                'sans-serif' : ['Fira Sans'],
+                'sans-recursive' : ['Dancing Script'],
             },
 
             backgroundColor: {
-                'dark-mode-pastel': '#121824',
-                'bgcolor-gray-pastel': '#d2d4d5',
-                'bgcolor-pink-pastel': '#d5a4a5',
-                'bgcolor-beige-pastel': '#e2d3bf',
-                'bgcolor-white-pastel': '#f2f1f2',
+                'f3dbc3': '#F3DBC3',
+                'e9c2c2': '#E9C2C2',
+                'd9d9d9': '#D9D9D9',
+
             },
 
             colors: {
-                'color-gray-pastel': '#d2d4d5',
-                'color-pink-pastel': '#d5a4a5',
-                'color-beige-pastel': '#e2d3bf',
-                'color-white-pastel': '#f2f1f2',
+                'pink': '#E9C2C2',
+                'gray': '#FFFFFF',
             }
         },
         // breakpoints :

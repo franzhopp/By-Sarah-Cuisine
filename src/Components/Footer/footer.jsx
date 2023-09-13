@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="bg-bgcolor-pink-pastel">
+    <footer className="bg-e9c2c2">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <div className="text-color-white-pastel">By_sarah_cuisine</div>
+          <div className="text-white">Logo</div>
 
           <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
             <li>
@@ -11,7 +11,7 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-color-white-pastel transition hover:opacity-75"
+                className="text-white transition hover:opacity-75"
               >
                 <span className="sr-only">Facebook</span>
 
@@ -35,7 +35,7 @@ const Footer = () => {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-color-white-pastel transition hover:opacity-75"
+                className="text-white transition hover:opacity-75"
               >
                 <span className="sr-only">Instagram</span>
 
@@ -56,15 +56,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
+        <div className="grid grid-cols-1 gap-8 border-t border-white pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16">
           <div>
-            <p className="text-color-white-pastel font-extrabold">Services</p>
+            <p className="text-white font-extrabold">Services</p>
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Plats
                 </a>
@@ -73,7 +73,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Desserts
                 </a>
@@ -82,7 +82,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Mariage
                 </a>
@@ -91,7 +91,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Évènements
                 </a>
@@ -100,13 +100,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-color-white-pastel font-extrabold">Production</p>
+            <p className="text-white font-extrabold">Production</p>
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   À propos
                 </a>
@@ -115,7 +115,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Contact
                 </a>
@@ -124,7 +124,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Devis en ligne gratuit
                 </a>
@@ -133,13 +133,13 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-color-white-pastel font-extrabold">Légalité</p>
+            <p className="text-white font-extrabold">Légalité</p>
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Accessibilité
                 </a>
@@ -148,7 +148,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Politique de retour
                 </a>
@@ -157,7 +157,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-color-white-pastel hover:text-color-beige-pastel transition hover:opacity-75"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Politique de remboursement
                 </a>
@@ -166,7 +166,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="text-xs text-color-white-pastel font-extrabold">
+        <p className="text-xs text-white font-extrabold">
           &copy; 2023, By_sarah_cuisine. | Tous droits réversés.
         </p>
       </div>
