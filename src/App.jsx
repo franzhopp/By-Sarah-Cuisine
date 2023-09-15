@@ -12,7 +12,7 @@ import Section from "./Components/Section/section";
 import SectionDuplicate from "./Components/Section/section_duplicate.jsx";
 import Cards from "./Components/Cards/cards.jsx";
 import Partner from "./Components/Partner/partner.jsx";
-// import Form from "./Components/Contact/contact.jsx";
+import Form from "./Components/Contact/contact.jsx";
 import Footer from "./Components/Footer/footer.jsx";
 
 // Segmentation 2 //
@@ -23,6 +23,7 @@ import PropositionOfServices from "./Pages/Proposal/proposal.jsx";
 
 // Segmentation 4 //
 import DevisFree from "./Pages/Devis/devis.jsx";
+import AvisClient from "./Components/Partner/avis-client.jsx";
 
 // Système de routage //
 const App = () => {
@@ -55,7 +56,8 @@ const Homepage = () => {
       <SectionDuplicate />
       <Cards />
       <Partner />
-      {/* <Form /> */}
+      <AvisClient/>
+      <Form />
     </div>
   );
 };

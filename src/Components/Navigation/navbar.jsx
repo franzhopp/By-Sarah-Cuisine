@@ -8,6 +8,13 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
 
+const pages = [
+  { link: "/plats", name: "Plats" },
+  { link: "/desserts", name: "Desserts" },
+  { link: "/events", name: "Évènements" },
+  { link: "/all", name: "Tous les services" },
+];
+
 const Navbar = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -78,8 +85,8 @@ const Navbar = () => {
     <div className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
       <nav
         className={`${
-          scrollNavbar ? " bg-white " : ""
-        } fixed bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
+          scrollNavbar ? "bg-white" : ""
+        } font-sans-serif fixed bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center h-24">
@@ -97,8 +104,8 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 className={`${
-                  scrollNavbar ? "text-pink " : ""
-                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
+                  scrollNavbar ? "text-pink" : "text-white"
+                } px-6 py-2 text-base font-extrabold uppercase`}
               >
                 Accueil
               </NavLink>
@@ -107,61 +114,39 @@ const Navbar = () => {
                 href="about"
                 onClick={SectionToScrollAbout}
                 className={`${
-                  scrollNavbar ? "text-pink " : ""
-                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
+                  scrollNavbar ? "text-pink" : "text-white"
+                }  px-6 py-2 text-base font-extrabold uppercase`}
               >
                 À propos
               </NavLink>
               <NavLink
                 to="/nos-services"
                 className={`${
-                  scrollNavbar ? "text-pink " : ""
-                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
+                  scrollNavbar ? "text-pink" : "text-white"
+                }  px-6 py-2 text-base font-extrabold`}
               >
                 <li className="relative group list-none">
                   <NavLink
                     to="/nos-services"
-                    className="block px-3 py-2 rounded-md text-base font-extrabold hover:text-color-beige-pastel"
+                    className="block px-3 py-2 rounded-md font-extrabold"
                   >
                     <p className="uppercase">Services</p>
                   </NavLink>
 
                   {/* Sous-liste */}
-                  <ul className="absolute hidden group-hover:block bg-bgcolor-white-pastel border border-gray-300 mt-2 py-2 rounded-md">
-                    <li>
-                      <NavLink
-                        to="/plats"
-                        onMouseEnter={handleMouseEnterSubmenu}
-                        onMouseLeave={handleMouseLeaveParent}
-                        className="block px-4 py-2 hover:text-color-beige-pastel"
-                      >
-                        Plats
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/desserts"
-                        className="block px-4 py-2 hover:text-color-beige-pastel"
-                      >
-                        Desserts
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/events"
-                        className="block px-4 py-2 hover:text-color-beige-pastel"
-                      >
-                        Évènements
-                      </NavLink>
-                    </li>
-                    <li>
-                      <a
-                        to="/events"
-                        className="block px-4 py-2 hover:text-color-beige-pastel underline"
-                      >
-                        Tous les services
-                      </a>
-                    </li>
+                  <ul className="absolute hidden group-hover:block bg-white shadow-md mt-2 py-2 rounded-md">
+                    {pages.map((page, index) => (
+                      <li key={index}>
+                        <NavLink
+                          to={page.link}
+                          onMouseEnter={handleMouseEnterSubmenu}
+                          onMouseLeave={handleMouseLeaveParent}
+                          className="block px-4 py-2 text-pink"
+                        >
+                          <p className="">{page.name}</p>
+                        </NavLink>
+                      </li>
+                    ))}
                   </ul>
                 </li>
               </NavLink>
@@ -171,18 +156,19 @@ const Navbar = () => {
                 href="contact"
                 onClick={SectionToScroll}
                 className={`${
-                  scrollNavbar ? "text-pink " : ""
-                }  text-white hover:text-color-beige-pastel px-6 py-2 text-base font-extrabold uppercase`}
+                  scrollNavbar ? "text-pink" : "text-white"
+                } px-6 py-2 text-base font-extrabold uppercase`}
               >
                 Contact
               </NavLink>
-              {/* <NavLink
-                to="/devis-gratuit"
-                className="text-color-white-pastel hover:text-color-beige-pastel px-4 py-2 rounded-md text-base font-extrabold uppercase"
-              >
-                Devis gratuit
-              </NavLink> */}
-              {/* <DarkLightThemes className="hidden sm:block test" /> */}
+            </div>
+
+            <div className="ml-2 mb-5 mt-5">
+              <DarkLightThemes
+                className={`${
+                  scrollNavbar ? "text-pink" : "text-white"
+                } hidden sm:block`}
+              />
             </div>
 
             <a
@@ -321,7 +307,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-
       <Homepage />
     </div>
   );

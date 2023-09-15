@@ -7,25 +7,26 @@ const DarkLightThemes = () => {
 
   useEffect(() => {
     if (isDarkMode) {
-        document.body.classList.add("bg-dark-mode-pastel");
+        document.body.classList.add("bg-black");
         document.body.classList.remove("bg-white");
     } else {
         document.body.classList.add("bg-white");
-      document.body.classList.remove("bg-dark-mode-pastel");
+      document.body.classList.remove("bg-black");
     }
   }, [isDarkMode]);
 
   return (
-    <div className={isDarkMode ? "text-color-white-pastel" : ""}>
+    <div className={isDarkMode ? "text-white" : ""}>
       <button
         onClick={toggleTheme}
-        className={`py-2 px-4 bg-transparent rounded-full border border-color-white-pastel ${isDarkMode ? "dark" : ""}`}
+        className={`py-2 px-4 bg-transparent rounded-full ${isDarkMode ? "dark" : ""}`}
       >
         {isDarkMode ? "" : ""}
-        <div className="icons text-color-white-pastel">{isDarkMode ? <IoMdSunny /> : <IoMdMoon />}</div>
+        <div className="icons text-pink border border-white rounded-full p-2">{isDarkMode ? <IoMdSunny /> : <IoMdMoon />}</div>
       </button>
     </div>
   );
 };
 
 export default DarkLightThemes;
+

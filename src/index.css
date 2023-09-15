@@ -40,7 +40,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./assets/IMAGE-CLIENT.png');  
+    background-image: url('./assets/IMAGE-CLIENT.png');
 }
 
 .font-home {
@@ -82,4 +82,8 @@ body {
 
 .z-max {
     z-index: 50 !important;
+}
+
+.bg-contact {
+    background: rgba(243, 219, 195, 0.32);
 }

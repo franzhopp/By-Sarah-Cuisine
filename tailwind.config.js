@@ -29,6 +29,7 @@ export default {
                 'f3dbc3': '#F3DBC3',
                 'e9c2c2': '#E9C2C2',
                 'd9d9d9': '#D9D9D9',
+                'efefef': '#EFEFEF',
 
             },
 
