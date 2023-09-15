@@ -59,10 +59,10 @@ const SectionDuplicate = () => {
             />
           </svg>
         </div>
+
       </div>
-      <div className="mt-12 text-base text-white text-center font-sans-serif font-extrabold">
-        Demander un devis sur-mesure où Sarah traitera votre commande avec
-        attention.
+        <div className="text-base text-white text-center font-sans-serif font-extrabold">
+       Demander un devis sur-mesure où Sarah traitera votre commande avec attention.
         <div className="w-full mt-10">
           <a
             to="/"

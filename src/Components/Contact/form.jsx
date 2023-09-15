@@ -45,7 +45,7 @@ const Form = () => {
                   <input
                     className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                     placeholder="Numéro de téléphone"
-                    type="text"
+                    type="tel"
                   />
                 </div>
               </div>
