@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const SectionDuplicate = () => {
   return (
     <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
@@ -59,18 +61,16 @@ const SectionDuplicate = () => {
             />
           </svg>
         </div>
-
       </div>
-        <div className="text-base text-white text-center font-sans-serif font-extrabold">
-       Demander un devis sur-mesure où Sarah traitera votre commande avec attention.
-        <div className="w-full mt-10">
-          <a
-            to="/"
-            className="mt-8 p-20 bg-e9c2c2 cursor-pointer rounded-2xl py-2 text-sm font-semibold text-white text-center hover:bg-slate-400"
-          >
-            {`Demander un devis`}
-          </a>
-        </div>
+      <div className="text-base text-white text-center font-sans-serif font-extrabold">
+        Demander un devis sur-mesure où Sarah traitera votre commande avec
+        attention.
+        <NavLink
+          to="/devis-gratuit"
+          className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
+        >
+          <p className="font-extrabold">Demander un devis</p>
+        </NavLink>
       </div>
     </section>
   );

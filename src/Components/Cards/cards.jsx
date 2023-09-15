@@ -93,12 +93,12 @@ const Cards = () => {
         En savoir davantage sur toutes les offres et possibilité de réduction en
         vous inscrivant à la newletter de Sarah !
         <div className="w-full mt-10">
-          <NavLink
-            to="/"
-            className="mt-8 p-20 bg-f3dbc3 rounded-2xl py-2 text-sm font-semibold text-white text-center hover:bg-slate-400"
-          >
-            {`Je m'inscris`}
-          </NavLink>
+        <NavLink
+          to="/devis-gratuit"
+          className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
+        >
+          <p className="font-extrabold">{`Je m'inscris`}s</p>
+        </NavLink>
         </div>
       </div>
     </section>
