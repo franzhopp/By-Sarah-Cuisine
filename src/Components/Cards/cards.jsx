@@ -1,3 +1,4 @@
+import { MdOutlineEditNote } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 const Cards = () => {
@@ -92,13 +93,13 @@ const Cards = () => {
       <div className="mt-12 text-base text-white text-center font-sans-serif font-extrabold">
         En savoir davantage sur toutes les offres et possibilité de réduction en
         vous inscrivant à la newletter de Sarah !
-        <div className="w-full mt-10">
-        <NavLink
-          to="/devis-gratuit"
-          className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
-        >
-          <p className="font-extrabold">{`Je m'inscris`}s</p>
-        </NavLink>
+        <div className="mt-10 flex justify-center">
+          <NavLink
+            to="/devis-gratuit"
+            className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white"
+          >
+            <p className="flex flex-row font-extrabold">{`Je m'inscris`}<MdOutlineEditNote className="ml-2 mt-1"/></p>
+          </NavLink>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { MdOutlineEditNote } from "react-icons/md";
 
 const SectionDuplicate = () => {
   return (
@@ -65,12 +66,15 @@ const SectionDuplicate = () => {
       <div className="text-base text-white text-center font-sans-serif font-extrabold">
         Demander un devis sur-mesure où Sarah traitera votre commande avec
         attention.
-        <NavLink
-          to="/devis-gratuit"
-          className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
-        >
-          <p className="font-extrabold">Demander un devis</p>
-        </NavLink>
+        <div className="mt-10 flex justify-center">
+          <NavLink
+            to="/devis-gratuit"
+            className="bg-e9c2c2 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white"
+          >
+
+            <p className="flex flex-row font-extrabold">Demander un devis <MdOutlineEditNote className="ml-2 mt-1"/></p>
+          </NavLink>
+        </div>
       </div>
     </section>
   );

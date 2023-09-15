@@ -9,7 +9,7 @@ const Section = () => {
         </h2>
       </div>
       <div className="flex justify-center">
-        <p className="text-sm sm:text-xl">INGRÉDIENTS BIO OU DE QUALITÉS</p>
+        <p className="text-sm sm:text-xl tracking-wide">INGRÉDIENTS BIO OU DE QUALITÉS</p>
       </div>
 
       <div className="flex justify-center">
