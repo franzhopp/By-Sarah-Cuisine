@@ -27,7 +27,7 @@ body {
     height: auto;
     max-width: 100%;
     display: block;
-    padding-top: 250px;
+    padding-top: 50px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,6 +38,7 @@ body {
     height: 300px;
     max-width: 100%;
     display: block;
+    border-bottom: 8px solid #E9C2C2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,6 +55,16 @@ body {
     border: 6px solid #E9C2C2;
     background-size: cover;
     background-image: url('./assets/IMAGE-CLIENT.png');
+}
+
+.image-blur-by-sarah-cuisine {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/image-contact-flou.png');
 }
 
 .font-home {
