@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Cards = () => {
   return (
     <section className="bg-e9c2c2 mx-auto py-20 px-4 sm:px-6 lg:px-8">
@@ -90,16 +92,15 @@ const Cards = () => {
       <div className="mt-12 text-base text-white text-center font-sans-serif font-extrabold">
         En savoir davantage sur toutes les offres et possibilité de réduction en
         vous inscrivant à la newletter de Sarah !
-        <div className="w-full mt-5">
-          <a
-            href=""
+        <div className="w-full mt-10">
+          <NavLink
+            to="/"
             className="mt-8 p-20 bg-f3dbc3 rounded-2xl py-2 text-sm font-semibold text-white text-center hover:bg-slate-400"
           >
-            Faire un devis
-          </a>
+            {`Je m'inscris`}
+          </NavLink>
         </div>
       </div>
-
     </section>
   );
 };

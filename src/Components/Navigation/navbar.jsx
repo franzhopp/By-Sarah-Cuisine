@@ -171,12 +171,12 @@ const Navbar = () => {
               />
             </div>
 
-            <a
-              href="#"
+            <NavLink
+               to="/devis-gratuit"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
-            </a>
+            </NavLink>
           </div>
         </div>
       </nav>

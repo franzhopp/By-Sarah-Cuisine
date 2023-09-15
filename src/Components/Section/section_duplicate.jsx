@@ -60,6 +60,18 @@ const SectionDuplicate = () => {
           </svg>
         </div>
       </div>
+      <div className="mt-12 text-base text-white text-center font-sans-serif font-extrabold">
+        Demander un devis sur-mesure où Sarah traitera votre commande avec
+        attention.
+        <div className="w-full mt-10">
+          <a
+            to="/"
+            className="mt-8 p-20 bg-e9c2c2 cursor-pointer rounded-2xl py-2 text-sm font-semibold text-white text-center hover:bg-slate-400"
+          >
+            {`Demander un devis`}
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

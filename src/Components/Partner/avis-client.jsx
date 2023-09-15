@@ -17,7 +17,7 @@ const AvisClient = () => {
               <h2 className="text-pink mt-3 lg:mt-5">MARIE, 35 ans</h2>
             </div>
   
-            <p className="lg:w-96 pr-3 font-sans-serif flex justify-end items-center mr-4 lg:mr-10">
+            <p className="lg:w-96 pr-3 text-justify font-sans-serif flex justify-end items-center mr-4 lg:mr-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               labore aliquid cupiditate officia vitae laboriosam ducimus
               voluptatem ipsa maiores quo reiciendis, itaque facilis vero totam
@@ -41,7 +41,7 @@ const AvisClient = () => {
               <h2 className="text-pink mt-3 lg:mt-5">MARIE, 35 ans</h2>
             </div>
   
-            <p className="lg:w-96 pr-3 font-sans-serif flex justify-end items-center mr-4 lg:mr-10">
+            <p className="lg:w-96 pr-3 text-justify font-sans-serif flex justify-end items-center mr-4 lg:mr-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               labore aliquid cupiditate officia vitae laboriosam ducimus
               voluptatem ipsa maiores quo reiciendis, itaque facilis vero totam
@@ -65,7 +65,7 @@ const AvisClient = () => {
               <h2 className="text-pink mt-3 lg:mt-5">MARIE, 35 ans</h2>
             </div>
   
-            <p className="lg:w-96 pr-3 font-sans-serif flex justify-end items-center mr-4 lg:mr-10">
+            <p className="lg:w-96 pr-3 text-justify font-sans-serif flex justify-end items-center mr-4 lg:mr-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               labore aliquid cupiditate officia vitae laboriosam ducimus
               voluptatem ipsa maiores quo reiciendis, itaque facilis vero totam
@@ -74,7 +74,7 @@ const AvisClient = () => {
           </div>
         </div>
   
-        {/* Répétez le même modèle pour les autres cartes */}
+        
       </div>
     );
   };
