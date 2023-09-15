@@ -16,7 +16,7 @@ import Form from "./Components/Contact/contact.jsx";
 import Footer from "./Components/Footer/footer.jsx";
 
 // Segmentation 2 //
-import PageEthics from "./Pages/Ethics/ethics.jsx";
+// import PageEthics from "./Pages/Ethics/ethics.jsx";
 
 // Segmentation 3 //
 import PropositionOfServices from "./Pages/Proposal/proposal.jsx";
