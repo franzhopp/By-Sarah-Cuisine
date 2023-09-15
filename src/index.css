@@ -11,27 +11,39 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f2f1f2;
+    background: white;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #d5a4a5;
-} */
+    background: #F3DBC3;
+}
 
 .image-home-by-sarah-cuisine {
     height: auto;
     max-width: 100%;
     display: block;
+    padding-top: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('./assets/image-home.png');
 }
+
+.image-contact-by-sarah-cuisine {
+    height: 300px;
+    max-width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/image-contact.png');
+}
+
 
 .image-client-by-sarah-cuisine {
     height: auto;
@@ -39,6 +51,7 @@ body {
     display: block;
     background-position: center;
     background-repeat: no-repeat;
+    border: 6px solid #E9C2C2;
     background-size: cover;
     background-image: url('./assets/IMAGE-CLIENT.png');
 }

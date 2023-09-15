@@ -1,6 +1,6 @@
 const AvisClient = () => {
     return (
-      <div className="flex flex-col lg:flex-row justify-center px-0 sm:px-20 mb-20">
+      <div className="mt-28 flex flex-col lg:flex-row justify-center px-0 sm:px-20 mb-20">
         <div className="lg:w-1/3 mx-2 lg:mx-4 mb-4">
           <div className="bg-efefef flex space-x-2">
             <div className="m-4 lg:m-6">

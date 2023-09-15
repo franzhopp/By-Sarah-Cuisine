@@ -13,6 +13,7 @@ import SectionDuplicate from "./Components/Section/section_duplicate.jsx";
 import Cards from "./Components/Cards/cards.jsx";
 import Partner from "./Components/Partner/partner.jsx";
 import Form from "./Components/Contact/contact.jsx";
+import FormContact from "./Components/Contact/form.jsx";
 import Footer from "./Components/Footer/footer.jsx";
 
 // Segmentation 2 //
@@ -58,6 +59,7 @@ const Homepage = () => {
       <Partner />
       <AvisClient/>
       <Form />
+      <FormContact />
     </div>
   );
 };
