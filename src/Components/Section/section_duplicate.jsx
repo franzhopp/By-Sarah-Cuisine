@@ -69,7 +69,7 @@ const SectionDuplicate = () => {
         <div className="mt-5 flex justify-center">
           <NavLink
             to="/devis-gratuit"
-            className="bg-e9c2c2 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white"
+            className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white"
           >
 
             <p className="flex flex-row font-extrabold">Devis gratuit <MdOutlineEditNote className="ml-2 mt-1"/></p>
