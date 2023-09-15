@@ -4,9 +4,9 @@ import Image from "../../assets/svg-contact.png";
 const TitleForm = () => {
   return (
     <div id="contact">
-      <div className="image-contact-by-sarah-cuisine h-auto max-w-4xl mx-auto sm:py-20 sm:px-6 lg:px-8">
+      <div className="image-contact-by-sarah-cuisine max-w-4xl mx-auto sm:py-20 sm:px-6 lg:px-8">
         <span className="flex justify-center">
-          <img data-aos="fade-right" src={Image} alt="" />
+          <img data-aos="fade-right" src={Image} alt="" className="mt-24 sm:mt-4" />
         </span>
       </div>
     </div>

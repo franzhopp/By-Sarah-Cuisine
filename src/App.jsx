@@ -24,7 +24,7 @@ import PropositionOfServices from "./Pages/Proposal/proposal.jsx";
 
 // Segmentation 4 //
 import DevisFree from "./Pages/Devis/devis.jsx";
-import AvisClient from "./Components/Partner/avis-client.jsx";
+// import AvisClient from "./Components/Partner/avis-client.jsx";
 
 // Système de routage //
 const App = () => {
@@ -57,7 +57,7 @@ const Homepage = () => {
       <SectionDuplicate />
       <Cards />
       <Partner />
-      <AvisClient/>
+      {/* <AvisClient/> */}
       <Form />
       <FormContact />
     </div>
