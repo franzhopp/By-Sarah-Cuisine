@@ -17,7 +17,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
         </h2>
         <p className="text-gray-600 font-sans-serif mb-4">
           Ce site utilise des cookies pour mesurer la fréquentation du site afin
-          d'en améliorer le fonctionnement et l'admistration et votre accord
+          d'en améliorer le fonctionnement et l'admistration. Votre accord est
           pour améliorer votre expérience utilisateur.
         </p>
         <div className="flex flex-col">
