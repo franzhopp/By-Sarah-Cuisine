@@ -302,12 +302,12 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <Homepage />
       <CookieModal
         isOpen={isCookieModalOpen}
         onRequestClose={() => setCookieModalOpen(false)}
         onAccept={handleAcceptCookie}
       />
+      <Homepage />
     </div>
   );
 };
