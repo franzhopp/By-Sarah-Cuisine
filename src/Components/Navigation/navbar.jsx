@@ -184,7 +184,7 @@ const Navbar = () => {
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
-            <img className="w-20 mr-4" src={Image} alt="Icône de Sarah" />
+            <img className="w-20 mt-1" src={Image} alt="Icône de Sarah" />
           </a>
 
           <div className="mr-2">

@@ -9,7 +9,7 @@ export default {
         extend: {
 
             height: {
-                '400' : '496px',
+                '400': '496px',
             },
 
             minHeight: {
@@ -19,8 +19,8 @@ export default {
 
             fontFamily: {
                 'sans': ['Helvetica', 'sans-serif'],
-                'sans-serif' : ['Fira Sans'],
-                'sans-recursive' : ['Dancing Script'],
+                'sans-serif': ['Fira Sans'],
+                'sans-recursive': ['Dancing Script'],
             },
 
             backgroundColor: {
@@ -33,7 +33,7 @@ export default {
 
             colors: {
                 'pink': '#d598a0',
-                'gray' : '#D9D9D9',
+                'gray': '#D9D9D9',
             }
         },
         screens: {
@@ -43,5 +43,17 @@ export default {
             'xl': '1280px',
             '2xl': '1536px',
         }
+    },
+
+    plugins: [require("daisyui")],
+    daisyui: {
+        themes: [
+            {
+                light: {
+                    ...require("daisyui/src/theming/themes"),
+                    "secondary": "#EFEFEF",
+                },
+            },
+        ],
     },
 }
