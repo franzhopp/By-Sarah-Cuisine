@@ -47,14 +47,14 @@ body {
 
 
 .image-client-by-sarah-cuisine {
-    height: auto;
+    height: 300px;
     max-width: 100%;
     display: block;
     background-position: center;
+    border-bottom: 8px solid #E9C2C2;
     background-repeat: no-repeat;
-    border: 6px solid #E9C2C2;
     background-size: cover;
-    background-image: url('./assets/IMAGE-CLIENT.png');
+    background-image: url('./assets/imag-client-blur.png');
 }
 
 .image-blur-by-sarah-cuisine {
