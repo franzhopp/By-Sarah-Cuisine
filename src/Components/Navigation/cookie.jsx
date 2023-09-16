@@ -13,16 +13,12 @@ const Homepage = () => {
   }, []);
 
   const handleAcceptCookie = () => {
-    Cookies.set("accept_cookie", "true", { expires: 365 }); // Marquez l'acceptation du cookie
+    Cookies.set("accept_cookie", "true", { expires: 365 });
     setCookieModalOpen(false);
   };
 
   return (
     <div>
-      {/* Votre contenu de page d'accueil */}
-      {/* <h1>Bienvenue sur la page d'accueil</h1> */}
-
-      {/* Modal des cookies */}
       <CookieModal
         isOpen={isCookieModalOpen}
         onRequestClose={() => setCookieModalOpen(false)}
