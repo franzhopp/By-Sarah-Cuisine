@@ -95,7 +95,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center h-24">
             <div className="md:left-0 md:inline md:absolute">
               <NavLink href="/" className="text-gray-900 text-lg font-semibold">
-                <img className="mt-14" src={Image} alt="Icône de Sarah" />
+                <img className="mt-10" src={Image} alt="Icône de Sarah" />
               </NavLink>
             </div>
             <div className="flex items-center">
@@ -205,7 +205,7 @@ const Navbar = () => {
         <ul
           className={`toggle-menu ${
             toggleMenu ? "block" : "hidden"
-          } p-2 transform transition-transform duration-300 ease-in-out`}
+          } p-2 border-t border-gray transform transition-transform duration-300 ease-in-out`}
         >
           <li>
             <NavLink

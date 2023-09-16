@@ -1,9 +1,13 @@
+import Image from "../../assets/logo-bsc.png";
+
 const Footer = () => {
   return (
     <footer className="bg-d9d9d9">
       <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          {/* <div className="text-white">Logo</div> */}
+        <a href="">
+            <img className="" src={Image} alt="Icône de Sarah" />
+          </a>
 
           <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
             <li>
@@ -66,6 +70,15 @@ const Footer = () => {
                   href="#"
                   className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
+                  Apéritifs
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
+                >
                   Plats
                 </a>
               </li>
@@ -76,15 +89,6 @@ const Footer = () => {
                   className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
                   Desserts
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
-                >
-                  Mariage
                 </a>
               </li>
 
@@ -126,48 +130,14 @@ const Footer = () => {
                   href="#"
                   className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
                 >
-                  Devis en ligne gratuit
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <p className="text-white font-extrabold">Légalité</p>
-
-            <ul className="mt-6 space-y-4 text-sm">
-              <li>
-                <a
-                  href="#"
-                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
-                >
-                  Accessibilité
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
-                >
-                  Politique de retour
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  className="text-white hover:text-color-beige-pastel transition hover:opacity-75"
-                >
-                  Politique de remboursement
+                  Devis gratuit
                 </a>
               </li>
             </ul>
           </div>
         </div>
-
         <p className="text-xs text-white font-extrabold">
-          &copy; 2023, By_sarah_cuisine. | Tous droits réversés.
+          &copy; 2023, By Sarah Cuisine. | Tous droits réversés.
         </p>
       </div>
     </footer>
