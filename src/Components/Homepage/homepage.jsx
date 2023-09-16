@@ -8,7 +8,7 @@ const Homepage = () => {
           data-aos="fade-right"
           src={Image}
           alt="Image name"
-          className="flex items-center"
+          className="px-16"
         />
       </div>
       <div className="text-transparent mb-14">Division invisible</div>

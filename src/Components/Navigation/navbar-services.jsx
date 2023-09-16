@@ -2,16 +2,17 @@ import { useEffect, useState } from "react";
 import Image from "../../assets/title-services.png";
 import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import { TfiMenu } from "react-icons/tfi";
+import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
 
 const pages = [
-  { link: "/plats", name: "Plats" },
-  { link: "/desserts", name: "Desserts" },
-  { link: "/events", name: "Évènements" },
-  { link: "/all", name: "Tous les services" },
+  { link: "/services", name: "Apéritifs" },
+  { link: "/services", name: "Plats" },
+  { link: "/services", name: "Desserts" },
+  { link: "/services", name: "Tous les services" },
 ];
 
 const NavbarServices = () => {
@@ -19,10 +20,12 @@ const NavbarServices = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
+  const [changeMenuNavbar, setChangeMenuNavbar] = useState();
 
   // Fonctionnalité du toggle de la liste/navbar :
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
+    setChangeMenuNavbar(!changeMenuNavbar);
   };
 
   // Fonctionnalité de la sous-liste/navbar pour les serviceeees :
@@ -119,28 +122,28 @@ const NavbarServices = () => {
                 À propos
               </NavLink>
               <NavLink
-                to="/nos-services"
+                to="/services"
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 }  px-6 py-2 text-base font-extrabold`}
               >
-                <li className="relative group list-none">
+                <li className="relative group list-none text-center">
                   <NavLink
-                    to="/nos-services"
+                    to="/services"
                     className="block px-3 py-2 rounded-md font-extrabold"
                   >
                     <p className="uppercase">Services</p>
                   </NavLink>
 
                   {/* Sous-liste */}
-                  <ul className="absolute hidden group-hover:block bg-white shadow-md mt-2 py-2 rounded-md">
+                  <ul className="absolute w-28 hidden group-hover:block bg-white shadow-md mt-2 py-2 rounded-md">
                     {pages.map((page, index) => (
                       <li key={index}>
                         <NavLink
                           to={page.link}
                           onMouseEnter={handleMouseEnterSubmenu}
                           onMouseLeave={handleMouseLeaveParent}
-                          className="block px-4 py-2 text-pink"
+                          className="block py-2 text-pink"
                         >
                           <p className="">{page.name}</p>
                         </NavLink>
@@ -181,7 +184,7 @@ const NavbarServices = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav className="fixed w-full top-0 left-0 shadow-md xl:hidden bg-white z-max">
+      <nav className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
         {/* 2 items */}
         <div className="px-5 h-24 flex items-center justify-between">
           <a href="">
@@ -191,9 +194,13 @@ const NavbarServices = () => {
           <div className="-mr-2">
             <button
               onClick={toggleMenuMobile}
-              className="icon-toggle bg-e9c2c2 border border-white rounded-md p-2 inline-flex items-center justify-center ring-1 ring-black ring-opacity-20"
+              className={`icon-toggle  bg-e9c2c2 border border-white rounded-md p-5 inline-flex items-center justify-center`}
             >
-              <HiOutlineMenuAlt1 className="h-6 w-6 text-white" />
+              {changeMenuNavbar ? (
+                <ImCross className="text-white" />
+              ) : (
+                <TfiMenu className="text-white" />
+              )}
             </button>
           </div>
         </div>
@@ -219,57 +226,33 @@ const NavbarServices = () => {
               À propos
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/nos-services"
-              className="block px-1 py-2 rounded-md text-base font-extrabold  text-color-white-pastel translate-x-2 duration-100"
-            >
-              <button onClick={toggleSousListsMenu}>
-                <div className="flex items-center justify-between">
-                  <div className="pr-2">Services</div>{" "}
-                  <MdOutlineKeyboardArrowDown />
-                </div>
-              </button>
 
-              <ul
-                className={`toggle-menu ${
-                  showSousListsMenu ? "block" : "hidden"
-                } p-2`}
-              >
-                <li>
+          <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
+            <button onClick={toggleSousListsMenu}>
+              <div className="flex items-center justify-between">
+                <div className="pr-4 uppercase">Services</div>{" "}
+                <MdOutlineKeyboardArrowDown />
+              </div>
+            </button>
+
+            <ul
+              className={`toggle-menu ${
+                showSousListsMenu ? "block" : "hidden"
+              } p-2 pt-2`}
+            >
+              {pages.map((page, index) => (
+                <li key={index}>
                   <NavLink
-                    to="/plats"
-                    className="hover:text-color-beige-pastel"
+                    to={page.link}
+                    onMouseEnter={handleMouseEnterSubmenu}
+                    onMouseLeave={handleMouseLeaveParent}
+                    className="block py-2 text-pink"
                   >
-                    Plats
+                    <p className="text-center">{page.name}</p>
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    to="/desserts"
-                    className="hover:text-color-beige-pastel"
-                  >
-                    Desserts
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/events"
-                    className="hover:text-color-beige-pastel"
-                  >
-                    Évènements
-                  </NavLink>
-                </li>
-                <li>
-                  <a
-                    to="/events"
-                    className=" hover:text-color-beige-pastel underline"
-                  >
-                    Tous les services
-                  </a>
-                </li>
-              </ul>
-            </NavLink>
+              ))}
+            </ul>
           </li>
           <li>
             <NavLink
@@ -281,15 +264,7 @@ const NavbarServices = () => {
               Contact
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/nos-valeurs"
-              onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
-            >
-              Nos valeurs
-            </NavLink>
-          </li>
+
           <li>
             <NavLink
               to="/devis-gratuit"
