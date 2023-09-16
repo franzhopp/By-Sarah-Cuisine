@@ -184,7 +184,7 @@ const Navbar = () => {
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
-            <img className="w-20 mt-1" src={Image} alt="Icône de Sarah" />
+            <img className="w-28 mt-2" src={Image} alt="Icône de Sarah" />
           </a>
 
           <div className="mr-2">
@@ -205,7 +205,7 @@ const Navbar = () => {
         <ul
           className={`toggle-menu ${
             toggleMenu ? "block" : "hidden"
-          } p-2 border-t border-gray transform transition-transform duration-300 ease-in-out`}
+          } p-2 border-t border-t-gray transform transition-transform duration-300 ease-in-out`}
         >
           <li>
             <NavLink

@@ -1,7 +1,23 @@
 import { NavLink } from "react-router-dom";
 import { MdOutlineEditNote } from "react-icons/md";
+import { useState } from "react";
 
 const SectionDuplicate = () => {
+  const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
   return (
     <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
@@ -15,6 +31,8 @@ const SectionDuplicate = () => {
         {/* svg */}
         <div className="flex-col justify-start items-center w-40 mr-4 sm:flex hidden">
           <svg
+            onClick={prevImage}
+            className="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
@@ -31,24 +49,38 @@ const SectionDuplicate = () => {
         {/* 2 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
-            <div className=" h-60 w-60 bg-white rounded-xl"></div>
+            <img
+              src={images[currentImageIndex]}
+              alt={`Image ${currentImageIndex + 1}`}
+              className="h-60 w-60 bg-white rounded-xl"
+            />
           </div>
         </div>
         {/* 1 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
-            <div className=" h-60 w-60 bg-white rounded-xl"></div>
+            <img
+              src={images[currentImageIndex]}
+              alt={`Image ${currentImageIndex + 1}`}
+              className="h-60 w-60 bg-white rounded-xl"
+            />
           </div>
         </div>
         {/* 2 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
-            <div className=" h-60 w-60 bg-white rounded-xl"></div>
+            <img
+              src={images[currentImageIndex]}
+              alt={`Image ${currentImageIndex + 1}`}
+              className="h-60 w-60 bg-white rounded-xl"
+            />
           </div>
         </div>
         {/* svg */}
         <div className="flex-col justify-start items-center w-40 ml-4 sm:flex hidden">
           <svg
+            onClick={nextImage}
+            className="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
@@ -63,6 +95,7 @@ const SectionDuplicate = () => {
           </svg>
         </div>
       </div>
+      
       <div className="text-white text-base text-center font-sans-serif font-extrabold">
         Demander un devis sur-mesure où Sarah traitera votre commande avec
         attention.
@@ -71,8 +104,9 @@ const SectionDuplicate = () => {
             to="/devis-gratuit"
             className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white"
           >
-
-            <p className="flex flex-row font-extrabold">Devis gratuit <MdOutlineEditNote className="ml-2 mt-1"/></p>
+            <p className="flex flex-row font-extrabold">
+              Devis gratuit <MdOutlineEditNote className="ml-2 mt-1" />
+            </p>
           </NavLink>
         </div>
       </div>
