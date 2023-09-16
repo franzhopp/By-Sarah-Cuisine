@@ -312,7 +312,7 @@ const NavbarServices = () => {
             data-aos="fade-right"
             src={Image}
             alt="Image name"
-            className="flex items-center"
+            className="px-16 mt-24 mb-20 sm:mb-10 sm:mt-4"
           />
         </div>
         <div className="text-transparent mb-14">Division invisible</div>
