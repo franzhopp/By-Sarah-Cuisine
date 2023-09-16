@@ -9,13 +9,11 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
       className="fixed bottom-0 left-0 right-0 bg-white p-4 border-t border-gray-300 shadow-md"
-      overlayClassName="fixed top-0 left-0 right-0 bottom-0 opacity-75"
+      overlayClassName="fixed top-0 left-0 right-0 bottom-0 bg-gray-800"
     >
-      <div className="text-left">
-        <h2 className="text-xl font-extrabold mb-2 font-sans-serif">
-          Politique de cookies
-        </h2>
-        <p className="text-gray-600 mb-4 font-sans-serif">
+      <div className="text-center">
+        <h2 className="text-xl font-bold mb-2">Politique de cookies</h2>
+        <p className="text-gray-600 mb-4">
           Ce site utilise des cookies pour mesurer la fréquentation du site afin
           d'en améliorer le fonctionnement et l'admistration et votre accord
           pour améliorer votre expérience utilisateur.
