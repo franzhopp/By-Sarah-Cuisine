@@ -19,7 +19,6 @@ const App = () => {
       <div>
         <ThemeProvider>
           <Router>
-           
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/services" element={<Proposal />} />
@@ -37,12 +36,12 @@ const App = () => {
 const Homepage = () => {
   return (
     <div>
-       <Header />
+      <Header />
       <Section />
       <SectionDuplicate />
       <Cards />
       <Partner />
-      <AvisClient/>
+      <AvisClient />
       <Form />
       <FormContact />
     </div>

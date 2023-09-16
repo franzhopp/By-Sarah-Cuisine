@@ -8,6 +8,8 @@ import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
+import CookieModal from "./modal-cookie.jsx";
+import Cookies from "js-cookie";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
@@ -22,6 +24,14 @@ const Navbar = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [changeMenuNavbar, setChangeMenuNavbar] = useState();
+  const [isCookieModalOpen, setCookieModalOpen] = useState(false);
+
+  useEffect(() => {
+    const hasAcceptedCookie = Cookies.get("accept_cookie");
+    if (!hasAcceptedCookie) {
+      setCookieModalOpen(true);
+    }
+  }, []);
 
   // Fonctionnalité du toggle de la liste/navbar :
   const toggleMenuMobile = () => {
@@ -69,6 +79,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    const hasAcceptedCookie = Cookies.get("accept_cookie");
+    if (!hasAcceptedCookie) {
+      setCookieModalOpen(true);
+    }
+
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -83,6 +98,11 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleAcceptCookie = () => {
+    Cookies.set("accept_cookie", "true", { expires: 365 }); // Marquez l'acceptation du cookie
+    setCookieModalOpen(false);
+  };
 
   return (
     <div className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
@@ -283,6 +303,11 @@ const Navbar = () => {
         </ul>
       </nav>
       <Homepage />
+      <CookieModal
+        isOpen={isCookieModalOpen}
+        onRequestClose={() => setCookieModalOpen(false)}
+        onAccept={handleAcceptCookie}
+      />
     </div>
   );
 };

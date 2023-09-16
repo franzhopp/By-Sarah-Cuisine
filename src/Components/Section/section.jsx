@@ -1,5 +1,3 @@
-// import Image from "../../assets/cuisine.png";
-
 const Section = () => {
   return (
     <section className="mb-12">
