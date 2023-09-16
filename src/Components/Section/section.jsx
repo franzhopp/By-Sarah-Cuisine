@@ -5,7 +5,7 @@ const Section = () => {
     <section className="mb-12">
       <div className="flex justify-center mt-16">
         <h2 className="font-extrabold text-2xl sm:text-4xl">
-          <span className="font-section">{`Traiteur de tous types d'évènements`}</span>
+          <span className="text-pink font-sans-recursive">{`Traiteur de tous types d'évènements`}</span>
         </h2>
       </div>
       <div className="flex justify-center">

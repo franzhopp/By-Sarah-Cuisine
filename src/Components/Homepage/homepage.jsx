@@ -11,7 +11,7 @@ const Homepage = () => {
           className="px-16"
         />
       </div>
-      <div className="text-transparent mb-14">Division invisible</div>
+      <div className="text-transparent mb-12">Division invisible</div>
       <div id="about"></div>
     </section>
   );

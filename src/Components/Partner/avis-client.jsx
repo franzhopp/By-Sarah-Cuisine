@@ -14,7 +14,7 @@ const AvisClient = () => {
             <circle cx="72.5" cy="72.5" r="72.5" fill="#d598a0" />
             <circle cx="72.5" cy="72.5" r="59.5" fill="white" />
           </svg>
-          <h2 className="text-pink text-center mt-3 lg:mt-5">MARIE, 35 ans</h2>
+          <h2 className="text-pink font-sans-recursive text-2xl text-center mt-3 lg:mt-5">Marie, 35 ans</h2>
           <p className="text-justify font-sans-serif mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             labore aliquid cupiditate officia vitae laboriosam ducimus
@@ -34,7 +34,7 @@ const AvisClient = () => {
             <circle cx="72.5" cy="72.5" r="72.5" fill="#d598a0" />
             <circle cx="72.5" cy="72.5" r="59.5" fill="white" />
           </svg>
-          <h2 className="text-pink text-center mt-3 lg:mt-5">MARIE, 35 ans</h2>
+          <h2 className="text-pink font-sans-recursive text-2xl text-center mt-3 lg:mt-5">Karim, 35 ans</h2>
           <p className="text-justify font-sans-serif mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             labore aliquid cupiditate officia vitae laboriosam ducimus
@@ -54,7 +54,7 @@ const AvisClient = () => {
             <circle cx="72.5" cy="72.5" r="72.5" fill="#d598a0" />
             <circle cx="72.5" cy="72.5" r="59.5" fill="white" />
           </svg>
-          <h2 className="text-pink text-center mt-3 lg:mt-5">MARIE, 35 ans</h2>
+          <h2 className="text-pink font-sans-recursive text-2xl text-center mt-3 lg:mt-5">Lou, 35 ans</h2>
           <p className="text-justify font-sans-serif mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             labore aliquid cupiditate officia vitae laboriosam ducimus

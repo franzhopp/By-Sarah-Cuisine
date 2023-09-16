@@ -5,16 +5,17 @@ const DevisFree = () => {
     <section className=" bg-efefef">
       <NavbarDevis />
       <div className="mx-auto max-w-4xl px-4 py-28 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-sans-recursive font-extrabold text-pink text-center">
-          Demander un devis sur-mesure !
-        </h1>
+        <h2 className="font-extrabold text-2xl text-center sm:text-4xl">
+          <span className="text-pink font-sans-recursive">{`Demander un devis sur-mesure !`}</span>
+        </h2>
 
         <div className="flex justify-center">
           <div className="w-full sm:w-2/4">
             <div className="mt-12 mb-16 font-sans-serif text-base text-center">
-              Vous souhaitez préparer un évènement très important comme <span className="font-extrabold">un
-              mariage</span>, <span className="font-extrabold">un anniversaire</span> ? Merci de le préciser afin que le chef
-              traite votre demande.
+              Vous souhaitez préparer un évènement très important comme{" "}
+              <span className="font-extrabold">un mariage</span>,{" "}
+              <span className="font-extrabold">un anniversaire</span> ? Merci de
+              le préciser afin que le chef traite votre demande.
             </div>
           </div>
         </div>
@@ -77,7 +78,7 @@ const DevisFree = () => {
                     Service choisi
                   </label>
                   <select
-                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 bg-white"
+                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 bg-white text-zinc-400"
                     placeholder="Service choisi"
                     type="email"
                     id="email"
@@ -95,7 +96,7 @@ const DevisFree = () => {
                     Date de la commande
                   </label>
                   <input
-                    className="rounded-xl w-full p-3 outline-none input-secondary border-gray-200 text-md mb-2 bg-white"
+                    className="rounded-xl w-full p-3 outline-none input-secondary border-gray-200 text-md mb-2 bg-white text-zinc-400"
                     placeholder="Date de la commande"
                     type="date"
                     id="phone"
@@ -105,7 +106,7 @@ const DevisFree = () => {
 
               <div>
                 <select
-                  className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 bg-white"
+                  className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 bg-white text-zinc-400"
                   placeholder="Service choisi"
                   type="email"
                   id="email"

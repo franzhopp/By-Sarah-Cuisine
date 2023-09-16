@@ -4,7 +4,7 @@ import { MdOutlineEditNote } from "react-icons/md";
 const SectionDuplicate = () => {
   return (
     <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
-      <h2 className=" font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
+      <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
         Découvrez toute la gallerie du traiteur
       </h2>
       <p className="font-sans-serif text-white font-extrabold mt-3 px-4 text-md sm:text-1 sm:mt-4">

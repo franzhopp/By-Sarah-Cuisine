@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Homepage from "../Homepage/homepage";
+import Image from "../../assets/logo-bsc.png";
 import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
 import { TfiMenu } from "react-icons/tfi";
@@ -94,12 +95,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center h-24">
             <div className="md:left-0 md:inline md:absolute">
               <NavLink href="/" className="text-gray-900 text-lg font-semibold">
-                {/* <img
-                  className="w-full h-24 pt-2"
-                  src={Image}
-                  alt="Icône de Sarah"
-                /> */}
-                {/* <p>Logo</p> */}
+                <img className="mt-14" src={Image} alt="Icône de Sarah" />
               </NavLink>
             </div>
             <div className="flex items-center">
@@ -188,13 +184,13 @@ const Navbar = () => {
         {/* 2 items */}
         <div className="px-5 h-24 flex items-center justify-between">
           <a href="">
-            {/* <img className="w-full h-24 pt-2" src={Image} alt="Icône de Sarah" /> */}
+            <img className="mt-14" src={Image} alt="Icône de Sarah" />
           </a>
 
           <div className="-mr-2">
             <button
               onClick={toggleMenuMobile}
-              className={`icon-toggle  bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
+              className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
             >
               {changeMenuNavbar ? (
                 <ImCross className="text-white" />
@@ -206,7 +202,11 @@ const Navbar = () => {
         </div>
         {/* end 2 items */}
 
-        <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2 border-t-2 border-gray`}>
+        <ul
+          className={`toggle-menu ${
+            toggleMenu ? "block" : "hidden"
+          } p-2 transform transition-transform duration-300 ease-in-out`}
+        >
           <li>
             <NavLink
               to="/"
@@ -255,13 +255,12 @@ const Navbar = () => {
             </ul>
           </li>
 
-
           <li>
             <NavLink
               to="/"
               href="contact"
               onClick={SectionToScroll}
-              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Contact
             </NavLink>
@@ -271,13 +270,13 @@ const Navbar = () => {
             <NavLink
               to="/devis-gratuit"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Devis gratuit
             </NavLink>
           </li>
           <li>
-            <div className="ml-2 mb-5 mt-5">
+            <div className="ml-2 mb-5 mt-3">
               <DarkLightThemes className="hidden sm:block" />
             </div>
           </li>
