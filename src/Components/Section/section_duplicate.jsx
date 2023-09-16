@@ -31,7 +31,7 @@ const SectionDuplicate = () => {
         {/* svg */}
         <div className="flex-col justify-start items-center w-40 mr-4 sm:flex hidden">
           <svg
-            onClick={prevImage}
+            // onClick={prevImage}
             className="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
@@ -49,37 +49,37 @@ const SectionDuplicate = () => {
         {/* 2 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
-            <img
-              src={images[currentImageIndex]}
-              alt={`Image ${currentImageIndex + 1}`}
+            {/* <img
+              // src={images[currentImageIndex]}
+              // alt={`Image ${currentImageIndex + 1}`}
               className="h-60 w-60 bg-white rounded-xl"
-            />
+            /> */}
           </div>
         </div>
         {/* 1 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
-            <img
+            {/* <img
               src={images[currentImageIndex]}
               alt={`Image ${currentImageIndex + 1}`}
               className="h-60 w-60 bg-white rounded-xl"
-            />
+            /> */}
           </div>
         </div>
         {/* 2 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
-            <img
+            {/* <img
               src={images[currentImageIndex]}
               alt={`Image ${currentImageIndex + 1}`}
               className="h-60 w-60 bg-white rounded-xl"
-            />
+            /> */}
           </div>
         </div>
         {/* svg */}
         <div className="flex-col justify-start items-center w-40 ml-4 sm:flex hidden">
           <svg
-            onClick={nextImage}
+            // onClick={nextImage}
             className="cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
