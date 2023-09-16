@@ -1,9 +1,8 @@
-import NavbarPages from "../../Components/Navigation/navbar-page";
 
 const DevisFree = () => {
   return (
     <section className="bg-white">
-      <NavbarPages/>
+      {/* <NavbarPages/> */}
       <div className="mx-auto max-w-screen-xl px-4 py-52 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-center">
           Demande de devis gratuit

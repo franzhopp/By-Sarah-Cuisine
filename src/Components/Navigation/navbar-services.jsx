@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Homepage from "../Homepage/homepage";
+import Image from "../../assets/title-services.png";
 import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
@@ -81,7 +81,7 @@ const NavbarPages = () => {
   }, []);
 
   return (
-    <div className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
+    <div className="image-navbar-pages pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
       <nav
         className={`${
           scrollNavbar ? "bg-white" : ""
@@ -171,7 +171,7 @@ const NavbarPages = () => {
             </div>
 
             <NavLink
-               to="/devis-gratuit"
+              to="/devis-gratuit"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -306,7 +306,18 @@ const NavbarPages = () => {
           </li>
         </ul>
       </nav>
-      <Homepage />
+      <section>
+        <div className="flex justify-center pt-48 mb-32 px-4 sm:mt-70">
+          <img
+            data-aos="fade-right"
+            src={Image}
+            alt="Image name"
+            className="flex items-center"
+          />
+        </div>
+        <div className="text-transparent mb-14">Division invisible</div>
+        <div id="about"></div>
+      </section>
     </div>
   );
 };

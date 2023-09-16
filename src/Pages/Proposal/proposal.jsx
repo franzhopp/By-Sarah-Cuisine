@@ -1,10 +1,11 @@
-import NavbarPages from "../../Components/Navigation/navbar-page";
+import NavbarPages from "../../Components/Navigation/navbar-services";
 import Image from "../../assets/template.png";
 
 const Proposal = () => {
   return (
     <>
       <NavbarPages /> 
+      
       {/* Title 1 */}
       <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-left tracking-tighter">
