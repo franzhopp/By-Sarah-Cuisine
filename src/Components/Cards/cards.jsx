@@ -19,11 +19,14 @@ const Cards = () => {
       <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
         <div className="bg-d9d9d9 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
+          <div className="flex flex-col justify-start items-center mt-5">
+            <div className="h-40 w-64 bg-white rounded-xl"></div>
+          </div>
           <div className="p-6">
             <div className="text-2xl text-center font-extrabold text-white">
               Plateaux de fruit
             </div>
-            <p className="mt-2 text-medium text-white">
+            <p className="mt-2 text-medium text-white font-extrabold">
               Comblez vos évènements entre famille, mariage, pour de jolis
               plateaux.
             </p>
@@ -43,11 +46,14 @@ const Cards = () => {
 
         {/* Step 2 */}
         <div className="bg-d9d9d9 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
+          <div className="flex flex-col justify-start items-center mt-5">
+            <div className="h-40 w-64 bg-white rounded-xl"></div>
+          </div>
           <div className="p-6">
             <div className="text-2xl text-center font-extrabold text-white">
               Boîte à desserts
             </div>
-            <p className="mt-2 text-medium text-white">
+            <p className="mt-2 text-medium text-white font-extrabold">
               Comblez vos évènements entre famille, mariage, pour de jolis
               plateaux.
             </p>
@@ -67,11 +73,14 @@ const Cards = () => {
 
         {/* Step 3 */}
         <div className="bg-d9d9d9 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
+          <div className="flex flex-col justify-start items-center mt-5">
+            <div className="h-40 w-64 bg-white rounded-xl"></div>
+          </div>
           <div className="p-6">
             <div className="text-2xl text-center font-extrabold text-white">
               Brush
             </div>
-            <p className="mt-2 text-medium text-white">
+            <p className="mt-2 text-medium text-white font-extrabold">
               Comblez vos évènements entre famille, mariage, pour de jolis
               plateaux.
             </p>
@@ -98,7 +107,10 @@ const Cards = () => {
             to="/devis-gratuit"
             className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white"
           >
-            <p className="flex flex-row font-extrabold">{`Je m'inscris`}<MdOutlineEditNote className="ml-2 mt-1"/></p>
+            <p className="flex flex-row font-extrabold">
+              {`Je m'inscris`}
+              <MdOutlineEditNote className="ml-2 mt-1" />
+            </p>
           </NavLink>
         </div>
       </div>

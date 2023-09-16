@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-// import Image from "../../assets/haaat-1.png";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
 

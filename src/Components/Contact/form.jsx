@@ -10,7 +10,7 @@ const Form = () => {
           <div className="mb-10">
             <p className="font-sans-serif text-white">
               Remplissez le formulaire de contact ci-dessous afin qu’elle puisse
-              vous contacter pour toutes informations précises !
+              vous contacter pour toutes informations précises.
             </p>
           </div>
 
