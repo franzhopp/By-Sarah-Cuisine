@@ -1,28 +1,33 @@
+import NavbarDevis from "../../Components/Navigation/navbar-devis";
 
 const DevisFree = () => {
   return (
-    <section className="bg-white">
-      {/* <NavbarPages/> */}
-      <div className="mx-auto max-w-screen-xl px-4 py-52 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-extrabold text-color-gray-pastel text-center">
-          Demande de devis gratuit
+    <section className=" bg-efefef">
+      <NavbarDevis />
+      <div className="mx-auto max-w-4xl px-4 py-28 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-sans-recursive font-extrabold text-pink text-center">
+          Demander un devis sur-mesure !
         </h1>
 
-        <div className="p mt-5 text-base text-color-gray-pastel font-extrabold text-center">
-          Faites un devis gratuitement afin de pouvoir faire votre première
-          commande !
+        <div className="flex justify-center">
+          <div className="w-full sm:w-2/4">
+            <div className="mt-12 mb-16 font-sans-serif text-base text-center">
+              Vous souhaitez préparer un évènement très important comme <span className="font-extrabold">un
+              mariage</span>, <span className="font-extrabold">un anniversaire</span> ? Merci de le préciser afin que le chef
+              traite votre demande.
+            </div>
+          </div>
         </div>
 
-        <hr className="mt-5 mx-auto w-1/4 pb-8" />
-        <div className="">
-          <div className="rounded-lg bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
+        <div className="bg-devis rounded-lg">
+          <div className="bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
             <form action="" className="space-y-4">
               <div>
                 <label className="sr-only" htmlFor="name">
                   Prénom
                 </label>
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                   placeholder="Prénom"
                   type="text"
                   id="name"
@@ -33,7 +38,7 @@ const DevisFree = () => {
                   Nom
                 </label>
                 <input
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                   placeholder="Nom"
                   type="text"
                   id="name"
@@ -46,7 +51,7 @@ const DevisFree = () => {
                     Email
                   </label>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                     placeholder="Adresse mail"
                     type="email"
                     id="email"
@@ -58,7 +63,7 @@ const DevisFree = () => {
                     Téléphone
                   </label>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
                     placeholder="Téléphone"
                     type="tel"
                     id="phone"
@@ -72,7 +77,7 @@ const DevisFree = () => {
                     Service choisi
                   </label>
                   <select
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 bg-white"
                     placeholder="Service choisi"
                     type="email"
                     id="email"
@@ -90,7 +95,7 @@ const DevisFree = () => {
                     Date de la commande
                   </label>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm text-gray-900"
+                    className="rounded-xl w-full p-3 outline-none input-secondary border-gray-200 text-md mb-2 bg-white"
                     placeholder="Date de la commande"
                     type="date"
                     id="phone"
@@ -100,7 +105,7 @@ const DevisFree = () => {
 
               <div>
                 <select
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 bg-white"
                   placeholder="Service choisi"
                   type="email"
                   id="email"
@@ -120,7 +125,7 @@ const DevisFree = () => {
                 </label>
 
                 <textarea
-                  className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 bg-white"
                   placeholder="Message"
                   rows="8"
                   id="message"
@@ -129,9 +134,8 @@ const DevisFree = () => {
 
               <div className="flex justify-center items-center mt-4">
                 <button
-                  data-aos="fade-left"
                   type="submit"
-                  className="inline-block w-full rounded-lg bg-bgcolor-beige-pastel px-5 py-3 font-extrabold text-white sm:w-auto"
+                  className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white"
                 >
                   Envoyer
                 </button>

@@ -41,7 +41,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./assets/image-contact.png');
+    background-image: url('./assets/imag-contact.png');
 }
 
 
@@ -74,7 +74,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./assets/image-services-devis-questionnaire.png');
+    background-image: url('./assets/image-contact-flou.png');
 }
 
 
@@ -121,4 +121,8 @@ body {
 
 .bg-contact {
     background: rgba(243, 219, 195, 0.32);
+}
+
+.bg-devis {
+    background: rgba(213, 152, 160, 0.31);
 }

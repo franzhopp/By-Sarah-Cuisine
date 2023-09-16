@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Image from "../../assets/title-services.png";
+import Image from "../../assets/title-devis.png";
 import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
@@ -14,7 +14,7 @@ const pages = [
   { link: "/all", name: "Tous les services" },
 ];
 
-const NavbarServices = () => {
+const NavbarDevis = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
@@ -322,4 +322,4 @@ const NavbarServices = () => {
   );
 };
 
-export default NavbarServices;
+export default NavbarDevis;
