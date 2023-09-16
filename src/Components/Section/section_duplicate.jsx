@@ -3,21 +3,21 @@ import { MdOutlineEditNote } from "react-icons/md";
 import { useState } from "react";
 
 const SectionDuplicate = () => {
-  const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
+  // const images = ["image1.jpg", "image2.jpg", "image3.jpg"];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  // const nextImage = () => {
+  //   setCurrentImageIndex((prevIndex) =>
+  //     prevIndex === images.length - 1 ? 0 : prevIndex + 1
+  //   );
+  // };
 
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+  // const prevImage = () => {
+  //   setCurrentImageIndex((prevIndex) =>
+  //     prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  //   );
+  // };
   return (
     <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
