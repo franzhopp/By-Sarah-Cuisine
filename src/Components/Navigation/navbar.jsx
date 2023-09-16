@@ -306,7 +306,7 @@ const Navbar = () => {
         isOpen={isCookieModalOpen}
         onRequestClose={() => setCookieModalOpen(false)}
         onAccept={handleAcceptCookie}
-        className="fixed outline-none border-none shadow-none"
+        className="sm:fixed outline-none border-none shadow-none"
       />
       <Homepage />
     </div>
