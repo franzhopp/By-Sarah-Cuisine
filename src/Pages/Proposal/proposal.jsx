@@ -1,18 +1,21 @@
+import NavbarPages from "../../Components/Navigation/navbar-page";
 import Image from "../../assets/template.png";
 
 const Proposal = () => {
   return (
     <>
+      <NavbarPages /> 
       {/* Title 1 */}
       <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-left tracking-tighter">
-          <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">Apéritifs</p>
+          <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
+            Apéritifs
+          </p>
           <p className="font-sans-serif text-base sm:text-2xl">
             Préparation d’apéritifs pour vos entrées
           </p>
         </h1>
       </div>
-
       <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
         <div
@@ -68,16 +71,16 @@ const Proposal = () => {
           </div>
         </div>
       </div>
-
       <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-right tracking-tighter">
-        <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">Plats</p>
+          <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
+            Plats
+          </p>
           <p className="font-sans-serif text-base sm:text-2xl">
             Préparation d’apéritifs pour vos entrées
           </p>
         </h1>
       </div>
-
       <div
         data-aos="zoom-in"
         className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
@@ -136,16 +139,16 @@ const Proposal = () => {
           </div>
         </div>
       </div>
-
       <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-left tracking-tighter">
-        <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">Desserts</p>
+          <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
+            Desserts
+          </p>
           <p className="font-sans-serif text-base sm:text-2xl">
             Préparation d’apéritifs pour vos entrées
           </p>
         </h1>
       </div>
-
       {/* Step 1 */}
       <div
         data-aos="zoom-in"

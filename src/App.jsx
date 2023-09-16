@@ -24,7 +24,7 @@ import PropositionOfServices from "./Pages/Proposal/proposal.jsx";
 
 // Segmentation 4 //
 import DevisFree from "./Pages/Devis/devis.jsx";
-// import AvisClient from "./Components/Partner/avis-client.jsx";
+import AvisClient from "./Components/Partner/avis-client.jsx";
 
 // Système de routage //
 const App = () => {
@@ -33,7 +33,7 @@ const App = () => {
       <div>
         <ThemeProvider>
           <Router>
-            <Header />
+           
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/nos-valeurs" element={<Ethics />} />
@@ -53,11 +53,12 @@ const App = () => {
 const Homepage = () => {
   return (
     <div>
+       <Header />
       <Section />
       <SectionDuplicate />
       <Cards />
       <Partner />
-      {/* <AvisClient/> */}
+      <AvisClient/>
       <Form />
       <FormContact />
     </div>

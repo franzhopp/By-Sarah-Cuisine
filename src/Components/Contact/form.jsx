@@ -12,8 +12,8 @@ const Form = () => {
           </p>
           <div className="mb-10">
             <p className="font-sans-serif text-white">
-              Remplissez le formulaire de contact ci-dessous afin qu’elle puisse
-              vous contacter pour toutes informations précises. Vous retrouvez tous ces réseaux afin d'avoir un contact direct en ligne mais pour plus de faciliter, veuillez remplir le formulaire.
+              {`Remplissez le formulaire de contact ci-dessous afin qu’elle puisse
+              vous contacter pour toutes informations précises. Vous retrouvez tous ces réseaux afin d'avoir un contact direct en ligne mais pour plus de faciliter, veuillez remplir le formulaire.`}
             </p>
             <div className="flex justify-center items-center space-x-2 mt-5">
               <MdPhoneInTalk className="h-10 w-10 text-white" />
