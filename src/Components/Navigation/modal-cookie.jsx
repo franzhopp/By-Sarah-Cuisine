@@ -8,8 +8,8 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
-      className="fixed bottom-0 left-0 right-0 bg-white p-4 border-t border-pink shadow-md"
-      overlayClassName="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 opacity-75"
+      className="fixed bottom-0 left-0 right-0 bg-white p-4"
+      overlayClassName="fixed top-0 left-0 right-0 bottom-0 opacity-75"
     >
       <div className="text-left">
         <h2 className="text-xl font-bold mb-2 font-sans-serif">Politique de cookies</h2>
