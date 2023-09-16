@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Image from "../../assets/title-services.png";
+import Image from "../../assets/logo-bsc.png";
+import ImageTitle from "../../assets/title-services.png";
 import { NavLink } from "react-router-dom";
 import DarkLightThemes from "../../hook/useTheme";
 import { TfiMenu } from "react-icons/tfi";
@@ -94,12 +95,7 @@ const NavbarServices = () => {
           <div className="flex items-center justify-center h-24">
             <div className="md:left-0 md:inline md:absolute">
               <NavLink href="/" className="text-gray-900 text-lg font-semibold">
-                {/* <img
-                  className="w-full h-24 pt-2"
-                  src={Image}
-                  alt="Icône de Sarah"
-                /> */}
-                {/* <p>Logo</p> */}
+                <img className="mt-10" src={Image} alt="Icône de Sarah" />
               </NavLink>
             </div>
             <div className="flex items-center">
@@ -186,15 +182,15 @@ const NavbarServices = () => {
       {/* Navigation mobile */}
       <nav className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
         {/* 2 items */}
-        <div className="px-5 h-24 flex items-center justify-between">
+        <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
-            {/* <img className="w-full h-24 pt-2" src={Image} alt="Icône de Sarah" /> */}
+            <img className="w-28 mt-2" src={Image} alt="Icône de Sarah" />
           </a>
 
-          <div className="-mr-2">
+          <div className="mr-2">
             <button
               onClick={toggleMenuMobile}
-              className={`icon-toggle  bg-e9c2c2 border border-white rounded-md p-5 inline-flex items-center justify-center`}
+              className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
             >
               {changeMenuNavbar ? (
                 <ImCross className="text-white" />
@@ -206,12 +202,16 @@ const NavbarServices = () => {
         </div>
         {/* end 2 items */}
 
-        <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
+        <ul
+          className={`toggle-menu ${
+            toggleMenu ? "block" : "hidden"
+          } p-2 border-t border-t-gray transform transition-transform duration-300 ease-in-out`}
+        >
           <li>
             <NavLink
               to="/"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Accueil
             </NavLink>
@@ -221,7 +221,7 @@ const NavbarServices = () => {
               to="/"
               href="about"
               onClick={SectionToScrollAbout}
-              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               À propos
             </NavLink>
@@ -254,12 +254,13 @@ const NavbarServices = () => {
               ))}
             </ul>
           </li>
+
           <li>
             <NavLink
               to="/"
               href="contact"
               onClick={SectionToScroll}
-              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Contact
             </NavLink>
@@ -269,13 +270,13 @@ const NavbarServices = () => {
             <NavLink
               to="/devis-gratuit"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Devis gratuit
             </NavLink>
           </li>
           <li>
-            <div className="ml-2 mb-5 mt-5">
+            <div className="ml-2 mb-5 mt-3">
               <DarkLightThemes className="hidden sm:block" />
             </div>
           </li>
@@ -285,7 +286,7 @@ const NavbarServices = () => {
         <div className="flex justify-center pt-48 mb-12 px-4 sm:mt-70">
           <img
             data-aos="fade-right"
-            src={Image}
+            src={ImageTitle}
             alt="Image name"
             className="px-16 mt-24 mb-20 sm:mb-10 sm:mt-4"
           />
