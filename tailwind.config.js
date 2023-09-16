@@ -33,7 +33,7 @@ export default {
 
             colors: {
                 'pink': '#d598a0',
-                'gray': '#FFFFFF',
+                'gray' : '#D9D9D9',
             }
         },
         screens: {

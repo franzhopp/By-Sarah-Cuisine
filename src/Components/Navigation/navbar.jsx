@@ -194,20 +194,24 @@ const Navbar = () => {
           <div className="-mr-2">
             <button
               onClick={toggleMenuMobile}
-              className={`icon-toggle  bg-e9c2c2 border border-white rounded-md p-5 inline-flex items-center justify-center`}
+              className={`icon-toggle  bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
             >
-              {changeMenuNavbar ? <ImCross className="text-white" /> : <TfiMenu className="text-white"/>}
+              {changeMenuNavbar ? (
+                <ImCross className="text-white" />
+              ) : (
+                <TfiMenu className="text-white" />
+              )}
             </button>
           </div>
         </div>
         {/* end 2 items */}
 
-        <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2`}>
+        <ul className={`toggle-menu ${toggleMenu ? "block" : "hidden"} p-2 border-t-2 border-gray`}>
           <li>
             <NavLink
               to="/"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Accueil
             </NavLink>
@@ -217,7 +221,7 @@ const Navbar = () => {
               to="/"
               href="about"
               onClick={SectionToScrollAbout}
-              className="block px-3 py-2 rounded-md text-base font-extrabold  text-color-white-pastel hover:text-color-beige-pastel"
+              className="block px-3 py-2 rounded-md text-base font-extrabold"
             >
               À propos
             </NavLink>
@@ -250,6 +254,8 @@ const Navbar = () => {
               ))}
             </ul>
           </li>
+
+
           <li>
             <NavLink
               to="/"

@@ -129,7 +129,7 @@ const NavbarDevis = () => {
               >
                 <li className="relative group list-none text-center">
                   <NavLink
-                    to="/nos-services"
+                    to="/services"
                     className="block px-3 py-2 rounded-md font-extrabold"
                   >
                     <p className="uppercase">Services</p>
