@@ -21,18 +21,20 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
           et l'admistration et votre accord pour améliorer votre expérience
           utilisateur.
         </p>
-        <button
-          onClick={onAccept}
-          className="bg-f3dbc3 hover:bg-gray text-white font-bold py-2 px-4 rounded-full"
-        >
-          Accepter
-        </button>
-        <button
-          onClick={onRequestClose}
-          className="text-gray-600 font-sans-serif"
-        >
-          Continuer sans accepter
-        </button>
+        <div className="flex flex-col">
+          <button
+            onClick={onAccept}
+            className="bg-f3dbc3 hover:bg-gray text-white font-bold py-2 px-4 rounded-full"
+          >
+            Accepter
+          </button>
+          <button
+            onClick={onRequestClose}
+            className="text-gray-600 font-sans-serif mt-5 underline"
+          >
+            Continuer sans accepter
+          </button>
+        </div>
       </div>
     </Modal>
   );
