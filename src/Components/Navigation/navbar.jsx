@@ -182,12 +182,12 @@ const Navbar = () => {
       {/* Navigation mobile */}
       <nav className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
         {/* 2 items */}
-        <div className="px-5 h-24 flex items-center justify-between">
+        <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
-            <img className="mt-14" src={Image} alt="Icône de Sarah" />
+            <img className="w-20 mr-4" src={Image} alt="Icône de Sarah" />
           </a>
 
-          <div className="-mr-2">
+          <div className="mr-2">
             <button
               onClick={toggleMenuMobile}
               className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
