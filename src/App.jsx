@@ -17,17 +17,19 @@ const App = () => {
   return (
     <>
       <div>
-        <ThemeProvider>
-          <Router>
-            <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/services" element={<Proposal />} />
-              <Route path="/devis-gratuit" element={<Devis />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
-            <Footer />
-          </Router>
-        </ThemeProvider>
+        <div className="fade-in">
+          <ThemeProvider>
+            <Router>
+              <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/services" element={<Proposal />} />
+                <Route path="/devis-gratuit" element={<Devis />} />
+                <Route path="*" element={<PageNotFound />} />
+              </Routes>
+              <Footer />
+            </Router>
+          </ThemeProvider>
+        </div>
       </div>
     </>
   );
