@@ -26,13 +26,6 @@ const Navbar = () => {
   const [changeMenuNavbar, setChangeMenuNavbar] = useState();
   const [isCookieModalOpen, setCookieModalOpen] = useState(false);
 
-  useEffect(() => {
-    const hasAcceptedCookie = Cookies.get("accept_cookie");
-    if (!hasAcceptedCookie) {
-      setCookieModalOpen(true);
-    }
-  }, []);
-
   // Fonctionnalité du toggle de la liste/navbar :
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
@@ -79,6 +72,10 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // const hasAcceptedCookie = Cookies.get("accept_cookie");
+    // if (!hasAcceptedCookie) {
+    //   setCookieModalOpen(true);
+    // }
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
