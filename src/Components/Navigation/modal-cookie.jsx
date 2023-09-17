@@ -11,7 +11,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       className="fixed bottom-0 left-0 right-0 bg-white p-4 outline-none border-none shadow-none"
       overlayClassName="fixed top-0 left-0 right-0 bottom-0 bg-gray-800"
     >
-      <div className="text-left">
+      <div className="text-left w-64 h-64">
         <h2 className="text-xl font-extrabold font-sans-serif mb-2">
           Politique de cookies
         </h2>
