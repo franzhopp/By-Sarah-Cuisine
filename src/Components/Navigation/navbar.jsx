@@ -8,8 +8,8 @@ import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
-import CookieModal from "./modal-cookie.jsx";
-import Cookies from "js-cookie";
+// import CookieModal from "./modal-cookie.jsx";
+// import Cookies from "js-cookie";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
