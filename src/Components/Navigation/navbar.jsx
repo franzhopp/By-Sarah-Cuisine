@@ -97,7 +97,7 @@ const Navbar = () => {
   // };
 
   return (
-    <div className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
+    <div loading="lazy" className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
       <nav
         className={`${
           scrollNavbar ? "bg-white" : ""
