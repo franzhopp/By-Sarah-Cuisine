@@ -9,9 +9,11 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
     >
-      <h2>Politique de cookies</h2>
-      <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
-      <button onClick={onAccept}>Accepter</button>
+      <div className=" h-96 w-400 ">
+        <h2>Politique de cookies</h2>
+        <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
+        <button onClick={onAccept}>Accepter</button>
+      </div>
     </Modal>
   );
 };
