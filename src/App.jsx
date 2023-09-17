@@ -36,14 +36,16 @@ const App = () => {
 const Homepage = () => {
   return (
     <div>
-      <Header />
-      <Section />
-      <SectionDuplicate />
-      <Cards />
-      <Partner />
-      <AvisClient />
-      <Form />
-      <FormContact />
+      <ThemeProvider>
+        <Header />
+        <Section />
+        <SectionDuplicate />
+        <Cards />
+        <Partner />
+        <AvisClient />
+        <Form />
+        <FormContact />
+      </ThemeProvider>
     </div>
   );
 };

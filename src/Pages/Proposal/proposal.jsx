@@ -12,7 +12,7 @@ const Proposal = () => {
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
             Apéritifs
           </p>
-          <p className="font-sans-serif text-base sm:text-2xl">
+          <p className="text-black font-sans-serif text-base sm:text-2xl">
             Préparation d’apéritifs pour vos entrées
           </p>
         </h1>
@@ -77,7 +77,7 @@ const Proposal = () => {
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
             Plats
           </p>
-          <p className="font-sans-serif text-base sm:text-2xl">
+          <p className="text-black font-sans-serif text-base sm:text-2xl">
             Préparation d’apéritifs pour vos entrées
           </p>
         </h1>
@@ -145,7 +145,7 @@ const Proposal = () => {
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
             Desserts
           </p>
-          <p className="font-sans-serif text-base sm:text-2xl">
+          <p className="text-black font-sans-serif text-base sm:text-2xl">
             Préparation d’apéritifs pour vos entrées
           </p>
         </h1>

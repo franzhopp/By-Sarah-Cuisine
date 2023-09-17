@@ -11,6 +11,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+.text-light {
+    color: white;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -52,7 +56,7 @@ body {
     border-bottom: 8px solid #F3DBC3;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./assets/imag-client.png');
+    background-image: url('./assets/imag-client-blur.png');
 }
 
 .image-blur-by-sarah-cuisine {

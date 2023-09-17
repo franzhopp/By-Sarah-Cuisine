@@ -37,7 +37,7 @@ const Cards = () => {
             </p>
             <a
               href=""
-              className="bg-f3dbc3 text-black text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
@@ -64,7 +64,7 @@ const Cards = () => {
             </p>
             <a
               href=""
-              className="bg-f3dbc3 text-black text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
@@ -91,7 +91,7 @@ const Cards = () => {
             </p>
             <a
               href=""
-              className="bg-f3dbc3 text-black text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
