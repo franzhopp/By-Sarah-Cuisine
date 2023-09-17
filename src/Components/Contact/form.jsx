@@ -4,7 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 const Form = () => {
   return (
     <section className="image-blur-by-sarah-cuisine">
-      <div className="max-w-4xl mx-auto px-4 sm:py-20 sm:px-6 lg:px-8">
+      <div data-aos="fade-right" className="max-w-4xl mx-auto px-4 sm:py-20 sm:px-6 lg:px-8">
         <span className="flex flex-col text-center">
           <p className="font-sans-serif text-2xl font-extrabold text-white mb-5 mt-10">
             Contactez Sarah pour plus d’informations concernant ses prestations

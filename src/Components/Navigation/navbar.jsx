@@ -8,8 +8,8 @@ import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
-// import CookieModal from "./modal-cookie.jsx";
-// import Cookies from "js-cookie";
+import CookieModal from "./modal-cookie.jsx";
+import Cookies from "js-cookie";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
@@ -72,10 +72,12 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // const hasAcceptedCookie = Cookies.get("accept_cookie");
-    // if (!hasAcceptedCookie) {
-    //   setCookieModalOpen(true);
-    // }
+
+    const hasAcceptedCookie = Cookies.get("accept_cookie");
+    if (!hasAcceptedCookie) {
+      setCookieModalOpen(true);
+    }
+
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -91,13 +93,16 @@ const Navbar = () => {
     };
   }, []);
 
-  // const handleAcceptCookie = () => {
-  //   Cookies.set("accept_cookie", "true", { expires: 365 }); 
-  //   setCookieModalOpen(false);
-  // };
+  const handleAcceptCookie = () => {
+    Cookies.set("accept_cookie", "true", { expires: 365 });
+    setCookieModalOpen(false);
+  };
 
   return (
-    <div loading="lazy" className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
+    <div
+      loading="lazy"
+      className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500"
+    >
       <nav
         className={`${
           scrollNavbar ? "bg-white" : ""
@@ -294,11 +299,11 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      {/* <CookieModal
+      <CookieModal
         isOpen={isCookieModalOpen}
         onRequestClose={() => setCookieModalOpen(false)}
         onAccept={handleAcceptCookie}
-      /> */}
+      />
       <Homepage />
     </div>
   );

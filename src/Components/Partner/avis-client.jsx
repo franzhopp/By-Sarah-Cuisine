@@ -1,12 +1,11 @@
 const AvisClient = () => {
   return (
     <div className="container mx-auto mt-10 px-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          className="bg-8f8f88 flex flex-col items-center rounded-lg p-6"
-        >
+      <div
+        data-aos="fade-right"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+      >
+        <div className="bg-8f8f88 flex flex-col items-center rounded-lg p-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="145"
@@ -28,11 +27,7 @@ const AvisClient = () => {
             voluptas facere blanditiis iste non.
           </p>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          className="bg-8f8f88 flex flex-col items-center rounded-lg p-6"
-        >
+        <div className="bg-8f8f88 flex flex-col items-center rounded-lg p-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="145"
@@ -54,11 +49,7 @@ const AvisClient = () => {
             voluptas facere blanditiis iste non.
           </p>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          className="bg-8f8f88 flex flex-col items-center rounded-lg p-6"
-        >
+        <div className="bg-8f8f88 flex flex-col items-center rounded-lg p-6">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="145"

@@ -1,6 +1,10 @@
 const Section = () => {
   return (
-    <section className="mb-12">
+    <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+      className="mb-12"
+    >
       <div className="flex justify-center mt-16">
         <h2 className="font-extrabold text-2xl sm:text-4xl">
           <span className="text-pink font-sans-recursive">{`Traiteur de tous types d'évènements`}</span>
