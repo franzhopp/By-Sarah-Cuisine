@@ -26,7 +26,7 @@ const Cards = () => {
             <div className="text-2xl text-center font-extrabold text-white">
               Plateaux de fruit
             </div>
-            <p className="mt-2 text-medium text-white font-extrabold">
+            <p className="text-black text-justify mt-2">
               Comblez vos évènements entre famille, mariage, pour de jolis
               plateaux.
             </p>
@@ -53,7 +53,7 @@ const Cards = () => {
             <div className="text-2xl text-center font-extrabold text-white">
               Boîte à desserts
             </div>
-            <p className="mt-2 text-medium text-white font-extrabold">
+            <p className="text-black text-justify mt-2">
               Comblez vos évènements entre famille, mariage, pour de jolis
               plateaux.
             </p>
@@ -80,7 +80,7 @@ const Cards = () => {
             <div className="text-2xl text-center font-extrabold text-white">
               Brush
             </div>
-            <p className="mt-2 text-medium text-white font-extrabold">
+            <p className="text-black text-justify mt-2">
               Comblez vos évènements entre famille, mariage, pour de jolis
               plateaux.
             </p>
