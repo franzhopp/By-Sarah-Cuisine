@@ -29,7 +29,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
             </button>
             <button
               onClick={onRequestClose}
-              className="text-gray-600 font-sans-serif mt-5 underline"
+              className="text-black font-sans-serif mt-5 underline"
             >
               Continuer sans accepter
             </button>
