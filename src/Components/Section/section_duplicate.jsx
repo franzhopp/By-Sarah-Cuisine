@@ -49,6 +49,7 @@ const SectionDuplicate = () => {
         {/* 2 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
+            <div className="h-60 w-60 bg-white rounded-xl"></div>
             {/* <img
               // src={images[currentImageIndex]}
               // alt={`Image ${currentImageIndex + 1}`}
@@ -59,6 +60,7 @@ const SectionDuplicate = () => {
         {/* 1 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
+            <div className="h-60 w-60 bg-white rounded-xl"></div>
             {/* <img
               src={images[currentImageIndex]}
               alt={`Image ${currentImageIndex + 1}`}
@@ -69,6 +71,7 @@ const SectionDuplicate = () => {
         {/* 2 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
+            <div className="h-60 w-60 bg-white rounded-xl"></div>
             {/* <img
               src={images[currentImageIndex]}
               alt={`Image ${currentImageIndex + 1}`}
@@ -95,7 +98,7 @@ const SectionDuplicate = () => {
           </svg>
         </div>
       </div>
-      
+
       <div className="text-white text-base text-center font-sans-serif font-extrabold">
         Demander un devis sur-mesure où Sarah traitera votre commande avec
         attention.
