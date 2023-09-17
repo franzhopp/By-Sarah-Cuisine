@@ -1,5 +1,5 @@
+import React from "react";
 import Modal from "react-modal";
-
 Modal.setAppElement("#root");
 
 const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
@@ -8,35 +8,10 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
-      className="fixed bottom-0 left-0 right-0 bg-white p-4 outline-none border-none shadow-none"
-      overlayClassName="fixed top-0 left-0 right-0 bottom-0 bg-gray-800"
     >
-      <div className="text-left w-64 h-64">
-        <h2 className="text-xl font-extrabold font-sans-serif mb-2">
-          Politique de cookies
-        </h2>
-        <p className="text-gray-600 font-sans-serif mb-4">
-          Ce site utilise des cookies pour mesurer la fréquentation du site afin
-          d'en améliorer le fonctionnement et l'admistration. Votre accord est
-          pour améliorer votre expérience utilisateur.
-        </p>
-        <div className="flex flex-col">
-          <div className="w-52">
-            <button
-              onClick={onAccept}
-              className="bg-f3dbc3 hover:bg-gray text-white font-extrabold font-sans-serif py-2 px-4 rounded-full"
-            >
-              Accepter
-            </button>
-            <button
-              onClick={onRequestClose}
-              className="text-gray-600 font-sans-serif mt-5 underline"
-            >
-              Continuer sans accepter
-            </button>
-          </div>
-        </div>
-      </div>
+      <h2>Politique de cookies</h2>
+      <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
+      <button onClick={onAccept}>Accepter</button>
     </Modal>
   );
 };
