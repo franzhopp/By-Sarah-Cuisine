@@ -13,7 +13,7 @@ const Cards = () => {
       </div>
       <div className="mt-5 text-base text-white text-center font-sans-serif">
         Si vous voulez savoir plus précisément tous les services du traiteur,
-        n’hésitez pas à cliquer sur ce lien.
+        n’hésitez pas à <NavLink to="/services">cliquer sur ce lien</NavLink>.
       </div>
 
       <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
@@ -23,7 +23,7 @@ const Cards = () => {
             <div className="h-40 w-64 bg-white rounded-xl"></div>
           </div>
           <div className="p-6">
-            <div className="text-2xl text-center font-extrabold text-white">
+            <div className="text-pink text-2xl text-center font-sans-recursive font-extrabold">
               Plateaux de fruit
             </div>
             <p className="text-black text-justify mt-2">
@@ -37,7 +37,7 @@ const Cards = () => {
             </p>
             <a
               href=""
-              className="mt-8 block w-full bg-f3dbc3 rounded-2xl py-2 text-sm font-semibold text-white text-center hover:bg-slate-400"
+              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
@@ -50,7 +50,7 @@ const Cards = () => {
             <div className="h-40 w-64 bg-white rounded-xl"></div>
           </div>
           <div className="p-6">
-            <div className="text-2xl text-center font-extrabold text-white">
+            <div className="text-pink text-2xl text-center font-sans-recursive font-extrabold">
               Boîte à desserts
             </div>
             <p className="text-black text-justify mt-2">
@@ -64,7 +64,7 @@ const Cards = () => {
             </p>
             <a
               href=""
-              className="mt-8 block w-full bg-f3dbc3 rounded-2xl py-2 text-sm font-semibold text-white text-center hover:bg-slate-400"
+              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
@@ -77,7 +77,7 @@ const Cards = () => {
             <div className="h-40 w-64 bg-white rounded-xl"></div>
           </div>
           <div className="p-6">
-            <div className="text-2xl text-center font-extrabold text-white">
+            <div className="text-pink text-2xl text-center font-sans-recursive font-extrabold">
               Brush
             </div>
             <p className="text-black text-justify mt-2">
@@ -91,7 +91,7 @@ const Cards = () => {
             </p>
             <a
               href=""
-              className="mt-8 block w-full bg-f3dbc3 rounded-2xl py-2 text-sm font-semibold text-white text-center hover:bg-slate-400"
+              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
