@@ -19,7 +19,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
         </p>
         <button
           onClick={onAccept}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
+          className="bg-f3dbc3 hover:bg-gray text-white font-bold py-2 px-4 rounded-full"
         >
           Accepter
         </button>
