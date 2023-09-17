@@ -13,28 +13,16 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       overlayClassName="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 opacity-75"
     >
       <div className="text-left">
-        <h2 className="text-xl font-sans-serif font-extrabold mb-2">
-          Politique de cookies
-        </h2>
+        <h2 className="text-xl font-sans-serif font-extrabold mb-2">Politique de cookies</h2>
         <p className="text-gray-600 mb-4 font-sans-serif">
           Ce site utilise des cookies pour améliorer votre expérience.
         </p>
-        <div className="flex flex-col">
-          <div className="w-52">
-            <button
-              onClick={onAccept}
-              className="bg-f3dbc3 hover:bg-gray text-white font-extrabold font-sans-serif py-2 px-4 rounded-full"
-            >
-              Accepter
-            </button>
-            <button
-              onClick={onRequestClose}
-              className="text-gray-600 font-sans-serif mt-5 underline"
-            >
-              Continuer sans accepter
-            </button>
-          </div>
-        </div>
+        <button
+          onClick={onAccept}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
+        >
+          Accepter
+        </button>
       </div>
     </Modal>
   );
