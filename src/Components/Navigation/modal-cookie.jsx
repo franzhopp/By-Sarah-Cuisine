@@ -9,7 +9,7 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       onRequestClose={onRequestClose}
       contentLabel="Cookie Modal"
     >
-      <div className="h-64 w-64 p-4">
+      <div className="fixed bottom-0 left-0 right-0 h-64 w-64 p-4">
         <h2 className="text-lg font-semibold">Politique de cookies</h2>
         <p className="text-sm text-gray-600 mt-2">
           Ce site utilise des cookies pour améliorer votre expérience.
