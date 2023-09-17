@@ -31,13 +31,13 @@ const Cards = () => {
               plateaux.
             </p>
             <p className="mt-6">
-              <span className="text-4xl font-extrabold text-white">40€</span>
+              <span className="text-black text-4xl font-extrabold ">40€</span>
 
-              <span className="font-medium text-white"> par pack.</span>
+              <span className="text-black font-medium"> par pack.</span>
             </p>
             <a
               href=""
-              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+              className="bg-f3dbc3 text-black text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
@@ -58,13 +58,13 @@ const Cards = () => {
               plateaux.
             </p>
             <p className="mt-6">
-              <span className="text-4xl font-extrabold text-white">20€</span>
+              <span className="text-black text-4xl font-extrabold">20€</span>
 
               <span className="font-medium text-white"> par pack.</span>
             </p>
             <a
               href=""
-              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+              className="bg-f3dbc3 text-black text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
@@ -85,13 +85,13 @@ const Cards = () => {
               plateaux.
             </p>
             <p className="mt-6">
-              <span className="text-4xl font-extrabold text-white">10€</span>
+              <span className="text-black text-4xl font-extrabold">10€</span>
 
-              <span className="font-medium text-white"> par pack.</span>
+              <span className="text-black font-medium"> par pack.</span>
             </p>
             <a
               href=""
-              className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+              className="bg-f3dbc3 text-black text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
             >
               En savoir plus
             </a>
