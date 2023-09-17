@@ -79,10 +79,10 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const hasAcceptedCookie = Cookies.get("accept_cookie");
-    if (!hasAcceptedCookie) {
-      setCookieModalOpen(true);
-    }
+    // const hasAcceptedCookie = Cookies.get("accept_cookie");
+    // if (!hasAcceptedCookie) {
+    //   setCookieModalOpen(true);
+    // }
 
     const handleScroll = () => {
       if (window.scrollY > 0) {
