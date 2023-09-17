@@ -13,8 +13,8 @@ const CookieModal = ({ isOpen, onRequestClose, onAccept }) => {
       overlayClassName="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 opacity-75"
     >
       <div className="text-left">
-        <h2 className="text-xl font-sans-serif font-extrabold mb-2">Politique de cookies</h2>
-        <p className="text-gray-600 mb-4 font-sans-serif">
+        <h2 className="text-xl font-sans-serif font-extrabold mb-2 text-black">Politique de cookies</h2>
+        <p className="text-gray-600 mb-4 font-sans-serif text-black">
           Ce site utilise des cookies pour améliorer votre expérience.
         </p>
         <button
