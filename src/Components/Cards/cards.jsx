@@ -18,7 +18,7 @@ const Cards = () => {
 
       <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
-        <div className="bg-d9d9d9 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
+        <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
           <div className="flex flex-col justify-start items-center mt-5">
             <div className="h-40 w-64 bg-white rounded-xl"></div>
           </div>
@@ -45,7 +45,7 @@ const Cards = () => {
         </div>
 
         {/* Step 2 */}
-        <div className="bg-d9d9d9 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
+        <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
           <div className="flex flex-col justify-start items-center mt-5">
             <div className="h-40 w-64 bg-white rounded-xl"></div>
           </div>
@@ -72,7 +72,7 @@ const Cards = () => {
         </div>
 
         {/* Step 3 */}
-        <div className="bg-d9d9d9 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
+        <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
           <div className="flex flex-col justify-start items-center mt-5">
             <div className="h-40 w-64 bg-white rounded-xl"></div>
           </div>

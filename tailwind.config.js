@@ -28,6 +28,7 @@ export default {
                 'e9c2c2': '#d598a0',
                 'd9d9d9': '#D9D9D9',
                 'efefef': '#EFEFEF',
+                '8f8f88' :'#DBDBD0',
 
             },
 
