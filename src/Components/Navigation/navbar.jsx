@@ -8,8 +8,6 @@ import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/contact.jsx";
 import "../Section/section.jsx";
-import CookieModal from "./modal-cookie.jsx";
-import Cookies from "js-cookie";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
@@ -24,7 +22,6 @@ const Navbar = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [changeMenuNavbar, setChangeMenuNavbar] = useState();
-  const [isCookieModalOpen, setCookieModalOpen] = useState(false);
 
   // Fonctionnalité du toggle de la liste/navbar :
   const toggleMenuMobile = () => {
@@ -72,12 +69,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-
-    const hasAcceptedCookie = Cookies.get("accept_cookie");
-    if (!hasAcceptedCookie) {
-      setCookieModalOpen(true);
-    }
-
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -92,11 +83,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const handleAcceptCookie = () => {
-    Cookies.set("accept_cookie", "true", { expires: 365 });
-    setCookieModalOpen(false);
-  };
 
   return (
     <div
@@ -299,11 +285,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <CookieModal
-        isOpen={isCookieModalOpen}
-        onRequestClose={() => setCookieModalOpen(false)}
-        onAccept={handleAcceptCookie}
-      />
       <Homepage />
     </div>
   );
