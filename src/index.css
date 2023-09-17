@@ -93,7 +93,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./assets/image-contact-flou.png');
+    background-image: url('./assets/image-home.png');
+}
+
+.bg-devis {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/imag-client-blur.png');
 }
 
 /* BG FORM */
@@ -101,7 +111,7 @@ body {
     background: rgba(243, 219, 195, 0.32);
 }
 
-.bg-devis {
+.bg-devis-color {
     background-color: #D598A04F;
 }
 
