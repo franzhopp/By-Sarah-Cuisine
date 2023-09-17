@@ -126,6 +126,10 @@ body {
     background: rgba(243, 219, 195, 0.32);
 }
 
+.bg-devis {
+    background-color: #D598A04F;
+}
+
 .fade-in {
     opacity: 0;
     animation: fade-in-animation 1s ease-in forwards;

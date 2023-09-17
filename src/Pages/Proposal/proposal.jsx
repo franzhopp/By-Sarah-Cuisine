@@ -17,10 +17,10 @@ const Proposal = () => {
           </p>
         </h1>
       </div>
-      <div className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
+      <div data-aos="fade-right" className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
         <div
-          data-aos="zoom-in"
+         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -38,7 +38,7 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div
-          data-aos="zoom-in"
+         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -56,7 +56,7 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div
-          data-aos="zoom-in"
+          
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -83,12 +83,12 @@ const Proposal = () => {
         </h1>
       </div>
       <div
-        data-aos="zoom-in"
+        data-aos="fade-right"
         className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
         <div
-          data-aos="zoom-in"
+         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -106,7 +106,7 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div
-          data-aos="zoom-in"
+         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -124,7 +124,7 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div
-          data-aos="zoom-in"
+          
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -152,12 +152,12 @@ const Proposal = () => {
       </div>
       {/* Step 1 */}
       <div
-        data-aos="zoom-in"
+        data-aos="fade-left"
         className="mb-20 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
         <div
-          data-aos="zoom-in"
+         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -175,7 +175,7 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div
-          data-aos="zoom-in"
+         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -193,7 +193,7 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div
-          data-aos="zoom-in"
+         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />

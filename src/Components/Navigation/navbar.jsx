@@ -164,13 +164,13 @@ const Navbar = () => {
               </NavLink>
             </div>
 
-            <div className="ml-2 mb-5 mt-5">
+            {/* <div className="ml-2 mb-5 mt-5">
               <DarkLightThemes
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 } hidden sm:block`}
               />
-            </div>
+            </div> */}
 
             <NavLink
               to="/devis-gratuit"
