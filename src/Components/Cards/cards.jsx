@@ -31,7 +31,7 @@ const Cards = () => {
               plateaux.
             </p>
             <p className="mt-6">
-              <span className="text-black text-4xl font-extrabold ">40€</span>
+              <span className="text-black text-4xl">40€</span>
 
               <span className="text-black font-medium"> par pack.</span>
             </p>
@@ -58,9 +58,9 @@ const Cards = () => {
               plateaux.
             </p>
             <p className="mt-6">
-              <span className="text-black text-4xl font-extrabold">20€</span>
+              <span className="text-black text-4xl">20€</span>
 
-              <span className="font-medium text-white"> par pack.</span>
+              <span className="text-black font-medium"> par pack.</span>
             </p>
             <a
               href=""
@@ -85,7 +85,7 @@ const Cards = () => {
               plateaux.
             </p>
             <p className="mt-6">
-              <span className="text-black text-4xl font-extrabold">10€</span>
+              <span className="text-black text-4xl">10€</span>
 
               <span className="text-black font-medium"> par pack.</span>
             </p>
