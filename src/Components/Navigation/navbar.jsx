@@ -79,11 +79,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // const hasAcceptedCookie = Cookies.get("accept_cookie");
-    // if (!hasAcceptedCookie) {
-    //   setCookieModalOpen(true);
-    // }
-
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -99,10 +94,10 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleAcceptCookie = () => {
-    Cookies.set("accept_cookie", "true", { expires: 365 }); // Marquez l'acceptation du cookie
-    setCookieModalOpen(false);
-  };
+  // const handleAcceptCookie = () => {
+  //   Cookies.set("accept_cookie", "true", { expires: 365 }); 
+  //   setCookieModalOpen(false);
+  // };
 
   return (
     <div className="image-home-by-sarah-cuisine pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
