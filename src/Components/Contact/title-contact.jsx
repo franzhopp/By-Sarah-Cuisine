@@ -1,4 +1,4 @@
-import Image from "../../assets/svg-contact.png";
+import Image from "../../assets/title-client.png";
 // import Form from "./form.jsx";
 
 const TitleForm = () => {
