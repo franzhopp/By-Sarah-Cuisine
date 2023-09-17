@@ -200,7 +200,7 @@ const Navbar = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
+      <nav className="fixed w-full text-black font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
