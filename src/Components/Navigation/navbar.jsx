@@ -2,11 +2,10 @@ import { useEffect, useState } from "react";
 import Homepage from "../Homepage/homepage";
 import Image from "../../assets/logo-bsc.png";
 import { NavLink } from "react-router-dom";
-import DarkLightThemes from "../../hook/useTheme";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import "../Contact/contact.jsx";
+import "../Contact/title-contact.jsx";
 import "../Section/section.jsx";
 
 const pages = [
@@ -163,15 +162,6 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </div>
-
-            {/* <div className="ml-2 mb-5 mt-5">
-              <DarkLightThemes
-                className={`${
-                  scrollNavbar ? "text-pink" : "text-white"
-                } hidden sm:block`}
-              />
-            </div> */}
-
             <NavLink
               to="/devis-gratuit"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
@@ -277,11 +267,6 @@ const Navbar = () => {
             >
               Devis gratuit
             </NavLink>
-          </li>
-          <li>
-            <div className="ml-2 mb-5 mt-3">
-              <DarkLightThemes className="hidden sm:block" />
-            </div>
           </li>
         </ul>
       </nav>

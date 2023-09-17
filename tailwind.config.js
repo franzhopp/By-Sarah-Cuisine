@@ -8,15 +8,6 @@ export default {
     theme: {
         extend: {
 
-            height: {
-                '400': '496px',
-            },
-
-            minHeight: {
-                500: "500px",
-                600: "650px"
-            },
-
             fontFamily: {
                 'sans': ['Helvetica', 'sans-serif'],
                 'sans-serif': ['Fira Sans'],
@@ -28,7 +19,7 @@ export default {
                 'e9c2c2': '#d598a0',
                 'd9d9d9': '#D9D9D9',
                 'efefef': '#EFEFEF',
-                '8f8f88' :'#d5d5d5',
+                '8f8f88': '#d5d5d5',
 
             },
 
@@ -45,7 +36,6 @@ export default {
             '2xl': '1536px',
         }
     },
-
     plugins: [require("daisyui")],
     daisyui: {
         themes: [

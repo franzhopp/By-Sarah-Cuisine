@@ -1,34 +1,31 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ThemeProvider from "./context/ThemeProvider.jsx";
 import Header from "./Components/Navigation/navbar.jsx";
 import PageNotFound from "./Pages/Error/pagenotfound.jsx";
 import Section from "./Components/Section/section";
-import SectionDuplicate from "./Components/Section/section_duplicate.jsx";
+import SectionDuplicate from "./Components/Section/section-gallery.jsx";
 import Cards from "./Components/Cards/cards.jsx";
-import Partner from "./Components/Partner/partner.jsx";
-import Form from "./Components/Contact/contact.jsx";
-import FormContact from "./Components/Contact/form.jsx";
+import Partner from "./Components/Client/title-client.jsx";
+import Form from "./Components/Contact/title-contact.jsx";
+import FormContact from "./Components/Contact/form-contact.jsx";
 import Footer from "./Components/Footer/footer.jsx";
-import PropositionOfServices from "./Pages/Proposal/proposal.jsx";
+import PropositionOfServices from "./Pages/Services/services.jsx";
 import DevisFree from "./Pages/Devis/devis.jsx";
-import AvisClient from "./Components/Partner/avis-client.jsx";
+import AvisClient from "./Components/Client/avis-client.jsx";
 
 const App = () => {
   return (
     <>
       <div>
         <div className="fade-in">
-          <ThemeProvider>
-            <Router>
-              <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/services" element={<Proposal />} />
-                <Route path="/devis-gratuit" element={<Devis />} />
-                <Route path="*" element={<PageNotFound />} />
-              </Routes>
-              <Footer />
-            </Router>
-          </ThemeProvider>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/services" element={<Proposal />} />
+              <Route path="/devis-gratuit" element={<Devis />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+            <Footer />
+          </Router>
         </div>
       </div>
     </>
@@ -38,16 +35,14 @@ const App = () => {
 const Homepage = () => {
   return (
     <div>
-      <ThemeProvider>
-        <Header />
-        <Section />
-        <SectionDuplicate />
-        <Cards />
-        <Partner />
-        <AvisClient />
-        <Form />
-        <FormContact />
-      </ThemeProvider>
+      <Header />
+      <Section />
+      <SectionDuplicate />
+      <Cards />
+      <Partner />
+      <AvisClient />
+      <Form />
+      <FormContact />
     </div>
   );
 };

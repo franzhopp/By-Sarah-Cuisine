@@ -1,12 +1,10 @@
 import NavbarServices from "../../Components/Navigation/navbar-services";
 import Image from "../../assets/template.png";
 
-const Proposal = () => {
+const Services = () => {
   return (
     <>
       <NavbarServices /> 
-      
-      {/* Title 1 */}
       <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-left tracking-tighter">
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
@@ -20,7 +18,6 @@ const Proposal = () => {
       <div data-aos="fade-right" className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
         {/* Step 1 */}
         <div
-         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -38,7 +35,6 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div
-         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -56,7 +52,6 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div
-          
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -88,7 +83,6 @@ const Proposal = () => {
       >
         {/* Step 1 */}
         <div
-         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -106,7 +100,6 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div
-         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -124,7 +117,6 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div
-          
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -157,7 +149,6 @@ const Proposal = () => {
       >
         {/* Step 1 */}
         <div
-         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -175,7 +166,6 @@ const Proposal = () => {
 
         {/* Step 2 */}
         <div
-         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -193,7 +183,6 @@ const Proposal = () => {
 
         {/* Step 3 */}
         <div
-         
           className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5"
         >
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
@@ -213,4 +202,4 @@ const Proposal = () => {
   );
 };
 
-export default Proposal;
+export default Services;

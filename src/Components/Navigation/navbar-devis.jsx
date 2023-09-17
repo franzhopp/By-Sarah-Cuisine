@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import Image from "../../assets/logo-bsc.png";
 import ImageTitle from "../../assets/title-devis.png";
+import Image from "../../assets/logo-bsc.png";
 import { NavLink } from "react-router-dom";
-import DarkLightThemes from "../../hook/useTheme";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import "../Contact/contact.jsx";
+import "../Contact/title-contact.jsx";
 import "../Section/section.jsx";
 
 const pages = [
@@ -85,7 +84,10 @@ const NavbarDevis = () => {
   }, []);
 
   return (
-    <div className="image-navbar-pages pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500">
+    <div
+      loading="lazy"
+      className="image-navbar-pages pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500"
+    >
       <nav
         className={`${
           scrollNavbar ? "bg-white" : ""
@@ -160,15 +162,6 @@ const NavbarDevis = () => {
                 Contact
               </NavLink>
             </div>
-
-            <div className="ml-2 mb-5 mt-5">
-              <DarkLightThemes
-                className={`${
-                  scrollNavbar ? "text-pink" : "text-white"
-                } hidden sm:block`}
-              />
-            </div>
-
             <NavLink
               to="/devis-gratuit"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
@@ -181,7 +174,6 @@ const NavbarDevis = () => {
 
       {/* Navigation mobile */}
       <nav className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
-        {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
             <img className="w-28 mt-2" src={Image} alt="Icône de Sarah" />
@@ -200,8 +192,6 @@ const NavbarDevis = () => {
             </button>
           </div>
         </div>
-        {/* end 2 items */}
-
         <ul
           className={`toggle-menu ${
             toggleMenu ? "block" : "hidden"
@@ -211,7 +201,7 @@ const NavbarDevis = () => {
             <NavLink
               to="/"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Accueil
             </NavLink>
@@ -221,7 +211,7 @@ const NavbarDevis = () => {
               to="/"
               href="about"
               onClick={SectionToScrollAbout}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               À propos
             </NavLink>
@@ -230,7 +220,7 @@ const NavbarDevis = () => {
           <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
-                <div className="pr-4 uppercase">Services</div>{" "}
+                <div className="text-black pr-4 uppercase">Services</div>{" "}
                 <MdOutlineKeyboardArrowDown />
               </div>
             </button>
@@ -260,7 +250,7 @@ const NavbarDevis = () => {
               to="/"
               href="contact"
               onClick={SectionToScroll}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Contact
             </NavLink>
@@ -270,15 +260,10 @@ const NavbarDevis = () => {
             <NavLink
               to="/devis-gratuit"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Devis gratuit
             </NavLink>
-          </li>
-          <li>
-            <div className="ml-2 mb-5 mt-3">
-              <DarkLightThemes className="hidden sm:block" />
-            </div>
           </li>
         </ul>
       </nav>

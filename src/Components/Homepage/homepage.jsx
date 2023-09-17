@@ -1,4 +1,4 @@
-import Image from "../../assets/HOMEPAGE.png";
+import Image from "../../assets/title-home.png";
 
 const Homepage = () => {
   return (

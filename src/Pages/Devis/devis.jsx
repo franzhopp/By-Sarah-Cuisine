@@ -1,6 +1,6 @@
 import NavbarDevis from "../../Components/Navigation/navbar-devis";
 
-const DevisFree = () => {
+const Devis = () => {
   return (
     <section className="bg-white">
       <NavbarDevis />
@@ -149,4 +149,4 @@ const DevisFree = () => {
   );
 };
 
-export default DevisFree;
+export default Devis;

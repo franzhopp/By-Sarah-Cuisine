@@ -11,10 +11,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.text-light {
-    color: white;
-}
-
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -27,109 +23,7 @@ body {
     background: #F3DBC3;
 }
 
-.image-home-by-sarah-cuisine {
-    height: auto;
-    width: 100%;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./assets/image-home.png');
-}
-
-.image-contact-by-sarah-cuisine {
-    height: 300px;
-    max-width: 100%;
-    display: block;
-    border-bottom: 8px solid #d598a0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./assets/imag-contact.png');
-}
-
-.image-client-by-sarah-cuisine {
-    height: auto;
-    max-width: 100%;
-    display: block;
-    background-position: center;
-    border-bottom: 8px solid #F3DBC3;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./assets/imag-client-blur.png');
-}
-
-.image-blur-by-sarah-cuisine {
-    height: auto;
-    max-width: 100%;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./assets/image-contact-flou.png');
-}
-
-
-.image-navbar-pages {
-    height: auto;
-    max-width: 100%;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./assets/image-contact-flou.png');
-}
-
-
-.font-home {
-    color: #F3DBC3;
-    font-family: Dancing Script, cursive;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.sub-font-home {
-    color: #FFF;
-    font-family: Fira Sans, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.svg-section {
-    position: absolute;
-    top: 778px;
-    left: 531px;
-}
-
-.stroke {
-    -webkit-text-stroke: 1px #FFFFFF;
-    stroke: 1px #FFFFFF;
-}
-
-.font-section {
-    color: #E9C2C2;
-    text-align: center;
-    font-family: Dancing Script;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.z-max {
-    z-index: 50 !important;
-}
-
-.bg-contact {
-    background: rgba(243, 219, 195, 0.32);
-}
-
-.bg-devis {
-    background-color: #D598A04F;
-}
-
+/* ANIMATION ENTRÉE */
 .fade-in {
     opacity: 0;
     animation: fade-in-animation 1s ease-in forwards;
@@ -143,4 +37,75 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+/* IMG HOME */
+.image-home-by-sarah-cuisine {
+    height: auto;
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/image-home.png');
+}
+
+/* IMG CLIENT */
+.image-client-by-sarah-cuisine {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    background-position: center;
+    border-bottom: 8px solid #F3DBC3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/imag-client-blur.png');
+}
+
+/* IMG CONTACT */
+.image-contact-by-sarah-cuisine {
+    height: 300px;
+    max-width: 100%;
+    display: block;
+    border-bottom: 8px solid #d598a0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/imag-contact.png');
+}
+
+/* IMG BLUR */
+.image-blur-by-sarah-cuisine {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/image-contact-flou.png');
+}
+
+/* IMG PAGE NAVBAR */
+.image-navbar-pages {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/image-contact-flou.png');
+}
+
+/* BG FORM */
+.bg-contact {
+    background: rgba(243, 219, 195, 0.32);
+}
+
+.bg-devis {
+    background-color: #D598A04F;
+}
+
+/* Z-INDEX */
+.z-max {
+    z-index: 50 !important;
 }
