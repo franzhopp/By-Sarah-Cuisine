@@ -24,11 +24,11 @@ export default {
             },
 
             backgroundColor: {
-                'f3dbc3': '#d4ac90',
+                'f3dbc3': '#F3DBC3',
                 'e9c2c2': '#d598a0',
                 'd9d9d9': '#D9D9D9',
                 'efefef': '#EFEFEF',
-                '8f8f88' :'#DBDBD0',
+                '8f8f88' :'#d5d5d5',
 
             },
 
