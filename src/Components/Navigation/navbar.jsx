@@ -200,7 +200,7 @@ const Navbar = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav className="fixed w-full text-black font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
+      <nav className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
@@ -231,7 +231,7 @@ const Navbar = () => {
             <NavLink
               to="/"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Accueil
             </NavLink>
@@ -241,7 +241,7 @@ const Navbar = () => {
               to="/"
               href="about"
               onClick={SectionToScrollAbout}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               À propos
             </NavLink>
@@ -250,7 +250,7 @@ const Navbar = () => {
           <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
             <button onClick={toggleSousListsMenu}>
               <div className="flex items-center justify-between">
-                <div className="pr-4 uppercase">Services</div>{" "}
+                <div className="text-black pr-4 uppercase">Services</div>{" "}
                 <MdOutlineKeyboardArrowDown />
               </div>
             </button>
@@ -280,7 +280,7 @@ const Navbar = () => {
               to="/"
               href="contact"
               onClick={SectionToScroll}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Contact
             </NavLink>
@@ -290,7 +290,7 @@ const Navbar = () => {
             <NavLink
               to="/devis-gratuit"
               onClick={closeMobileMenu}
-              className="block px-3 py-2 rounded-md text-base font-extrabold"
+              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
               Devis gratuit
             </NavLink>
