@@ -2,6 +2,12 @@ import { MdOutlineEditNote } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 const Cards = () => {
+
+  const handleLinkClick = () => {
+    window.location.reload();
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section className="bg-e9c2c2 mx-auto py-20 px-4 sm:px-6 lg:px-8">
       <div data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -15,9 +21,13 @@ const Cards = () => {
         <div className="mt-5 text-base text-white text-center font-sans-serif">
           Si vous voulez savoir plus précisément tous les services du traiteur,
           n’hésitez pas à{" "}
-          <NavLink to="/services" className="underline font-extrabold">
+          <a
+            onClick={handleLinkClick}
+            href="/services"
+            className="underline font-extrabold"
+          >
             cliquer sur ce lien
-          </NavLink>
+          </a>
           .
         </div>
 

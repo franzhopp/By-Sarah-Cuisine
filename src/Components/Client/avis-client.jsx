@@ -1,6 +1,15 @@
 const AvisClient = () => {
   return (
     <div className="container mx-auto mt-10 px-10">
+      <div className="flex justify-center">
+        <div className="w-full sm:w-1/2">
+          <p className="text-black text-center font-sans-serif mb-10">
+            Remboursés ou satisfaits, découvrez les avis des clients de Sarah.
+            Si vous souhaitez lancer un évènement, n'hésitez pas à écrire au
+            traiteur votre contact ainsi qu'un devis pour plus de sécurité !
+          </p>
+        </div>
+      </div>
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
