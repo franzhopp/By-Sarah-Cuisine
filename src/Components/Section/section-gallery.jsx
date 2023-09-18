@@ -1,22 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { MdOutlineEditNote } from "react-icons/md";
 import { useState } from "react";
-// import images from "../../assets/test-image.png";
+import { images } from "../Helpers/images-data";
 
 const SectionGallery = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currImg, setCurrImg] = useState(0);
 
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
   return (
     <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
@@ -26,12 +15,14 @@ const SectionGallery = () => {
         Des ingrédients de qualité où vous trouvez votre bonheur !
       </p>
 
-      <div className="flex justify-center items-center mt-10 mb-10 p-3 flex-row">
+      <div className="flex justify-center items-center mt-10 mb-10 p-3 flex-col sm:flex-row">
         {/* svg */}
-        <div className="flex-col justify-start items-center w-40 mr-4 sm:flex hidden">
+        <div className="flex flex-col justify-start items-center w-40 mr-4">
           <svg
-            // onClick={prevImage}
-            className="cursor-pointer"
+            onClick={() => {
+              currImg > 0 && setCurrImg(currImg - 1);
+            }}
+            className="cursor-pointer w-10 h-10 sm:w-20 sm:h-20"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
@@ -45,44 +36,23 @@ const SectionGallery = () => {
             />
           </svg>
         </div>
-        {/* 2 step */}
-        <div className="p-20">
-          <div className="flex flex-col justify-start items-center w-40">
-            <div className="h-60 w-60 bg-white rounded-xl">
-              {/* <img
-                src={images[currentImageIndex]}
-                alt={`Image ${currentImageIndex + 1}`}
-              /> */}
-            </div>
-          </div>
-        </div>
         {/* 1 step */}
         <div className="p-20">
           <div className="flex flex-col justify-start items-center w-40">
-            <div className="h-60 w-60 bg-white rounded-xl">
-              {/* <img
-                src={images[currentImageIndex]}
-                alt={`Image ${currentImageIndex + 1}`}
-              /> */}
-            </div>
+            <div
+              className="h-60 w-60 bg-white rounded-xl"
+              style={{ backgroundImage: `url(${images[currImg].img})` }}
+            ></div>
           </div>
         </div>
-        {/* 2 step */}
-        <div className="p-20">
-          <div className="flex flex-col justify-start items-center w-40">
-            <div className="h-60 w-60 bg-white rounded-xl">
-              {/* <img
-                src={images[currentImageIndex]}
-                alt={`Image ${currentImageIndex + 1}`}
-              /> */}
-            </div>
-          </div>
-        </div>
+
         {/* svg */}
-        <div className="flex-col justify-start items-center w-40 ml-4 sm:flex hidden">
+        <div className="flex flex-col justify-start items-center w-40 ml-4">
           <svg
-            // onClick={nextImage}
-            className="cursor-pointer"
+            onClick={() => {
+              currImg < images.length - 1 && setCurrImg(currImg + 1);
+            }}
+            className="cursor-pointer w-10 h-10 sm:w-20 sm:h-20"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
