@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { MdOutlineEditNote } from "react-icons/md";
 import { useState } from "react";
 import { images } from "../Helpers/images-data";
+import InfoDevis from "./info-devis.jsx";
 
 const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);
@@ -22,6 +23,7 @@ const SectionGallery = () => {
             onClick={() => {
               currImg > 0 && setCurrImg(currImg - 1);
             }}
+            onContextMenu={(e) => e.preventDefault()}
             className="cursor-pointer w-10 h-10 sm:w-20 sm:h-20"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
@@ -40,7 +42,7 @@ const SectionGallery = () => {
         <div className="p-20">
           <div className="flex flex-col justify-start items-center">
             <div
-              className=" h-96 w-96 bg-no-repeat bg-white rounded-xl"
+              className="h-72 w-72 sm:h-96 sm:w-96 bg-no-repeat bg-white rounded-xl"
               style={{ backgroundImage: `url(${images[currImg].img})` }}
             ></div>
           </div>
@@ -49,6 +51,10 @@ const SectionGallery = () => {
         {/* svg */}
         <div className="flex flex-row justify-start items-center">
           <svg
+            onContextMenu={(e) => {
+              e.preventDefault();
+              console.log("Context menu prevented");
+            }}
             onClick={() => {
               currImg < images.length - 1 && setCurrImg(currImg + 1);
             }}
@@ -67,21 +73,7 @@ const SectionGallery = () => {
           </svg>
         </div>
       </div>
-
-      <div className="text-white text-base text-center font-sans-serif font-extrabold">
-        Demander un devis sur-mesure où Sarah traitera votre commande avec
-        attention.
-        <div className="mt-5 flex justify-center">
-          <NavLink
-            to="/devis-gratuit"
-            className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white"
-          >
-            <p className="flex flex-row font-extrabold">
-              Devis gratuit <MdOutlineEditNote className="ml-2 mt-1" />
-            </p>
-          </NavLink>
-        </div>
-      </div>
+      <InfoDevis />
     </section>
   );
 };
