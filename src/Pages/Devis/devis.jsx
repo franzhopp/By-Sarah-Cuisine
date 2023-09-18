@@ -22,9 +22,7 @@ const Devis = () => {
               </div>
             </div>
 
-            <div
-              className="bg-devis rounded-lg"
-            >
+            <div className="bg-devis-color rounded-lg">
               <div className="bg-gray-100 p-8 mb-10 shadow-lg lg:col-span-3 lg:p-12">
                 <form action="" className="space-y-4">
                   <div>
@@ -140,7 +138,7 @@ const Devis = () => {
                   <div className="flex justify-center items-center mt-4">
                     <button
                       type="submit"
-                      className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white"
+                      className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-6 py-2 border rounded-3xl text-white"
                     >
                       Envoyer
                     </button>

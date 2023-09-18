@@ -115,14 +115,10 @@ const Footer = () => {
             </li>
 
             <li>
-              <a
-                href="/public/FLYER.png"
-                download="FLYER.png"
-                className="text-black transition hover:opacity-75"
-              >
+              <a download href="./Flyer/FLYER.png">
                 <span className="sr-only">Download flyer</span>
 
-                <MdOutlineFileDownload className="h-6 w-6" />
+                <MdOutlineFileDownload className="h-6 w-6 text-black" />
               </a>
             </li>
           </ul>

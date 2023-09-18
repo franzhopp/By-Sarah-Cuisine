@@ -1,5 +1,5 @@
 import NavbarServices from "../../Components/Navigation/navbar-services";
-// import Image from "../../assets/brush.png";
+import Image from "../../assets/template.png";
 
 const Services = () => {
   return (
