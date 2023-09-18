@@ -17,7 +17,7 @@ const SectionGallery = () => {
 
       <div className="flex justify-center items-center mt-10 mb-10 p-3 flex-col sm:flex-row">
         {/* svg */}
-        <div className="flex flex-col justify-start items-center w-40 mr-4">
+        <div className="flex flex-row justify-start items-center">
           <svg
             onClick={() => {
               currImg > 0 && setCurrImg(currImg - 1);
@@ -38,16 +38,16 @@ const SectionGallery = () => {
         </div>
         {/* 1 step */}
         <div className="p-20">
-          <div className="flex flex-col justify-start items-center w-40">
+          <div className="flex flex-col justify-start items-center">
             <div
-              className="h-60 w-60 bg-white rounded-xl"
+              className=" h-96 w-96 bg-no-repeat bg-white rounded-xl"
               style={{ backgroundImage: `url(${images[currImg].img})` }}
             ></div>
           </div>
         </div>
 
         {/* svg */}
-        <div className="flex flex-col justify-start items-center w-40 ml-4">
+        <div className="flex flex-row justify-start items-center">
           <svg
             onClick={() => {
               currImg < images.length - 1 && setCurrImg(currImg + 1);
