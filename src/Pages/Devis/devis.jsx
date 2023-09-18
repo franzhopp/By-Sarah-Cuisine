@@ -22,7 +22,11 @@ const Devis = () => {
               </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-anchor-placement="top-center" className="bg-devis rounded-lg">
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+              className="bg-devis rounded-lg"
+            >
               <div className="bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
                 <form action="" className="space-y-4">
                   <div>

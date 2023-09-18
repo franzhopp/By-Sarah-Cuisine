@@ -6,17 +6,17 @@ import { useState } from "react";
 const SectionGallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // const nextImage = () => {
-  //   setCurrentImageIndex((prevIndex) =>
-  //     prevIndex === images.length - 1 ? 0 : prevIndex + 1
-  //   );
-  // };
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-  // const prevImage = () => {
-  //   setCurrentImageIndex((prevIndex) =>
-  //     prevIndex === 0 ? images.length - 1 : prevIndex - 1
-  //   );
-  // };
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
   return (
     <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
@@ -26,7 +26,7 @@ const SectionGallery = () => {
         Des ingrédients de qualité où vous trouvez votre bonheur !
       </p>
 
-      <div className="flex justify-center items-center mt-10 mb-10 p-3 flex-col sm:flex-row">
+      <div className="flex justify-center items-center mt-10 mb-10 p-3 flex-row">
         {/* svg */}
         <div className="flex-col justify-start items-center w-40 mr-4 sm:flex hidden">
           <svg
