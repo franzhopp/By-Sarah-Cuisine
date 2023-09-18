@@ -116,7 +116,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="../../../public/FLYER.png"
+                href="/public/FLYER.png"
                 download="FLYER.png"
                 className="text-black transition hover:opacity-75"
               >
