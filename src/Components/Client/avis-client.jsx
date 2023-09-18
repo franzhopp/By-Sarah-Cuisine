@@ -6,7 +6,9 @@ const AvisClient = () => {
           <p className="text-black text-center font-sans-serif mb-10">
             Remboursés ou satisfaits, découvrez les avis des clients de Sarah.
             Si vous souhaitez lancer un évènement, n'hésitez pas à écrire au
-            traiteur votre contact ainsi qu'un devis pour plus de sécurité !
+            traiteur <span className="font-extrabold">votre contact</span> ainsi
+            qu'un devis <span className="underline">pour plus de sécurité</span>{" "}
+            !
           </p>
         </div>
       </div>

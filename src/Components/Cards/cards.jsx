@@ -23,7 +23,7 @@ const Cards = () => {
           n’hésitez pas à{" "}
           <a
             onClick={handleLinkClick}
-            href="/services"
+            href="http://by-sarah-cuisine.netlify.app/services"
             className="underline font-extrabold"
           >
             cliquer sur ce lien

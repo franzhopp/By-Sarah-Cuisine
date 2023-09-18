@@ -14,7 +14,7 @@ const InfoDevis = () => {
         <div className="mt-5 flex justify-center">
           <a
             onClick={handleLinkClick}
-            href="/devis-gratuit"
+            href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
             className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white"
           >
             <p className="flex flex-row font-extrabold">
