@@ -16,7 +16,6 @@ const Cards = () => {
           Si vous voulez savoir plus précisément tous les services du traiteur,
           n’hésitez pas à{" "}
           <NavLink
-            to="/services"
             onClick={() => {
               window.location.href = "/services";
               window.scrollTo(0, 0);

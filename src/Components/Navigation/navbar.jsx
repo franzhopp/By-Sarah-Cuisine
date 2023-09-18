@@ -163,7 +163,7 @@ const Navbar = () => {
               </NavLink>
             </div>
             <NavLink
-              to="/devis-gratuit"
+              to="/devisgratuit"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -261,7 +261,7 @@ const Navbar = () => {
 
           <li>
             <NavLink
-              to="/devis-gratuit"
+              to="/devisgratuit"
               onClick={closeMobileMenu}
               className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
