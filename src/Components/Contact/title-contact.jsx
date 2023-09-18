@@ -11,8 +11,7 @@ const TitleForm = () => {
         <span className="flex justify-center">
           <img
             loading="lazy"
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
+            data-aos="fade-left"
             src={Image}
             alt=""
             className="px-16 mt-28 mb-10 sm:mt-4"
