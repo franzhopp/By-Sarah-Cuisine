@@ -273,7 +273,7 @@ const NavbarDevis = () => {
             data-aos="fade-right"
             src={ImageTitle}
             alt="Image name"
-            className="px-16 mt-10 mb-20 sm:mb-10 sm:mt-4"
+            className="px-16 mt-14 mb-20 sm:mb-10 sm:mt-4"
           />
         </div>
         <div className="text-transparent mb-14">Division invisible</div>
