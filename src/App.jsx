@@ -16,17 +16,15 @@ const App = () => {
   return (
     <>
       <div>
-        <div className="fade-in">
-          <Router>
-            <Routes>
-              <Route path="/" element={<Homepage />} />
-              <Route path="/services" element={<Proposal />} />
-              <Route path="/devis-gratuit" element={<Devis />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
-            <Footer />
-          </Router>
-        </div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/services" element={<Proposal />} />
+            <Route path="/devisgratuit" element={<Devis />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+          <Footer />
+        </Router>
       </div>
     </>
   );
@@ -35,14 +33,16 @@ const App = () => {
 const Homepage = () => {
   return (
     <div>
-      <Header />
-      <Section />
-      <SectionDuplicate />
-      <Cards />
-      <Partner />
-      <AvisClient />
-      <Form />
-      <FormContact />
+      <div className="fade-in">
+        <Header />
+        <Section />
+        <SectionDuplicate />
+        <Cards />
+        <Partner />
+        <AvisClient />
+        <Form />
+        <FormContact />
+      </div>
     </div>
   );
 };

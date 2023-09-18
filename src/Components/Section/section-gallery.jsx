@@ -1,9 +1,6 @@
-import { NavLink } from "react-router-dom";
-import { MdOutlineEditNote } from "react-icons/md";
 import { useState } from "react";
 import { images } from "../Helpers/images-data";
 import InfoDevis from "./info-devis.jsx";
-import Image from "../../assets/brush.png";
 
 const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);
@@ -14,7 +11,9 @@ const SectionGallery = () => {
         Découvrez toute la gallerie du traiteur
       </h2>
       <p className="font-sans-serif text-white font-extrabold mt-3 px-4 text-md sm:text-1 sm:mt-4">
-        Des ingrédients de qualité où vous trouvez votre bonheur !
+        Des recettes de cuisine de qualité où vous trouvez votre bonheur !
+        D'apéritifs, aux plats, aux desserts, vous trouverez tout ce qui vous
+        intéresse.
       </p>
 
       <div className="flex justify-center items-center mt-10 mb-10 p-3 flex-col sm:flex-row">
@@ -25,7 +24,7 @@ const SectionGallery = () => {
               currImg > 0 && setCurrImg(currImg - 1);
             }}
             onContextMenu={(e) => e.preventDefault()}
-            className="cursor-pointer w-10 h-10 sm:w-20 sm:h-20"
+            className="cursor-pointer w-20 h-20"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
@@ -59,7 +58,7 @@ const SectionGallery = () => {
             onClick={() => {
               currImg < images.length - 1 && setCurrImg(currImg + 1);
             }}
-            className="cursor-pointer w-10 h-10 sm:w-20 sm:h-20"
+            className="cursor-pointer w-20 h-20"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"

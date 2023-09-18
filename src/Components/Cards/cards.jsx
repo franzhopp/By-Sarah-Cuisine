@@ -2,12 +2,6 @@ import { MdOutlineEditNote } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 const Cards = () => {
-
-  const handleLinkClick = () => {
-    window.location.reload();
-    window.scrollTo(0, 0);
-  };
-
   return (
     <section className="bg-e9c2c2 mx-auto py-20 px-4 sm:px-6 lg:px-8">
       <div data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -21,13 +15,16 @@ const Cards = () => {
         <div className="mt-5 text-base text-white text-center font-sans-serif">
           Si vous voulez savoir plus précisément tous les services du traiteur,
           n’hésitez pas à{" "}
-          <a
-            onClick={handleLinkClick}
-            href="http://by-sarah-cuisine.netlify.app/services"
+          <NavLink
+            to="/services"
+            onClick={() => {
+              window.location.href = "/services";
+              window.scrollTo(0, 0);
+            }}
             className="underline font-extrabold"
           >
             cliquer sur ce lien
-          </a>
+          </NavLink>
           .
         </div>
 
@@ -54,12 +51,16 @@ const Cards = () => {
 
                 <span className="text-black font-medium"> par pack.</span>
               </p>
-              <a
-                href=""
+              <NavLink
+                to="/services"
+                onClick={() => {
+                  window.location.href = "/services";
+                  window.scrollTo(0, 0);
+                }}
                 className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
               >
                 En savoir plus
-              </a>
+              </NavLink>
             </div>
           </div>
 
@@ -85,12 +86,16 @@ const Cards = () => {
 
                 <span className="text-black font-medium"> par pack.</span>
               </p>
-              <a
-                href=""
+              <NavLink
+                to="/services"
+                onClick={() => {
+                  window.location.href = "/services";
+                  window.scrollTo(0, 0);
+                }}
                 className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
               >
                 En savoir plus
-              </a>
+              </NavLink>
             </div>
           </div>
 
@@ -116,12 +121,16 @@ const Cards = () => {
 
                 <span className="text-black font-medium"> par pack.</span>
               </p>
-              <a
-                href=""
+              <NavLink
+                to="/services"
+                onClick={() => {
+                  window.location.href = "/services";
+                  window.scrollTo(0, 0);
+                }}
                 className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
               >
                 En savoir plus
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
