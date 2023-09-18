@@ -96,6 +96,7 @@ body {
     background-image: url('./assets/image-home.png');
 }
 
+/* IMG CLIENT */
 .bg-devis {
     height: auto;
     max-width: 100%;
@@ -105,6 +106,13 @@ body {
     background-size: cover;
     background-image: url('./assets/imag-client-blur.png');
 }
+
+/* BRUSH */
+.bg-brush {
+    background-repeat: no-repeat;
+    background-image: url('./assets/brush.png');
+}
+
 
 /* BG FORM */
 .bg-contact {
