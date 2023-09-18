@@ -15,7 +15,7 @@ const pages = [
   { link: "/services", name: "Tous les services" },
 ];
 
-const NavbarServices = () => {
+const NavbarDevis = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
@@ -86,7 +86,7 @@ const NavbarServices = () => {
   return (
     <div
       loading="lazy"
-      className="image-navbar-pages pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500"
+      className="image-navbar-pages"
     >
       <nav
         className={`${
@@ -268,12 +268,12 @@ const NavbarServices = () => {
         </ul>
       </nav>
       <section>
-        <div className="flex justify-center pt-48 mb-12 px-4 sm:mt-70">
+        <div className="flex justify-center pt-32  px-4 sm:pt-32">
           <img
             data-aos="fade-right"
             src={ImageTitle}
             alt="Image name"
-            className="px-16 mt-24 mb-20 sm:mb-10 sm:mt-4"
+            className="px-16 mt-10 mb-20 sm:mb-10 sm:mt-4"
           />
         </div>
         <div className="text-transparent mb-14">Division invisible</div>
@@ -283,4 +283,4 @@ const NavbarServices = () => {
   );
 };
 
-export default NavbarServices;
+export default NavbarDevis;

@@ -3,10 +3,10 @@ import NavbarDevis from "../../Components/Navigation/navbar-devis";
 const Devis = () => {
   return (
     <div>
-      <div className="bg-devis-color">
+      <div className="bg-efefef">
         <NavbarDevis />
-        <section className="bg-devis">
-          <div className="mx-auto max-w-4xl px-4 py-28 sm:px-6 lg:px-8">
+        <section className="">
+          <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
             <h2 className="font-extrabold text-3xl text-center sm:text-5xl">
               <span className="text-pink font-sans-recursive">{`Demander un devis sur-mesure !`}</span>
             </h2>
@@ -23,11 +23,9 @@ const Devis = () => {
             </div>
 
             <div
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-center"
               className="bg-devis rounded-lg"
             >
-              <div className="bg-gray-100 p-8 shadow-lg lg:col-span-3 lg:p-12">
+              <div className="bg-gray-100 p-8 mb-10 shadow-lg lg:col-span-3 lg:p-12">
                 <form action="" className="space-y-4">
                   <div>
                     <label className="sr-only" htmlFor="name">

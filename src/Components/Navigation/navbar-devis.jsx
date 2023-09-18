@@ -86,7 +86,7 @@ const NavbarDevis = () => {
   return (
     <div
       loading="lazy"
-      className="image-navbar-pages pt-6 pb-16 sm:pb-24 mb:min-h-650 min-h-500"
+      className="image-navbar-pages"
     >
       <nav
         className={`${
@@ -163,7 +163,7 @@ const NavbarDevis = () => {
               </NavLink>
             </div>
             <NavLink
-              to="/devis-gratuit"
+              to="/devisgratuit"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -258,7 +258,7 @@ const NavbarDevis = () => {
 
           <li>
             <NavLink
-              to="/devis-gratuit"
+              to="/devisgratuit"
               onClick={closeMobileMenu}
               className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
             >
@@ -268,12 +268,12 @@ const NavbarDevis = () => {
         </ul>
       </nav>
       <section>
-        <div className="flex justify-center pt-48 mb-12 px-4 sm:mt-70">
+        <div className="flex justify-center pt-32  px-4 sm:pt-32">
           <img
             data-aos="fade-right"
             src={ImageTitle}
             alt="Image name"
-            className="px-16 mt-24 mb-20 sm:mb-10 sm:mt-4"
+            className="px-16 mt-10 mb-20 sm:mb-10 sm:mt-4"
           />
         </div>
         <div className="text-transparent mb-14">Division invisible</div>

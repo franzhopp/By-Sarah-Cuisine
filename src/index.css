@@ -87,13 +87,10 @@ body {
 
 /* IMG PAGE NAVBAR */
 .image-navbar-pages {
-    height: auto;
-    max-width: 100%;
-    display: block;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('./assets/image-home.png');
+    background-image: url('./assets/image-contact-flou.png');
 }
 
 /* IMG CLIENT */
