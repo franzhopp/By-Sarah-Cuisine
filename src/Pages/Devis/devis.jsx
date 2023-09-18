@@ -5,7 +5,7 @@ const Devis = () => {
     <div>
       <div className="bg-devis-color">
         <NavbarDevis />
-        <section className="bg-devis sm:h-40">
+        <section className="bg-devis">
           <div className="mx-auto max-w-4xl px-4 py-28 sm:px-6 lg:px-8">
             <h2 className="font-extrabold text-3xl text-center sm:text-5xl">
               <span className="text-pink font-sans-recursive">{`Demander un devis sur-mesure !`}</span>
