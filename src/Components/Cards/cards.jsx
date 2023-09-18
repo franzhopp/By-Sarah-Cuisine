@@ -36,7 +36,7 @@ const Cards = () => {
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
           >
             <div className="flex flex-col justify-start items-center mt-5">
-              <div className="h-40 w-64 bg-white rounded-xl"></div>
+              <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
             <div className="p-6">
               <div className="text-pink text-2xl text-center font-sans-recursive font-extrabold">
@@ -71,7 +71,7 @@ const Cards = () => {
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
           >
             <div className="flex flex-col justify-start items-center mt-5">
-              <div className="h-40 w-64 bg-white rounded-xl"></div>
+              <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
             <div className="p-6">
               <div className="text-pink text-2xl text-center font-sans-recursive font-extrabold">
@@ -106,7 +106,7 @@ const Cards = () => {
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
           >
             <div className="flex flex-col justify-start items-center mt-5">
-              <div className="h-40 w-64 bg-white rounded-xl"></div>
+              <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
             <div className="p-6">
               <div className="text-pink text-2xl text-center font-sans-recursive font-extrabold">
