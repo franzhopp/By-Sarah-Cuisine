@@ -1,4 +1,4 @@
-import Image from "../../assets/title-client.png";
+import Image from "../../assets/title-contact.png";
 // import Form from "./form.jsx";
 
 const TitleForm = () => {
