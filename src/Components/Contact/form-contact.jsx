@@ -1,4 +1,4 @@
-import { MdPhoneInTalk } from "react-icons/md";
+import { MdPhoneInTalk, MdLocationPin } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 
 const Form = () => {
@@ -29,6 +29,12 @@ const Form = () => {
               <BsInstagram className="h-10 w-10 text-white" />
               <p className="font-sans-serif text-white text-3xl font-extrabold">
                 by_sarah_cuisine
+              </p>
+            </div>
+            <div className="flex justify-center items-center space-x-2 mt-5">
+              <MdLocationPin className="h-10 w-10 text-white" />
+              <p className="font-sans-serif text-white text-3xl font-extrabold">
+                Paris, Île-de-France
               </p>
             </div>
           </div>
