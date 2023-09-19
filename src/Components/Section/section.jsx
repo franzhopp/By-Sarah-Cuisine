@@ -1,6 +1,6 @@
 const Section = () => {
   return (
-    <section className="mb-12">
+    <section className="mb-10">
       <div className="flex justify-center">
         <svg
           className="relative bottom-7"
