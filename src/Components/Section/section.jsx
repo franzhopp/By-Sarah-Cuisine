@@ -43,7 +43,7 @@ const Section = () => {
             data-aos-easing="ease-in-sine"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
-            {`Sarah est ouverte à toutes vos propositions et peut personnaliser ses services pour correspondre à vos attentes, que ce soit pour des mariages, des anniversaires, des soirées, et bien plus encore. Notre traiteur propose une variété de formules pour répondre à toutes vos demandes.`}
+            {`Sarah est ouverte à toutes vos propositions et peut personnaliser ces derniers pour correspondre à vos attentes, que ce soit pour des mariages, des anniversaires, des soirées, et bien plus encore. Notre traiteur propose une variété de formules pour répondre à toutes vos demandes.`}
           </p>
         </div>
       </div>
