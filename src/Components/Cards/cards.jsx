@@ -6,15 +6,14 @@ const Cards = () => {
     <section className="bg-e9c2c2 mx-auto py-20 px-4 sm:px-6 lg:px-8">
       <div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-sans-recursive text-center">
-          Choisissez vos formules
+          Les formules
         </h1>
         <div className="mt-5 text-base text-white text-center font-sans-serif font-extrabold">
           Différentes formules pour de grandes variétés culinaires chez by Sarah
           cuisine.
         </div>
         <div className="mt-5 text-base text-white text-center font-sans-serif">
-          Si vous voulez savoir plus précisément tous les services du traiteur,
-          n’hésitez pas à{" "}
+          Savoir plus précisément tous les services du traiteur,{" "}
           <NavLink
             to="/services"
             onClick={() => {
@@ -23,7 +22,7 @@ const Cards = () => {
             }}
             className="underline font-extrabold"
           >
-            cliquer sur ce lien
+            cliquez sur ce lien
           </NavLink>
           .
         </div>
@@ -43,8 +42,8 @@ const Cards = () => {
                 Plateaux de fruit
               </div>
               <p className="text-black text-justify mt-2">
-                Comblez vos évènements entre famille, mariage, pour de jolis
-                plateaux.
+                Égayez vos moments spéciaux en famille, lors de mariages, de
+                dîners romantiques, grâce à de magnifiques plateaux de fruit.
               </p>
               <p className="mt-6">
                 <span className="text-black text-4xl">40€</span>
@@ -78,8 +77,8 @@ const Cards = () => {
                 Boîte à desserts
               </div>
               <p className="text-black text-justify mt-2">
-                Comblez vos évènements entre famille, mariage, pour de jolis
-                plateaux.
+                Découvrez la sélection de desserts pour égayer vos moments en
+                famille, vos mariages, avec de superbes boîtes à desserts.
               </p>
               <p className="mt-6">
                 <span className="text-black text-4xl">20€</span>
@@ -113,8 +112,8 @@ const Cards = () => {
                 Brush
               </div>
               <p className="text-black text-justify mt-2">
-                Comblez vos évènements entre famille, mariage, pour de jolis
-                plateaux.
+                Vous souhaitez avoir un brush pour accompagner vos moments,
+                découvrez la sélection que le traiteur propose.
               </p>
               <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>

@@ -2,6 +2,26 @@ import { useState } from "react";
 import { images } from "../Helpers/images-data";
 import InfoDevis from "./info-devis.jsx";
 
+// tâches à finir :
+// - fonctionnalité des formulaires
+// - fonctionnalité de la newletter
+// - ne pas oublier les animations erreurs sur les formulaires
+// - ne pas oublier la fonctionnalité des gestions d'erreur
+// - revoir les animations du site en général
+// - animation hover bouton et liens/svg
+// - responsivité du click "about" bonne marge (pour le mobile)
+// - click reload navbar depuis les pages (surtout pour le bouton devis gratuit)
+// - animation de la navbar
+// - tailwind css pour les loaders d'envoi
+// - essayer de mettre des petits svg pour le style
+// - liens pour le footer et les liens menant aux réseaux sociaux
+// - rework sur la rédaction web du site
+// - finir les bg story ig
+// - faire la bio ig de Sarah / fait
+// - modal pour le zoom des images de la gallery
+// - refactor le code de A à Z avant l'hébergement
+// - mettre tous les bonnes marges et valeurs aux textes
+
 const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);
 
@@ -10,13 +30,17 @@ const SectionGallery = () => {
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
         Découvrez toute la gallerie du traiteur
       </h2>
-      <p className="font-sans-serif text-white font-extrabold mt-3 px-4 text-md sm:text-1 sm:mt-4">
-        Des recettes de cuisine de qualité où vous trouvez votre bonheur !
-        D'apéritifs, aux plats, aux desserts, vous trouverez tout ce qui vous
-        intéresse.
-      </p>
-
-      <div className="flex justify-center items-center mt-10 mb-10 p-3 flex-col sm:flex-row">
+      <div className="flex justify-center mt-5">
+        <div className="w-full sm:w-1/2">
+          <p className="font-sans-serif text-white font-extrabold mt-3 px-4 text-md sm:text-1 sm:mt-4">
+            Découvrez des recettes de cuisine de haute qualité qui combleront
+            vos choix ! Que vous soyez à la recherche d'apéritifs, de plats
+            principaux ou de desserts, vous trouverez ici une variété de choix
+            pour satisfaire toutes vos envies.
+          </p>
+        </div>
+      </div>
+      <div className="flex justify-center items-center mt-4 mb-10 p-3 flex-col sm:flex-row">
         {/* svg */}
         <div className="flex flex-row justify-start items-center">
           <svg

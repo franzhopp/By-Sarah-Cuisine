@@ -8,16 +8,17 @@ const Devis = () => {
         <section className="">
           <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
             <h2 className="font-extrabold text-3xl text-center sm:text-5xl">
-              <span className="text-pink font-sans-recursive">{`Demander un devis sur-mesure !`}</span>
+              <span className="text-pink font-sans-recursive">{`Devis sur-mesure !`}</span>
             </h2>
 
             <div className="flex justify-center">
               <div className="w-full sm:w-2/4">
                 <div className="text-black mt-12 mb-16 font-sans-serif text-base text-center">
-                  Vous souhaitez préparer un évènement très important comme{" "}
-                  <span className="font-extrabold">un mariage</span>,{" "}
-                  <span className="font-extrabold">un anniversaire</span> ?
-                  Merci de le préciser afin que le chef traite votre demande.
+                  Si vous avez l'intention d'organiser un événement majeur tel
+                  qu'un <span className="font-extrabold">mariage</span> ou un{" "}
+                  <span className="font-extrabold">anniversaire</span>,
+                  veuillez le mentionner afin que notre chef puisse traiter
+                  votre demande de manière appropriée.
                 </div>
               </div>
             </div>

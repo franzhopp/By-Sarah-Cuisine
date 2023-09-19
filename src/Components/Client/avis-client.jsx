@@ -6,10 +6,17 @@ const AvisClient = () => {
       <div className="flex justify-center">
         <div className="w-full sm:w-1/2">
           <p className="text-black text-center font-sans-serif mb-10">
-            Remboursés ou satisfaits, découvrez les avis des clients de Sarah.
-            Si vous souhaitez lancer un évènement, n'hésitez pas à écrire au
-            traiteur <span className="font-extrabold">votre contact</span> ainsi
-            qu'un devis <span className="underline">pour plus de sécurité</span>{" "}
+            Remboursés ou satisfaits, consultez les avis des clients de Sarah.
+            Vous prévoyez de planifier un événement,
+            <span className="font-extrabold">
+              {" "}
+              contactez Sarah via les informations ci-desous,
+            </span>{" "}
+            le traiteur peut également vous fournir un devis pour assurer le
+            succès de{" "}
+            <span className="underline">
+              vos événements plus importants en toute sécurité
+            </span>{" "}
             !
           </p>
         </div>
