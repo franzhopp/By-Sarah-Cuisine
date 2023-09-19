@@ -1,3 +1,5 @@
+import { RiStarSFill } from "react-icons/ri";
+
 const AvisClient = () => {
   return (
     <div className="container mx-auto mt-10 px-10">
@@ -32,7 +34,16 @@ const AvisClient = () => {
           <h2 className="text-pink font-sans-recursive text-2xl text-center mt-3 lg:mt-5">
             Marie, 35 ans
           </h2>
-          <p className="text-black text-justify font-sans-serif mt-4">
+          <div>
+            <div className="flex justify-center mt-5">
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />
+            </div>
+          </div>
+          <p className="text-black text-justify font-sans-serif mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             labore aliquid cupiditate officia vitae laboriosam ducimus
             voluptatem ipsa maiores quo reiciendis, itaque facilis vero totam
@@ -54,7 +65,16 @@ const AvisClient = () => {
           <h2 className="text-pink font-sans-recursive text-2xl text-center mt-3 lg:mt-5">
             Karim, 35 ans
           </h2>
-          <p className="text-black text-justify font-sans-serif mt-4">
+          <div>
+            <div className="flex justify-center mt-5">
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />{" "}
+              <RiStarSFill className="h-6 w-6 text-yellow" />
+            </div>
+          </div>
+          <p className="text-black text-justify font-sans-serif mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             labore aliquid cupiditate officia vitae laboriosam ducimus
             voluptatem ipsa maiores quo reiciendis, itaque facilis vero totam
@@ -76,6 +96,15 @@ const AvisClient = () => {
           <h2 className="text-pink font-sans-recursive text-2xl text-center mt-3 lg:mt-5">
             Lou, 35 ans
           </h2>
+          <div>
+            <div className="flex justify-center mt-5">
+              <RiStarSFill className="h-6 w-6 text-yellow" />
+              <RiStarSFill className="h-6 w-6 text-yellow" />
+              <RiStarSFill className="h-6 w-6 text-yellow" />
+              <RiStarSFill className="h-6 w-6 text-yellow" />
+              <RiStarSFill className="h-6 w-6 text-yellow" />
+            </div>
+          </div>
           <p className="text-black text-justify font-sans-serif mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             labore aliquid cupiditate officia vitae laboriosam ducimus
