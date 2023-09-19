@@ -27,8 +27,9 @@ const Section = () => {
       <div className="flex justify-center">
         <div className="flex justify-center flex-col sm:flex-row mt-5">
           <p
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
             {`Originaire de Meaux, Sarah est une excellente cusinière. Elle partage sa cuisine au quotidien,
@@ -37,8 +38,9 @@ const Section = () => {
           </p>
 
           <p
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-center"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
             {`Sarah est ouverte à toutes vos propositions et peut personnaliser ses services pour correspondre à vos attentes, que ce soit pour des mariages, des anniversaires, des soirées, et bien plus encore. Notre traiteur propose une variété de formules pour répondre à toutes vos demandes.`}
