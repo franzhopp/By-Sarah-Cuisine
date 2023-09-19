@@ -141,7 +141,7 @@ const Cards = () => {
           <div className="mt-5 flex justify-center">
             <NavLink
               to="/devis-gratuit"
-              className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white"
+              className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-e9c2c2"
             >
               <p className="flex flex-row font-extrabold">
                 {`Je m'inscris`}

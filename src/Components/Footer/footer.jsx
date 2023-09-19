@@ -184,7 +184,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-black font-sans-serif text-xs font-extrabold">
-          &copy; 2023, By Sarah Cuisine. | Tous droits réversés.
+          &copy; 2023, By Sarah Cuisine. | Les droits d'auteur de ce contenu sont protégés par la loi.
         </p>
       </div>
     </footer>
