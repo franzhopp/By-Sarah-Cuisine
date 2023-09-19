@@ -7,7 +7,7 @@ import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/title-contact.jsx";
 import "../Section/section.jsx";
-import CookieModal from "./modal-cookie";
+// import CookieModal from "./modal-cookie";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
@@ -272,7 +272,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <CookieModal />
       <Homepage />
     </div>
   );
