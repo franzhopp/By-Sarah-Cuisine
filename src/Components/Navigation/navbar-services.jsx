@@ -12,6 +12,7 @@ const pages = [
   { link: "/services", name: "Apéritifs" },
   { link: "/services", name: "Plats" },
   { link: "/services", name: "Desserts" },
+  { link: "/services", name: "Évenements" },
   { link: "/services", name: "Tous les services" },
 ];
 

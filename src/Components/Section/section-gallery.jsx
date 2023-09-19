@@ -35,8 +35,7 @@ const SectionGallery = () => {
           <p className="font-sans-serif text-white font-extrabold mt-3 px-4 text-md sm:text-1 sm:mt-4">
             Découvrez des recettes de cuisine de haute qualité qui combleront
             vos choix ! Que vous soyez à la recherche d'apéritifs, de plats
-            principaux ou de desserts, vous trouverez ici une variété de formule
-            pour satisfaire toutes vos envies.
+            principaux ou de desserts, vous trouverez tous les services en une gallerie.
           </p>
         </div>
       </div>

@@ -30,8 +30,9 @@ const Cards = () => {
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
           <div
-            // data-aos="fade-up"
-            // data-aos-anchor-placement="top-center"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
           >
             <div className="flex flex-col justify-start items-center mt-5">
@@ -65,8 +66,9 @@ const Cards = () => {
 
           {/* Step 2 */}
           <div
-            // data-aos="fade-up"
-            // data-aos-anchor-placement="top-center"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
           >
             <div className="flex flex-col justify-start items-center mt-5">
@@ -100,8 +102,9 @@ const Cards = () => {
 
           {/* Step 3 */}
           <div
-            // data-aos="fade-up"
-            // data-aos-anchor-placement="top-center"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
           >
             <div className="flex flex-col justify-start items-center mt-5">
