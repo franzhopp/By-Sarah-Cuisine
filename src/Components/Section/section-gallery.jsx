@@ -2,25 +2,6 @@ import { useState } from "react";
 import { images } from "../Helpers/images-data";
 import InfoDevis from "./info-devis.jsx";
 
-// tâches à finir :
-// - fonctionnalité des formulaires
-// - fonctionnalité de la newletter
-// - ne pas oublier les animations erreurs sur les formulaires
-// - ne pas oublier la fonctionnalité des gestions d'erreur
-// - revoir les animations du site en général
-// - animation hover bouton et liens/svg
-// - responsivité du click "about" bonne marge (pour le mobile)
-// - click reload navbar depuis les pages (surtout pour le bouton devis gratuit)
-// - animation de la navbar
-// - tailwind css pour les loaders d'envoi
-// - liens pour le footer et les liens menant aux réseaux sociaux
-// - rework sur la rédaction web du site / fait sauf pour les services et bio que sarah changera à son souhait 
-// - finir les bg story ig / fait 
-// - faire la bio ig de Sarah / fait
-// - modal pour le zoom des images de la gallery
-// - refactor le code de A à Z avant l'hébergement
-// - mettre tous les bonnes marges et valeurs aux textes
-
 const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);
 

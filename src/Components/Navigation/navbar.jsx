@@ -7,14 +7,12 @@ import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/title-contact.jsx";
 import "../Section/section.jsx";
-// import CookieModal from "./modal-cookie";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
   { link: "/services", name: "Plats" },
   { link: "/services", name: "Desserts" },
-  { link: "/services", name: "Évenements" },
-  { link: "/services", name: "Tous les services" },
+  { link: "/services", name: "Évènements" },
 ];
 
 const Navbar = () => {
@@ -138,7 +136,7 @@ const Navbar = () => {
                   </NavLink>
 
                   {/* Sous-liste */}
-                  <ul className="absolute w-28 hidden group-hover:block bg-white shadow-md mt-2 py-2 rounded-md">
+                  <ul className="absolute w-28 py-2 hidden group-hover:block bg-white shadow-md rounded-md">
                     {pages.map((page, index) => (
                       <li key={index}>
                         <NavLink
@@ -147,10 +145,19 @@ const Navbar = () => {
                           onMouseLeave={handleMouseLeaveParent}
                           className="block py-2 text-pink"
                         >
-                          <p className="">{page.name}</p>
+                          <p>{page.name}</p>
                         </NavLink>
                       </li>
                     ))}
+                    <li>
+                      <NavLink
+                        to="/services"
+                        href="services"
+                        className="underline font-extrabold text-pink"
+                      >
+                        Tous les services
+                      </NavLink>
+                    </li>
                   </ul>
                 </li>
               </NavLink>
@@ -179,7 +186,7 @@ const Navbar = () => {
       {/* Navigation mobile */}
       <nav
         id="navlinks"
-        className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
+        className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
       >
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
@@ -209,7 +216,7 @@ const Navbar = () => {
             toggleMenu ? "block" : "hidden"
           } p-2 border-t border-t-efefef transform transition-transform duration-300 ease-in-out`}
         >
-          <div id="navlinks" className="TEST">
+          <div id="navlinks">
             <li>
               <NavLink
                 to="/"
@@ -233,29 +240,41 @@ const Navbar = () => {
             <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
-                  <div className="text-black pr-4 uppercase">Services</div>{" "}
+                  <div className="text-black pr-4">Services</div>{" "}
                   <MdOutlineKeyboardArrowDown />
                 </div>
               </button>
 
-              <ul
-                className={`toggle-menu ${
-                  showSousListsMenu ? "block" : "hidden"
-                } p-2 pt-2`}
-              >
-                {pages.map((page, index) => (
-                  <li key={index}>
-                    <NavLink
-                      to={page.link}
-                      onMouseEnter={handleMouseEnterSubmenu}
-                      onMouseLeave={handleMouseLeaveParent}
-                      className="block py-2 text-pink"
-                    >
-                      <p className="text-center">{page.name}</p>
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
+              <div id="navlinks">
+                <ul
+                  id="navlinks"
+                  className={`toggle-menu ${
+                    showSousListsMenu ? "block" : "hidden"
+                  } p-2 pt-2`}
+                >
+                  {pages.map((page, index) => (
+                    <li key={index}>
+                      <NavLink
+                        to={page.link}
+                        onMouseEnter={handleMouseEnterSubmenu}
+                        onMouseLeave={handleMouseLeaveParent}
+                        className="block py-2 text-pink"
+                      >
+                        <p className="text-center">{page.name}</p>
+                      </NavLink>
+                    </li>
+                  ))}
+                <li>
+                  <NavLink
+                    to="/services"
+                    href="services"
+                    className="underline font-extrabold text-pink"
+                  >
+                    Tous les services
+                  </NavLink>
+                </li>
+                </ul>
+              </div>
             </li>
 
             <li>
