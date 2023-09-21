@@ -1,7 +1,98 @@
 import { MdPhoneInTalk, MdLocationPin } from "react-icons/md";
+import emailjs from "emailjs-com";
 import { BsInstagram } from "react-icons/bs";
+import { useEffect, useState } from "react";
 
 const Form = () => {
+  const [status, setStatus] = useState("");
+
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const newErrors = {};
+
+    if (!formData.firstname) {
+      newErrors.firstname = "Veuillez entrer un prénom.";
+    }
+
+    if (!formData.lastname) {
+      newErrors.lastname = "Veuillez entrer un nom.";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Veuillez entrer un email.";
+    }
+
+    if (!formData.tel) {
+      newErrors.tel = "Veuillez entrer un numéro de téléphone.";
+    }
+
+    if (!formData.message) {
+      newErrors.message = "Veuillez entrer un message.";
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setIsLoading(true);
+
+    const emailParams = {
+      to_name: "Sarah",
+      firstname: formData.firstname,
+      lastname: formData.lastname,
+      email: formData.email,
+      tel: formData.tel,
+      message: formData.message,
+    };
+
+    try {
+      const response = await emailjs.send(
+        "service_5z74upq",
+        "template_h7yknhf",
+        emailParams
+      );
+
+      console.log("Email envoyé !", response.status, response.text);
+      setStatus("Merci ! Votre contact a bien été envoyé.");
+    } catch (error) {
+      console.error("Erreur d'envoi d'e-mail :", error);
+    }
+
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    emailjs.init("E-u_BQRxlwXZIR-_Y");
+  }, []);
+
   return (
     <section className="image-blur-by-sarah-cuisine">
       <div
@@ -39,56 +130,119 @@ const Form = () => {
           </div>
 
           <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12 rounded-md mb-11">
-            <form action="" className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div action="" className="space-y-4">
                 <div>
                   <input
-                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
+                      errors.firstname ? "input-error border-red-700" : ""
+                    }`}
                     placeholder="Prénom"
-                    type="name"
+                    id="firstname"
+                    name="firstname"
+                    value={formData.firstname}
+                    onChange={handleInputChange}
                   />
+                  {errors.firstname && (
+                    <p className="text-left font-sans-serif text-red-700">
+                      {errors.firstname}
+                    </p>
+                  )}
                 </div>
 
                 <div>
                   <input
-                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
+                      errors.firstname ? "input-error border-red-700" : ""
+                    }`}
                     placeholder="Nom"
-                    type="name"
+                    id="lastname"
+                    name="lastname"
+                    value={formData.lastname}
+                    onChange={handleInputChange}
                   />
+                  {errors.lastname && (
+                    <p className="text-left font-sans-serif text-red-700">
+                      {errors.lastname}
+                    </p>
+                  )}
                 </div>
 
                 <div>
                   <input
-                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
+                      errors.firstname ? "input-error border-red-700" : ""
+                    }`}
                     placeholder="Adresse mail"
                     type="text"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
                   />
+                  {errors.email && (
+                    <p className="text-left font-sans-serif text-red-700">
+                      {errors.email}
+                    </p>
+                  )}
                 </div>
                 <div>
                   <input
-                    className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2"
+                    className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
+                      errors.firstname ? "input-error border-red-700" : ""
+                    }`}
                     placeholder="Numéro de téléphone"
                     type="tel"
+                    id="tel"
+                    name="tel"
+                    value={formData.tel}
+                    onChange={handleInputChange}
                   />
+                  {errors.tel && (
+                    <p className="text-left font-sans-serif text-red-700">
+                      {errors.tel}
+                    </p>
+                  )}
                 </div>
               </div>
 
               <div>
                 <textarea
-                  className="rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-20"
+                  className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-20 ${
+                    errors.firstname ? "input-error border-red-700" : ""
+                  }`}
                   placeholder="Message"
                   rows="8"
                   id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                 ></textarea>
+                {errors.message && (
+                  <p className="text-left font-sans-serif text-red-700">
+                    {errors.message}
+                  </p>
+                )}
               </div>
 
               <button
+                onClick={handleSubmit}
                 type="submit"
-                className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-e9c2c2"
+                className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-e9c2c2 cursor-pointer"
+                value="Envoyer"
               >
-                Envoyer
+                {isLoading ? (
+                  <div
+                    className={`En cours...`}
+                  ></div>
+                ) : (
+                  "Envoyer"
+                )}
               </button>
             </form>
+            <div className="mt-5 text-center font-sans-serif text-white font-extrabold">
+              {status && <p>{status}</p>}
+            </div>
           </div>
         </span>
       </div>

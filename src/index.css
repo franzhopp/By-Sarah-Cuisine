@@ -23,7 +23,6 @@ body {
     background: #F3DBC3;
 }
 
-/* ANIMATION ENTRÉE */
 .fade-in {
     opacity: 0;
     animation: fade-in-animation 1s ease-in forwards;
@@ -110,21 +109,17 @@ body {
     background-image: url('./assets/brush_white.png');
 }
 
-/* BG FORM */
 .bg-contact {
     background: rgba(243, 219, 195, 0.32);
 }
 
-/* BG FORM 2 */
 .bg-devis-color {
     background-color: #D598A04F;
 }
 
-/* Z-INDEX */
 .z-max {
     z-index: 50 !important;
 }
-
 
 #navlinks {
     animation: translate .4s;
@@ -140,3 +135,28 @@ body {
     }
 }
 
+.input-error {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}

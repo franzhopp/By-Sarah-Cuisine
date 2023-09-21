@@ -23,6 +23,12 @@ dependencies:
   daisyui:
     specifier: ^3.7.4
     version: 3.7.4
+  emailjs:
+    specifier: ^4.0.3
+    version: 4.0.3
+  emailjs-com:
+    specifier: ^3.2.0
+    version: 3.2.0
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
@@ -1041,6 +1047,22 @@ packages:
   /electron-to-chromium@1.4.502:
     resolution: {integrity: sha512-xqeGw3Gr6o3uyHy/yKjdnDQHY2RQvXcGC2cfHjccK1IGkH6cX1WQBN8EeC/YpwPhGkBaikDTecJ8+ssxSVRQlw==}
     dev: true
+
+  /emailjs-com@3.2.0:
+    resolution: {integrity: sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==}
+    engines: {node: '>=12.0.0'}
+    deprecated: The SDK name changed to @emailjs/browser
+    dev: false
+
+  /emailjs@4.0.3:
+    resolution: {integrity: sha512-1CDXoE3FxkSg7QRTlLsDCYG9elFNu/JQsYWu3Xfrk77ubbg5zYgFGg+JRUKQJ56mceM8o3rHHX0VB4wo9XsyLQ==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      typescript: '>=4.3.5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dev: false
 
   /es-abstract@1.22.1:
     resolution: {integrity: sha512-ioRRcXMO6OFyRpyzV3kE1IIBd4WG5/kltnzdxSCqoP8CMGs/Li+M1uF5o7lOkZVFjDs+NLesthnF66Pg/0q0Lw==}
