@@ -189,12 +189,12 @@ const Navbar = () => {
         className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
       >
         {/* 2 items */}
-        <div className="h-28 flex items-center justify-between">
+        <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
-            <img className="mt-12 pr-5" src={Image} alt="Icône de Sarah" />
+            <img className="w-28 mt-2" src={Image} alt="Icône de Sarah" />
           </a>
 
-          <div className="mr-5">
+          <div className="mr-2">
             <button
               onClick={toggleMenuMobile}
               className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
