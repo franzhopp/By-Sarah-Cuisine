@@ -60,7 +60,7 @@ const Cards = () => {
                   window.location.href = "/services";
                   window.scrollTo(0, 0);
                 }}
-                className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+                className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
               >
                 En savoir plus
               </NavLink>
@@ -95,7 +95,7 @@ const Cards = () => {
                   window.location.href = "/services";
                   window.scrollTo(0, 0);
                 }}
-                className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+                className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
               >
                 En savoir plus
               </NavLink>
@@ -130,14 +130,13 @@ const Cards = () => {
                   window.location.href = "/services";
                   window.scrollTo(0, 0);
                 }}
-                className="bg-f3dbc3 text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+                className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
               >
                 En savoir plus
               </NavLink>
             </div>
           </div>
         </div>
-
         <div className="mt-12 text-base text-white text-center font-sans-serif font-extrabold">
           En savoir davantage sur toutes les offres et possibilité de réduction
           en vous inscrivant à la newletter de Sarah !
