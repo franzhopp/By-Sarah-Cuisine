@@ -220,12 +220,36 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div>
+            <p className="text-black font-sans-serif font-extrabold">
+              Légalité
+            </p>
+
+            <ul className="mt-6 space-y-4 text-sm">
+              <li>
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
+                  Mentions légales
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
+                  Conditions d'utilisation
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <p className="text-black font-sans-serif text-xs font-extrabold">
-          &copy; 2023, By Sarah Cuisine. | Tous les articles, images,
-          descriptions et vidéos présents sur ce site sont la propriété de
-          l'auteur et les droits d'auteur de ce contenu sont protégés par la
-          loi.
+          &copy; 2023, By Sarah Cuisine. | Tous les articles, images, et vidéos
+          présents sur ce site sont la propriété de l'auteur et les droits
+          d'auteur de ce contenu sont protégés par la loi.
         </p>
       </div>
     </footer>
