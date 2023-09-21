@@ -52,7 +52,7 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
       );
 
       console.log("Email envoyé !", response.status, response.text);
-      setStatus("Merci ! Votre adresse mail a bien été envoyé.");
+      setStatus("Merci ! Adresse envoyée.");
     } catch (error) {
       console.error("Erreur d'envoi d'e-mail :", error);
     }
