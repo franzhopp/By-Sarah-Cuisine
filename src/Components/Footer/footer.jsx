@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="">
             <h2 className="font-sans-recursive text-2xl text-pink">
-              By Sarah Cuisine
+              By Sarah Cuisine,
             </h2>
             <p className="text-black italic font-sans-serif text-xs">
               Recettes pour un mode de vie sain et gourmand
@@ -132,26 +132,46 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a href="#" className="text-black font-sans-serif">
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
                   Apéritifs
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-black font-sans-serif">
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
                   Plats
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-black font-sans-serif">
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
                   Desserts
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-black font-sans-serif">
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
                   Évènements
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
+                  Tous les services
                 </a>
               </li>
             </ul>
@@ -164,19 +184,37 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a href="#" className="text-black font-sans-serif">
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
                   À propos
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-black font-sans-serif">
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
+                  Avis client
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
                   Contact
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-black font-sans-serif">
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
                   Devis gratuit
                 </a>
               </li>
@@ -184,7 +222,10 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-black font-sans-serif text-xs font-extrabold">
-          &copy; 2023, By Sarah Cuisine. | Les droits d'auteur de ce contenu sont protégés par la loi.
+          &copy; 2023, By Sarah Cuisine. | Tous les articles, images,
+          descriptions et vidéos présents sur ce site sont la propriété de
+          l'auteur et les droits d'auteur de ce contenu sont protégés par la
+          loi.
         </p>
       </div>
     </footer>
