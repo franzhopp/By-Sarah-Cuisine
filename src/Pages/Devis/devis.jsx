@@ -8,7 +8,7 @@ const Devis = () => {
         <section className="">
           <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
             <h2 className="font-extrabold text-3xl text-center sm:text-5xl">
-              <span className="text-pink font-sans-recursive">{`Devis sur-mesure !`}</span>
+              <span className="text-pink font-sans-recursive">{`Faites un devis sur-mesure !`}</span>
             </h2>
 
             <div className="flex justify-center">
@@ -17,8 +17,8 @@ const Devis = () => {
                   Si vous avez l'intention d'organiser un événement majeur tel
                   qu'un <span className="font-extrabold">mariage</span> ou un{" "}
                   <span className="font-extrabold">anniversaire</span>,
-                  veuillez le mentionner afin que notre chef puisse traiter
-                  votre demande de manière appropriée.
+                  veuillez le mentionner afin que le chef puisse traiter
+                  votre demande.
                 </div>
               </div>
             </div>

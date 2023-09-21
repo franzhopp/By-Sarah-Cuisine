@@ -112,7 +112,7 @@ const Cards = () => {
                 Brush
               </div>
               <p className="text-black text-justify mt-2">
-                Vous souhaitez avoir un brush pour accompagner vos moments, découvrez la sélection que le traiteur pr
+                Vous souhaitez avoir un brush pour accompagner vos moments, découvrez la sélection que le traiteur propose.
               </p>
               <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>

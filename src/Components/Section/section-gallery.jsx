@@ -13,10 +13,9 @@ import InfoDevis from "./info-devis.jsx";
 // - click reload navbar depuis les pages (surtout pour le bouton devis gratuit)
 // - animation de la navbar
 // - tailwind css pour les loaders d'envoi
-// - essayer de mettre des petits svg pour le style
 // - liens pour le footer et les liens menant aux réseaux sociaux
-// - rework sur la rédaction web du site
-// - finir les bg story ig
+// - rework sur la rédaction web du site / fait sauf pour les services et bio que sarah changera à son souhait 
+// - finir les bg story ig / fait 
 // - faire la bio ig de Sarah / fait
 // - modal pour le zoom des images de la gallery
 // - refactor le code de A à Z avant l'hébergement

@@ -5,7 +5,7 @@ const InfoDevis = () => {
   return (
     <>
       <div className="text-white text-base text-center font-sans-serif font-extrabold">
-        Demandez un devis sur-mesure où Sarah traitera votre commande avec
+        Faites un devis sur-mesure où Sarah traite votre demande avec
         attention.
         <div className="mt-5 flex justify-center">
           <NavLink

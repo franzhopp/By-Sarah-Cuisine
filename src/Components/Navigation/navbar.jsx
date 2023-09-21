@@ -23,11 +23,13 @@ const Navbar = () => {
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [changeMenuNavbar, setChangeMenuNavbar] = useState();
+  const [isRotated, setIsRotated] = useState(false);
 
   // Fonctionnalité du toggle de la liste/navbar :
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setChangeMenuNavbar(!changeMenuNavbar);
+    setIsRotated(!isRotated);
   };
 
   // Fonctionnalité de la sous-liste/navbar pour les serviceeees :
@@ -175,7 +177,10 @@ const Navbar = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
+      <nav
+        id="navlinks"
+        className="fixed w-full font-sans-serif uppercase text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
+      >
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <a href="">
@@ -185,9 +190,11 @@ const Navbar = () => {
           <div className="mr-2">
             <button
               onClick={toggleMenuMobile}
-              className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
+              className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
+                isRotated ? " -rotate-180 " : ""
+              }`}
             >
-              {changeMenuNavbar ? (
+              {isRotated ? (
                 <ImCross className="text-white" />
               ) : (
                 <TfiMenu className="text-white" />
@@ -200,76 +207,78 @@ const Navbar = () => {
         <ul
           className={`toggle-menu ${
             toggleMenu ? "block" : "hidden"
-          } p-2 border-t border-t-gray transform transition-transform duration-300 ease-in-out`}
+          } p-2 border-t border-t-efefef transform transition-transform duration-300 ease-in-out`}
         >
-          <li>
-            <NavLink
-              to="/"
-              onClick={closeMobileMenu}
-              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
-            >
-              Accueil
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/"
-              href="about"
-              onClick={SectionToScrollAbout}
-              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
-            >
-              À propos
-            </NavLink>
-          </li>
+          <div id="navlinks" className="TEST">
+            <li>
+              <NavLink
+                to="/"
+                onClick={closeMobileMenu}
+                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+              >
+                Accueil
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/"
+                href="about"
+                onClick={SectionToScrollAbout}
+                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+              >
+                À propos
+              </NavLink>
+            </li>
 
-          <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
-            <button onClick={toggleSousListsMenu}>
-              <div className="flex items-center justify-between">
-                <div className="text-black pr-4 uppercase">Services</div>{" "}
-                <MdOutlineKeyboardArrowDown />
-              </div>
-            </button>
+            <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
+              <button onClick={toggleSousListsMenu}>
+                <div className="flex items-center justify-between">
+                  <div className="text-black pr-4 uppercase">Services</div>{" "}
+                  <MdOutlineKeyboardArrowDown />
+                </div>
+              </button>
 
-            <ul
-              className={`toggle-menu ${
-                showSousListsMenu ? "block" : "hidden"
-              } p-2 pt-2`}
-            >
-              {pages.map((page, index) => (
-                <li key={index}>
-                  <NavLink
-                    to={page.link}
-                    onMouseEnter={handleMouseEnterSubmenu}
-                    onMouseLeave={handleMouseLeaveParent}
-                    className="block py-2 text-pink"
-                  >
-                    <p className="text-center">{page.name}</p>
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </li>
+              <ul
+                className={`toggle-menu ${
+                  showSousListsMenu ? "block" : "hidden"
+                } p-2 pt-2`}
+              >
+                {pages.map((page, index) => (
+                  <li key={index}>
+                    <NavLink
+                      to={page.link}
+                      onMouseEnter={handleMouseEnterSubmenu}
+                      onMouseLeave={handleMouseLeaveParent}
+                      className="block py-2 text-pink"
+                    >
+                      <p className="text-center">{page.name}</p>
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </li>
 
-          <li>
-            <NavLink
-              to="/"
-              href="contact"
-              onClick={SectionToScroll}
-              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
-            >
-              Contact
-            </NavLink>
-          </li>
+            <li>
+              <NavLink
+                to="/"
+                href="contact"
+                onClick={SectionToScroll}
+                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+              >
+                Contact
+              </NavLink>
+            </li>
 
-          <li>
-            <NavLink
-              to="/devisgratuit"
-              onClick={closeMobileMenu}
-              className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
-            >
-              Devis gratuit
-            </NavLink>
-          </li>
+            <li>
+              <NavLink
+                to="/devisgratuit"
+                onClick={closeMobileMenu}
+                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+              >
+                Devis gratuit
+              </NavLink>
+            </li>
+          </div>
         </ul>
       </nav>
       <Homepage />
