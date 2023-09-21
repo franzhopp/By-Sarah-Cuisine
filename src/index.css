@@ -104,6 +104,12 @@ body {
     background-image: url('./assets/imag-client-blur.png');
 }
 
+.bg-brush {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/brush_white.png');
+}
+
 /* BG FORM */
 .bg-contact {
     background: rgba(243, 219, 195, 0.32);

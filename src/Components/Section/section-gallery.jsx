@@ -6,7 +6,7 @@ const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);
 
   return (
-    <section className="bg-f3dbc3 bg-brush py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
+    <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
         Découvrez toute la gallerie du traiteur
       </h2>
@@ -15,7 +15,8 @@ const SectionGallery = () => {
           <p className="font-sans-serif text-white font-extrabold mt-3 px-4 text-md sm:text-1 sm:mt-4">
             Découvrez des recettes de cuisine de haute qualité qui combleront
             vos choix ! Que vous soyez à la recherche d'apéritifs, de plats
-            principaux ou de desserts, vous trouverez tous les services en une gallerie.
+            principaux ou de desserts, vous trouverez tous les services en une
+            gallerie.
           </p>
         </div>
       </div>

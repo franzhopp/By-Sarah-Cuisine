@@ -221,7 +221,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 onClick={closeMobileMenu}
-                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold"
               >
                 Accueil
               </NavLink>
@@ -292,7 +292,7 @@ const Navbar = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
-                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black mb-3 block px-3 py-2 rounded-md text-base font-extrabold"
               >
                 Devis gratuit
               </NavLink>

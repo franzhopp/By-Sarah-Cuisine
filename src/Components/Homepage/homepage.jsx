@@ -12,7 +12,7 @@ const Homepage = () => {
         />
       </div>
       <div className="text-transparent mb-12">Division invisible</div>
-      <div id="about"></div>
+      <div id="about" className="mb-24 sm:mb-0"></div>
     </section>
   );
 };
