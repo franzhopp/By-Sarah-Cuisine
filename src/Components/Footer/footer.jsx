@@ -231,16 +231,23 @@ const Footer = () => {
                   href="#"
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
-                  Mentions légales
+                  Politique de confidentialité
                 </a>
               </li>
-
               <li>
                 <a
                   href="#"
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Conditions d'utilisation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-black font-sans-serif transition hover:opacity-75"
+                >
+                  Mentions légales
                 </a>
               </li>
             </ul>

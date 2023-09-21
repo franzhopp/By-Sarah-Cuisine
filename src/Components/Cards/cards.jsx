@@ -1,7 +1,12 @@
 import { MdOutlineEditNote } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import ModalNewletter from "../Modal/modal-newletter.jsx";
+import { useState } from "react";
 
 const Cards = () => {
+  const [openSearch, setSearchQuery] = useState("");
+  const [openModel, setOpenModel] = useState(false);
+
   return (
     <section className="bg-e9c2c2 mx-auto py-20 px-4 sm:px-6 lg:px-8">
       <div>
@@ -26,7 +31,6 @@ const Cards = () => {
           </NavLink>
           .
         </div>
-
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
           <div
@@ -112,7 +116,8 @@ const Cards = () => {
                 Brush
               </div>
               <p className="text-black text-justify mt-2">
-                Vous souhaitez avoir un brush pour accompagner vos moments, découvrez la sélection que le traiteur propose.
+                Vous souhaitez avoir un brush pour accompagner vos moments,
+                découvrez la sélection que le traiteur propose.
               </p>
               <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
@@ -137,15 +142,25 @@ const Cards = () => {
           En savoir davantage sur toutes les offres et possibilité de réduction
           en vous inscrivant à la newletter de Sarah !
           <div className="mt-5 flex justify-center">
-            <NavLink
-              to="/devis-gratuit"
+            <button
+              onClick={() => {
+                setOpenModel(true);
+              }}
               className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-e9c2c2"
             >
               <p className="flex flex-row font-extrabold">
                 {`Je m'inscris`}
                 <MdOutlineEditNote className="ml-2 mt-1" />
               </p>
-            </NavLink>
+            </button>
+          </div>
+          <div className="flex justify-center">
+            {openModel && (
+              <ModalNewletter
+                closeModal={setOpenModel}
+                searchQuery={setSearchQuery}
+              />
+            )}
           </div>
         </div>
       </div>

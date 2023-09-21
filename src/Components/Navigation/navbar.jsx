@@ -136,7 +136,7 @@ const Navbar = () => {
                   </NavLink>
 
                   {/* Sous-liste */}
-                  <ul className="absolute w-28 py-2 hidden group-hover:block bg-white shadow-md rounded-md">
+                  <ul className="absolute w-28 py-4 hidden group-hover:block bg-white shadow-md rounded-md">
                     {pages.map((page, index) => (
                       <li key={index}>
                         <NavLink
