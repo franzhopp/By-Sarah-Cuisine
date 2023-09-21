@@ -8,7 +8,7 @@ const Cards = () => {
   const [openModel, setOpenModel] = useState(false);
 
   return (
-    <section className="bg-e9c2c2 mx-auto py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-pink pt-12 pb-12 mx-auto px-4 sm:px-6 lg:px-8">
       <div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-sans-recursive text-center">
           Les formules
