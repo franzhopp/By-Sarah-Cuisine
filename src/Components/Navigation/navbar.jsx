@@ -98,7 +98,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center h-24">
             <div className="md:left-0 md:inline md:absolute">
-              <NavLink href="/" className="text-gray-900 text-lg font-semibold">
+              <NavLink to="/">
                 <img className="mt-10" src={Image} alt="Icône de Sarah" />
               </NavLink>
             </div>
@@ -190,9 +190,9 @@ const Navbar = () => {
       >
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
-          <a href="">
+          <NavLink to="/">
             <img className="w-28 mt-2" src={Image} alt="Icône de Sarah" />
-          </a>
+          </NavLink>
 
           <div className="mr-2">
             <button
