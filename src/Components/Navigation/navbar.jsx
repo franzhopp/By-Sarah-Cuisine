@@ -264,15 +264,15 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                   ))}
-                <li>
-                  <NavLink
-                    to="/services"
-                    href="services"
-                    className="underline font-extrabold text-pink"
-                  >
-                    Tous les services
-                  </NavLink>
-                </li>
+                  <li>
+                    <NavLink
+                      to="/services"
+                      href="services"
+                      className="underline font-extrabold text-pink"
+                    >
+                      Tous les services
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             </li>
