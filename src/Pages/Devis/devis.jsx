@@ -136,7 +136,7 @@ const Devis = () => {
 
             <div className="bg-devis-color rounded-lg">
               <div className="bg-gray-100 p-8 mb-10 shadow-lg lg:col-span-3 lg:p-12">
-                <form action="" className="space-y-4">
+                <form onClick={handleSubmit} className="space-y-4">
                   <div>
                     <input
                       className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
