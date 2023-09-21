@@ -15,10 +15,10 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
             <ImCross className="text-C22E2E mb-4 sm:mb-0" />
           </button>
         </div>
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-0 sm:mt-5">
           <button
             id="navlinks"
-            className="bg-f3dbc3 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-e9c2c2"
+            className="bg-f3dbc3 text-white shadow-md px-6 py-2 border rounded-3xl "
           >
             Valider l'inscription
           </button>
