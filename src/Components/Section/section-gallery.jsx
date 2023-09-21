@@ -47,7 +47,7 @@ const SectionGallery = () => {
           <div className="flex flex-col justify-start items-center">
             <div
               className="h-72 w-72 sm:h-96 sm:w-96 bg-no-repeat bg-white rounded-xl"
-              // style={{ backgroundImage: `url(${images[currImg].img})` }}
+              style={{ backgroundImage: `url(${images[currImg].img})` }}
             ></div>
           </div>
         </div>

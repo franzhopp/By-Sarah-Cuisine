@@ -3,7 +3,7 @@ import Image from "../../assets/title-home.png";
 const Homepage = () => {
   return (
     <section>
-      <div className="flex justify-center pt-72 mb-32 px-4 sm:mt-0 mt-24">
+      <div className="flex justify-center pt-72 mb-28 px-4">
         <img
           data-aos="fade-left"
           src={Image}
