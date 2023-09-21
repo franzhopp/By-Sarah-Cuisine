@@ -236,7 +236,7 @@ const Form = () => {
                     <svg
                       aria-hidden="true"
                       role="status"
-                      class="flex justify-center w-6 h-6 text-white animate-spin"
+                      class="flex justify-center w-3 h-3 text-white animate-spin"
                       viewBox="0 0 100 101"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -255,6 +255,8 @@ const Form = () => {
                   "Envoyer"
                 )}
               </button>
+
+              
             </form>
             <div className="mt-5 text-center font-sans-serif text-white font-extrabold">
               {status && <p>{status}</p>}
