@@ -112,7 +112,7 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
                   </svg>
                 </div>
               ) : (
-                "Envoyer"
+                "Valider l'inscription"
               )}
             </button>
             <div className="mt-5 text-center font-sans-serif text-white font-extrabold">
