@@ -3,9 +3,10 @@ import Image from "../../assets/title-home.png";
 const Homepage = () => {
   return (
     <section id="home">
-      <div className="flex justify-center pt-72 mb-28 px-4">
+      <div className="flex justify-center pt-72 mb-24 px-4">
         <img
-          data-aos="fade-left"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
           src={Image}
           alt="Image name"
           className="px-3"

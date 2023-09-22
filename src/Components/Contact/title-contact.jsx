@@ -6,14 +6,14 @@ const TitleForm = () => {
     <div>
       <div
         loading="lazy"
-        className="image-contact-by-sarah-cuisine sm:py-16 sm:px-24 lg:px-8"
+        className="image-contact-by-sarah-cuisine"
       >
-        <span className="flex justify-center mt-4">
+        <span className="flex justify-center mb-5">
           <img
             data-aos="fade-right"
             src={Image}
             alt=""
-            className="px-16 mt-24 mb-24 sm:mb-10 sm:mt-4"
+            className="px-16 mt-24"
           />
         </span>
       </div>
