@@ -28,7 +28,7 @@ const SectionGallery = () => {
               currImg > 0 && setCurrImg(currImg - 1);
             }}
             onContextMenu={(e) => e.preventDefault()}
-            className="cursor-pointer w-20 h-20"
+            className="cursor-pointer w-20 h-20 transition ease duration-300 group hover:translate-y-5"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
@@ -62,7 +62,7 @@ const SectionGallery = () => {
             onClick={() => {
               currImg < images.length - 1 && setCurrImg(currImg + 1);
             }}
-            className="cursor-pointer w-20 h-20"
+            className="cursor-pointer w-20 h-20 transition ease duration-300 group hover:translate-y-5"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"

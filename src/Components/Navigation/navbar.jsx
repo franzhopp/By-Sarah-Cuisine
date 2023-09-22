@@ -58,6 +58,11 @@ const Navbar = () => {
     if (homeSection) {
       homeSection.scrollIntoView({ behavior: "smooth" });
     }
+
+    setTimeout(() => {
+      setToggleMenu();
+      setIsRotated(true);
+    }, 1000);
   };
 
   const SectionToScrollAbout = () => {

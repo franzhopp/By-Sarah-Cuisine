@@ -20,7 +20,7 @@ const Services = () => {
         className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -35,7 +35,7 @@ const Services = () => {
         </div>
 
         {/* Step 2 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -50,7 +50,7 @@ const Services = () => {
         </div>
 
         {/* Step 3 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -79,7 +79,7 @@ const Services = () => {
         className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -94,7 +94,7 @@ const Services = () => {
         </div>
 
         {/* Step 2 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -109,7 +109,7 @@ const Services = () => {
         </div>
 
         {/* Step 3 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -139,7 +139,7 @@ const Services = () => {
         className="mb-20 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -154,7 +154,7 @@ const Services = () => {
         </div>
 
         {/* Step 2 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -169,7 +169,7 @@ const Services = () => {
         </div>
 
         {/* Step 3 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -198,7 +198,7 @@ const Services = () => {
         data-aos="fade-up" className="mb-20 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -213,7 +213,7 @@ const Services = () => {
         </div>
 
         {/* Step 2 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
@@ -228,7 +228,7 @@ const Services = () => {
         </div>
 
         {/* Step 3 */}
-        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5">
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg pt-5 pb-5 transition ease duration-300 group hover:translate-y-5">
           <img className="w-full p-10" src={Image} alt="Pictures apéritifs" />
           <div className="px-6 py-4">
             <div className="font-bold text-pink underline text-xl mb-2">
