@@ -209,8 +209,8 @@ const NavbarDevis = () => {
             </button>
           </div>
         </div>
-        {/* end 2 items */}
 
+        {/* end 2 items */}
         <ul
           className={`toggle-menu ${
             toggleMenu ? "block" : "hidden"
@@ -221,7 +221,7 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 onClick={closeMobileMenu}
-                className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 Accueil
               </NavLink>
@@ -231,7 +231,7 @@ const NavbarDevis = () => {
                 to="/"
                 href="about"
                 onClick={SectionToScrollAbout}
-                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 À propos
               </NavLink>
@@ -250,17 +250,14 @@ const NavbarDevis = () => {
                   id="navlinks"
                   className={`toggle-menu ${
                     showSousListsMenu ? "block" : "hidden"
-                  } p-2 pt-2`}
+                  } p-2 pt-2 pr-5`}
                 >
                   {pages.map((page, index) => (
                     <li key={index}>
                       <NavLink
                         to={page.link}
-                        onMouseEnter={handleMouseEnterSubmenu}
-                        onMouseLeave={handleMouseLeaveParent}
-                        className="block py-2 text-pink"
                       >
-                        <p className="text-center">{page.name}</p>
+                        <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500">{page.name}</p>
                       </NavLink>
                     </li>
                   ))}
@@ -268,7 +265,7 @@ const NavbarDevis = () => {
                     <NavLink
                       to="/services"
                       href="services"
-                      className="underline font-extrabold text-pink"
+                      className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
                     >
                       Tous les services
                     </NavLink>
@@ -282,7 +279,7 @@ const NavbarDevis = () => {
                 to="/"
                 href="contact"
                 onClick={SectionToScroll}
-                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 Contact
               </NavLink>
@@ -292,7 +289,7 @@ const NavbarDevis = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
-                className="text-black mb-3 block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 Devis gratuit
               </NavLink>
