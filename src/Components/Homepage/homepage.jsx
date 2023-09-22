@@ -17,9 +17,21 @@ const Homepage = () => {
       </div>
       <div className="flex justify-center">
         <div className="flex space-x-3">
-          <img src={fb} alt="Image name" className="h-16 w-16" />
-          <img src={insta} alt="Image name" className="h-16 w-16" />
-          <img src={ws} alt="Image name" className="h-16 w-16" />
+          <img
+            src={fb}
+            alt="Image name"
+            className="h-16 w-16 transition ease duration-300 group hover:translate-y-5 cursor-pointer"
+          />
+          <img
+            src={insta}
+            alt="Image name"
+            className="h-16 w-16 transition ease duration-300 group hover:translate-y-5 cursor-pointer"
+          />
+          <img
+            src={ws}
+            alt="Image name"
+            className="h-16 w-16 transition ease duration-300 group hover:translate-y-5 cursor-pointer"
+          />
         </div>
       </div>
       <div className="text-transparent mb-12">Division invisible</div>
