@@ -32,9 +32,9 @@ const Section = () => {
             data-aos-easing="ease-in-sine"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
-            {`Originaire de Meaux, Sarah est une excellente cusinière. Elle partage sa cuisine au quotidien,
-            avec beaucoup de passion et de rigueur. L'excellence, l'hygiène, l'assiduité font partie de ses valeurs qu'elle prône.
-            Elle crée des expériences uniques qui reflètent l'identité de ses services.`}
+            {`« Originaire de Meaux, je me suis lancée en tant que novice dans la cuisine culinaire. Je partage ma cuisine au quotidien,
+            avec beaucoup de passion et de rigueur. Tout au long de mon parcours, j'ai appris à perfectionner mes plats. L'excellence, l'hygiène, l'assiduité font partie de es valeurs qu'elle prône.
+            Elle crée des expériences uniques qui reflètent l'identité de ses services. »`}
           </p>
 
           <p
