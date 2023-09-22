@@ -47,11 +47,11 @@ const Cards = () => {
                 Égayez vos moments spéciaux en famille, lors de mariages, de
                 dîners romantiques, grâce à de magnifiques plateaux de fruit.
               </p>
-              <p className="mt-6">
+              {/* <p className="mt-6">
                 <span className="text-black text-4xl">40€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
-              </p>
+              </p> */}
               <NavLink
                 to="/services"
                 onClick={() => {
@@ -80,11 +80,11 @@ const Cards = () => {
                 Découvrez la sélection de desserts pour égayer vos moments en
                 famille, vos mariages, avec de superbes boîtes à desserts.
               </p>
-              <p className="mt-6">
+              {/* <p className="mt-6">
                 <span className="text-black text-4xl">20€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
-              </p>
+              </p> */}
               <NavLink
                 to="/services"
                 onClick={() => {
@@ -115,11 +115,11 @@ const Cards = () => {
                 Vous souhaitez avoir un brush pour accompagner vos moments,
                 découvrez la sélection que le traiteur propose.
               </p>
-              <p className="mt-6">
+              {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
-              </p>
+              </p> */}
               <NavLink
                 to="/services"
                 onClick={() => {

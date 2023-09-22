@@ -1,5 +1,7 @@
+import { NavLink } from "react-router-dom";
 import NavbarServices from "../../Components/Navigation/navbar-services";
 import Image from "../../assets/template.png";
+import { MdOutlineEditNote } from "react-icons/md";
 
 const Services = () => {
   return (
@@ -240,6 +242,24 @@ const Services = () => {
               exercitationem praesentium nihil.
             </p>
           </div>
+        </div>
+      </div>
+        <div className="px-12 mt-12 mb-12 text-black text-base text-center font-sans-serif font-extrabold">
+        Un devis sur-mesure ? Pour préparer un évènement, c'est ici.
+        <div className="mt-5 flex justify-center">
+          <NavLink
+             to="/devisgratuit"
+             onClick={() => {
+               window.location.href = "/devisgratuit";
+               window.scrollTo(0, 0);
+             }}
+            href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
+            className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
+          >
+            <p className="flex flex-row font-extrabold">
+              Devis gratuit <MdOutlineEditNote className="ml-2 mt-1" />
+            </p>
+          </NavLink>
         </div>
       </div>
     </>
