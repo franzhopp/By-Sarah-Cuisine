@@ -6,7 +6,7 @@ import ws from "../../assets/WHATSAPP.svg";
 const Homepage = () => {
   return (
     <section id="home">
-      <div className="flex justify-center pt-72 mb-24 px-4">
+      <div className="flex justify-center pt-72 mb-20 px-4">
         <img
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
