@@ -115,7 +115,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <a href="/resume/flyer.png" download>
+              <a href="/resume/cdvfyr.png" download>
                 <span className="sr-only">Download flyer</span>
 
                 <MdOutlineFileDownload className="h-6 w-6 text-black" />
