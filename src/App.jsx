@@ -21,7 +21,9 @@ const App = () => {
             <Route path="/" element={<Homepage />} />
             <Route path="/services" element={<Proposal />} />
             <Route path="/devisgratuit" element={<Devis />} />
-            
+            {/* <Route path="/privacy" element={<PoliticyConditendial />} />
+            <Route path="/terms" element={<ConditionUtilisation />} />
+            <Route path="/mentions" element={<MentionsLegales />} /> */}
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />

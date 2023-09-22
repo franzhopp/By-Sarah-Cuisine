@@ -1,4 +1,7 @@
 import Image from "../../assets/title-home.png";
+import fb from "../../assets/FACEBOOK.svg";
+import insta from "../../assets/INSTAGRAM.svg";
+import ws from "../../assets/WHATSAPP.svg";
 
 const Homepage = () => {
   return (
@@ -11,6 +14,13 @@ const Homepage = () => {
           alt="Image name"
           className="px-3"
         />
+      </div>
+      <div className="flex justify-center">
+        <div className="flex space-x-3">
+          <img src={fb} alt="Image name" className="h-16 w-16" />
+          <img src={insta} alt="Image name" className="h-16 w-16" />
+          <img src={ws} alt="Image name" className="h-16 w-16" />
+        </div>
       </div>
       <div className="text-transparent mb-12">Division invisible</div>
       <div id="about" className="mb-24 sm:mb-0"></div>
