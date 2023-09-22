@@ -17,20 +17,18 @@ const pages = [
 
 const Navbar = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
+  const [changeMenuNavbar, setChangeMenuNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
-  const [changeMenuNavbar, setChangeMenuNavbar] = useState();
   const [isRotated, setIsRotated] = useState(false);
 
-  // Fonctionnalité du toggle de la liste/navbar :
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
     setChangeMenuNavbar(!changeMenuNavbar);
     setIsRotated(!isRotated);
   };
 
-  // Fonctionnalité de la sous-liste/navbar pour les serviceeees :
   const toggleSousListsMenu = () => {
     setShowSousListsMenu(!showSousListsMenu);
   };
