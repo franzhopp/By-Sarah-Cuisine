@@ -24,6 +24,7 @@ export default {
             },
 
             colors: {
+                'beige' : '#F3DBC3',
                 'yellow': '#DEAB68',
                 'pink': '#d598a0',
                 'gray': '#D9D9D9',
