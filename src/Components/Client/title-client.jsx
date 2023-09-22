@@ -7,7 +7,7 @@ const Partner = () => {
         loading="lazy"
         className="image-client-by-sarah-cuisine sm:py-16 sm:px-24 lg:px-8"
       >
-        <span className="flex justify-center mt-4">
+        <span className="flex justify-center">
           <img
             data-aos="fade-right"
             src={Image}
