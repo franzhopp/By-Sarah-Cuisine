@@ -175,6 +175,10 @@ const Navbar = () => {
             </div>
             <NavLink
               to="/devisgratuit"
+              onClick={() => {
+                window.location.href = "/devisgratuit";
+                window.scrollTo(0, 0);
+              }}
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0 hover:bg-e9c2c2"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -221,7 +225,7 @@ const Navbar = () => {
               <NavLink
                 to="/"
                 onClick={closeMobileMenu}
-                className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 Accueil
               </NavLink>
@@ -231,7 +235,7 @@ const Navbar = () => {
                 to="/"
                 href="about"
                 onClick={SectionToScrollAbout}
-                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 À propos
               </NavLink>
@@ -250,17 +254,14 @@ const Navbar = () => {
                   id="navlinks"
                   className={`toggle-menu ${
                     showSousListsMenu ? "block" : "hidden"
-                  } p-2 pt-2`}
+                  } p-2 pt-2 pr-5`}
                 >
                   {pages.map((page, index) => (
                     <li key={index}>
                       <NavLink
                         to={page.link}
-                        onMouseEnter={handleMouseEnterSubmenu}
-                        onMouseLeave={handleMouseLeaveParent}
-                        className="block py-2 text-pink"
                       >
-                        <p className="text-center">{page.name}</p>
+                        <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500">{page.name}</p>
                       </NavLink>
                     </li>
                   ))}
@@ -268,7 +269,7 @@ const Navbar = () => {
                     <NavLink
                       to="/services"
                       href="services"
-                      className="underline font-extrabold text-pink"
+                      className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
                     >
                       Tous les services
                     </NavLink>
@@ -282,7 +283,7 @@ const Navbar = () => {
                 to="/"
                 href="contact"
                 onClick={SectionToScroll}
-                className="text-black block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 Contact
               </NavLink>
@@ -292,7 +293,7 @@ const Navbar = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
-                className="text-black mb-3 block px-3 py-2 rounded-md text-base font-extrabold"
+                className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
               >
                 Devis gratuit
               </NavLink>
