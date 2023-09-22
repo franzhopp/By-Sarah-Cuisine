@@ -198,7 +198,7 @@ const Navbar = () => {
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
-            <img className="w-44 mt-2" src={ImageMobile} alt="Icône de Sarah" />
+            <img className="w-44 mb-2" src={ImageMobile} alt="Icône de Sarah" />
           </NavLink>
 
           <div className="mr-2">

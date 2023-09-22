@@ -245,7 +245,7 @@ const Services = () => {
         </div>
       </div>
         <div className="px-12 mt-12 mb-16 text-black text-base text-center font-sans-serif font-extrabold">
-        Un devis sur-mesure ? Pour préparer un évènement, c'est ici.
+        Un devis sur-mesure ? Pour préparer un évènement, c'est par ici.
         <div className="mt-5 flex justify-center">
           <NavLink
              to="/devisgratuit"

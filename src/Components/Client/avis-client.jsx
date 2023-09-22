@@ -10,7 +10,7 @@ const AvisClient = () => {
             Vous prévoyez de planifier un événement,
             <span className="font-extrabold">
               {" "}
-              contactez Sarah via les informations ci-desous,
+              contactez Sarah via les informations ci-dessous,
             </span>{" "}
             le traiteur peut également vous fournir un devis pour assurer le
             succès de{" "}
