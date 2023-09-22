@@ -6,7 +6,7 @@ const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);
 
   return (
-    <section className="bg-f3dbc3 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
+    <section className="bg-f3dbc3 border py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
         Découvrez toute la gallerie du traiteur
       </h2>

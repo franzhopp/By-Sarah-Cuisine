@@ -50,11 +50,11 @@ const Section = () => {
           </p>
         </div>
       </div>
-      <img
+      {/* <img
         src={image}
         className="-rotate-180 relative top-10"
         alt="Brush de By Sarah Cuisine"
-      />
+      /> */}
     </section>
   );
 };
