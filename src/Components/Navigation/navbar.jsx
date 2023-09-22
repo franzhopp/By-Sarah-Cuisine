@@ -25,7 +25,6 @@ const Navbar = () => {
 
   const toggleMenuMobile = () => {
     setToggleMenu(!toggleMenu);
-    setChangeMenuNavbar(!changeMenuNavbar);
     setIsRotated(!isRotated);
   };
 
@@ -58,11 +57,6 @@ const Navbar = () => {
     if (homeSection) {
       homeSection.scrollIntoView({ behavior: "smooth" });
     }
-
-    setTimeout(() => {
-      setToggleMenu();
-      setIsRotated(true);
-    }, 1000);
   };
 
   const SectionToScrollAbout = () => {
