@@ -1,3 +1,5 @@
+import image from "../../assets/brush.png";
+
 const Section = () => {
   return (
     <section className="mb-10">
@@ -13,7 +15,7 @@ const Section = () => {
           <rect width="748" height="46" rx="20" fill="white" />
         </svg>
       </div>
-      <div className="flex justify-center ">
+      <div className="flex justify-center">
         <h2 className="font-extrabold text-2xl sm:text-4xl">
           <span className="text-pink font-sans-recursive">{`Traiteur pour tous types d'évènements`}</span>
         </h2>
@@ -44,10 +46,15 @@ const Section = () => {
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
             {`Chaque plat que je prépare est une expression de ma créativité et de mon amour pour la cuisine. Qu'il s'agisse de plats simples du quotidien ou de mets plus élaborés pour des occasions spéciales, je mets toujours tout mon cœur dans ce que je fais. La satisfaction de voir mes proches savourer mes créations est ma plus grande récompense.
-Ma cuisine est devenue une source de joie et de partage. Chaque jour est une nouvelle aventure gastronomique, et je suis impatiente de découvrir ce que l'avenir me réserve dans ma quête pour devenir une véritable experte en cuisine. » `}
+              Ma cuisine est devenue une source de joie et de partage. Chaque jour est une nouvelle aventure gastronomique, et je suis impatiente de découvrir ce que l'avenir me réserve dans ma quête pour devenir une véritable experte en cuisine. » `}
           </p>
         </div>
       </div>
+      <img
+        src={image}
+        className="-rotate-180 relative top-10"
+        alt="Brush de By Sarah Cuisine"
+      />
     </section>
   );
 };

@@ -33,9 +33,7 @@ const Cards = () => {
         </div>
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
-          <div
-            className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
-          >
+          <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
             <div className="flex flex-col justify-start items-center mt-5">
               <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
@@ -66,9 +64,7 @@ const Cards = () => {
           </div>
 
           {/* Step 2 */}
-          <div
-            className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
-          >
+          <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5">
             <div className="flex flex-col justify-start items-center mt-5">
               <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
@@ -132,7 +128,41 @@ const Cards = () => {
               </NavLink>
             </div>
           </div>
+        <div
+          // data-aos="fade-up"
+          // data-aos-anchor-placement="top-center"
+          className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
+        >
+          <div className="flex flex-col justify-start items-center mt-5">
+            <div className="h-52 w-64 bg-white rounded-xl"></div>
+          </div>
+          <div className="p-6">
+            <div className="text-pink text-2xl text-center font-sans-recursive font-extrabold">
+              Charcuterie
+            </div>
+            <p className="text-black text-justify mt-2">
+              Vous souhaitez avoir un brush pour accompagner vos moments,
+              découvrez la sélection que le traiteur propose.
+            </p>
+            {/* <p className="mt-6">
+                <span className="text-black text-4xl">10€</span>
+
+                <span className="text-black font-medium"> par pack.</span>
+              </p> */}
+            <NavLink
+              to="/services"
+              onClick={() => {
+                window.location.href = "/services";
+                window.scrollTo(0, 0);
+              }}
+              className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl text-sm font-extrabold"
+            >
+              En savoir plus
+            </NavLink>
+          </div>
         </div>
+        </div>
+
         <div className="mt-12 text-base text-white text-center font-sans-serif font-extrabold">
           En savoir davantage sur toutes les offres et possibilité de réduction
           en vous inscrivant à la newletter de Sarah !

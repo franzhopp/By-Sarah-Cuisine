@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Homepage from "../Homepage/homepage";
 import Image from "../../assets/logo-bsc.png";
+import ImageMobile from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
@@ -197,7 +198,7 @@ const Navbar = () => {
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
-            <img className="w-28 mt-2" src={Image} alt="Icône de Sarah" />
+            <img className="w-44 mt-2" src={ImageMobile} alt="Icône de Sarah" />
           </NavLink>
 
           <div className="mr-2">
