@@ -20,7 +20,8 @@ const Section = () => {
       </div>
       <div className="flex justify-center">
         <p className="text-black text-sm sm:text-xl tracking-widest">
-          Ingrédients bios ou de qualités 
+          Ingrédients bio ou de qualité
+          {/* <p className="mt-5 text-pink text-center font-sans-serif -tracking-tight text-xl">À propos de Sarah</p> */}
         </p>
       </div>
 
@@ -32,9 +33,8 @@ const Section = () => {
             data-aos-easing="ease-in-sine"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
-            {`« Originaire de Meaux, je me suis lancée en tant que novice dans la cuisine culinaire. Je partage ma cuisine au quotidien,
-            avec beaucoup de passion et de rigueur. Tout au long de mon parcours, j'ai appris à perfectionner mes plats. L'excellence, l'hygiène, l'assiduité font partie de es valeurs qu'elle prône.
-            Elle crée des expériences uniques qui reflètent l'identité de ses services. »`}
+            {`« Originaire de Meaux, je me suis lancée en tant que novice dans la cuisine culinaire. Je partage ma cuisine au quotidien, avec beaucoup de passion et de rigueur. Tout au long de mon parcours, j'ai appris à perfectionner mes plats. Je me souviens encore de mes premières expériences en cuisine, lorsque je découvrais les bases de la préparation des repas. 
+                Au fil des années, ma cuisine est devenue mon laboratoire personnel, un lieu où je teste de nouvelles recettes, explore de nouvelles saveurs et développe mon propre style culinaire. J'ai appris l'importance des ingrédients biologiques, frais et de qualité, ainsi que la nécessité de la patience et de la précision en cuisine.`}
           </p>
 
           <p
@@ -43,7 +43,8 @@ const Section = () => {
             data-aos-easing="ease-in-sine"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
-            {`Sarah est ouverte à toutes vos propositions et peut personnaliser ces derniers pour correspondre à vos attentes, que ce soit pour des mariages, des anniversaires, des soirées, et bien plus encore. Le traiteur propose une variété de formules pour répondre à toutes vos demandes.`}
+            {`Chaque plat que je prépare est une expression de ma créativité et de mon amour pour la cuisine. Qu'il s'agisse de plats simples du quotidien ou de mets plus élaborés pour des occasions spéciales, je mets toujours tout mon cœur dans ce que je fais. La satisfaction de voir mes proches savourer mes créations est ma plus grande récompense.
+Ma cuisine est devenue une source de joie et de partage. Chaque jour est une nouvelle aventure gastronomique, et je suis impatiente de découvrir ce que l'avenir me réserve dans ma quête pour devenir une véritable experte en cuisine. » `}
           </p>
         </div>
       </div>
