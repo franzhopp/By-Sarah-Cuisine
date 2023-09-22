@@ -55,10 +55,10 @@ const Navbar = () => {
     setToggleMenu(false);
   };
 
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
+  const SectionToScrollHome = () => {
+    const homeSection = document.getElementById("home");
+    if (homeSection) {
+      homeSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -66,6 +66,13 @@ const Navbar = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const SectionToScroll = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -104,7 +111,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center">
               <NavLink
-                to="/"
+                onClick={SectionToScrollHome}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 } px-6 py-2 text-base font-extrabold uppercase`}
@@ -112,8 +119,6 @@ const Navbar = () => {
                 Accueil
               </NavLink>
               <NavLink
-                to="/"
-                href="about"
                 onClick={SectionToScrollAbout}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
@@ -223,9 +228,8 @@ const Navbar = () => {
           <div id="navlinks">
             <li>
               <NavLink
-                to="/"
-                onClick={closeMobileMenu}
-                className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
+                onClick={SectionToScrollHome}
+                className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Accueil
               </NavLink>
@@ -235,7 +239,7 @@ const Navbar = () => {
                 to="/"
                 href="about"
                 onClick={SectionToScrollAbout}
-                className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
+                className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 À propos
               </NavLink>
@@ -258,10 +262,10 @@ const Navbar = () => {
                 >
                   {pages.map((page, index) => (
                     <li key={index}>
-                      <NavLink
-                        to={page.link}
-                      >
-                        <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500">{page.name}</p>
+                      <NavLink to={page.link}>
+                        <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
+                          {page.name}
+                        </p>
                       </NavLink>
                     </li>
                   ))}
@@ -269,7 +273,7 @@ const Navbar = () => {
                     <NavLink
                       to="/services"
                       href="services"
-                      className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
+                      className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
                     </NavLink>
@@ -280,10 +284,8 @@ const Navbar = () => {
 
             <li>
               <NavLink
-                to="/"
-                href="contact"
                 onClick={SectionToScroll}
-                className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
+                className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Contact
               </NavLink>
@@ -293,7 +295,7 @@ const Navbar = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
-                className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-500"
+                className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Devis gratuit
               </NavLink>
