@@ -8,7 +8,7 @@ const Homepage = () => {
           data-aos="fade-left"
           src={Image}
           alt="Image name"
-          className="px-16"
+          className="px-3"
         />
       </div>
       <div className="text-transparent mb-12">Division invisible</div>

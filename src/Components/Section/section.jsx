@@ -19,8 +19,8 @@ const Section = () => {
         </h2>
       </div>
       <div className="flex justify-center">
-        <p className="text-black text-sm sm:text-xl tracking-wide">
-          INGRÉDIENTS BIO OU DE QUALITÉS
+        <p className="text-black text-sm sm:text-xl tracking-widest">
+          Ingrédients bios ou de qualités 
         </p>
       </div>
 
