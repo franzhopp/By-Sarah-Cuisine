@@ -8,12 +8,12 @@ const TitleForm = () => {
         loading="lazy"
         className="image-contact-by-sarah-cuisine"
       >
-        <span className="flex justify-center mb-5">
+        <span className="flex justify-center">
           <img
             data-aos="fade-right"
             src={Image}
             alt=""
-            className="px-16 mt-24"
+            className="px-16 mt-24 p-1"
           />
         </span>
       </div>

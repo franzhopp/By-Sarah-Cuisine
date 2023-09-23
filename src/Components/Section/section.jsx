@@ -1,5 +1,3 @@
-import image from "../../assets/brush.png";
-
 const Section = () => {
   return (
     <section className="mb-10">
@@ -23,26 +21,27 @@ const Section = () => {
       <div className="flex justify-center">
         <p className="text-black text-sm sm:text-xl tracking-widest">
           Ingrédients bio ou de qualité
-          {/* <p className="mt-5 text-pink text-center font-sans-serif -tracking-tight text-xl">À propos de Sarah</p> */}
         </p>
       </div>
 
       <div className="flex justify-center">
         <div className="flex justify-center flex-col sm:flex-row mt-5">
-          <p
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+          <div
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
-            {`« Originaire de Meaux, je me suis lancée en tant que novice dans la cuisine culinaire. Je partage ma cuisine au quotidien, avec beaucoup de passion et de rigueur. Tout au long de mon parcours, j'ai appris à perfectionner mes plats. Je me souviens encore de mes premières expériences en cuisine, lorsque je découvrais les bases de la préparation des repas. 
+            {`« Je me suis lancée en tant que nouvelle dans la cuisine culinaire. Je partage ma cuisine au quotidien, avec beaucoup de passion et de rigueur. Tout au long de mon parcours, j'ai appris à perfectionner mes plats. Je me souviens encore de mes premières expériences en cuisine, lorsque je découvrais les bases de la préparation des repas. 
                 Au fil des années, ma cuisine est devenue mon laboratoire personnel, un lieu où je teste de nouvelles recettes, explore de nouvelles saveurs et développe mon propre style culinaire. J'ai appris l'importance des ingrédients biologiques, frais et de qualité, ainsi que la nécessité de la patience et de la précision en cuisine.`}
-          </p>
+          </div>
 
           <p
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
             className="text-black font-sans-serif w-80 m-4 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5"
           >
             {`Chaque plat que je prépare est une expression de ma créativité et de mon amour pour la cuisine. Qu'il s'agisse de plats simples du quotidien ou de mets plus élaborés pour des occasions spéciales, je mets toujours tout mon cœur dans ce que je fais. La satisfaction de voir mes proches savourer mes créations est ma plus grande récompense.
@@ -50,11 +49,6 @@ const Section = () => {
           </p>
         </div>
       </div>
-      {/* <img
-        src={image}
-        className="-rotate-180 relative top-10"
-        alt="Brush de By Sarah Cuisine"
-      /> */}
     </section>
   );
 };
