@@ -212,12 +212,16 @@ const Footer = () => {
               </li>
 
               <li>
-                <a
-                  href="#"
+              <NavLink
+                  to="/devisgratuit"
+                  onClick={() => {
+                    window.location.href = "/devisgratuit";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
-                  Devis gratuit
-                </a>
+                  Devis Gratuit
+                </NavLink>
               </li>
             </ul>
           </div>
