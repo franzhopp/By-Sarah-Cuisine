@@ -25,7 +25,7 @@ const Section = () => {
       </div>
 
       <div className="flex justify-center">
-        <div className="flex justify-center flex-col sm:flex-row mt-5">
+        <div className="flex justify-center flex-col sm:flex-row mt-5 px-5">
           <div
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
