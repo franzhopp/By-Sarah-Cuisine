@@ -31,7 +31,7 @@ const Section = () => {
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
-            className="text-black mr-5 p-10 pt-10 font-sans-serif max-w-sm rounded-xl overflow-hidden shadow-lg pb-5 transition ease duration-300 group hover:translate-y-5"
+            className="text-black mr-5 p-10 pt-10 font-sans-serif max-w-sm rounded-3xl overflow-hidden shadow-lg pb-5 transition ease duration-300 group hover:translate-y-5"
           >
             <span className="uppercase font-extrabold text-gray text-sm tracking-widest">
               À propos de Sarah
@@ -59,7 +59,7 @@ const Section = () => {
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0"
-            className="text-black ml-10 p-10 pt-10 font-sans-serif max-w-sm rounded-xl overflow-hidden shadow-lg pb-5 transition ease duration-300 group hover:translate-y-5"
+            className="text-black ml-10 p-10 pt-10 font-sans-serif max-w-sm rounded-3xl overflow-hidden shadow-lg pb-5 transition ease duration-300 group hover:translate-y-5"
           >
             {/* <hr className="font-extrabold text-gray mb-3" /> */}
             Chaque plat que je prépare est une expression de ma créativité et de

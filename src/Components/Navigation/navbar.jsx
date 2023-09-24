@@ -204,8 +204,8 @@ const Navbar = () => {
           <div className="mr-2">
             <button
               onClick={toggleMenuMobile}
-              className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
-                isRotated ? " -rotate-180 " : ""
+              className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
+                isRotated ? "-rotate-180" : ""
               }`}
             >
               {isRotated ? (

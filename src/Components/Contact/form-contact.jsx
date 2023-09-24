@@ -129,7 +129,7 @@ const Form = () => {
             </div>
           </div>
 
-          <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12 rounded-md mb-11">
+          <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12 rounded-3xl mb-11">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div action="" className="space-y-4">
                 <div>
@@ -236,7 +236,7 @@ const Form = () => {
                     <svg
                       aria-hidden="true"
                       role="status"
-                      class="flex justify-center w-3 h-3 text-white animate-spin"
+                      class="flex justify-center w-8 h-8 text-white animate-spin"
                       viewBox="0 0 100 101"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"

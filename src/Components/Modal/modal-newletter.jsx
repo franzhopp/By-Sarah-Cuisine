@@ -96,7 +96,7 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
                   <svg
                     aria-hidden="true"
                     role="status"
-                    class="flex justify-center w-3 h-3 text-white animate-spin"
+                    class="flex justify-center w-8 h-8 text-white animate-spin"
                     viewBox="0 0 100 101"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
                   </svg>
                 </div>
               ) : (
-                "Valider l'inscription"
+                "Valider"
               )}
             </button>
             <div className="mt-5 text-center font-sans-serif text-white font-extrabold">
