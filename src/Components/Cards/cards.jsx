@@ -34,7 +34,7 @@ const Cards = () => {
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
           <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5 transition-transform transform hover:scale-105">
-            <div className="flex flex-col justify-start items-center mt-5">
+            <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
             <div className="p-6">
@@ -65,7 +65,7 @@ const Cards = () => {
 
           {/* Step 2 */}
           <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5 transition-transform transform hover:scale-105">
-            <div className="flex flex-col justify-start items-center mt-5">
+            <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
             <div className="p-6">
@@ -100,7 +100,7 @@ const Cards = () => {
             // data-aos-anchor-placement="top-center"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5 transition-transform transform hover:scale-105"
           >
-            <div className="flex flex-col justify-start items-center mt-5">
+            <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-52 w-64 bg-white rounded-xl"></div>
             </div>
             <div className="p-6">
@@ -131,9 +131,9 @@ const Cards = () => {
         <div
           // data-aos="fade-up"
           // data-aos-anchor-placement="top-center"
-          className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5 transition-transform transform hover:scale-105"
+          className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl mt-5"
         >
-          <div className="flex flex-col justify-start items-center mt-5">
+          <div className="flex flex-col justify-start items-center mt-10">
             <div className="h-52 w-64 bg-white rounded-xl"></div>
           </div>
           <div className="p-6">
@@ -171,7 +171,7 @@ const Cards = () => {
               onClick={() => {
                 setOpenModel(true);
               }}
-              className="bg-f3dbc3 text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
+              className="bg-f3dbc3 text-white shadow-md px-6 py-2 border rounded-3xl "
             >
               <p className="flex flex-row font-extrabold">
                 {`Je m'inscris`}
