@@ -7,7 +7,7 @@ const PageConditions = () => {
       <NavbarPages />
       <div className="flex justify-center">
         <div className="w-full md:max-w-3xl p-4 font-sans-serif mt-16 mb-16">
-          <h1 className="text-pink font-sans-recursive text-2xl md:text-3xl font-semibold mb-4">
+          <h1 className="text-pink font-sans-recursive mb-16 text-2xl md:text-3xl font-semibold">
             Conditions d'Utilisation
           </h1>
 

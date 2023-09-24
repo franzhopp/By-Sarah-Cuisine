@@ -7,7 +7,7 @@ const PagePrivacy = () => {
       <NavbarPages />
       <div className="flex justify-center font-sans-serif mt-16 mb-16">
         <div className="w-full md:max-w-3xl p-4">
-          <h1 className="text-2xl md:text-3xl font-semibold mb-4 text-pink font-sans-recursive">
+          <h1 className="text-2xl md:text-3xl font-semibold mb-16 text-pink font-sans-recursive">
             Politique de Confidentialité des Données
           </h1>
 

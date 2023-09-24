@@ -23,7 +23,15 @@ const PageMentions = () => {
               {" "}
               Adresse du site :
             </span>{" "}
-            https://bysarahcuisine.com
+            <NavLink
+              to="http://bysarahcuisine.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink underline"
+            >
+              http://bysarahcuisine.com/
+            </NavLink>
+            .
             <br />•<span className={keywordsStyle}> Propriétaire :</span> KHALFA
             SARAH – bysarahcuisine@gmail.com
             <br />•<span className={keywordsStyle}> Activité :</span>{" "}
@@ -145,28 +153,30 @@ const PageMentions = () => {
             <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
             <NavLink
               to="http://navistudio.io/defaultsite"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-pink underline"
             >
               http://navistudio.io/
             </NavLink>
             .
             <br />•<span className={keywordsStyle}> Hébergeur :</span> IONOS
-            <br />•<span className={keywordsStyle}> Logo :</span> LOUISA
-            FERNANDEZ
+            <br />•<span className={keywordsStyle}> Logo :</span> FERNANDEZ
+            LOUISA
             <br />•<span className={keywordsStyle}> Photographies : </span>
             PEXELS
-            <br />•<span className={keywordsStyle}> Vidéos :</span> SARAH KHALFA
+            <br />•<span className={keywordsStyle}> Vidéos :</span> KHALFA SARAH
             <br />•
             <span className={keywordsStyle}> Contenu des rubriques :</span>{" "}
-            LOUISA FERNANDEZ
+            FERNANDEZ LOUISA
             <br />•
             <span className={keywordsStyle}> Montages des visuels :</span>{" "}
-            LOUISA FERNANDEZ
+            FERNANDEZ LOUISA
             <br />•<span className={keywordsStyle}>
               {" "}
               Montages des vidéos :
             </span>{" "}
-            LOUISA FERNANDEZ
+            FERNANDEZ LOUISA
             <br />•
             <span className={keywordsStyle}>
               {" "}
@@ -189,6 +199,8 @@ const PageMentions = () => {
               CNIL - Version 2019 /{" "}
               <NavLink
                 to="https://www.cnil.fr/professionnel"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-pink underline"
               >
                 https://www.cnil.fr/professionnel
