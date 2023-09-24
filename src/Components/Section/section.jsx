@@ -46,7 +46,7 @@ const Section = () => {
             ma cuisine est devenue mon laboratoire personnel, un lieu où je
             teste de nouvelles recettes, explore de nouvelles saveurs et
             développe mon propre style culinaire.{" "}
-            <span className="underline">
+            <span className="italic">
               J'ai appris l'importance des ingrédients biologiques, frais et de
               qualité
             </span>
@@ -61,7 +61,7 @@ const Section = () => {
             data-aos-offset="0"
             className="text-black ml-10 p-10 pt-10 font-sans-serif max-w-sm rounded-xl overflow-hidden shadow-lg pb-5 transition ease duration-300 group hover:translate-y-5"
           >
-            <hr className="font-extrabold text-gray mb-3" />
+            {/* <hr className="font-extrabold text-gray mb-3" /> */}
             Chaque plat que je prépare est une expression de ma créativité et de
             mon amour pour la cuisine. Qu'il s'agisse de plats simples du
             quotidien ou de mets plus élaborés pour des occasions spéciales, je
@@ -74,7 +74,7 @@ const Section = () => {
             . Chaque jour est une nouvelle aventure gastronomique, et je suis
             impatiente de découvrir ce que l'avenir me réserve dans ma quête
             pour devenir une véritable experte en cuisine. »
-            <div className="mt-5">
+            <div className="mt-5 mb-5">
               <p className="uppercase font-extrabold text-gray text-sm tracking-widest">
                 ― Par Sarah, le 01/03/99.
               </p>
