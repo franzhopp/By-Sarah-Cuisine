@@ -67,10 +67,18 @@ const Section = () => {
             quotidien ou de mets plus élaborés pour des occasions spéciales, je
             mets toujours tout mon cœur dans ce que je fais. La satisfaction de
             voir mes proches savourer mes créations est ma plus grande
-            récompense.  <span className="text-pink">Ma cuisine est devenue une source de joie et de partage</span>.
-            Chaque jour est une nouvelle aventure gastronomique, et je suis
+            récompense.{" "}
+            <span className="text-pink">
+              Ma cuisine est devenue une source de joie et de partage
+            </span>
+            . Chaque jour est une nouvelle aventure gastronomique, et je suis
             impatiente de découvrir ce que l'avenir me réserve dans ma quête
             pour devenir une véritable experte en cuisine. »
+            <div className="mt-5">
+              <p className="uppercase font-extrabold text-gray text-sm tracking-widest">
+                ― Par Sarah, le 01/03/99.
+              </p>
+            </div>
           </p>
         </div>
       </div>
