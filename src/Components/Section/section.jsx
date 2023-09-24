@@ -20,7 +20,7 @@ const Section = () => {
       </div>
       <div className="flex justify-center">
         <p className="text-black text-sm sm:text-xl tracking-widest">
-          Ingrédients bio ou de qualité
+          Ingrédients biologique ou de qualité
         </p>
       </div>
 
@@ -33,8 +33,25 @@ const Section = () => {
             data-aos-offset="0"
             className="text-black mr-5 p-10 pt-10 font-sans-serif max-w-sm rounded-xl overflow-hidden shadow-lg pb-5 transition ease duration-300 group hover:translate-y-5"
           >
-            {`« Je me suis lancée en tant que nouvelle dans la cuisine culinaire. Je partage ma cuisine au quotidien, avec beaucoup de passion et de rigueur. Tout au long de mon parcours, j'ai appris à perfectionner mes plats. Je me souviens encore de mes premières expériences en cuisine, lorsque je découvrais les bases de la préparation des repas. 
-                Au fil des années, ma cuisine est devenue mon laboratoire personnel, un lieu où je teste de nouvelles recettes, explore de nouvelles saveurs et développe mon propre style culinaire. J'ai appris l'importance des ingrédients biologiques, frais et de qualité, ainsi que la nécessité de la patience et de la précision en cuisine.`}
+            <span className="uppercase font-extrabold text-gray text-sm tracking-widest">
+              À propos de Sarah
+            </span>
+            <br /> « Je me suis lancée dans la cuisine lors de mes premiers pas.
+            Et aujourd'hui, je partage ma cuisine au quotidien, avec beaucoup de
+            <span className="text-pink"> passion</span> et de
+            <span className="text-pink"> rigueur</span>. Tout au long de mon
+            parcours, j'ai appris à perfectionner mes plats. Je me souviens
+            encore de mes premières expériences en cuisine, lorsque je
+            découvrais les bases de la préparation des repas. Au fil des années,
+            ma cuisine est devenue mon laboratoire personnel, un lieu où je
+            teste de nouvelles recettes, explore de nouvelles saveurs et
+            développe mon propre style culinaire.{" "}
+            <span className="underline">
+              J'ai appris l'importance des ingrédients biologiques, frais et de
+              qualité
+            </span>
+            , ainsi que la nécessité de la patience et de la précision en
+            cuisine.
           </div>
 
           <p
@@ -44,8 +61,16 @@ const Section = () => {
             data-aos-offset="0"
             className="text-black ml-10 p-10 pt-10 font-sans-serif max-w-sm rounded-xl overflow-hidden shadow-lg pb-5 transition ease duration-300 group hover:translate-y-5"
           >
-            {`Chaque plat que je prépare est une expression de ma créativité et de mon amour pour la cuisine. Qu'il s'agisse de plats simples du quotidien ou de mets plus élaborés pour des occasions spéciales, je mets toujours tout mon cœur dans ce que je fais. La satisfaction de voir mes proches savourer mes créations est ma plus grande récompense.
-              Ma cuisine est devenue une source de joie et de partage. Chaque jour est une nouvelle aventure gastronomique, et je suis impatiente de découvrir ce que l'avenir me réserve dans ma quête pour devenir une véritable experte en cuisine. » `}
+            <hr className="font-extrabold text-gray mb-3" />
+            Chaque plat que je prépare est une expression de ma créativité et de
+            mon amour pour la cuisine. Qu'il s'agisse de plats simples du
+            quotidien ou de mets plus élaborés pour des occasions spéciales, je
+            mets toujours tout mon cœur dans ce que je fais. La satisfaction de
+            voir mes proches savourer mes créations est ma plus grande
+            récompense.  <span className="text-pink">Ma cuisine est devenue une source de joie et de partage</span>.
+            Chaque jour est une nouvelle aventure gastronomique, et je suis
+            impatiente de découvrir ce que l'avenir me réserve dans ma quête
+            pour devenir une véritable experte en cuisine. »
           </p>
         </div>
       </div>

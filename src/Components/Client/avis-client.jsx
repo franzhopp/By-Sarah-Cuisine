@@ -26,7 +26,7 @@ const AvisClient = () => {
         data-aos-anchor-placement="top-center"
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
       >
-        <div className="bg-8f8f88 flex flex-col items-center rounded-lg p-6 transition-transform transform hover:scale-105">
+        <div className="bg-8f8f88 flex flex-col items-center rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="145"
@@ -57,7 +57,7 @@ const AvisClient = () => {
             voluptas facere blanditiis iste non.
           </p>
         </div>
-        <div className="bg-8f8f88 flex flex-col items-center rounded-lg p-6 transition-transform transform hover:scale-105">
+        <div className="bg-8f8f88 flex flex-col items-center rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="145"
@@ -88,7 +88,7 @@ const AvisClient = () => {
             voluptas facere blanditiis iste non.
           </p>
         </div>
-        <div className="bg-8f8f88 flex flex-col items-center rounded-lg p-6 transition-transform transform hover:scale-105">
+        <div className="bg-8f8f88 flex flex-col items-center rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="145"
