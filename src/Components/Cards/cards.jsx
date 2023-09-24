@@ -171,7 +171,7 @@ const Cards = () => {
               onClick={() => {
                 setOpenModel(true);
               }}
-              className="bg-f3dbc3 text-white shadow-md px-6 py-2 border rounded-3xl "
+              className="bg-f3dbc3 text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
             >
               <p className="flex flex-row font-extrabold">
                 {`Je m'inscris`}

@@ -293,7 +293,7 @@ const Navbar = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
-                className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
+                className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white"
               >
                 Devis gratuit
               </NavLink>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { images } from "../Helpers/images-data";
+// import { images } from "../Helpers/images-data";
 import InfoDevis from "./info-devis.jsx";
 
 const SectionGallery = () => {
@@ -28,7 +28,7 @@ const SectionGallery = () => {
               currImg > 0 && setCurrImg(currImg - 1);
             }}
             onContextMenu={(e) => e.preventDefault()}
-            className="cursor-pointer transition ease-in-out duration-300 group hover:translate-y-1"
+            className="cursor-pointer transition-transform transform hover:scale-105"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
@@ -46,8 +46,8 @@ const SectionGallery = () => {
         <div className="p-8">
           <div className="flex flex-col justify-start items-center">
             <div
-              className="h-72 w-72 sm:h-96 sm:w-96 bg-no-repeat bg-white rounded-xl transition-transform transform hover:scale-105"
-              style={{ backgroundImage: `url(${images[currImg].img})` }}
+              className="h-72 w-72 sm:h-96 sm:w-96 bg-no-repeat bg-white rounded-xl"
+              // style={{ backgroundImage: `url(${images[currImg].img})` }}
             ></div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const SectionGallery = () => {
             onClick={() => {
               currImg < images.length - 1 && setCurrImg(currImg + 1);
             }}
-            className="cursor-pointer transition ease-in-out duration-300 group hover:translate-y-1"
+            className="cursor-pointer transition-transform transform hover:scale-105"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
