@@ -36,8 +36,8 @@ const Section = () => {
             <span className="uppercase font-extrabold text-gray text-sm tracking-widest">
               À propos de Sarah
             </span>
-            <br /> « Je me suis lancée dans la cuisine lors de mes premiers pas.
-            Et aujourd'hui, je partage ma cuisine au quotidien, avec beaucoup de
+            <br /> « Je me suis lancée dans la cuisine très jeune. À l'heure
+            d'aujourd'hui, je partage ma cuisine au quotidien, avec beaucoup de
             <span className="text-pink"> passion</span> et de
             <span className="text-pink"> rigueur</span>. Tout au long de mon
             parcours, j'ai appris à perfectionner mes plats. Je me souviens
