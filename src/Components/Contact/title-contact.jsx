@@ -13,7 +13,7 @@ const TitleForm = () => {
             data-aos="fade-right"
             src={Image}
             alt=""
-            className="px-16 mt-24 p-1"
+            className="px-16 mt-28 sm:mt-24 p-1"
           />
         </span>
       </div>
