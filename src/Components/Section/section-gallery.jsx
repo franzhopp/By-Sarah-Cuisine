@@ -1,12 +1,12 @@
 import { useState } from "react";
-// import { images } from "../Helpers/images-data";
+import { images } from "../Helpers/images-data";
 import InfoDevis from "./info-devis.jsx";
 
 const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);
 
   return (
-    <section className="bg-f3dbc3 border py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
+    <section className="bg-f3dbc3 border-t border-b py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20 text-center">
       <h2 className="font-sans-recursive text-4xl md:text-5xl font-extrabold text-white">
         Découvrez toute la gallerie du traiteur
       </h2>
@@ -22,13 +22,13 @@ const SectionGallery = () => {
       </div>
       <div className="flex justify-center items-center mt-4 mb-10 p-3 flex-col sm:flex-row">
         {/* svg */}
-        <div className="flex flex-row justify-start items-center">
+        <div className="flex flex-row justify-start items-center shadow-lg rounded-full">
           <svg
             onClick={() => {
               currImg > 0 && setCurrImg(currImg - 1);
             }}
             onContextMenu={(e) => e.preventDefault()}
-            className="cursor-pointer w-20 h-20"
+            className="cursor-pointer transition ease-in-out duration-300 group hover:translate-y-1"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
@@ -46,14 +46,14 @@ const SectionGallery = () => {
         <div className="p-8">
           <div className="flex flex-col justify-start items-center">
             <div
-              className="h-72 w-72 sm:h-96 sm:w-96 bg-no-repeat bg-white rounded-xl"
-              // style={{ backgroundImage: `url(${images[currImg].img})` }}
+              className="h-72 w-72 sm:h-96 sm:w-96 bg-no-repeat bg-white rounded-xl transition-transform transform hover:scale-105"
+              style={{ backgroundImage: `url(${images[currImg].img})` }}
             ></div>
           </div>
         </div>
 
         {/* svg */}
-        <div className="flex flex-row justify-start items-center">
+        <div className="flex flex-row justify-start items-center shadow-lg rounded-full">
           <svg
             onContextMenu={(e) => {
               e.preventDefault();
@@ -62,7 +62,7 @@ const SectionGallery = () => {
             onClick={() => {
               currImg < images.length - 1 && setCurrImg(currImg + 1);
             }}
-            className="cursor-pointer w-20 h-20"
+            className="cursor-pointer transition ease-in-out duration-300 group hover:translate-y-1"
             xmlns="http://www.w3.org/2000/svg"
             width="82"
             height="82"
