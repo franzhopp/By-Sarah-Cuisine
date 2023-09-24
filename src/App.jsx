@@ -11,6 +11,9 @@ import Footer from "./Components/Footer/footer.jsx";
 import PropositionOfServices from "./Pages/Services/services.jsx";
 import DevisFree from "./Pages/Devis/devis.jsx";
 import AvisClient from "./Components/Client/avis-client.jsx";
+import PagePrivacy from "./Components/Privacy/page-privacy.jsx";
+import PageConditions from "./Components/Conditions/page-conditions.jsx";
+import PageMentions from "./Components/Mentions/page-mentions.jsx";
 
 const App = () => {
   return (
@@ -21,9 +24,9 @@ const App = () => {
             <Route path="/" element={<Homepage />} />
             <Route path="/services" element={<Proposal />} />
             <Route path="/devisgratuit" element={<Devis />} />
-            {/* <Route path="/privacy" element={<PoliticyConditendial />} />
-            <Route path="/terms" element={<ConditionUtilisation />} />
-            <Route path="/mentions" element={<MentionsLegales />} /> */}
+            <Route path="/privacy" element={<PagePrivacy />} />
+            <Route path="/terms" element={<PageConditions />} />
+            <Route path="/mentions" element={<PageMentions />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />

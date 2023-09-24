@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Image from "../../assets/logo-bsc.png";
 import { MdOutlineFileDownload } from "react-icons/md";
 
@@ -227,28 +228,40 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/privacy"
+                  onClick={() => {
+                    window.location.href = "/privacy";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Politique de confidentialité
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/terms"
+                  onClick={() => {
+                    window.location.href = "/terms";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Conditions d'utilisation
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/mentions"
+                  onClick={() => {
+                    window.location.href = "/mentions";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Mentions légales
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
