@@ -13,7 +13,7 @@ const PagePrivacy = () => {
 
           <p className="text-black text-justify mb-4">
             • Chez{" "}
-            <span className="text-pink font-extrabold">navi studio.</span>, nous
+            <span className="text-pink font-extrabold">By Sarah Cuisine</span>, nous
             accordons une grande importance à la protection de vos informations
             personnelles. Cette politique de confidentialité explique comment
             nous collectons, utilisons, et protégeons vos données.
