@@ -187,10 +187,10 @@ const PageMentions = () => {
               {" "}
               Éditeur de code :
             </span>{" "}
-            PhpStorm.
+            PhpStorm (JetBrains).
             <br />•
             <span className={keywordsStyle}> Technologies utilsées :</span>{" "}
-            React, Tailwind CSS, EmailJS, Postman, PNPM, AOS, React Icons, Hyper
+            React, Tailwind CSS, HTML/CSS, EmailJS, Postman, PNPM, AOS, React Icons, Hyper
             UI, Daisy UI etc...
             <br />
             <div className="mt-16">
