@@ -2,6 +2,10 @@ import { MdOutlineEditNote } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import ModalNewletter from "../Modal/modal-newletter.jsx";
 import { useState } from "react";
+import ImgFruits from "../../assets/fruits1.png";
+import ImgDesserts from "../../assets/desserts1.png";
+import ImgPieces from "../../assets/piece1.png";
+import ImgCharcuterie from "../../assets/charcuterie1.png";
 
 const Cards = () => {
   const [openSearch, setSearchQuery] = useState("");
@@ -34,11 +38,13 @@ const Cards = () => {
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
           <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105">
-            <div className="flex flex-col justify-start items-center mt-10">
-              <div className="h-52 w-64 bg-white rounded-xl"></div>
+          <div className="flex flex-col justify-start items-center mt-10">
+              <div className="h-72 w-64 bg-white rounded-xl">
+                <img src={ImgFruits} alt="Image Fruits" className="rounded-xl" />
+              </div>
             </div>
             <div className="p-6">
-              <div className="text-pink text-3xl text-center font-sans-recursive font-extrabold">
+              <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
                 Plateaux de fruit
               </div>
               <p className="text-black text-justify mt-2">
@@ -65,12 +71,14 @@ const Cards = () => {
 
           {/* Step 2 */}
           <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105">
-            <div className="flex flex-col justify-start items-center mt-10">
-              <div className="h-52 w-64 bg-white rounded-xl"></div>
+          <div className="flex flex-col justify-start items-center mt-10">
+              <div className="h-72 w-64 bg-white rounded-xl">
+                <img src={ImgDesserts} alt="Image Desserts" className="rounded-xl" />
+              </div>
             </div>
             <div className="p-6">
-              <div className="text-pink text-3xl text-center font-sans-recursive font-extrabold">
-                Boîte à desserts
+              <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
+                Desserts
               </div>
               <p className="text-black text-justify mt-2">
                 Découvrez la sélection de desserts pour égayer vos moments en
@@ -101,11 +109,13 @@ const Cards = () => {
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
           >
             <div className="flex flex-col justify-start items-center mt-10">
-              <div className="h-52 w-64 bg-white rounded-xl"></div>
+              <div className="h-72 w-64 bg-white rounded-xl">
+                <img src={ImgPieces} alt="Image Pièces" className="rounded-xl" />
+              </div>
             </div>
             <div className="p-6">
-              <div className="text-pink text-3xl text-center font-sans-recursive font-extrabold">
-                Brush
+              <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
+                Apéritifs 
               </div>
               <p className="text-black text-justify mt-2">
                 Vous souhaitez avoir un brush pour accompagner vos moments,
@@ -128,39 +138,41 @@ const Cards = () => {
               </NavLink>
             </div>
           </div>
-        <div
-          // data-aos="fade-up"
-          // data-aos-anchor-placement="top-center"
-          className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
-        >
-          <div className="flex flex-col justify-start items-center mt-10">
-            <div className="h-52 w-64 bg-white rounded-xl"></div>
-          </div>
-          <div className="p-6">
-            <div className="text-pink text-3xl text-center font-sans-recursive font-extrabold">
-              Charcuterie
+          <div
+            // data-aos="fade-up"
+            // data-aos-anchor-placement="top-center"
+            className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
+          >
+            <div className="flex flex-col justify-start items-center mt-10">
+              <div className="h-72 w-64 bg-white rounded-xl">
+                <img src={ImgCharcuterie} alt="Image Charcuterie" className="rounded-xl" />
+              </div>
             </div>
-            <p className="text-black text-justify mt-2">
-              Vous souhaitez avoir un brush pour accompagner vos moments,
-              découvrez la sélection que le traiteur propose.
-            </p>
-            {/* <p className="mt-6">
+            <div className="p-6">
+              <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
+                Charcuterie
+              </div>
+              <p className="text-black text-justify mt-2">
+                Vous souhaitez avoir un brush pour accompagner vos moments,
+                découvrez la sélection que le traiteur propose.
+              </p>
+              {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
               </p> */}
-            <NavLink
-              to="/services"
-              onClick={() => {
-                window.location.href = "/services";
-                window.scrollTo(0, 0);
-              }}
-              className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
-            >
-              En savoir plus
-            </NavLink>
+              <NavLink
+                to="/services"
+                onClick={() => {
+                  window.location.href = "/services";
+                  window.scrollTo(0, 0);
+                }}
+                className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
+              >
+                En savoir plus
+              </NavLink>
+            </div>
           </div>
-        </div>
         </div>
 
         <div className="mt-12 text-base text-white text-center font-sans-serif font-extrabold">
