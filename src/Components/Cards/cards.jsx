@@ -38,9 +38,13 @@ const Cards = () => {
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
           <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105">
-          <div className="flex flex-col justify-start items-center mt-10">
+            <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-72 w-64 bg-white rounded-xl">
-                <img src={ImgFruits} alt="Image Fruits" className="rounded-xl" />
+                <img
+                  src={ImgFruits}
+                  alt="Image Fruits"
+                  className="rounded-xl"
+                />
               </div>
             </div>
             <div className="p-6">
@@ -71,9 +75,13 @@ const Cards = () => {
 
           {/* Step 2 */}
           <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105">
-          <div className="flex flex-col justify-start items-center mt-10">
+            <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-72 w-64 bg-white rounded-xl">
-                <img src={ImgDesserts} alt="Image Desserts" className="rounded-xl" />
+                <img
+                  src={ImgDesserts}
+                  alt="Image Desserts"
+                  className="rounded-xl"
+                />
               </div>
             </div>
             <div className="p-6">
@@ -110,15 +118,19 @@ const Cards = () => {
           >
             <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-72 w-64 bg-white rounded-xl">
-                <img src={ImgPieces} alt="Image Pièces" className="rounded-xl" />
+                <img
+                  src={ImgPieces}
+                  alt="Image Pièces"
+                  className="rounded-xl"
+                />
               </div>
             </div>
             <div className="p-6">
               <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
-                Apéritifs 
+                Apéritifs
               </div>
               <p className="text-black text-justify mt-2">
-                Vous souhaitez avoir un brush pour accompagner vos moments,
+                Vous souhaitez avoir des apéritifs pour accompagner vos moments,
                 découvrez la sélection que le traiteur propose.
               </p>
               {/* <p className="mt-6">
@@ -145,7 +157,11 @@ const Cards = () => {
           >
             <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-72 w-64 bg-white rounded-xl">
-                <img src={ImgCharcuterie} alt="Image Charcuterie" className="rounded-xl" />
+                <img
+                  src={ImgCharcuterie}
+                  alt="Image Charcuterie"
+                  className="rounded-xl"
+                />
               </div>
             </div>
             <div className="p-6">
@@ -153,8 +169,7 @@ const Cards = () => {
                 Charcuterie
               </div>
               <p className="text-black text-justify mt-2">
-                Vous souhaitez avoir un brush pour accompagner vos moments,
-                découvrez la sélection que le traiteur propose.
+                Accompagnez vos moments avec cette sélection, notamment les délicieux plateaux de charcuteries.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
