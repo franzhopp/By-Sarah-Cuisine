@@ -136,7 +136,7 @@ const Devis = () => {
                   importantes. Si vous envisagez d'organiser un événement majeur
                   tel qu'un{" "}
                   <span className="font-extrabold">mariage, fiançaille</span>,{" "}
-                  <span className="font-extrabold">anniversaire, baptême</span>
+                  <span className="font-extrabold">anniversaire, baptême</span>{" "}
                   ou tout autre événement spécial, nous vous encourageons
                   vivement à le mentionner explicitement dans le champ «
                   <span className="font-extrabold">
