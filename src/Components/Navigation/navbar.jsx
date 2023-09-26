@@ -21,7 +21,6 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
-  const [isRotated, setIsRotated] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -206,14 +205,12 @@ const Navbar = () => {
           <div className="mr-2">
             <button
               onClick={toggleNavbar}
-              className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
-                isRotated ? "-rotate-180" : ""
-              }`}
+              className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
             >
               {isOpen ? (
-                <ImCross className="text-white" />
+                <ImCross className="text-white transform hover:scale-110" />
               ) : (
-                <TfiMenu className="text-white" />
+                <TfiMenu className="text-white transform hover:scale-110" />
               )}
             </button>
           </div>
