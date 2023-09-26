@@ -194,7 +194,6 @@ const Navbar = () => {
 
       {/* Navigation mobile */}
       <nav
-        id="navlinks"
         className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
       >
         {/* 2 items */}
