@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Image from "../../assets/logo-bsc.png";
 import { MdOutlineFileDownload } from "react-icons/md";
 
 const Footer = () => {
@@ -133,47 +132,67 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/services"
+                  onClick={() => {
+                    window.location.href = "/services";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Apéritifs
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/services"
+                  onClick={() => {
+                    window.location.href = "/services";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Plats
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/services"
+                  onClick={() => {
+                    window.location.href = "/services";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Desserts
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/services"
+                  onClick={() => {
+                    window.location.href = "/services";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Évènements
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/services"
+                  onClick={() => {
+                    window.location.href = "/services";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Tous les services
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -185,34 +204,46 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4 text-sm">
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    window.location.href = "/";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   À propos
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    window.location.href = "/";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Avis client
-                </a>
+                </NavLink>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    window.location.href = "/";
+                    window.scrollTo(0, 0);
+                  }}
                   className="text-black font-sans-serif transition hover:opacity-75"
                 >
                   Contact
-                </a>
+                </NavLink>
               </li>
 
               <li>
-              <NavLink
+                <NavLink
                   to="/devisgratuit"
                   onClick={() => {
                     window.location.href = "/devisgratuit";

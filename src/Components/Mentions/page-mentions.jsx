@@ -149,8 +149,12 @@ const PageMentions = () => {
           </h2>
           <p className="mb-4 text-black">
             •<span className={keywordsStyle}> Site créé et designé par :</span>{" "}
-            navi studio.™
-            <br />•<span className={keywordsStyle}> Site URL :</span>{" "}
+            FERNANDEZ LOUISA
+            <br />•
+            <span className={keywordsStyle}>
+              {" "}
+              Site URL de la développeuse :
+            </span>{" "}
             <NavLink
               to="http://navistudio.io/defaultsite"
               target="_blank"
@@ -159,7 +163,7 @@ const PageMentions = () => {
             >
               http://navistudio.io/
             </NavLink>
-            .
+            , navi studio.™
             <br />•<span className={keywordsStyle}> Hébergeur :</span> IONOS
             <br />•<span className={keywordsStyle}> Logo :</span> FERNANDEZ
             LOUISA
@@ -189,9 +193,9 @@ const PageMentions = () => {
             </span>{" "}
             PhpStorm (JetBrains).
             <br />•
-            <span className={keywordsStyle}> Technologies utilsées :</span>{" "}
-            React, Tailwind CSS, HTML/CSS, EmailJS, Postman, PNPM, AOS, React Icons, Hyper
-            UI, Daisy UI etc...
+            <span className={keywordsStyle}> Technologies utilisées :</span>{" "}
+            React, Tailwind CSS, HTML/CSS, EmailJS, Postman, PNPM, AOS, React
+            Icons, Hyper UI, Daisy UI etc...
             <br />
             <div className="mt-16">
               Modèle de formule de collecte de données à caractère personnel
