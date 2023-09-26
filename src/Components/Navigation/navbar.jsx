@@ -243,7 +243,7 @@ const Navbar = () => {
             </li>
 
             <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
-              <button onClick={toggleSousListsMenu}>
+              <button>
                 <div className="flex items-center justify-between">
                   <div className="text-black pr-4">Services</div>{" "}
                   <MdOutlineKeyboardArrowDown />
@@ -276,10 +276,10 @@ const Navbar = () => {
                     <NavLink
                       to="/services"
                       href="services"
-                      onClick={() => {
-                        window.location.href = "/services";
-                        window.scrollTo(0, 0);
-                      }}
+                      // onClick={() => {
+                      //   window.location.href = "/services";
+                      //   window.scrollTo(0, 0);
+                      // }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
