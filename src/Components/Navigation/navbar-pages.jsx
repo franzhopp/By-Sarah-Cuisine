@@ -215,6 +215,7 @@ const NavbarPages = () => {
           <div id="navlinks">
             <li>
               <NavLink
+                to="/"
                 onClick={SectionToScrollHome}
                 className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >

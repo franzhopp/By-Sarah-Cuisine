@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ImageTitle from "../../assets/title-devis.png";
 import Image from "../../assets/logo-bsc.png";
+import ImageMobile from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
@@ -182,13 +183,13 @@ const NavbarDevis = () => {
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
-            <img className="w-28 mt-2" src={Image} alt="Icône de Sarah" />
+            <img className="w-28 mt-2" src={ImageMobile} alt="Icône de Sarah" />
           </NavLink>
 
           <div className="mr-2">
             <button
               onClick={toggleMenuMobile}
-              className={`icon-toggle bg-e9c2c2 border border-white rounded-lg p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
+              className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
                 isRotated ? " -rotate-180 " : ""
               }`}
             >
