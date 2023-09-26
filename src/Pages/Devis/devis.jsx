@@ -139,7 +139,7 @@ const Devis = () => {
                   ... etc, veuillez EXPLICITEMENT le mentionner dans le champ «
                   <span className="font-extrabold">
                     {" "}
-                    Quels évènements voulez-vous célébrer ?
+                    Quels évènements souhaitez-vous célébrer ?
                   </span>{" "}
                   » afin que le chef puisse traiter votre demande avec attention. Écrire
                   également vos réponses de manière claire et concise.
@@ -228,7 +228,7 @@ const Devis = () => {
                         className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
                           errors.select ? "input-error border-red-700" : ""
                         }`}
-                        placeholder="Quels évènements voulez-vous célébrer ? Mariage, soirée...?"
+                        placeholder="Quels évènements souhaitez-vous célébrer ? Mariage, soirée...?"
                         type="select"
                         id="select"
                         name="select"
