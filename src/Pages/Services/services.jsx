@@ -336,7 +336,7 @@ const Services = () => {
 
       <div className="image-bg border-t py-5 px-6">
         <div className="px-12 mt-12 mb-16 text-pink font-sans-recursive text-3xl text-center font-extrabold">
-          Télécharger le flyer de Sarah ainsi que sa carte de visite en un clic
+          Téléchargez le flyer de Sarah ainsi que sa carte de visite en un clic
           !
           <div className="flex justify-center">
             <a href="/resume/cdvfyr.png" download>

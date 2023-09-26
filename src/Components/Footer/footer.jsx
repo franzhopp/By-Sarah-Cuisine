@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaSnapchatGhost } from "react-icons/fa";
+import { GrNotes } from "react-icons/gr";
 
 const Footer = () => {
   return (
@@ -79,7 +80,6 @@ const Footer = () => {
               </a>
             </li>
 
-
             <li>
               <a
                 href="/"
@@ -90,6 +90,14 @@ const Footer = () => {
                 <span className="sr-only">Whatsapp</span>
 
                 <BsWhatsapp className="h-6 w-6 text-black" />
+              </a>
+            </li>
+
+            <li>
+              <a href="/resume/fiche.png" download>
+                <span className="sr-only">Download flyer</span>
+
+                <GrNotes className="h-5 w-5 mt-1 text-black" />
               </a>
             </li>
 
