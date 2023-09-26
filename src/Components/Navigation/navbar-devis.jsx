@@ -307,7 +307,7 @@ const NavbarDevis = () => {
           />
         </div>
         <div className="px-12 text-white text-lg sm:text-2xl  text-center font-sans-serif font-extrabold">
-          Faites un devis sur-mesure. Un évènement ? 
+           Un évènement ? Faites un devis sur-mesure.
           <div className="mt-5 flex justify-center">
             <NavLink
               to="/devisgratuit"

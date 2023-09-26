@@ -133,17 +133,17 @@ const Devis = () => {
                     Lire avant d'effectuer un devis
                   </span>{" "}
                   : si vous avez l'intention d'organiser un événement majeur tel
-                  qu'un <span className="font-extrabold">mariage</span> ou un{" "}
-                  <span className="font-extrabold">
-                    anniversaire, baptême, anniversaire, fiançaille
-                  </span>
+                  qu'un{" "}
+                  <span className="font-extrabold">mariage, fiançaille</span> ou
+                  un{" "}
+                  <span className="font-extrabold">anniversaire, baptême</span>
                   ... etc, veuillez EXPLICITEMENT le mentionner dans le champ «
                   <span className="font-extrabold">
                     {" "}
                     Quels évènements voulez-vous ?
                   </span>{" "}
                   » afin que le chef puisse traiter votre demande. Écrire
-                  également vos réponses de manière lisible.
+                  également vos réponses de manière concise.
                 </div>
               </div>
             </div>
