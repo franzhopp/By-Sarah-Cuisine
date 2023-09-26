@@ -21,10 +21,12 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
+    setIsRotated(!isRotated);
   };
 
   const toggleSousListsMenu = () => {
@@ -205,7 +207,9 @@ const Navbar = () => {
           <div className="mr-2">
             <button
               onClick={toggleNavbar}
-              className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110`}
+              className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
+                isRotated ? "transform hover:scale-110" : ""
+              }`}
             >
               {isOpen ? (
                 <ImCross className="text-white transform hover:scale-110" />
@@ -243,7 +247,7 @@ const Navbar = () => {
             </li>
 
             <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
-              <button>
+              <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="text-black pr-4">Services</div>{" "}
                   <MdOutlineKeyboardArrowDown />
@@ -276,10 +280,10 @@ const Navbar = () => {
                     <NavLink
                       to="/services"
                       href="services"
-                      // onClick={() => {
-                      //   window.location.href = "/services";
-                      //   window.scrollTo(0, 0);
-                      // }}
+                      onClick={() => {
+                        window.location.href = "/services";
+                        window.scrollTo(0, 0);
+                      }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
