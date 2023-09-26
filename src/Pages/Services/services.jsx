@@ -281,7 +281,7 @@ const Services = () => {
           </div>
           <div className="px-6 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
-              Mariage, fiançailles
+              Mariage, fiançaille
             </div>
             <p className="text-black font-semibold text-base font-sans-serif">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -323,7 +323,7 @@ const Services = () => {
           </div>
           <div className="px-6 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
-              Soirées entre vos familles, amis
+              Soirées
             </div>
             <p className="text-black font-semibold text-base font-sans-serif">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -334,25 +334,7 @@ const Services = () => {
         </div>
       </div>
 
-      {/* <div className="px-12 mt-12 mb-16 text-black text-base text-center font-sans-serif font-extrabold">
-        Un devis sur-mesure ? Pour préparer un évènement, c'est par ici.
-        <div className="mt-5 flex justify-center">
-          <NavLink
-            to="/devisgratuit"
-            onClick={() => {
-              window.location.href = "/devisgratuit";
-              window.scrollTo(0, 0);
-            }}
-            href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
-            className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
-          >
-            <p className="flex flex-row font-extrabold">
-              Devis gratuit <MdOutlineEditNote className="ml-2 mt-1" />
-            </p>
-          </NavLink>
-        </div>
-      </div> */}
-      <div className="image-bg py-5 px-6">
+      <div className="image-bg border-t py-5 px-6">
         <div className="px-12 mt-12 mb-16 text-pink font-sans-recursive text-3xl text-center font-extrabold">
           Télécharger le flyer de Sarah ainsi que sa carte de visite en un clic
           !
