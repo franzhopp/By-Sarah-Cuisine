@@ -4,7 +4,7 @@ import Image from "../../assets/logo-bsc.png";
 import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { MdOutlineEditNote, MdOutlineKeyboardArrowDown } from "react-icons/md";
 import "../Contact/title-contact.jsx";
 import "../Section/section.jsx";
 
@@ -305,6 +305,24 @@ const NavbarDevis = () => {
             alt="Image name"
             className="px-16 mt-14 mb-12 sm:mb-10 sm:mt-4"
           />
+        </div>
+        <div className="px-12 text-white text-lg sm:text-2xl  text-center font-sans-serif font-extrabold">
+          Faites un devis sur-mesure. Un évènement ? 
+          <div className="mt-5 flex justify-center">
+            <NavLink
+              to="/devisgratuit"
+              onClick={() => {
+                window.location.href = "/devisgratuit";
+                window.scrollTo(0, 0);
+              }}
+              href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
+              className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
+            >
+              <p className="flex flex-row font-extrabold">
+                Commencer <MdOutlineEditNote className="ml-2 mt-1" />
+              </p>
+            </NavLink>
+          </div>
         </div>
       </section>
     </div>

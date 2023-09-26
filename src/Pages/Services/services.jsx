@@ -334,7 +334,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="px-12 mt-12 mb-16 text-black text-base text-center font-sans-serif font-extrabold">
+      {/* <div className="px-12 mt-12 mb-16 text-black text-base text-center font-sans-serif font-extrabold">
         Un devis sur-mesure ? Pour préparer un évènement, c'est par ici.
         <div className="mt-5 flex justify-center">
           <NavLink
@@ -351,7 +351,7 @@ const Services = () => {
             </p>
           </NavLink>
         </div>
-      </div>
+      </div> */}
       <div className="image-bg py-5 px-6">
         <div className="px-12 mt-12 mb-16 text-pink font-sans-recursive text-3xl text-center font-extrabold">
           Télécharger le flyer de Sarah ainsi que sa carte de visite en un clic

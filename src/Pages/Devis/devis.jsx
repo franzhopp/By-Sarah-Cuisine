@@ -12,6 +12,7 @@ const Devis = () => {
     tel: "",
     select: "",
     selectOther: "",
+    codepostal: "",
     date: "",
     message: "",
   });
@@ -23,6 +24,7 @@ const Devis = () => {
     tel: "",
     select: "",
     selectOther: "",
+    codepostal: "",
     date: "",
     message: "",
   });
@@ -66,6 +68,10 @@ const Devis = () => {
       newErrors.selectOther = "Veuillez entrer une information.";
     }
 
+    if (!formData.codepostal) {
+      newErrors.codepostal = "Veuillez entrer un code postal.";
+    }
+
     if (!formData.date) {
       newErrors.date = "Veuillez entrer une date.";
     }
@@ -89,6 +95,7 @@ const Devis = () => {
       tel: formData.tel,
       select: formData.select,
       selectOther: formData.selectOther,
+      codepostal: formData.codepostal,
       date: formData.date,
       message: formData.message,
     };
@@ -119,17 +126,24 @@ const Devis = () => {
         <NavbarDevis />
         <section className="">
           <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
-            <h2 className="font-extrabold text-5xl text-center sm:text-6xl">
-              <span className="text-pink font-sans-recursive">{`Faites un devis sur-mesure !`}</span>
-            </h2>
-
             <div className="flex justify-center">
               <div className="w-full sm:w-2/4">
-                <div className="text-black mt-12 mb-16 font-sans-serif text-base text-center">
-                  Si vous avez l'intention d'organiser un événement majeur tel
+                <div className="text-black mt-12 text-center leading-8 mb-16 font-sans-serif text-base sm:text-lg">
+                  <span className="font-extrabold">
+                    Lire avant d'effectuer un devis
+                  </span>{" "}
+                  : si vous avez l'intention d'organiser un événement majeur tel
                   qu'un <span className="font-extrabold">mariage</span> ou un{" "}
-                  <span className="font-extrabold">anniversaire</span>, veuillez
-                  le mentionner afin que le chef puisse traiter votre demande.
+                  <span className="font-extrabold">
+                    anniversaire, baptême, anniversaire, fiançaille
+                  </span>
+                  ... etc, veuillez EXPLICITEMENT le mentionner dans le champ «
+                  <span className="font-extrabold">
+                    {" "}
+                    Quels évènements voulez-vous ?
+                  </span>{" "}
+                  » afin que le chef puisse traiter votre demande. Écrire
+                  également vos réponses de manière lisible.
                 </div>
               </div>
             </div>
@@ -215,7 +229,7 @@ const Devis = () => {
                         className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
                           errors.select ? "input-error border-red-700" : ""
                         }`}
-                        placeholder="Quels services voulez-vous ? Mariage, soirée...?"
+                        placeholder="Quels évènements voulez-vous ? Mariage, soirée...?"
                         type="select"
                         id="select"
                         name="select"
@@ -247,7 +261,23 @@ const Devis = () => {
                       )}
                     </div>
                   </div>
-
+                  <div>
+                    <input
+                      className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
+                        errors.codepostal ? "input-error border-red-700" : ""
+                      }`}
+                      placeholder="Code postal"
+                      id="codepostal"
+                      name="codepostal"
+                      value={formData.codepostal}
+                      onChange={handleInputChange}
+                    />
+                    {errors.codepostal && (
+                      <p className="text-left font-sans-serif text-red-700">
+                        {errors.codepostal}
+                      </p>
+                    )}
+                  </div>
                   <div>
                     <div>
                       <input

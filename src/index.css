@@ -160,6 +160,7 @@ body {
         transform: translateX(5px);
     }
 }
+
 /* 
 .h {
     height: 41rem;
@@ -170,8 +171,8 @@ body {
 } */
 
 .image-bg {
-    background-image: url('./assets/Background.png'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image de fond */
+    background-image: url('./assets/Background.png');
     height: auto;
     max-width: 100%;
     display: block;
-  }
+}
