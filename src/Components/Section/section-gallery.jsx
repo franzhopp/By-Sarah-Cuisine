@@ -47,6 +47,7 @@ const SectionGallery = () => {
         <div className="p-8">
           <div className="flex flex-col justify-start items-center">
             <div
+              data-aos="fade-in"
               className="bg-white h-80 w-80 sm:h-96 sm:w-96 bg-no-repeat rounded-3xl shadow-md"
               style={{ backgroundImage: `url(${images[currImg].img})` }}
             >

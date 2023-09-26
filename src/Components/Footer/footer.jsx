@@ -20,7 +20,7 @@ const Footer = () => {
           <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
             <li>
               <a
-                href="/"
+                href="https://www.facebook.com/fafa.doc.3/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-black transition hover:opacity-75"
@@ -44,7 +44,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="/"
+                href="https://www.instagram.com/by_sarah_cuisine/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-black transition hover:opacity-75"
@@ -68,7 +68,7 @@ const Footer = () => {
 
             <li>
               <a
-                href="/"
+                href="https://t.snapchat.com/T4KuLKrl"
                 rel="noreferrer"
                 target="_blank"
                 className="text-black transition hover:opacity-75"
