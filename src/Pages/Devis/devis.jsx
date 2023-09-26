@@ -130,20 +130,23 @@ const Devis = () => {
               <div className="w-full">
                 <div className="text-black mt-5 text-center mb-16 font-sans-serif text-base sm:text-lg">
                   <span className="underline">
-                    Lire avant d'effectuer un devis
+                    Avant de soumettre votre demande de devis
                   </span>{" "}
-                  : si vous avez l'intention d'organiser un événement majeur tel
-                  qu'un{" "}
+                  : veuillez prendre un moment pour lire ces directives
+                  importantes. Si vous envisagez d'organiser un événement majeur
+                  tel qu'un{" "}
                   <span className="font-extrabold">mariage, fiançaille</span>,{" "}
                   <span className="font-extrabold">anniversaire, baptême</span>
-                  ... etc, veuillez EXPLICITEMENT le mentionner dans le champ «
+                  ou tout autre événement spécial, nous vous encourageons
+                  vivement à le mentionner explicitement dans le champ «
                   <span className="font-extrabold">
                     {" "}
                     Quels évènements souhaitez-vous célébrer ?
                   </span>{" "}
-                  » afin que le chef puisse traiter votre demande avec
-                  attention. Écrire également vos réponses de manière claire et
-                  concise.
+                  » Cela permettra au chef de traiter votre demande avec une
+                  attention particulière. De plus, veuillez rédiger vos réponses
+                  de manière claire et concise pour faciliter le processus de
+                  traitement de votre demande.
                 </div>
               </div>
             </div>

@@ -334,7 +334,7 @@ const NavbarDevis = () => {
               </p>
             </NavLink>
           </div>
-          <section id="devis"></section>
+          <section id="devis" className="sm:mb-0 mb-10"></section>
         </div>
       </section>
     </div>
