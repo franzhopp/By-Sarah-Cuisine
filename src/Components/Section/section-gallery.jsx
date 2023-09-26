@@ -24,7 +24,8 @@ const SectionGallery = () => {
         {/* svg */}
         <div className="flex flex-row justify-start items-center shadow-lg rounded-full">
           <svg
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
               currImg > 0 && setCurrImg(currImg - 1);
             }}
             onContextMenu={(e) => e.preventDefault()}
@@ -46,20 +47,24 @@ const SectionGallery = () => {
         <div className="p-8">
           <div className="flex flex-col justify-start items-center">
             <div
-              className="bg-white h-72 w-72 sm:h-96 sm:w-96 bg-no-repeat rounded-3xl shadow-md"
-              style={{ backgroundImage: `url(${images[currImg].img})`  }}
-            ></div>
+              className="bg-white h-80 w-80 sm:h-96 sm:w-96 bg-no-repeat rounded-3xl shadow-md"
+              style={{ backgroundImage: `url(${images[currImg].img})` }}
+            >
+              <div className="flex justify-end mt-64 sm:mt-80 mr-6">
+                <p className="text-white text-2xl font-sans-recursive font-extrabold">
+                  {" "}
+                  By Sarah Cuisine
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* svg */}
         <div className="flex flex-row justify-start items-center shadow-lg rounded-full">
           <svg
-            onContextMenu={(e) => {
+            onClick={(e) => {
               e.preventDefault();
-              console.log("Context menu prevented");
-            }}
-            onClick={() => {
               currImg < images.length - 1 && setCurrImg(currImg + 1);
             }}
             className="cursor-pointer transition-transform transform hover:scale-105"

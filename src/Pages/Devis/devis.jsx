@@ -128,7 +128,7 @@ const Devis = () => {
           <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
             <div className="flex justify-center">
               <div className="w-full sm:w-2/4">
-                <div className="text-black mt-8 text-center leading-8 mb-16 font-sans-serif text-base sm:text-lg">
+                <div className="text-black mt-5  text-center leading-8 mb-16 font-sans-serif text-base sm:text-lg">
                   <span className="font-extrabold">
                     Lire avant d'effectuer un devis
                   </span>{" "}
