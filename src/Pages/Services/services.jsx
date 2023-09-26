@@ -281,7 +281,7 @@ const Services = () => {
           </div>
           <div className="px-6 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
-              Mariage
+              Mariage, fiançailles
             </div>
             <p className="text-black font-semibold text-base font-sans-serif">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
