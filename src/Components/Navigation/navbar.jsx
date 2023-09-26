@@ -26,7 +26,6 @@ const Navbar = () => {
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-    setIsRotated(!isRotated);
   };
 
   const toggleSousListsMenu = () => {
@@ -208,13 +207,13 @@ const Navbar = () => {
             <button
               onClick={toggleNavbar}
               className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
-                isRotated ? "transform hover:scale-110" : ""
+                isRotated ? "-rotate-180" : ""
               }`}
             >
               {isOpen ? (
-                <ImCross className="text-white transform hover:scale-110" />
+                <ImCross className="text-white" />
               ) : (
-                <TfiMenu className="text-white transform hover:scale-110" />
+                <TfiMenu className="text-white" />
               )}
             </button>
           </div>
@@ -264,10 +263,10 @@ const Navbar = () => {
                   {pages.map((page, index) => (
                     <li key={index}>
                       <NavLink
-                        onClick={() => {
-                          window.location.href = "/services";
-                          window.scrollTo(0, 0);
-                        }}
+                        // onClick={() => {
+                        //   window.location.href = "/services";
+                        //   window.scrollTo(0, 0);
+                        // }}
                         to={page.link}
                       >
                         <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
@@ -280,10 +279,10 @@ const Navbar = () => {
                     <NavLink
                       to="/services"
                       href="services"
-                      onClick={() => {
-                        window.location.href = "/services";
-                        window.scrollTo(0, 0);
-                      }}
+                      // onClick={() => {
+                      //   window.location.href = "/services";
+                      //   window.scrollTo(0, 0);
+                      // }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
@@ -306,13 +305,6 @@ const Navbar = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
-                // onClick={() => {
-                //   {
-                //     closeMobileMenu;
-                //   }
-                //   window.location.href = "/services";
-                //   window.scrollTo(0, 0);
-                // }}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white"
               >
                 Devis gratuit
