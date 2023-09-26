@@ -220,6 +220,10 @@ const NavbarServices = () => {
             <li>
               <NavLink
                 to="/"
+                // onClick={() => {
+                //   window.location.href = "/";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Accueil
@@ -229,7 +233,14 @@ const NavbarServices = () => {
               <NavLink
                 to="/"
                 href="about"
-                onClick={SectionToScrollAbout}
+                // onClick={() => {
+                //   {
+                //     SectionToScrollAbout;
+                //   }
+                //   window.location.href = "/";
+                //   window.scrollTo(0, 0);
+                // }}
+                // onClick={SectionToScrollAbout}
                 className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 À propos
@@ -253,7 +264,13 @@ const NavbarServices = () => {
                 >
                   {pages.map((page, index) => (
                     <li key={index}>
-                      <NavLink to={page.link}>
+                      <NavLink
+                        // onClick={() => {
+                        //   window.location.href = "/";
+                        //   window.scrollTo(0, 0);
+                        // }}
+                        to={page.link}
+                      >
                         <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
                           {page.name}
                         </p>
@@ -277,7 +294,10 @@ const NavbarServices = () => {
               <NavLink
                 to="/"
                 href="contact"
-                onClick={SectionToScroll}
+                // onClick={() => {
+                //   window.location.href = "/";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Contact
@@ -288,6 +308,13 @@ const NavbarServices = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
+                // onClick={() => {
+                //   {
+                //     closeMobileMenu;
+                //   }
+                //   window.location.href = "/devisgratuit";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Devis gratuit
@@ -310,10 +337,10 @@ const NavbarServices = () => {
           <div className="mt-5 flex justify-center">
             <NavLink
               to="/devisgratuit"
-              onClick={() => {
-                window.location.href = "/devisgratuit";
-                window.scrollTo(0, 0);
-              }}
+              // onClick={() => {
+              //   window.location.href = "/devisgratuit";
+              //   window.scrollTo(0, 0);
+              // }}
               href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
               className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
             >

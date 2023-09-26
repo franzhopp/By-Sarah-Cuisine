@@ -124,7 +124,7 @@ const Devis = () => {
     <div>
       <div className="bg-efefef">
         <NavbarDevis />
-        <section className="">
+        <section>
           <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
             <div className="flex justify-center">
               <div className="w-full">
@@ -141,8 +141,9 @@ const Devis = () => {
                     {" "}
                     Quels évènements souhaitez-vous célébrer ?
                   </span>{" "}
-                  » afin que le chef puisse traiter votre demande avec attention. Écrire
-                  également vos réponses de manière claire et concise.
+                  » afin que le chef puisse traiter votre demande avec
+                  attention. Écrire également vos réponses de manière claire et
+                  concise.
                 </div>
               </div>
             </div>

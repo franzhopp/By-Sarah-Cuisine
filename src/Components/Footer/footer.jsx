@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaSnapchatGhost } from "react-icons/fa";
-import { GrNotes } from "react-icons/gr";
+import { MdStickyNote2 } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -97,7 +97,7 @@ const Footer = () => {
               <a href="/resume/fiche.png" download>
                 <span className="sr-only">Download flyer</span>
 
-                <GrNotes className="h-5 w-5 mt-1 text-black" />
+                <MdStickyNote2 className="h-6 w-6 text-black" />
               </a>
             </li>
 

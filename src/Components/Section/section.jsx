@@ -76,7 +76,7 @@ const Section = () => {
             pour devenir une véritable experte en cuisine. »
             <div className="mt-5 mb-5">
               <p className="uppercase font-extrabold text-gray text-sm tracking-widest">
-                ― Par Sarah, le 01/03/99.
+                ― Par Sarah, le 01/10/23.
               </p>
             </div>
           </p>

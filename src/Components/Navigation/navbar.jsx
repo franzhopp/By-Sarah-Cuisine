@@ -18,15 +18,14 @@ const pages = [
 
 const Navbar = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
-  const [changeMenuNavbar, setChangeMenuNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
   const [isMouseOnSubmenu, setIsMouseOnSubmenu] = useState(false);
   const [isRotated, setIsRotated] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenuMobile = () => {
-    setToggleMenu(!toggleMenu);
-    setIsRotated(!isRotated);
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
   };
 
   const toggleSousListsMenu = () => {
@@ -58,6 +57,7 @@ const Navbar = () => {
     if (homeSection) {
       homeSection.scrollIntoView({ behavior: "smooth" });
     }
+    setIsOpen(false);
   };
 
   const SectionToScrollAbout = () => {
@@ -65,6 +65,7 @@ const Navbar = () => {
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
+    setIsOpen(false);
   };
 
   const SectionToScroll = () => {
@@ -72,6 +73,7 @@ const Navbar = () => {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -178,10 +180,10 @@ const Navbar = () => {
             </div>
             <NavLink
               to="/devisgratuit"
-              onClick={() => {
-                window.location.href = "/devisgratuit";
-                window.scrollTo(0, 0);
-              }}
+              // onClick={() => {
+              //   window.location.href = "/devisgratuit";
+              //   window.scrollTo(0, 0);
+              // }}
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0 hover:bg-e9c2c2"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -203,12 +205,12 @@ const Navbar = () => {
 
           <div className="mr-2">
             <button
-              onClick={toggleMenuMobile}
+              onClick={toggleNavbar}
               className={`icon-toggle bg-e9c2c2 border border-white rounded-3xl p-3 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
                 isRotated ? "-rotate-180" : ""
               }`}
             >
-              {isRotated ? (
+              {isOpen ? (
                 <ImCross className="text-white" />
               ) : (
                 <TfiMenu className="text-white" />
@@ -220,7 +222,7 @@ const Navbar = () => {
 
         <ul
           className={`toggle-menu ${
-            toggleMenu ? "block" : "hidden"
+            isOpen ? "block" : "hidden"
           } p-2 border-t border-t-efefef transform transition-transform duration-300 ease-in-out`}
         >
           <div id="navlinks">
@@ -260,7 +262,13 @@ const Navbar = () => {
                 >
                   {pages.map((page, index) => (
                     <li key={index}>
-                      <NavLink to={page.link}>
+                      <NavLink
+                        onClick={() => {
+                          window.location.href = "/services";
+                          window.scrollTo(0, 0);
+                        }}
+                        to={page.link}
+                      >
                         <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
                           {page.name}
                         </p>
@@ -271,6 +279,10 @@ const Navbar = () => {
                     <NavLink
                       to="/services"
                       href="services"
+                      onClick={() => {
+                        window.location.href = "/services";
+                        window.scrollTo(0, 0);
+                      }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
@@ -293,6 +305,13 @@ const Navbar = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
+                // onClick={() => {
+                //   {
+                //     closeMobileMenu;
+                //   }
+                //   window.location.href = "/services";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white"
               >
                 Devis gratuit

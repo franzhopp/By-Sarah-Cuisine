@@ -55,15 +55,8 @@ const NavbarDevis = () => {
     setToggleMenu(false);
   };
 
-  const SectionToScroll = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const SectionToScrollAbout = () => {
-    const aboutSection = document.getElementById("about");
+  const SectionToScrollDevis = () => {
+    const aboutSection = document.getElementById("devis");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -114,7 +107,6 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 href="about"
-                onClick={SectionToScrollAbout}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 }  px-6 py-2 text-base font-extrabold uppercase`}
@@ -165,7 +157,6 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 href="contact"
-                onClick={SectionToScroll}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 } px-6 py-2 text-base font-extrabold uppercase`}
@@ -221,6 +212,10 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 onClick={closeMobileMenu}
+                // onClick={() => {
+                //   window.location.href = "/";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Accueil
@@ -230,7 +225,10 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 href="about"
-                onClick={SectionToScrollAbout}
+                // onClick={() => {
+                //   window.location.href = "/";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 À propos
@@ -255,9 +253,15 @@ const NavbarDevis = () => {
                   {pages.map((page, index) => (
                     <li key={index}>
                       <NavLink
+                        // onClick={() => {
+                        //   window.location.href = "/";
+                        //   window.scrollTo(0, 0);
+                        // }}
                         to={page.link}
                       >
-                        <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">{page.name}</p>
+                        <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
+                          {page.name}
+                        </p>
                       </NavLink>
                     </li>
                   ))}
@@ -265,6 +269,10 @@ const NavbarDevis = () => {
                     <NavLink
                       to="/services"
                       href="services"
+                      // onClick={() => {
+                      //   window.location.href = "/";
+                      //   window.scrollTo(0, 0);
+                      // }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
@@ -278,7 +286,10 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 href="contact"
-                onClick={SectionToScroll}
+                // onClick={() => {
+                //   window.location.href = "/";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Contact
@@ -289,6 +300,10 @@ const NavbarDevis = () => {
               <NavLink
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
+                // onClick={() => {
+                //   window.location.href = "/";
+                //   window.scrollTo(0, 0);
+                // }}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Devis gratuit
@@ -307,15 +322,11 @@ const NavbarDevis = () => {
           />
         </div>
         <div className="px-12 text-white text-lg sm:text-2xl  text-center font-sans-serif font-extrabold">
-           Un évènement ? Faites un devis sur-mesure.
+          Un évènement ? Faites un devis sur-mesure.
           <div className="mt-5 flex justify-center">
             <NavLink
               to="/devisgratuit"
-              onClick={() => {
-                window.location.href = "/devisgratuit";
-                window.scrollTo(0, 0);
-              }}
-              href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
+              onClick={SectionToScrollDevis}
               className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
             >
               <p className="flex flex-row font-extrabold">
@@ -323,6 +334,7 @@ const NavbarDevis = () => {
               </p>
             </NavLink>
           </div>
+          <section id="devis"></section>
         </div>
       </section>
     </div>
