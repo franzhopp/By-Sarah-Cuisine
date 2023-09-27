@@ -217,8 +217,8 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+        
         {/* end 2 items */}
-
         <ul
           className={`toggle-menu ${
             isOpen ? "block" : "hidden"
