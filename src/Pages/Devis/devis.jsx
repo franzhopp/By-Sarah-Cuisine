@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import { NavLink } from "react-router-dom";
 import NavbarDevis from "../../Components/Navigation/navbar-devis";
-import { BiLeftArrowAlt, BiDownArrowAlt } from "react-icons/bi";
+import { BiLeftArrowAlt } from "react-icons/bi";
 
 const Devis = () => {
   const [status, setStatus] = useState("");
@@ -364,7 +364,7 @@ const Devis = () => {
             <div className="mt-12 text-base text-black text-center font-sans-serif font-extrabold">
               <div className="flex justify-center">
                 Pour découvrir tous les réseaux sociaux de Sarah, vous les
-                trouverez en bas de la page de retour.
+                trouverez en bas des pages !
               </div>
               <div className="mt-5 flex justify-center">
                 <NavLink
