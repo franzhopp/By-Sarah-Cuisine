@@ -15,7 +15,7 @@ const Section = () => {
       </div>
       <div className="flex justify-center">
         <h2 className="font-extrabold text-2xl sm:text-4xl">
-          <span className="text-pink font-sans-recursive">{`Traiteur pour tous types d'évènements`}</span>
+          <span className="text-pink font-sans-recursive">{`Traiteur pour tous types d'évènement`}</span>
         </h2>
       </div>
       <div className="flex justify-center">
