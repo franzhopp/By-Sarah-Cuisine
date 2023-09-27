@@ -104,7 +104,7 @@ const Services = () => {
             Plats
           </p>
           <p className="text-black font-sans-serif text-base sm:text-2xl">
-            Préparation d’apéritifs pour vos entrées
+            Préparation de plats
           </p>
         </h1>
       </div>
@@ -261,7 +261,7 @@ const Services = () => {
             Évènements
           </p>
           <p className="text-black font-sans-serif text-base sm:text-2xl">
-            Préparation évènements
+            Préparation d'évènement
           </p>
         </h1>
       </div>

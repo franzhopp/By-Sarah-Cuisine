@@ -46,7 +46,7 @@ const Form = () => {
     }
 
     if (!formData.email) {
-      newErrors.email = "Veuillez entrer un email.";
+      newErrors.email = "Veuillez entrer une adresse mail.";
     }
 
     if (!formData.tel) {

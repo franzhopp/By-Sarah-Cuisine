@@ -169,7 +169,7 @@ const Cards = () => {
                 Charcuterie
               </div>
               <p className="text-black text-justify mt-2">
-                Accompagnez vos moments avec cette sélection, notamment les délicieux plateaux de charcuteries.
+                Accompagnez vos moments avec cette sélection, notamment les délicieux plateaux de charcuterie.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>

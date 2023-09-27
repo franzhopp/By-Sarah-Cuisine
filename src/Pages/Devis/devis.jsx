@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
+import { NavLink } from "react-router-dom";
 import NavbarDevis from "../../Components/Navigation/navbar-devis";
+import { BiLeftArrowAlt, BiDownArrowAlt } from "react-icons/bi";
 
 const Devis = () => {
   const [status, setStatus] = useState("");
@@ -53,7 +55,7 @@ const Devis = () => {
     }
 
     if (!formData.email) {
-      newErrors.email = "Veuillez entrer un email.";
+      newErrors.email = "Veuillez entrer une adresse mail.";
     }
 
     if (!formData.tel) {
@@ -128,7 +130,7 @@ const Devis = () => {
           <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
             <div className="flex justify-center">
               <div className="w-full">
-                <div className="text-black mt-5 text-center mb-16 font-sans-serif text-base sm:text-lg">
+                <div className="text-black mt-5 leading-8 text-center mb-16 font-sans-serif text-base sm:text-lg">
                   <span className="underline">
                     Avant de soumettre votre demande de devis
                   </span>{" "}
@@ -194,7 +196,7 @@ const Devis = () => {
                         className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
                           errors.email ? "input-error border-red-700" : ""
                         }`}
-                        placeholder="Email"
+                        placeholder="Adresse mail"
                         id="email"
                         name="email"
                         value={formData.email}
@@ -357,6 +359,27 @@ const Devis = () => {
                 <div className="mt-5 text-center font-sans-serif text-white font-extrabold">
                   {status && <p>{status}</p>}
                 </div>
+              </div>
+            </div>
+            <div className="mt-12 text-base text-black text-center font-sans-serif font-extrabold">
+              <div className="flex justify-center">
+                Pour découvrir tous les réseaux sociaux de Sarah, vous les
+                trouverez en bas de la page de retour.
+              </div>
+              <div className="mt-5 flex justify-center">
+                <NavLink
+                  to="/"
+                  // onClick={() => {
+                  //   window.location.href = "/";
+                  //   window.scrollTo(0, 0);
+                  // }}
+                  className=" bg-pink text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
+                >
+                  <p className="flex flex-row font-extrabold">
+                    {`Retournez à la page d'accueil`}
+                    <BiLeftArrowAlt className="ml-2 mt-1" />
+                  </p>
+                </NavLink>
               </div>
             </div>
           </div>
