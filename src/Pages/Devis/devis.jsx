@@ -131,8 +131,9 @@ const Devis = () => {
             <div className="flex justify-center">
               <div className="w-full">
                 <div className="text-black mt-5 leading-8 text-center mb-16 font-sans-serif text-base sm:text-lg">
+                  ↪{" "}
                   <span className="underline">
-                    Avant de soumettre votre demande de devis
+                    Lire avant de soumettre votre demande de devis
                   </span>{" "}
                   : veuillez prendre un moment pour lire ces directives
                   importantes. Si vous envisagez d'organiser un événement majeur
@@ -365,7 +366,8 @@ const Devis = () => {
                 >
                   <p className="flex flex-row font-extrabold">
                     {`Retournez à la page d'accueil`}
-                    <BiLeftArrowAlt className="ml-2 mt-1" />
+                    <span className="ml-2 "> ↩</span>
+                    {/* <BiLeftArrowAlt className="ml-2 mt-1" /> */}
                   </p>
                 </NavLink>
               </div>
