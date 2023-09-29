@@ -133,7 +133,10 @@ const Devis = () => {
           >
             <div className="flex justify-center">
               <div className="w-full">
-                <div className="text-black mt-5 leading-8 text-center mb-16 font-sans-serif text-base sm:text-lg">
+                <div
+                  data-aos="fade-in"
+                  className="text-black mt-5 leading-8 text-center mb-16 font-sans-serif text-base sm:text-lg"
+                >
                   📩{" "}
                   <span className="underline">
                     Lire avant de soumettre votre demande de devis
@@ -157,7 +160,7 @@ const Devis = () => {
               </div>
             </div>
 
-            <div className="bg-devis-color rounded-3xl">
+            <div data-aos="fade-in" className="bg-devis-color rounded-3xl">
               <div className="bg-gray-100 p-8 mb-10 lg:col-span-3 lg:p-12">
                 <form onClick={handleSubmit} className="space-y-4">
                   <div>

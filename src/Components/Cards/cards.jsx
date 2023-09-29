@@ -156,8 +156,7 @@ const Cards = () => {
             </div>
           </div>
           <div
-            // data-aos="fade-up"
-            // data-aos-anchor-placement="top-center"
+            data-aos="fade-in"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
           >
             <div className="flex flex-col justify-start items-center mt-10">
