@@ -127,11 +127,15 @@ const Devis = () => {
       <div className="bg-efefef">
         <NavbarDevis />
         <section>
-          <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+          <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8"
+          >
             <div className="flex justify-center">
               <div className="w-full">
                 <div className="text-black mt-5 leading-8 text-center mb-16 font-sans-serif text-base sm:text-lg">
-                  ↪{" "}
+                  📩{" "}
                   <span className="underline">
                     Lire avant de soumettre votre demande de devis
                   </span>{" "}
@@ -366,8 +370,7 @@ const Devis = () => {
                 >
                   <p className="flex flex-row font-extrabold">
                     {`Retournez à la page d'accueil`}
-                    <span className="ml-2 "> ↩</span>
-                    {/* <BiLeftArrowAlt className="ml-2 mt-1" /> */}
+                    <BiLeftArrowAlt className="ml-2 mt-1" />
                   </p>
                 </NavLink>
               </div>
