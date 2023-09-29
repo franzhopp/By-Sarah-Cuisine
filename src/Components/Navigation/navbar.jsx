@@ -112,6 +112,9 @@ const Navbar = () => {
             <div className="flex items-center">
               <NavLink
                 onClick={SectionToScrollHome}
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 } px-6 py-2 text-base font-extrabold uppercase`}
@@ -120,6 +123,9 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 onClick={SectionToScrollAbout}
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 }  px-6 py-2 text-base font-extrabold uppercase`}
@@ -128,6 +134,9 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/services"
+                // onClick={() => {
+                //   window.location.href = "/services";
+                // }}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 }  px-6 py-2 text-base font-extrabold`}
@@ -135,6 +144,9 @@ const Navbar = () => {
                 <li className="relative group list-none text-center">
                   <NavLink
                     to="/services"
+                    // onClick={() => {
+                    //   window.location.href = "/services";
+                    // }}
                     className="block px-3 py-2 rounded-md font-extrabold"
                   >
                     <p className="uppercase">Services</p>
@@ -157,7 +169,9 @@ const Navbar = () => {
                     <li>
                       <NavLink
                         to="/services"
-                        href="services"
+                        // onClick={() => {
+                        //   window.location.href = "/services";
+                        // }}
                         className="underline font-extrabold text-pink"
                       >
                         Tous les services
@@ -169,7 +183,9 @@ const Navbar = () => {
 
               <NavLink
                 to="/"
-                href="contact"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 onClick={SectionToScroll}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
@@ -182,7 +198,6 @@ const Navbar = () => {
               to="/devisgratuit"
               // onClick={() => {
               //   window.location.href = "/devisgratuit";
-              //   window.scrollTo(0, 0);
               // }}
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0 hover:bg-e9c2c2"
             >
@@ -193,9 +208,7 @@ const Navbar = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav
-        className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
-      >
+      <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max ">
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
@@ -217,7 +230,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        
+
         {/* end 2 items */}
         <ul
           className={`toggle-menu ${
@@ -227,6 +240,10 @@ const Navbar = () => {
           <div id="navlinks">
             <li>
               <NavLink
+                to="/"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 onClick={SectionToScrollHome}
                 className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
@@ -236,7 +253,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                href="about"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 onClick={SectionToScrollAbout}
                 className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
@@ -264,7 +283,6 @@ const Navbar = () => {
                       <NavLink
                         // onClick={() => {
                         //   window.location.href = "/services";
-                        //   window.scrollTo(0, 0);
                         // }}
                         to={page.link}
                       >
@@ -277,10 +295,8 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/services"
-                      href="services"
                       // onClick={() => {
                       //   window.location.href = "/services";
-                      //   window.scrollTo(0, 0);
                       // }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
@@ -293,6 +309,10 @@ const Navbar = () => {
 
             <li>
               <NavLink
+                to="/"
+                // onClick={() => {
+                //   window.location.href = "/";
+                // }}
                 onClick={SectionToScroll}
                 className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
@@ -303,6 +323,9 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/devisgratuit"
+                // onClick={() => {
+                //   window.location.href = "/devisgratuit";
+                // }}
                 onClick={closeMobileMenu}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white"
               >

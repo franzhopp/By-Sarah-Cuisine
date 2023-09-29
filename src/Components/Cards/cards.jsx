@@ -37,7 +37,10 @@ const Cards = () => {
         </div>
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
           {/* Step 1 */}
-          <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105">
+          <div
+            data-aos="fade-in"
+            className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
+          >
             <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-72 w-64 bg-white rounded-xl">
                 <img
@@ -74,7 +77,10 @@ const Cards = () => {
           </div>
 
           {/* Step 2 */}
-          <div className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105">
+          <div
+            data-aos="fade-in"
+            className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
+          >
             <div className="flex flex-col justify-start items-center mt-10">
               <div className="h-72 w-64 bg-white rounded-xl">
                 <img
@@ -112,8 +118,7 @@ const Cards = () => {
 
           {/* Step 3 */}
           <div
-            // data-aos="fade-up"
-            // data-aos-anchor-placement="top-center"
+            data-aos="fade-in"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
           >
             <div className="flex flex-col justify-start items-center mt-10">
@@ -169,7 +174,8 @@ const Cards = () => {
                 Charcuterie
               </div>
               <p className="text-black text-justify mt-2">
-                Accompagnez vos moments avec cette sélection, notamment les délicieux plateaux de charcuterie.
+                Accompagnez vos moments avec cette sélection, notamment les
+                délicieux plateaux de charcuterie.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>

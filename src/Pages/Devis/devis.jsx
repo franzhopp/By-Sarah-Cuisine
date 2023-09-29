@@ -128,8 +128,7 @@ const Devis = () => {
         <NavbarDevis />
         <section>
           <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-in"
             className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8"
           >
             <div className="flex justify-center">

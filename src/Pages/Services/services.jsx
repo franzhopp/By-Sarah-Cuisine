@@ -30,7 +30,7 @@ const Services = () => {
         </h1>
       </div>
       <div
-        data-aos="fade-up"
+        data-aos="fade-in"
         className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
@@ -109,7 +109,7 @@ const Services = () => {
         </h1>
       </div>
       <div
-        data-aos="fade-up"
+        data-aos="fade-in"
         className="flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
@@ -188,7 +188,7 @@ const Services = () => {
       </div>
 
       <div
-        data-aos="fade-up"
+        data-aos="fade-in"
         className="mb-20 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}
@@ -267,7 +267,7 @@ const Services = () => {
       </div>
 
       <div
-        data-aos="fade-up"
+        data-aos="fade-in"
         className="mb-20 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6"
       >
         {/* Step 1 */}

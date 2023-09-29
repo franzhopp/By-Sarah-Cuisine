@@ -96,8 +96,7 @@ const Form = () => {
   return (
     <section className="image-blur-by-sarah-cuisine">
       <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade-in"
         className="max-w-4xl mx-auto px-4 sm:py-20 sm:px-6 lg:px-8"
       >
         <span className="flex flex-col text-center">
