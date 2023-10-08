@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import NavbarServices from "../../Components/Navigation/navbar-services";
+import NavbarServices from "../../Components/Navigation/ServicesNavbar";
 import Image from "../../assets/template.png";
 import { MdOutlineEditNote, MdOutlineFileDownload } from "react-icons/md";
 import ImgPiecesDeTousGenres from "../../assets/piecesdetousgenres.png";

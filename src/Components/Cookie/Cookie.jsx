@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import CookieModal from "./modal-cookie.jsx";
+import CookieModal from "./ModalCookie.jsx";
 import Cookies from "js-cookie";
 
 const Homepage = () => {

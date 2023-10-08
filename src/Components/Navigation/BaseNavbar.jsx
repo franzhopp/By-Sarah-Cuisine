@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Homepage from "../Homepage/homepage";
+import Homepage from "../Homepage/Homepage";
 import Image from "../../assets/logo-bsc.png";
 import ImageMobile from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import "../Contact/title-contact.jsx";
-import "../Section/section.jsx";
+import "../Contact/TitleContact.jsx";
+import "../Section/BaseSection.jsx";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },

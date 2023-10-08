@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import { NavLink } from "react-router-dom";
-import NavbarDevis from "../../Components/Navigation/navbar-devis";
+import NavbarDevis from "../../Components/Navigation/DevisNavbar";
 import { BiLeftArrowAlt } from "react-icons/bi";
 
 const Devis = () => {

@@ -9,7 +9,8 @@ const Partner = () => {
       >
         <span className="flex justify-center">
           <img
-            data-aos="fade-right"
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
             src={Image}
             alt=""
             className="px-16 mt-24 mb-24 sm:mb-10 sm:mt-4"

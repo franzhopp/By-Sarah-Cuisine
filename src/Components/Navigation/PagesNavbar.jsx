@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import "../Contact/title-contact.jsx";
-import "../Section/section.jsx";
+import "../Contact/TitleContact.jsx";
+import "../Section/BaseSection.jsx";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
@@ -180,9 +180,7 @@ const NavbarPages = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav
-        className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
-      >
+      <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max ">
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">

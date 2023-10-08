@@ -1,4 +1,4 @@
-import NavbarPages from "../Navigation/navbar-pages";
+import NavbarPages from "../Navigation/PagesNavbar";
 
 const PagePrivacy = () => {
   return (
@@ -13,10 +13,11 @@ const PagePrivacy = () => {
 
           <p className="text-black text-justify mb-4">
             • Chez{" "}
-            <span className="text-pink font-extrabold">By Sarah Cuisine</span>, nous
-            accordons une grande importance à la protection de vos informations
-            personnelles. Cette politique de confidentialité explique comment
-            nous collectons, utilisons, et protégeons vos données.
+            <span className="text-pink font-extrabold">By Sarah Cuisine</span>,
+            nous accordons une grande importance à la protection de vos
+            informations personnelles. Cette politique de confidentialité
+            explique comment nous collectons, utilisons, et protégeons vos
+            données.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-pink font-sans-recursive">

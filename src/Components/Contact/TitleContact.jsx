@@ -10,7 +10,8 @@ const TitleForm = () => {
       >
         <span className="flex justify-center">
           <img
-            data-aos="fade-right"
+             data-aos="fade-up"
+             data-aos-anchor-placement="top-bottom"
             src={Image}
             alt=""
             className="px-16 mt-28 sm:mt-24 p-1"

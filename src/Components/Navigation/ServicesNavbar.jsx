@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import ImageTitle from "../../assets/title-devis.png";
+import ImageTitle from "../../assets/title-services.png";
 import Image from "../../assets/logo-bsc.png";
 import ImageMobile from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
 import { MdOutlineEditNote, MdOutlineKeyboardArrowDown } from "react-icons/md";
-import "../Contact/title-contact.jsx";
-import "../Section/section.jsx";
+import "../Contact/TitleContact.jsx";
+import "../Section/BaseSection.jsx";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
@@ -16,7 +16,7 @@ const pages = [
   { link: "/services", name: "Évènements" },
 ];
 
-const NavbarDevis = () => {
+const NavbarServices = () => {
   const [scrollNavbar, setScrollNavbar] = useState();
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSousListsMenu, setShowSousListsMenu] = useState(false);
@@ -56,8 +56,15 @@ const NavbarDevis = () => {
     setToggleMenu(false);
   };
 
-  const SectionToScrollDevis = () => {
-    const aboutSection = document.getElementById("devis");
+  const SectionToScroll = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const SectionToScrollAbout = () => {
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -108,6 +115,7 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 href="about"
+                onClick={SectionToScrollAbout}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 }  px-6 py-2 text-base font-extrabold uppercase`}
@@ -158,6 +166,7 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 href="contact"
+                onClick={SectionToScroll}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 } px-6 py-2 text-base font-extrabold uppercase`}
@@ -176,9 +185,7 @@ const NavbarDevis = () => {
       </nav>
 
       {/* Navigation mobile */}
-      <nav
-        className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max "
-      >
+      <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max ">
         {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
@@ -211,7 +218,6 @@ const NavbarDevis = () => {
             <li>
               <NavLink
                 to="/"
-                onClick={closeMobileMenu}
                 // onClick={() => {
                 //   window.location.href = "/";
                 //   window.scrollTo(0, 0);
@@ -226,9 +232,13 @@ const NavbarDevis = () => {
                 to="/"
                 href="about"
                 // onClick={() => {
+                //   {
+                //     SectionToScrollAbout;
+                //   }
                 //   window.location.href = "/";
                 //   window.scrollTo(0, 0);
                 // }}
+                // onClick={SectionToScrollAbout}
                 className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 À propos
@@ -269,10 +279,6 @@ const NavbarDevis = () => {
                     <NavLink
                       to="/services"
                       href="services"
-                      // onClick={() => {
-                      //   window.location.href = "/";
-                      //   window.scrollTo(0, 0);
-                      // }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
@@ -301,7 +307,10 @@ const NavbarDevis = () => {
                 to="/devisgratuit"
                 onClick={closeMobileMenu}
                 // onClick={() => {
-                //   window.location.href = "/";
+                //   {
+                //     closeMobileMenu;
+                //   }
+                //   window.location.href = "/devisgratuit";
                 //   window.scrollTo(0, 0);
                 // }}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
@@ -315,30 +324,34 @@ const NavbarDevis = () => {
       <section>
         <div className="flex justify-center pt-32  px-4 sm:pt-32">
           <img
-            data-aos="fade-right"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
             src={ImageTitle}
             alt="Image name"
             className="px-16 mt-14 mb-12 sm:mb-10 sm:mt-4"
           />
         </div>
         <div className="px-12 text-white text-lg sm:text-2xl  text-center font-sans-serif font-extrabold">
-          Un évènement ? Faites un devis sur-mesure.
+          Un devis sur-mesure ? Pour préparer un évènement, c'est par ici.
           <div className="mt-5 flex justify-center">
             <NavLink
               to="/devisgratuit"
-              onClick={SectionToScrollDevis}
+              // onClick={() => {
+              //   window.location.href = "/devisgratuit";
+              //   window.scrollTo(0, 0);
+              // }}
+              href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
               className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
             >
               <p className="flex flex-row font-extrabold">
-                Commencer <MdOutlineEditNote className="ml-2 mt-1" />
+                Devis gratuit <MdOutlineEditNote className="ml-2 mt-1" />
               </p>
             </NavLink>
           </div>
-          <section id="devis" className="sm:mb-0 mb-10"></section>
         </div>
       </section>
     </div>
   );
 };
 
-export default NavbarDevis;
+export default NavbarServices;

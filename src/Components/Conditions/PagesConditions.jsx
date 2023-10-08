@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarPages from "../Navigation/navbar-pages";
+import NavbarPages from "../Navigation/PagesNavbar";
 
 const PageConditions = () => {
   return (

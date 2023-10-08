@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import NavbarPages from "../Navigation/navbar-pages";
+import NavbarPages from "../Navigation/PagesNavbar";
 
 const PageMentions = () => {
   const keywordsStyle = "font-extrabold";
@@ -193,7 +193,10 @@ const PageMentions = () => {
             </span>{" "}
             PhpStorm (JetBrains).
             <br />•
-            <span className={keywordsStyle}> Technologies utilisées :</span>{" "}
+            <span className={keywordsStyle}>
+              {" "}
+              Technologies utilisées :
+            </span>{" "}
             React, Tailwind CSS, HTML/CSS, EmailJS, Postman, PNPM, AOS, React
             Icons, Hyper UI, Daisy UI etc...
             <br />

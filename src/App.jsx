@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./Components/Navigation/navbar.jsx";
-import PageNotFound from "./Pages/Error/pagenotfound.jsx";
-import Section from "./Components/Section/section";
-import SectionDuplicate from "./Components/Section/section-gallery.jsx";
-import Cards from "./Components/Cards/cards.jsx";
-import Partner from "./Components/Client/title-client.jsx";
-import Form from "./Components/Contact/title-contact.jsx";
-import FormContact from "./Components/Contact/form-contact.jsx";
-import Footer from "./Components/Footer/footer.jsx";
-import PropositionOfServices from "./Pages/Services/services.jsx";
-import DevisFree from "./Pages/Devis/devis.jsx";
-import AvisClient from "./Components/Client/avis-client.jsx";
-import PagePrivacy from "./Components/Privacy/page-privacy.jsx";
-import PageConditions from "./Components/Conditions/page-conditions.jsx";
-import PageMentions from "./Components/Mentions/page-mentions.jsx";
+import Header from "./Components/Navigation/BaseNavbar.jsx";
+import PageNotFound from "./Pages/Error/PageNotFound.jsx";
+import Section from "./Components/Section/BaseSection.jsx";
+import SectionDuplicate from "./Components/Section/SectionGallery.jsx";
+import Cards from "./Components/Cards/CardsFormulas.jsx";
+import Partner from "./Components/Client/TitleClient.jsx";
+import Form from "./Components/Contact/TitleContact.jsx";
+import FormContact from "./Components/Contact/FormContact.jsx";
+import Footer from "./Components/Footer/Footer.jsx";
+import PropositionOfServices from "./Pages/Services/AllServices.jsx";
+import DevisFree from "./Pages/Devis/Devis.jsx";
+import AvisClient from "./Components/Client/AvisClient.jsx";
+import PagePrivacy from "./Components/Privacy/PagePrivacy.jsx";
+import PageConditions from "./Components/Conditions/PagesConditions.jsx";
+import PageMentions from "./Components/Mentions/PageMentions.jsx";
 
 const App = () => {
   return (

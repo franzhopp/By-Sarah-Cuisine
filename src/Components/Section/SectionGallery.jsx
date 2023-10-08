@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { images } from "../Helpers/images-data";
-import InfoDevis from "./info-devis.jsx";
+import { images } from "../Helpers/DataImages";
+import InfoDevis from "./InfoDevis.jsx";
 
 const SectionGallery = () => {
   const [currImg, setCurrImg] = useState(0);

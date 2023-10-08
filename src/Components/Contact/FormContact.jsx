@@ -129,7 +129,11 @@ const Form = () => {
           </div>
 
           <div className="bg-contact p-8 shadow-lg lg:col-span-3 lg:p-12 rounded-3xl mb-11">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form
+              data-aos="fade-in"
+              onSubmit={handleSubmit}
+              className="space-y-4"
+            >
               <div action="" className="space-y-4">
                 <div>
                   <input
