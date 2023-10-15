@@ -32,6 +32,9 @@ const Form = () => {
     }));
   };
 
+  const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const regexNumber = /^\d+$/;
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -45,12 +48,15 @@ const Form = () => {
       newErrors.lastname = "Veuillez entrer un nom.";
     }
 
-    if (!formData.email) {
-      newErrors.email = "Veuillez entrer une adresse mail.";
+    if (!formData.email || !regexEmail.test(formData.email)) {
+      newErrors.email = "Veuillez entrer une adresse e-mail valide.";
     }
 
     if (!formData.tel) {
       newErrors.tel = "Veuillez entrer un numéro de téléphone.";
+    } else if (!regexNumber.test(formData.tel)) {
+      newErrors.tel =
+        "Le numéro de téléphone doit contenir uniquement des chiffres.";
     }
 
     if (!formData.message) {

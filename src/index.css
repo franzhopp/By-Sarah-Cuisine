@@ -25,6 +25,7 @@ body {
 
 .fade-in {
     opacity: 0;
+    backdrop-filter: blur(10px);
     animation: fade-in-animation 1s ease-in forwards;
 }
 
@@ -176,4 +177,3 @@ body {
     max-width: 100%;
     display: block;
 }
-

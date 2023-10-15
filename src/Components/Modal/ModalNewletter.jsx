@@ -74,8 +74,8 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              placeholder="Exemple@exemple.com"
-              className="rounded-xl p-3 text-gray outline-none border border-1-white input-bordered input-primary mb-5 ml-2 mr-3 sm:mb-0 md:ml-0"
+              placeholder="Votre email*"
+              className="italic rounded-xl p-3 text-gray outline-none border border-1-white input-bordered input-primary mb-5 ml-2 mr-3 sm:mb-0 md:ml-0"
             />
             <button onClick={() => closeModal(false)}>
               <ImCross className="text-C22E2E mb-4 sm:mb-0" />

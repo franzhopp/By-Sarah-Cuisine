@@ -7,15 +7,15 @@ const AvisClient = () => {
         <div className="w-full sm:w-1/2">
           <p className="text-black text-center font-sans-serif mb-10">
             Remboursés ou satisfaits, consultez les avis des clients de Sarah.
-            Vous prévoyez de planifier un événement,
+            Vous prévoyez de planifier un événement ?
             <span className="font-extrabold">
               {" "}
-              contactez Sarah via les informations ci-dessous,
+              Contactez Sarah via les informations ci-dessous,
             </span>{" "}
             le traiteur peut également vous fournir un devis pour assurer le
             succès de{" "}
             <span className="underline">
-              vos événements plus importants en toute sécurité
+              vos événements plus importants, en toute sécurité
             </span>{" "}
             !
           </p>
@@ -93,10 +93,13 @@ const AvisClient = () => {
             </div>
           </div>
           <p className="text-black text-justify font-sans-serif mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-            labore aliquid cupiditate officia vitae laboriosam ducimus
-            voluptatem ipsa maiores quo reiciendis, itaque facilis vero totam
-            voluptas facere blanditiis iste non.
+            J'ai suggéré à mes amis de choisir By Sarah Cuisine pour un repas
+            important parce que je suis convaincue qu'elle est la meilleure
+            traiteur. Mes amis n'ont eu aucun regret, ils ont vraiment apprécié
+            la qualité de la cuisine. Sarah est une véritable professionnelle,
+            je la recommande sans hésitation pour la délicatesse de ses plats et
+            la passion qu'elle met dans chaque commande. Continue à nous
+            régaler, Sarah, avec tes délicieux plats raffinés !
           </p>
         </div>
         <div
@@ -130,10 +133,13 @@ const AvisClient = () => {
             </div>
           </div>
           <p className="text-black text-justify font-sans-serif mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-            labore aliquid cupiditate officia vitae laboriosam ducimus
-            voluptatem ipsa maiores quo reiciendis, itaque facilis vero totam
-            voluptas facere blanditiis iste non.
+            J'ai suggéré à mes amis de choisir By Sarah Cuisine pour un repas
+            important parce que je suis convaincue qu'elle est la meilleure
+            traiteur. Mes amis n'ont eu aucun regret, ils ont vraiment apprécié
+            la qualité de la cuisine. Sarah est une véritable professionnelle,
+            je la recommande sans hésitation pour la délicatesse de ses plats et
+            la passion qu'elle met dans chaque commande. Continue à nous
+            régaler, Sarah, avec tes délicieux plats raffinés !
           </p>
         </div>
       </div>

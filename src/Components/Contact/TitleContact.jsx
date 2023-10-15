@@ -4,14 +4,10 @@ import Image from "../../assets/title-contact.png";
 const TitleForm = () => {
   return (
     <div>
-      <div
-        loading="lazy"
-        className="image-contact-by-sarah-cuisine"
-      >
+      <div loading="lazy" className="image-contact-by-sarah-cuisine border-t">
         <span className="flex justify-center">
           <img
-             data-aos="fade-up"
-             data-aos-anchor-placement="top-bottom"
+            data-aos="fade-down-right"
             src={Image}
             alt=""
             className="px-16 mt-28 sm:mt-24 p-1"

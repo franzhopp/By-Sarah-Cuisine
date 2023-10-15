@@ -20,7 +20,7 @@ const SectionGallery = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-4 mb-10 p-3 flex-col sm:flex-row">
+      <div className="flex justify-center items-center mt-4 mb-10 flex-col sm:flex-row">
         {/* svg */}
         <div className="flex flex-row justify-start items-center shadow-lg rounded-full">
           <svg
@@ -48,10 +48,10 @@ const SectionGallery = () => {
           <div className="flex flex-col justify-start items-center">
             <div
               data-aos="fade-in"
-              className="bg-white h-80 w-80 sm:h-96 sm:w-96 bg-no-repeat rounded-3xl shadow-md"
+              className="bg-white h-96 w-96 bg-no-repeat rounded-3xl shadow-md"
               style={{ backgroundImage: `url(${images[currImg].img})` }}
             >
-              <div className="flex justify-end mt-64 sm:mt-80 mr-6">
+              <div className="flex justify-end mt-80 mr-6">
                 <p className="text-white text-2xl font-sans-recursive font-extrabold">
                   {" "}
                   By Sarah Cuisine

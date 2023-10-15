@@ -324,8 +324,7 @@ const NavbarServices = () => {
       <section>
         <div className="flex justify-center pt-32  px-4 sm:pt-32">
           <img
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
+            data-aos="fade-down-left"
             src={ImageTitle}
             alt="Image name"
             className="px-16 mt-14 mb-12 sm:mb-10 sm:mt-4"

@@ -1,6 +1,6 @@
 import { MdOutlineEditNote } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import ModalNewletter from "../Modal/modal-newletter.jsx";
+import ModalNewletter from "../Modal/ModalNewletter.jsx";
 import { useState } from "react";
 import ImgFruits from "../../assets/fruits1.png";
 import ImgDesserts from "../../assets/desserts1.png";
@@ -12,7 +12,7 @@ const Cards = () => {
   const [openModel, setOpenModel] = useState(false);
 
   return (
-    <section className="bg-pink pt-12 pb-12 mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-pink border-b pt-12 pb-12 mx-auto px-4 sm:px-6 lg:px-8">
       <div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-sans-recursive text-center">
           Les formules
@@ -52,11 +52,11 @@ const Cards = () => {
             </div>
             <div className="p-6">
               <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
-                Plateaux de fruit
+                Plateaux de fruits
               </div>
               <p className="text-black text-justify mt-2">
                 Égayez vos moments spéciaux en famille, lors de mariages, de
-                dîners romantiques, grâce à de magnifiques plateaux de fruit.
+                dîners romantiques, grâce à de magnifiques plateaux de fruits.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">40€</span>
@@ -92,11 +92,11 @@ const Cards = () => {
             </div>
             <div className="p-6">
               <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
-                Desserts
+                Plateaux de desserts
               </div>
               <p className="text-black text-justify mt-2">
                 Découvrez la sélection de desserts pour égayer vos moments en
-                famille, vos mariages, avec de superbes boîtes à desserts.
+                famille, vos mariages, avec de superbes boîtes à dessert.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">20€</span>
@@ -132,11 +132,11 @@ const Cards = () => {
             </div>
             <div className="p-6">
               <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
-                Apéritifs
+                Plateaux d'apéritifs
               </div>
               <p className="text-black text-justify mt-2">
-                Vous souhaitez avoir des apéritifs pour accompagner vos moments,
-                découvrez la sélection que le traiteur propose.
+                Vous souhaitez avoir des apéritifs pour accompagner vos évènements ?
+                Découvrez la sélection de différents apéritifs.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
@@ -170,11 +170,11 @@ const Cards = () => {
             </div>
             <div className="p-6">
               <div className="text-pink mt-5 text-3xl text-center font-sans-recursive font-extrabold">
-                Charcuterie
+                Plateaux de charcuteries
               </div>
               <p className="text-black text-justify mt-2">
-                Accompagnez vos moments avec cette sélection, notamment les
-                délicieux plateaux de charcuterie.
+                Accompagnez vos moments avec cette sélection, vous ne manquerez d'être séduit par les
+                délicieux plateaux de charcuteries du traiteur.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
