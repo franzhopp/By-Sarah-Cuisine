@@ -53,11 +53,11 @@ const Cards = () => {
                 Égayez vos moments spéciaux en famille, lors de mariages, de
                 dîners romantiques, grâce à de magnifiques plateaux de fruits.
               </p>
-              {/* <p className="mt-6">
-                <span className="text-black text-4xl">40€</span>
+              <p className="mt-6">
+                <span className="text-black text-4xl">0€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
-              </p> */}
+              </p>
               <NavLink
                 to="/services"
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
@@ -89,11 +89,11 @@ const Cards = () => {
                 Découvrez la sélection de desserts pour égayer vos moments en
                 famille, vos mariages, avec de superbes boîtes à dessert.
               </p>
-              {/* <p className="mt-6">
-                <span className="text-black text-4xl">20€</span>
+              <p className="mt-6">
+                <span className="text-black text-4xl">0€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
-              </p> */}
+              </p>
               <NavLink
                 to="/services"
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
@@ -123,11 +123,11 @@ const Cards = () => {
                 Vous souhaitez avoir des apéritifs pour accompagner vos
                 évènements ? Découvrez la sélection de différents apéritifs.
               </p>
-              {/* <p className="mt-6">
-                <span className="text-black text-4xl">10€</span>
+              <p className="mt-6">
+                <span className="text-black text-4xl">0€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
-              </p> */}
+              </p>
               <NavLink
                 to="/services"
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
@@ -158,11 +158,11 @@ const Cards = () => {
                 d'être séduit par les délicieux plateaux de charcuteries du
                 traiteur.
               </p>
-              {/* <p className="mt-6">
-                <span className="text-black text-4xl">10€</span>
+              <p className="mt-6">
+                <span className="text-black text-4xl">0€</span>
 
                 <span className="text-black font-medium"> par pack.</span>
-              </p> */}
+              </p>
               <NavLink
                 to="/services"
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"

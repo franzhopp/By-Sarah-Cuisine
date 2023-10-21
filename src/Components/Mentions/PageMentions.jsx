@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import NavbarPages from "../Navigation/PagesNavbar";
+import ImgText from "../../assets/logo-4.png";
 
 const PageMentions = () => {
   const keywordsStyle = "font-extrabold";
@@ -17,32 +18,40 @@ const PageMentions = () => {
             Identité
           </h2>
           <p className="text-black mb-4">
-            ›<span className={keywordsStyle}> Nom du site web :</span> By Sarah
-            Cuisine
+            ›<span className={keywordsStyle}> Nom du site web :</span>{" "}
+            <span className="text-pink text-xl font-sans-recursive">
+              {" "}
+              By Sarah Cuisine
+            </span>
+            ,{" "}
+            <span className="italic">
+              recettes pour un mode de vie sain et gourmand
+            </span>
+            .
             <br />›<span className={keywordsStyle}>
               {" "}
               Adresse du site :
             </span>{" "}
             <NavLink
-              to="http://Icône bysarahcuisine.com/"
+              to="http://bysarahcuisine.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink underline"
             >
-              http://Icône bysarahcuisine.com/
+              http://bysarahcuisine.com/
             </NavLink>
             .
-            <br />›<span className={keywordsStyle}> Propriétaire :</span> KHALFA
-            SARAH – Icône bysarahcuisine@gmail.com
+            <br />›<span className={keywordsStyle}> Propriétaire :</span> Khalfa
+            Sarah – contact@bysarahcuisine.com
             <br />›<span className={keywordsStyle}> Activité :</span>{" "}
-            Entrepreneur individuel
+            Entrepreneur individuel.
             <br />›
             <span className={keywordsStyle}>
               {" "}
               Responsable de publication :
             </span>{" "}
-            KHALFA SARAH – MEAUX, ÎLE-DE-FRANCE
-            <br />› <span className={keywordsStyle}>Hébergement :</span> IONOS
+            Khalfa Sarah – Meaux, Île-de-France.
+            <br />› <span className={keywordsStyle}>Hébergement :</span> IONOS.
             <br />
           </p>
 
@@ -101,9 +110,13 @@ const PageMentions = () => {
             Objet du traitement
           </h2>
           <p className="text-black text-justify">
-            › L'entreprise By Sarah Cuisine traite les données pour gérer les
-            commandes, le marketing, et la transmission de données aux
-            partenaires.
+            › L'entreprise
+            <span className="text-pink text-xl font-sans-recursive">
+              {" "}
+              By Sarah Cuisine
+            </span>{" "}
+            traite les données pour gérer les commandes, le marketing, et la
+            transmission de données aux partenaires.
           </p>
 
           <h2 className="text-pink font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
@@ -149,7 +162,7 @@ const PageMentions = () => {
           </h2>
           <p className="mb-4 text-black">
             ›<span className={keywordsStyle}> Site créé et designé par :</span>{" "}
-            FERNANDEZ LOUISA
+            Fernandez Louisa.
             <br />›
             <span className={keywordsStyle}>
               {" "}
@@ -163,30 +176,36 @@ const PageMentions = () => {
             >
               http://navistudio.io/
             </NavLink>
-            , navi studio.™
-            <br />›<span className={keywordsStyle}> Hébergeur :</span> IONOS
-            <br />›<span className={keywordsStyle}> Logo :</span> FERNANDEZ
-            LOUISA
+            ,{" "}
+            <img
+              src={ImgText}
+              className="h-6 ml-1 inline"
+              alt="Icône navi studio."
+            />
+            <br />›<span className={keywordsStyle}> Hébergeur :</span> IONOS.
+            <br />›<span className={keywordsStyle}> Logo :</span> Fernandez
+            Louisa
             <br />›<span className={keywordsStyle}> Photographies : </span>
-            PEXELS
-            <br />›<span className={keywordsStyle}> Vidéos :</span> KHALFA SARAH
+            Pexels.
+            <br />›<span className={keywordsStyle}> Vidéos :</span> Khalfa
+            Sarah.
             <br />›
             <span className={keywordsStyle}> Contenu des rubriques :</span>{" "}
-            FERNANDEZ LOUISA
+            Fernandez Louisa
             <br />›
             <span className={keywordsStyle}> Montages des visuels :</span>{" "}
-            FERNANDEZ LOUISA
+            Fernandez Louisa
             <br />›<span className={keywordsStyle}>
               {" "}
               Montages des vidéos :
             </span>{" "}
-            FERNANDEZ LOUISA
+            Fernandez Louisa
             <br />›
             <span className={keywordsStyle}>
               {" "}
               Icônes utilisées pour les visuels :
             </span>{" "}
-            Photoshop, Illustrator, Figma
+            Photoshop, Illustrator, Figma.
             <br />›<span className={keywordsStyle}>
               {" "}
               Éditeur de code :
@@ -197,10 +216,9 @@ const PageMentions = () => {
               {" "}
               Technologies utilisées :
             </span>{" "}
-            React, Tailwind CSS, HTML/CSS, EmailJS, Postman, PNPM, AOS, React
-            Icons, Hyper UI, Daisy UI etc...
+            React, Tailwind CSS, AOS... etc.
             <br />
-            <div className="mt-16">
+            <div className="text-justify mt-16 italic font-extrabold">
               Modèle de formule de collecte de données à caractère personnel
               pour la conception de la rubrique "MENTIONS LÉGALES" : Site du
               CNIL - Version 2019 /{" "}
@@ -212,6 +230,7 @@ const PageMentions = () => {
               >
                 https://www.cnil.fr/professionnel
               </NavLink>
+              .
             </div>
           </p>
         </div>
