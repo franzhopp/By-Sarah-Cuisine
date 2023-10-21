@@ -234,15 +234,15 @@ const Navbar = () => {
                     y="8.99109"
                     width="25"
                     height="7.01821"
-                    rx="3.5091"
+                    rx="2"
                     fill="white"
                   />
-                  <rect width="25" height="7.01821" rx="3.5091" fill="white" />
+                  <rect width="25" height="7.01821" rx="2" fill="white" />
                   <rect
                     y="17.9818"
                     width="25"
                     height="7.01821"
-                    rx="3.5091"
+                    rx="2"
                     fill="white"
                   />
                 </svg>
