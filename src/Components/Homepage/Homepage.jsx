@@ -6,7 +6,7 @@ const Homepage = () => {
       <div className="flex flex-col justify-center h-my-screen pt-52 sm:pt-32">
         <p
           data-aos="fade-in"
-          className="text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-beige tracking-wider font-sans-recursive stroke"
+          className="text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-beige font-sans-recursive stroke"
         >
           By Sarah Cuisine
         </p>
