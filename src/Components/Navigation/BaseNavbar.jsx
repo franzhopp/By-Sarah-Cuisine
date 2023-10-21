@@ -1,14 +1,13 @@
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { TfiMenu } from "react-icons/tfi";
-import { ImCross } from "react-icons/im";
-import { CgMenuRound } from "react-icons/cg";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Homepage from "../Homepage/Homepage";
 import Image from "../../assets/logo-bsc.png";
 import ImageMobile from "../../assets/logo.png";
 import "../Contact/TitleContact.jsx";
 import "../Section/BaseSection.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const pages = [
   { link: "/services", name: "Apéritifs" },
@@ -78,6 +77,8 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setScrollNavbar(true);
@@ -91,7 +92,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isOpen, showSousListsMenu]);
 
   return (
     <div
@@ -251,11 +252,12 @@ const Navbar = () => {
           </div>
         </div>
         <ul
+          data-aos="fade-in"
           className={`toggle-menu ${
             isOpen ? "block" : "hidden"
           } p-2 border-t border-t-efefef transform transition-transform duration-300 ease-in-out`}
         >
-          <div id="navlinks">
+          <div data-aos="fade-in">
             <li>
               <NavLink
                 to="/"
@@ -278,14 +280,14 @@ const Navbar = () => {
             <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
-                  <div className="text-black pr-4">Services</div>{" "}
+                  <div className="text-black pr-4">Services</div>
                   <MdOutlineKeyboardArrowDown className="text-black" />
                 </div>
               </button>
 
-              <div id="navlinks">
+              <div data-aos="fade-in">
                 <ul
-                  id="navlinks"
+                  data-aos="fade-in"
                   className={`toggle-menu ${
                     showSousListsMenu ? "block" : "hidden"
                   } p-2 pt-2 pr-5`}

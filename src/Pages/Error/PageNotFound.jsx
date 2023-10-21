@@ -19,12 +19,9 @@ const PageNotFound = () => {
 
             <NavLink
               to="/"
-              onClick={() => {
-                window.location.href = "/";
-              }}
               className="font-sans-serif bg-f3dbc3 inline-block px-5 py-3 mt-6 text-sm font-extrabold text-white bg-pink-600 rounded-full hover:bg-gray-700 focus:outline-none focus:ring"
             >
-              {`Revenir à la page d'accueil`}
+              {`Retourner à la page d'Accueil`}
             </NavLink>
           </div>
         </div>

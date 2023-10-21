@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { NavLink } from "react-router-dom";
 import NavbarDevis from "../../Components/Navigation/DevisNavbar";
 import { BiLeftArrowAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Devis = () => {
   const [status, setStatus] = useState("");
@@ -144,11 +145,11 @@ const Devis = () => {
               <div className="w-full">
                 <div
                   data-aos="fade-in"
-                  className="text-black mt-5 leading-8 text-center mb-16 font-sans-serif text-base sm:text-lg"
+                  className="text-black mt-5 mb-10 leading-8 text-center font-sans-serif text-base sm:text-lg"
                 >
                   📩{" "}
                   <span className="underline">
-                    Lire avant de soumettre votre demande de devis
+                    Lire attentivement avant de soumettre votre demande de devis
                   </span>{" "}
                   : veuillez prendre un moment pour lire ces directives
                   importantes. Si vous envisagez d'organiser un événement majeur
@@ -162,9 +163,16 @@ const Devis = () => {
                     Quels évènements souhaitez-vous célébrer ?
                   </span>{" "}
                   » Cela permettra au chef de traiter votre demande avec une
-                  attention particulière. De plus, veuillez rédiger vos réponses
-                  de manière claire et concise pour faciliter le processus de
-                  traitement de votre demande.
+                  attention particulière. Veuillez rédiger vos réponses de
+                  manière claire pour faciliter le processus de traitement de
+                  votre demande. Régalez-vous !{" "}
+                  <Link
+                    to="/services"
+                    className="underline text-pink font-extrabold"
+                  >
+                    Voir la page services
+                  </Link>
+                  .
                 </div>
               </div>
             </div>
@@ -250,7 +258,7 @@ const Devis = () => {
                         className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${
                           errors.select ? "input-error border-red-700" : ""
                         }`}
-                        placeholder="Quels évènements souhaitez-vous célébrer ? Mariage, soirée...?"
+                        placeholder="Quels évènements souhaitez-vous célébrer ?"
                         type="select"
                         id="select"
                         name="select"
@@ -373,10 +381,10 @@ const Devis = () => {
               <div className="mt-5 flex justify-center">
                 <NavLink
                   to="/"
-                  className=" bg-pink text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
+                  className="bg-pink text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
                 >
                   <p className="flex flex-row font-extrabold">
-                    {`Retournez à la page d'accueil`}
+                    {`Retourner à la page d'Accueil`}
                     <BiLeftArrowAlt className="ml-2 mt-1" />
                   </p>
                 </NavLink>
