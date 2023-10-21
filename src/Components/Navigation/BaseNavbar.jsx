@@ -188,12 +188,12 @@ const Navbar = () => {
         </div>
       </nav>
       <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max ">
-        <div className="px-4 h-28 flex items-center justify-between">
+        <div className="px-5 h-28 flex items-center justify-between">
           <NavLink to="/">
             <img className="w-44 mb-2" src={ImageMobile} alt="Icône de Sarah" />
           </NavLink>
 
-          <div className="mr-2">
+          <div>
             <button
               onClick={toggleNavbar}
               className={`icon-toggle bg-e9c2c2 rounded-full p-5 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
@@ -204,20 +204,20 @@ const Navbar = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
+                  height="21"
+                  viewBox="0 0 21 21"
                   fill="none"
                 >
                   <rect
                     width="24.1944"
                     height="3.46046"
-                    transform="matrix(-0.670476 0.741931 -0.805767 -0.592232 19.0078 2.04944)"
+                    transform="matrix(-0.686562 0.727071 -0.792606 -0.609734 19.7148 2.62463)"
                     fill="white"
                   />
                   <rect
-                    width="24.3398"
-                    height="3.44039"
-                    transform="matrix(0.737607 0.67523 -0.747319 0.664465 2.57129 1)"
+                    width="24.19"
+                    height="3.46"
+                    transform="matrix(0.755168 0.655532 -0.729525 0.683954 2.68799 1.83496)"
                     fill="white"
                   />
                 </svg>
