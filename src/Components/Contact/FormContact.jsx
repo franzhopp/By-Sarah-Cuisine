@@ -86,10 +86,10 @@ const Form = () => {
         emailParams
       );
 
-      console.log("Email envoyé !", response.status, response.text);
+      // console.log("Email envoyé !", response.status, response.text);
       setStatus("Merci ! Votre contact a bien été envoyé.");
     } catch (error) {
-      console.error("Erreur d'envoi d'e-mail :", error);
+      // console.error("Erreur d'envoi d'e-mail :", error);
     }
 
     setIsLoading(false);

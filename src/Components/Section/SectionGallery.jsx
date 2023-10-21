@@ -21,7 +21,6 @@ const SectionGallery = () => {
         </div>
       </div>
       <div className="flex justify-center items-center mt-4 mb-10 flex-col sm:flex-row">
-        {/* svg */}
         <div className="flex flex-row justify-start items-center shadow-lg rounded-full">
           <svg
             onClick={(e) => {
@@ -43,7 +42,6 @@ const SectionGallery = () => {
             />
           </svg>
         </div>
-        {/* 1 step */}
         <div className="p-8">
           <div className="flex flex-col justify-start items-center">
             <div
@@ -60,8 +58,6 @@ const SectionGallery = () => {
             </div>
           </div>
         </div>
-
-        {/* svg */}
         <div className="flex flex-row justify-start items-center shadow-lg rounded-full">
           <svg
             onClick={(e) => {

@@ -23,13 +23,14 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
     }));
   };
 
+  const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     const newErrors = {};
 
-    if (!formData.email) {
-      newErrors.email = "Veuillez entrer un email.";
+    if (!formData.email || !regexEmail.test(formData.email)) {
+      newErrors.email = "Entrez un e-mail valide.";
     }
 
     if (Object.keys(newErrors).length > 0) {
@@ -51,10 +52,10 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
         emailParams
       );
 
-      console.log("Email envoyé !", response.status, response.text);
+      // console.log("Email envoyé !", response.status, response.text);
       setStatus("Merci ! Adresse enregistrée.");
     } catch (error) {
-      console.error("Erreur d'envoi d'e-mail :", error);
+      // console.error("Erreur d'envoi d'e-mail :", error);
     }
 
     setIsLoading(false);
