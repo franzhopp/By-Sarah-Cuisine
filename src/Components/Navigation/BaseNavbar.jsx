@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
+import { CgMenuRound } from "react-icons/cg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Homepage from "../Homepage/Homepage";
 import Image from "../../assets/logo-bsc.png";
@@ -195,7 +196,7 @@ const Navbar = () => {
           <div className="mr-2">
             <button
               onClick={toggleNavbar}
-              className={`icon-toggle bg-e9c2c2 border border-beige rounded-full p-5 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
+              className={`icon-toggle bg-e9c2c2 rounded-full p-5 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
                 isRotated ? "-rotate-180" : ""
               }`}
             >
