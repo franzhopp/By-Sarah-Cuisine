@@ -3,7 +3,7 @@ import Image from "../../assets/title-home.png";
 const Homepage = () => {
   return (
     <section id="home">
-      <div className="flex flex-col justify-center h-my-screen px-4 pt-44">
+      <div className="flex flex-col justify-center h-my-screen px-4 pt-52 sm:pt-32">
         <p
           data-aos="fade-in"
           className="text-center text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-beige tracking-wider font-sans-recursive stroke"
@@ -19,8 +19,7 @@ const Homepage = () => {
           />
         </div>
       </div>
-      <div className="text-transparent">Division invisible</div>
-      <div id="about" className="mb-24 sm:mb-0"></div>
+      <div id="about" className="mb-28 sm:mb-0"></div>
     </section>
   );
 };

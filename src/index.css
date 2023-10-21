@@ -13,7 +13,7 @@ body {
 
 @layer utilities {
     .h-my-screen {
-        height: 60dvh;
+        height: 70dvh;
     }
 }
 
