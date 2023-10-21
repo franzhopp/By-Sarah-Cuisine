@@ -5,7 +5,7 @@ const Homepage = () => {
     <section id="home">
       <div className="flex flex-col justify-center h-my-screen pt-40 sm:pt-32">
         <p
-          data-aos="fade-in"
+          data-aos="fade-down-left"
           className="text-center text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-beige tracking-wider font-sans-recursive stroke"
         >
           By Sarah Cuisine
