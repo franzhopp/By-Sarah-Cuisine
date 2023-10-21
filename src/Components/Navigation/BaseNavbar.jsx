@@ -195,7 +195,7 @@ const Navbar = () => {
           <div className="mr-2">
             <button
               onClick={toggleNavbar}
-              className={`icon-toggle bg-e9c2c2 border border-white rounded-full p-5 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
+              className={`icon-toggle bg-e9c2c2 border border-beige rounded-full p-5 inline-flex items-center justify-center transition-transform transform hover:scale-110 ${
                 isRotated ? "-rotate-180" : ""
               }`}
             >
@@ -236,7 +236,7 @@ const Navbar = () => {
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
                   <div className="text-black pr-4">Services</div>{" "}
-                  <MdOutlineKeyboardArrowDown />
+                  <MdOutlineKeyboardArrowDown className="text-black" />
                 </div>
               </button>
 
