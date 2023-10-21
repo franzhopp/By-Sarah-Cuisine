@@ -10,7 +10,7 @@ const Homepage = () => {
         >
           By Sarah Cuisine
         </p>
-        <div className="flex justify-center mt-2">
+        <div className="flex justify-center mt-2 sm:mt-0">
           <img
             data-aos="fade-down-right"
             src={Image}
@@ -19,6 +19,7 @@ const Homepage = () => {
           />
         </div>
       </div>
+      <div id="about" className="mb-10 sm:mb-0"></div>
     </section>
   );
 };
