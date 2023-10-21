@@ -201,9 +201,38 @@ const Navbar = () => {
               }`}
             >
               {isOpen ? (
-                <ImCross className="text-white" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                >
+                  <rect
+                    width="24.1944"
+                    height="3.46046"
+                    transform="matrix(-0.670476 0.741931 -0.805767 -0.592232 19.0078 2.04944)"
+                    fill="white"
+                  />
+                  <rect
+                    width="24.3398"
+                    height="3.44039"
+                    transform="matrix(0.737607 0.67523 -0.747319 0.664465 2.57129 1)"
+                    fill="white"
+                  />
+                </svg>
               ) : (
-                <TfiMenu className="text-white" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <rect y="8.276" width="20" height="3.44828" fill="white" />
+                  <rect width="20" height="3.44828" fill="white" />
+                  <rect y="16.5516" width="20" height="3.44828" fill="white" />
+                </svg>
               )}
             </button>
           </div>
@@ -250,9 +279,7 @@ const Navbar = () => {
                 >
                   {pages.map((page, index) => (
                     <li key={index}>
-                      <NavLink
-                        to={page.link}
-                      >
+                      <NavLink to={page.link}>
                         <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
                           {page.name}
                         </p>
