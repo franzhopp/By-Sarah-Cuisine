@@ -9,12 +9,8 @@ const InfoDevis = () => {
         <div className="mt-5 flex justify-center">
           <NavLink
             to="/devis"
-            onClick={() => {
-              window.location.href = "/devis";
-              window.scrollTo(0, 0);
-            }}
             href="http://by-sarah-cuisine.netlify.app/devis-gratuit"
-            className="bg-e9c2c2 shadow-md px-3 py-2 border rounded-3xl text-white hover:bg-f3dbc3 transition-transform transform hover:scale-105"
+            className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3 transition-transform transform hover:scale-105"
           >
             <p className="flex flex-row font-extrabold">
               Devis gratuit <MdOutlineEditNote className="ml-2 mt-1" />

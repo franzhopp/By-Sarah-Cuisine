@@ -343,7 +343,7 @@ const Devis = () => {
                     <button
                       onClick={handleSubmit}
                       type="submit"
-                      className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-3 py-2 border rounded-3xl text-white cursor-pointer"
+                      className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-6 py-2 border rounded-3xl text-white cursor-pointer"
                       value="Envoyer"
                     >
                       {isLoading ? (
@@ -373,7 +373,7 @@ const Devis = () => {
               <div className="mt-5 flex justify-center">
                 <NavLink
                   to="/"
-                  className=" bg-pink text-white shadow-md px-3 py-2 border rounded-3xl transition-transform transform hover:scale-105"
+                  className=" bg-pink text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
                 >
                   <p className="flex flex-row font-extrabold">
                     {`Retournez à la page d'accueil`}

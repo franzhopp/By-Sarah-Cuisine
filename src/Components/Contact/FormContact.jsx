@@ -237,7 +237,7 @@ const Form = () => {
               <button
                 onClick={handleSubmit}
                 type="submit"
-                className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-3 py-2 border rounded-3xl text-white cursor-pointer"
+                className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-6 py-2 border rounded-3xl text-white cursor-pointer"
                 value="Envoyer"
               >
                 {isLoading ? (

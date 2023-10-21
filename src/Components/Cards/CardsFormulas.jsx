@@ -25,10 +25,6 @@ const Cards = () => {
           Savoir plus précisément tous les services du traiteur,{" "}
           <NavLink
             to="/services"
-            onClick={() => {
-              window.location.href = "/services";
-              window.scrollTo(0, 0);
-            }}
             className="underline font-extrabold"
           >
             cliquez sur ce lien
@@ -36,7 +32,6 @@ const Cards = () => {
           .
         </div>
         <div className="mt-8 flex flex-wrap justify-center items-center space-x-0 sm:space-x-6">
-          {/* Step 1 */}
           <div
             data-aos="fade-in"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
@@ -65,10 +60,6 @@ const Cards = () => {
               </p> */}
               <NavLink
                 to="/services"
-                onClick={() => {
-                  window.location.href = "/services";
-                  window.scrollTo(0, 0);
-                }}
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
               >
                 En savoir plus
@@ -105,18 +96,12 @@ const Cards = () => {
               </p> */}
               <NavLink
                 to="/services"
-                onClick={() => {
-                  window.location.href = "/services";
-                  window.scrollTo(0, 0);
-                }}
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
               >
                 En savoir plus
               </NavLink>
             </div>
           </div>
-
-          {/* Step 3 */}
           <div
             data-aos="fade-in"
             className="bg-8f8f88 font-sans-serif min-h-500 w-80 rounded-2xl shadow-lg mt-5 transition-transform transform hover:scale-105"
@@ -145,10 +130,6 @@ const Cards = () => {
               </p> */}
               <NavLink
                 to="/services"
-                onClick={() => {
-                  window.location.href = "/services";
-                  window.scrollTo(0, 0);
-                }}
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
               >
                 En savoir plus
@@ -184,10 +165,6 @@ const Cards = () => {
               </p> */}
               <NavLink
                 to="/services"
-                onClick={() => {
-                  window.location.href = "/services";
-                  window.scrollTo(0, 0);
-                }}
                 className="bg-f3dbc3 border border-1-white text-white text-center mt-8 py-3 block w-full rounded-2xl shadow-md text-base font-extrabold"
               >
                 En savoir plus
@@ -204,7 +181,7 @@ const Cards = () => {
               onClick={() => {
                 setOpenModel(true);
               }}
-              className="bg-f3dbc3 text-white shadow-md px-3 py-2 border rounded-3xl transition-transform transform hover:scale-105"
+              className="bg-f3dbc3 text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
             >
               <p className="flex flex-row font-extrabold">
                 {`Je m'inscris`}

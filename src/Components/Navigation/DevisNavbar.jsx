@@ -289,7 +289,7 @@ const NavbarDevis = () => {
             <NavLink
               to="/devis"
               onClick={SectionToScrollDevis}
-              className="bg-e9c2c2 shadow-md px-3 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
+              className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
             >
               <p className="flex flex-row font-extrabold">
                 Commencer <MdOutlineEditNote className="ml-2 mt-1" />
