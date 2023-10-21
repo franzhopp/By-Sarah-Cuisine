@@ -203,35 +203,48 @@ const Navbar = () => {
               {isOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="21"
-                  height="21"
-                  viewBox="0 0 21 21"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
                   fill="none"
                 >
-                  <rect
-                    width="24.1944"
-                    height="3.46046"
-                    transform="matrix(-0.686562 0.727071 -0.792606 -0.609734 19.7148 2.62463)"
-                    fill="white"
-                  />
-                  <rect
-                    width="24.19"
-                    height="3.46"
-                    transform="matrix(0.755168 0.655532 -0.729525 0.683954 2.68799 1.83496)"
-                    fill="white"
-                  />
+                  <g clip-path="url(#clip0_279_14)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.331604 19.9361L7.76772 12.5L0.331604 5.06386C-0.109884 4.62238 -0.109884 3.89809 0.331604 3.4566L3.4566 0.331604C3.89809 -0.109884 4.62238 -0.109884 5.06386 0.331604L12.5 7.76772L19.9361 0.331604C20.3776 -0.109884 21.1019 -0.109884 21.5434 0.331604L24.6684 3.4566C25.1098 3.89809 25.1098 4.62238 24.6684 5.06386L17.2322 12.5L24.6684 19.9361C25.1098 20.3776 25.1098 21.1019 24.6684 21.5434L21.5434 24.6684C21.1019 25.1098 20.3776 25.1098 19.9361 24.6684L12.5 17.2322L5.06386 24.6684C4.62238 25.1098 3.89809 25.1098 3.4566 24.6684L0.331604 21.5434C-0.109884 21.1019 -0.109884 20.3776 0.331604 19.9361Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_279_14">
+                      <rect width="25" height="25" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
                   fill="none"
                 >
-                  <rect y="8.276" width="20" height="3.44828" fill="white" />
-                  <rect width="20" height="3.44828" fill="white" />
-                  <rect y="16.5516" width="20" height="3.44828" fill="white" />
+                  <rect
+                    y="8.99109"
+                    width="25"
+                    height="7.01821"
+                    rx="3.5091"
+                    fill="white"
+                  />
+                  <rect width="25" height="7.01821" rx="3.5091" fill="white" />
+                  <rect
+                    y="17.9818"
+                    width="25"
+                    height="7.01821"
+                    rx="3.5091"
+                    fill="white"
+                  />
                 </svg>
               )}
             </button>
