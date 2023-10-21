@@ -17,18 +17,21 @@ import Footer from "./Components/Footer/Footer.jsx";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/services" element={<Proposal />} />
-        <Route path="/devis" element={<Devis />} />
-        <Route path="/privacy" element={<PagePrivacy />} />
-        <Route path="/terms" element={<PageConditions />} />
-        <Route path="/mentions" element={<PageMentions />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <>
+      <ScrollToTop />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/services" element={<Proposal />} />
+          <Route path="/devis" element={<Devis />} />
+          <Route path="/privacy" element={<PagePrivacy />} />
+          <Route path="/terms" element={<PageConditions />} />
+          <Route path="/mentions" element={<PageMentions />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 };
 
