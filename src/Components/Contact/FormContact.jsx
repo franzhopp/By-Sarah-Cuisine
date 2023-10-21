@@ -81,7 +81,7 @@ const Form = () => {
 
     try {
       const response = await emailjs.send(
-        "service_5z74upq",
+        "service_sg40c0g",
         "template_h7yknhf",
         emailParams
       );

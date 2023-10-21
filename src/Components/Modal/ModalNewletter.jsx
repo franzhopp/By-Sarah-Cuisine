@@ -46,13 +46,13 @@ const ModalNewletter = ({ closeModal, searchQuery }) => {
 
     try {
       const response = await emailjs.send(
-        "service_5z74upq",
+        "service_sg40c0g",
         "template_h7yknhf",
         emailParams
       );
 
       console.log("Email envoyé !", response.status, response.text);
-      setStatus("Merci ! Adresse envoyée.");
+      setStatus("Merci ! Votre adresse est enregistré.");
     } catch (error) {
       console.error("Erreur d'envoi d'e-mail :", error);
     }

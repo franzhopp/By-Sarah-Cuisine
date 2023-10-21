@@ -114,7 +114,7 @@ const Devis = () => {
 
     try {
       const response = await emailjs.send(
-        "service_5z74upq",
+        "service_sg40c0g",
         "template_h7yknhf",
         emailParams
       );
@@ -176,7 +176,6 @@ const Devis = () => {
                 </div>
               </div>
             </div>
-
             <div data-aos="fade-in" className="bg-devis-color rounded-3xl">
               <div className="bg-gray-100 p-8 mb-10 lg:col-span-3 lg:p-12">
                 <form onClick={handleSubmit} className="space-y-4">
@@ -327,8 +326,6 @@ const Devis = () => {
                       )}
                     </div>
                   </div>
-
-                  {/* Message */}
                   <div>
                     <textarea
                       className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mt-20 ${

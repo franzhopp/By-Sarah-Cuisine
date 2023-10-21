@@ -14,12 +14,12 @@ const Section = () => {
         </svg>
       </div>
       <div className="flex justify-center">
-        <h2 className="font-extrabold text-2xl sm:text-4xl">
-          <span className="text-pink font-sans-recursive">{`Traiteur pour tous types d'évènement`}</span>
+        <h2 className="font-exutrabold text-2xl sm:text-4xl">
+          <span data-aos="fade-down-left" className="text-pink font-sans-recursive">{`Traiteur pour tous types d'évènement`}</span>
         </h2>
       </div>
       <div className="flex justify-center">
-        <p className="text-black text-sm sm:text-xl tracking-widest">
+        <p  data-aos="fade-down-right" className="text-black text-sm sm:text-xl tracking-widest">
           Ingrédients biologique ou de qualité
         </p>
       </div>
