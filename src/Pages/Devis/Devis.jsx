@@ -165,7 +165,7 @@ const Devis = () => {
                   » Cela permettra au chef de traiter votre demande avec une
                   attention particulière. Veuillez rédiger vos réponses de
                   manière claire pour faciliter le processus de traitement de
-                  votre demande. Régalez-vous !{" "}
+                  votre demande.{" "}
                   <Link
                     to="/services"
                     className="underline text-pink font-extrabold"
@@ -384,7 +384,7 @@ const Devis = () => {
                   className="bg-pink text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
                 >
                   <p className="flex flex-row font-extrabold">
-                    {`Retourner à la page d'Accueil`}
+                    {`Retourner à la page d'accueil`}
                     <BiLeftArrowAlt className="ml-2 mt-1" />
                   </p>
                 </NavLink>

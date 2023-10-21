@@ -21,7 +21,7 @@ const PageNotFound = () => {
               to="/"
               className="font-sans-serif bg-f3dbc3 inline-block px-5 py-3 mt-6 text-sm font-extrabold text-white bg-pink-600 rounded-full hover:bg-gray-700 focus:outline-none focus:ring"
             >
-              {`Retourner à la page d'Accueil`}
+              {`Retourner à la page d'accueil`}
             </NavLink>
           </div>
         </div>
