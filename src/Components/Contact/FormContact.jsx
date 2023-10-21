@@ -140,7 +140,7 @@ const Form = () => {
               onSubmit={handleSubmit}
               className="space-y-4"
             >
-              <div action="" className="space-y-4">
+              <div className="space-y-4">
                 <div>
                   <input
                     className={`rounded-xl w-full p-4 outline-none input-secondary border-gray-200 text-md mb-2 ${

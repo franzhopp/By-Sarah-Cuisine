@@ -12,9 +12,11 @@ const PagePrivacy = () => {
           </h1>
 
           <p className="text-black text-justify mb-4">
-            • Chez{" "}
-            <span className="text-pink font-extrabold">By Sarah Cuisine</span>,
-            nous accordons une grande importance à la protection de vos
+            › Chez{" "}
+            <span className="text-pink font-extrabold font-sans-recursive text-xl">
+              By Sarah Cuisine
+            </span>
+            , nous accordons une grande importance à la protection de vos
             informations personnelles. Cette politique de confidentialité
             explique comment nous collectons, utilisons, et protégeons vos
             données.
@@ -24,7 +26,7 @@ const PagePrivacy = () => {
             Collecte des Données
           </h2>
           <p className="text-black text-justify mb-4">
-            • Lorsque vous utilisez notre site web, nous collectons des
+            › Lorsque vous utilisez notre site web, nous collectons des
             informations telles que votre nom, prénom, numéro de téléphone, et
             détails de commande. Certaines de ces informations sont essentielles
             pour vous fournir nos services.
@@ -34,7 +36,7 @@ const PagePrivacy = () => {
             Finalités et Bases Légales
           </h2>
           <p className="text-black text-justify mb-4">
-            • Vos données sont utilisées pour gérer vos commandes, paiements, et
+            › Vos données sont utilisées pour gérer vos commandes, paiements, et
             livraisons. Nous pouvons également les utiliser pour des promotions
             ou des offres sur des produits similaires à vos achats précédents.
             Notre traitement des données est basé sur l'exécution de contrats,
@@ -45,7 +47,7 @@ const PagePrivacy = () => {
             Destinataires des Données
           </h2>
           <p className="text-black text-justify mb-4">
-            • Vos informations sont accessibles uniquement à notre entreprise et
+            › Vos informations sont accessibles uniquement à notre entreprise et
             à nos partenaires de livraison. Si vous le souhaitez, nous pouvons
             partager votre adresse e-mail avec nos partenaires commerciaux pour
             des offres spéciales.
@@ -55,7 +57,7 @@ const PagePrivacy = () => {
             Durée de Conservation
           </h2>
           <p className="text-black text-justify mb-4">
-            • Nous conservons les données nécessaires à la gestion des commandes
+            › Nous conservons les données nécessaires à la gestion des commandes
             et à la facturation pendant la durée de votre relation commerciale,
             plus dix (10) ans pour les obligations comptables. Les données liées
             à la fidélisation et à la prospection sont conservées pendant la
@@ -64,7 +66,7 @@ const PagePrivacy = () => {
           </p>
 
           <p className="text-black text-justify mb-4">
-            • La sécurité de vos données est notre priorité. Si vous avez des
+            › La sécurité de vos données est notre priorité. Si vous avez des
             questions ou souhaitez exercer vos droits en matière de
             confidentialité, veuillez nous contacter. Votre confiance est
             précieuse, et nous nous engageons à respecter les réglementations en

@@ -17,9 +17,9 @@ const PageMentions = () => {
             Identité
           </h2>
           <p className="text-black mb-4">
-            •<span className={keywordsStyle}> Nom du site web :</span> By Sarah
+            ›<span className={keywordsStyle}> Nom du site web :</span> By Sarah
             Cuisine
-            <br />•<span className={keywordsStyle}>
+            <br />›<span className={keywordsStyle}>
               {" "}
               Adresse du site :
             </span>{" "}
@@ -32,17 +32,17 @@ const PageMentions = () => {
               http://Icône bysarahcuisine.com/
             </NavLink>
             .
-            <br />•<span className={keywordsStyle}> Propriétaire :</span> KHALFA
+            <br />›<span className={keywordsStyle}> Propriétaire :</span> KHALFA
             SARAH – Icône bysarahcuisine@gmail.com
-            <br />•<span className={keywordsStyle}> Activité :</span>{" "}
+            <br />›<span className={keywordsStyle}> Activité :</span>{" "}
             Entrepreneur individuel
-            <br />•
+            <br />›
             <span className={keywordsStyle}>
               {" "}
               Responsable de publication :
             </span>{" "}
             KHALFA SARAH – MEAUX, ÎLE-DE-FRANCE
-            <br />• <span className={keywordsStyle}>Hébergement :</span> IONOS
+            <br />› <span className={keywordsStyle}>Hébergement :</span> IONOS
             <br />
           </p>
 
@@ -50,7 +50,7 @@ const PageMentions = () => {
             Conditions d’utilisation
           </h2>
           <p className="text-black text-justify mb-4">
-            • L’utilisation du site implique l’acceptation des conditions
+            › L’utilisation du site implique l’acceptation des conditions
             d’utilisation décrites ci-dessous. Ces conditions peuvent être
             modifiées à tout moment.
           </p>
@@ -59,7 +59,7 @@ const PageMentions = () => {
             Informations
           </h2>
           <p className="text-black text-justify mb-4">
-            • Les informations du site sont indicatives et non exhaustives. Le
+            › Les informations du site sont indicatives et non exhaustives. Le
             propriétaire du site n'est pas responsable des dommages résultant de
             l'accès au site.
           </p>
@@ -68,7 +68,7 @@ const PageMentions = () => {
             Interactivité
           </h2>
           <p className="text-black text-justify mb-4">
-            • Les utilisateurs peuvent déposer du contenu sur le site, mais ce
+            › Les utilisateurs peuvent déposer du contenu sur le site, mais ce
             contenu doit respecter la charte déontologique du site et la
             législation en vigueur.
           </p>
@@ -77,7 +77,7 @@ const PageMentions = () => {
             Propriété intellectuelle
           </h2>
           <p className="text-black text-justify">
-            • Tous les éléments du site sont la propriété exclusive de leurs
+            › Tous les éléments du site sont la propriété exclusive de leurs
             auteurs. Toute utilisation non autorisée est interdite.
           </p>
 
@@ -85,7 +85,7 @@ const PageMentions = () => {
             Liens
           </h2>
           <p className="text-black text-justify">
-            • Le propriétaire autorise les liens vers le site sous certaines
+            › Le propriétaire autorise les liens vers le site sous certaines
             conditions.
           </p>
 
@@ -93,7 +93,7 @@ const PageMentions = () => {
             Politique de confidentialité des données
           </h2>
           <p className="text-black text-justify">
-            • Tout utilisateur a droit d'accès, de rectification et d'opposition
+            › Tout utilisateur a droit d'accès, de rectification et d'opposition
             à ses données personnelles.
           </p>
 
@@ -101,7 +101,7 @@ const PageMentions = () => {
             Objet du traitement
           </h2>
           <p className="text-black text-justify">
-            • L'entreprise By Sarah Cuisine traite les données pour gérer les
+            › L'entreprise By Sarah Cuisine traite les données pour gérer les
             commandes, le marketing, et la transmission de données aux
             partenaires.
           </p>
@@ -110,7 +110,7 @@ const PageMentions = () => {
             Bases légales
           </h2>
           <p className="text-black text-justify">
-            • Le traitement est basé sur l'exécution de contrats, l'intérêt
+            › Le traitement est basé sur l'exécution de contrats, l'intérêt
             légitime, le consentement, et l'obligation légale.
           </p>
 
@@ -118,7 +118,7 @@ const PageMentions = () => {
             Destinataires des données
           </h2>
           <p className="text-black text-justify">
-            • Les données sont destinées à l'entreprise et à ses sous-traitants
+            › Les données sont destinées à l'entreprise et à ses sous-traitants
             de livraison. Les adresses électroniques peuvent être transmises à
             des partenaires commerciaux.
           </p>
@@ -127,14 +127,14 @@ const PageMentions = () => {
             Durée de conservation des données
           </h2>
           <p className="text-black text-justify">
-            • Les données sont conservées selon les besoins légaux.
+            › Les données sont conservées selon les besoins légaux.
           </p>
 
           <h2 className="text-pink font-sans-recursive text-xl md:text-2xl font-semibold mb-2">
             Droits de l'utilisateur
           </h2>
           <p className="text-black text-justify">
-            • L'utilisateur peut exercer ses droits sur ses données en
+            › L'utilisateur peut exercer ses droits sur ses données en
             contactant l'entreprise.
           </p>
 
@@ -142,15 +142,15 @@ const PageMentions = () => {
             Consentement
           </h2>
           <p className="text-black text-justify">
-            • Un consentement explicite est requis pour certaines autorisations.
+            › Un consentement explicite est requis pour certaines autorisations.
           </p>
           <h2 className="text-pink font-sans-recursive text-xl md:text-2xl font-semibold mt-16 mb-2">
             Crédits
           </h2>
           <p className="mb-4 text-black">
-            •<span className={keywordsStyle}> Site créé et designé par :</span>{" "}
+            ›<span className={keywordsStyle}> Site créé et designé par :</span>{" "}
             FERNANDEZ LOUISA
-            <br />•
+            <br />›
             <span className={keywordsStyle}>
               {" "}
               Site URL de la développeuse :
@@ -164,35 +164,35 @@ const PageMentions = () => {
               http://navistudio.io/
             </NavLink>
             , navi studio.™
-            <br />•<span className={keywordsStyle}> Hébergeur :</span> IONOS
-            <br />•<span className={keywordsStyle}> Logo :</span> FERNANDEZ
+            <br />›<span className={keywordsStyle}> Hébergeur :</span> IONOS
+            <br />›<span className={keywordsStyle}> Logo :</span> FERNANDEZ
             LOUISA
-            <br />•<span className={keywordsStyle}> Photographies : </span>
+            <br />›<span className={keywordsStyle}> Photographies : </span>
             PEXELS
-            <br />•<span className={keywordsStyle}> Vidéos :</span> KHALFA SARAH
-            <br />•
+            <br />›<span className={keywordsStyle}> Vidéos :</span> KHALFA SARAH
+            <br />›
             <span className={keywordsStyle}> Contenu des rubriques :</span>{" "}
             FERNANDEZ LOUISA
-            <br />•
+            <br />›
             <span className={keywordsStyle}> Montages des visuels :</span>{" "}
             FERNANDEZ LOUISA
-            <br />•<span className={keywordsStyle}>
+            <br />›<span className={keywordsStyle}>
               {" "}
               Montages des vidéos :
             </span>{" "}
             FERNANDEZ LOUISA
-            <br />•
+            <br />›
             <span className={keywordsStyle}>
               {" "}
               Icônes utilisées pour les visuels :
             </span>{" "}
             Photoshop, Illustrator, Figma
-            <br />•<span className={keywordsStyle}>
+            <br />›<span className={keywordsStyle}>
               {" "}
               Éditeur de code :
             </span>{" "}
             PhpStorm (JetBrains).
-            <br />•
+            <br />›
             <span className={keywordsStyle}>
               {" "}
               Technologies utilisées :
