@@ -1,5 +1,4 @@
 import Image from "../../assets/title-contact.png";
-// import Form from "./form.jsx";
 
 const TitleForm = () => {
   return (
@@ -10,7 +9,7 @@ const TitleForm = () => {
             data-aos="fade-down-right"
             src={Image}
             alt=""
-            className="px-16 mt-28 sm:mt-24 p-1"
+            className="px-16 mt-24 sm:mt-20 p-1"
           />
         </span>
       </div>

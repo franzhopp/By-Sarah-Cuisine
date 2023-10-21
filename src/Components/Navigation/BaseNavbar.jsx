@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import Homepage from "../Homepage/Homepage";
-import Image from "../../assets/logo-bsc.png";
-import ImageMobile from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { TfiMenu } from "react-icons/tfi";
 import { ImCross } from "react-icons/im";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Homepage from "../Homepage/Homepage";
+import Image from "../../assets/logo-bsc.png";
+import ImageMobile from "../../assets/logo.png";
 import "../Contact/TitleContact.jsx";
 import "../Section/BaseSection.jsx";
 
@@ -100,105 +100,85 @@ const Navbar = () => {
       <nav
         className={`${
           scrollNavbar ? "bg-white" : ""
-        } font-sans-serif fixed bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
+        } fixed font-sans-serif bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-3 lg:px-8">
           <div className="flex items-center justify-center h-24">
             <div className="md:left-0 md:inline md:absolute">
               <NavLink to="/">
                 <img className="mt-10" src={Image} alt="Icône de Sarah" />
               </NavLink>
             </div>
+
             <div className="flex items-center">
               <NavLink
                 onClick={SectionToScrollHome}
-                // onClick={() => {
-                //   window.location.href = "/";
-                // }}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                } px-6 py-2 text-base font-extrabold uppercase`}
+                } px-3 py-2 text-base font-extrabold uppercase`}
               >
                 Accueil
               </NavLink>
               <NavLink
                 onClick={SectionToScrollAbout}
-                // onClick={() => {
-                //   window.location.href = "/";
-                // }}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                }  px-6 py-2 text-base font-extrabold uppercase`}
+                }  px-4 py-2 text-base font-extrabold uppercase`}
               >
                 À propos
               </NavLink>
               <NavLink
                 to="/services"
-                // onClick={() => {
-                //   window.location.href = "/services";
-                // }}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                }  px-6 py-2 text-base font-extrabold`}
+                } py-2 text-base font-extrabold`}
               >
                 <li className="relative group list-none text-center">
                   <NavLink
                     to="/services"
-                    // onClick={() => {
-                    //   window.location.href = "/services";
-                    // }}
                     className="block px-3 py-2 rounded-md font-extrabold"
                   >
                     <p className="uppercase">Services</p>
                   </NavLink>
-
-                  {/* Sous-liste */}
-                  <ul className="absolute w-28 py-4 hidden group-hover:block bg-white shadow-md rounded-md">
-                    {pages.map((page, index) => (
-                      <li key={index}>
+                  <div className="flex justify-center">
+                    <ul className="absolute w-32 py-5 px-5 hidden group-hover:block bg-white shadow-md rounded-md">
+                      {pages.map((page, index) => (
+                        <li key={index}>
+                          <NavLink
+                            to={page.link}
+                            onMouseEnter={handleMouseEnterSubmenu}
+                            onMouseLeave={handleMouseLeaveParent}
+                            className="block py-1 text-pink"
+                          >
+                            <p>{page.name}</p>
+                          </NavLink>
+                        </li>
+                      ))}
+                      <li>
                         <NavLink
-                          to={page.link}
-                          onMouseEnter={handleMouseEnterSubmenu}
-                          onMouseLeave={handleMouseLeaveParent}
-                          className="block py-2 text-pink"
+                          to="/services"
+                          className="underline font-extrabold text-pink"
                         >
-                          <p>{page.name}</p>
+                          Tous les services
                         </NavLink>
                       </li>
-                    ))}
-                    <li>
-                      <NavLink
-                        to="/services"
-                        // onClick={() => {
-                        //   window.location.href = "/services";
-                        // }}
-                        className="underline font-extrabold text-pink"
-                      >
-                        Tous les services
-                      </NavLink>
-                    </li>
-                  </ul>
+                    </ul>
+                  </div>
                 </li>
               </NavLink>
 
               <NavLink
                 to="/"
-                // onClick={() => {
-                //   window.location.href = "/";
-                // }}
                 onClick={SectionToScroll}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                } px-6 py-2 text-base font-extrabold uppercase`}
+                } px-4 py-2 text-base font-extrabold uppercase`}
               >
                 Contact
               </NavLink>
             </div>
             <NavLink
-              to="/devisgratuit"
-              // onClick={() => {
-              //   window.location.href = "/devisgratuit";
-              // }}
+              to="/devis"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0 hover:bg-e9c2c2"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -206,10 +186,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* Navigation mobile */}
       <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max ">
-        {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
             <img className="w-44 mb-2" src={ImageMobile} alt="Icône de Sarah" />
@@ -230,8 +207,6 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-
-        {/* end 2 items */}
         <ul
           className={`toggle-menu ${
             isOpen ? "block" : "hidden"
@@ -241,9 +216,6 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                // onClick={() => {
-                //   window.location.href = "/";
-                // }}
                 onClick={SectionToScrollHome}
                 className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
@@ -253,9 +225,6 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                // onClick={() => {
-                //   window.location.href = "/";
-                // }}
                 onClick={SectionToScrollAbout}
                 className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
@@ -281,9 +250,6 @@ const Navbar = () => {
                   {pages.map((page, index) => (
                     <li key={index}>
                       <NavLink
-                        // onClick={() => {
-                        //   window.location.href = "/services";
-                        // }}
                         to={page.link}
                       >
                         <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
@@ -295,9 +261,6 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/services"
-                      // onClick={() => {
-                      //   window.location.href = "/services";
-                      // }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
@@ -310,9 +273,6 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/"
-                // onClick={() => {
-                //   window.location.href = "/";
-                // }}
                 onClick={SectionToScroll}
                 className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
@@ -322,10 +282,7 @@ const Navbar = () => {
 
             <li>
               <NavLink
-                to="/devisgratuit"
-                // onClick={() => {
-                //   window.location.href = "/devisgratuit";
-                // }}
+                to="/devis"
                 onClick={closeMobileMenu}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white"
               >

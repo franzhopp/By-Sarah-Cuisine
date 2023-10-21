@@ -12,7 +12,7 @@ const Cards = () => {
   const [openModel, setOpenModel] = useState(false);
 
   return (
-    <section className="bg-pink border-b pt-12 pb-12 mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-pink border-b pt-12 pb-12 mx-auto px-4 sm:px-3 lg:px-8">
       <div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white font-sans-recursive text-center">
           Les formules
@@ -135,8 +135,8 @@ const Cards = () => {
                 Plateaux d'apéritifs
               </div>
               <p className="text-black text-justify mt-2">
-                Vous souhaitez avoir des apéritifs pour accompagner vos évènements ?
-                Découvrez la sélection de différents apéritifs.
+                Vous souhaitez avoir des apéritifs pour accompagner vos
+                évènements ? Découvrez la sélection de différents apéritifs.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
@@ -173,8 +173,9 @@ const Cards = () => {
                 Plateaux de charcuteries
               </div>
               <p className="text-black text-justify mt-2">
-                Accompagnez vos moments avec cette sélection, vous ne manquerez d'être séduit par les
-                délicieux plateaux de charcuteries du traiteur.
+                Accompagnez vos moments avec cette sélection, vous ne manquerez
+                d'être séduit par les délicieux plateaux de charcuteries du
+                traiteur.
               </p>
               {/* <p className="mt-6">
                 <span className="text-black text-4xl">10€</span>
@@ -203,7 +204,7 @@ const Cards = () => {
               onClick={() => {
                 setOpenModel(true);
               }}
-              className="bg-f3dbc3 text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
+              className="bg-f3dbc3 text-white shadow-md px-3 py-2 border rounded-3xl transition-transform transform hover:scale-105"
             >
               <p className="flex flex-row font-extrabold">
                 {`Je m'inscris`}

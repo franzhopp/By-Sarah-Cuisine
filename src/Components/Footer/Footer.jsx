@@ -7,7 +7,7 @@ import { MdStickyNote2 } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className="bg-8f8f88">
-      <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+      <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-3 lg:space-y-16 lg:px-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="">
             <h2 className="font-sans-recursive text-2xl text-pink">
@@ -231,9 +231,9 @@ const Footer = () => {
 
               <li>
                 <NavLink
-                  to="/devisgratuit"
+                  to="/devis"
                   onClick={() => {
-                    window.location.href = "/devisgratuit";
+                    window.location.href = "/devis";
                     window.scrollTo(0, 0);
                   }}
                   className="text-black font-sans-serif transition hover:opacity-75"

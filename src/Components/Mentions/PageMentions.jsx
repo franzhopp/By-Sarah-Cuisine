@@ -24,16 +24,16 @@ const PageMentions = () => {
               Adresse du site :
             </span>{" "}
             <NavLink
-              to="http://bysarahcuisine.com/"
+              to="http://Icône bysarahcuisine.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink underline"
             >
-              http://bysarahcuisine.com/
+              http://Icône bysarahcuisine.com/
             </NavLink>
             .
             <br />•<span className={keywordsStyle}> Propriétaire :</span> KHALFA
-            SARAH – bysarahcuisine@gmail.com
+            SARAH – Icône bysarahcuisine@gmail.com
             <br />•<span className={keywordsStyle}> Activité :</span>{" "}
             Entrepreneur individuel
             <br />•

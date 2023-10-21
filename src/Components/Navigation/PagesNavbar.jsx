@@ -95,7 +95,7 @@ const NavbarPages = () => {
           scrollNavbar ? "bg-white" : ""
         } font-sans-serif fixed bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-3 lg:px-8">
           <div className="flex items-center justify-center h-24">
             <div className="md:left-0 md:inline md:absolute">
               <NavLink to="/">
@@ -105,21 +105,19 @@ const NavbarPages = () => {
             <div className="flex items-center">
               <NavLink
                 to="/"
-                onClick={SectionToScrollHome}
-                className={`text-pink px-6 py-2 text-base font-extrabold uppercase`}
+                className={`text-pink px-3 py-2 text-base font-extrabold uppercase`}
               >
                 Accueil
               </NavLink>
               <NavLink
                 to="/"
-                onClick={SectionToScrollAbout}
-                className={`text-pink px-6 py-2 text-base font-extrabold uppercase`}
+                className={`text-pink px-4 py-2 text-base font-extrabold uppercase`}
               >
                 À propos
               </NavLink>
               <NavLink
                 to="/services"
-                className={`text-pink px-6 py-2 text-base font-extrabold uppercase`}
+                className={`text-pink py-2 text-base font-extrabold`}
               >
                 <li className="relative group list-none text-center">
                   <NavLink
@@ -128,49 +126,41 @@ const NavbarPages = () => {
                   >
                     <p className="uppercase">Services</p>
                   </NavLink>
-
-                  {/* Sous-liste */}
-                  <ul className="absolute w-28 py-4 hidden group-hover:block bg-white shadow-md rounded-md">
-                    {pages.map((page, index) => (
-                      <li key={index}>
+                  <div className="flex justify-center">
+                    <ul className="absolute w-32 py-5 px-5 hidden group-hover:block bg-white shadow-md rounded-md">
+                      {pages.map((page, index) => (
+                        <li key={index}>
+                          <NavLink
+                            to={page.link}
+                            onMouseEnter={handleMouseEnterSubmenu}
+                            onMouseLeave={handleMouseLeaveParent}
+                            className="block py-1 text-pink"
+                          >
+                            <p>{page.name}</p>
+                          </NavLink>
+                        </li>
+                      ))}
+                      <li>
                         <NavLink
-                          to={page.link}
-                          onMouseEnter={handleMouseEnterSubmenu}
-                          onMouseLeave={handleMouseLeaveParent}
-                          className="block py-2 text-pink"
+                          to="/services"
+                          className="underline font-extrabold text-pink"
                         >
-                          <p>{page.name}</p>
+                          Tous les services
                         </NavLink>
                       </li>
-                    ))}
-                    <li>
-                      <NavLink
-                        to="/services"
-                        href="services"
-                        className="underline font-extrabold text-pink"
-                      >
-                        Tous les services
-                      </NavLink>
-                    </li>
-                  </ul>
+                    </ul>
+                  </div>
                 </li>
               </NavLink>
-
               <NavLink
                 to="/"
-                href="contact"
-                onClick={SectionToScroll}
-                className={`text-pink px-6 py-2 text-base font-extrabold uppercase`}
+                className={`text-pink px-4 py-2 text-base font-extrabold uppercase`}
               >
                 Contact
               </NavLink>
             </div>
             <NavLink
-              to="/devisgratuit"
-              onClick={() => {
-                window.location.href = "/devisgratuit";
-                window.scrollTo(0, 0);
-              }}
+              to="/devis"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0 hover:bg-e9c2c2"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -178,10 +168,7 @@ const NavbarPages = () => {
           </div>
         </div>
       </nav>
-
-      {/* Navigation mobile */}
-      <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max ">
-        {/* 2 items */}
+      <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max">
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
             <img className="w-44 mb-2" src={ImageMobile} alt="Icône de Sarah" />
@@ -202,8 +189,6 @@ const NavbarPages = () => {
             </button>
           </div>
         </div>
-        {/* end 2 items */}
-
         <ul
           className={`toggle-menu ${
             toggleMenu ? "block" : "hidden"
@@ -229,7 +214,6 @@ const NavbarPages = () => {
                 À propos
               </NavLink>
             </li>
-
             <li className="block py-2 rounded-md text-base font-extrabold translate-x-2 duration-100">
               <button onClick={toggleSousListsMenu}>
                 <div className="flex items-center justify-between">
@@ -237,7 +221,6 @@ const NavbarPages = () => {
                   <MdOutlineKeyboardArrowDown />
                 </div>
               </button>
-
               <div id="navlinks">
                 <ul
                   id="navlinks"
@@ -266,7 +249,6 @@ const NavbarPages = () => {
                 </ul>
               </div>
             </li>
-
             <li>
               <NavLink
                 onClick={SectionToScroll}
@@ -275,10 +257,9 @@ const NavbarPages = () => {
                 Contact
               </NavLink>
             </li>
-
             <li>
               <NavLink
-                to="/devisgratuit"
+                to="/devis"
                 onClick={closeMobileMenu}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white"
               >

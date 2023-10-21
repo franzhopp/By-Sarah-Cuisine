@@ -19,7 +19,7 @@ const Services = () => {
   return (
     <>
       <NavbarServices />
-      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-3 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-left tracking-tighter">
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
             Apéritifs
@@ -43,7 +43,7 @@ const Services = () => {
             />
           </div>
 
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Pièces de différentes formules
             </div>
@@ -64,7 +64,7 @@ const Services = () => {
               alt="Image apéritifs"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Toast
             </div>
@@ -85,7 +85,7 @@ const Services = () => {
               alt="Image apéritifs"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Verrines
             </div>
@@ -98,7 +98,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-3 lg:px-8">
         <h1 className="text-3xl font-extrabold text-right tracking-tighter">
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
             Plats
@@ -121,7 +121,7 @@ const Services = () => {
               alt="Image plats"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Couscous
             </div>
@@ -142,7 +142,7 @@ const Services = () => {
               alt="Image Plats"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Paëlla
             </div>
@@ -163,7 +163,7 @@ const Services = () => {
               alt="Image plats"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Tajine
             </div>
@@ -176,7 +176,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-3 lg:px-8">
         <h1 className="text-3xl font-extrabold text-color-gray-pastel text-left tracking-tighter">
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
             Sucrées
@@ -200,7 +200,7 @@ const Services = () => {
               alt="Image sucrées"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Crêpes
             </div>
@@ -221,7 +221,7 @@ const Services = () => {
               alt="Image sucrées"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Donuts
             </div>
@@ -242,7 +242,7 @@ const Services = () => {
               alt="Image sucrées"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Viennoiseries
             </div>
@@ -255,7 +255,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mt-10 mx-auto py-15 px-4 pb-10 sm:px-3 lg:px-8">
         <h1 className="text-3xl font-extrabold text-right tracking-tighter">
           <p className="text-pink font-sans-recursive text-4xl sm:text-5xl ">
             Évènements
@@ -279,7 +279,7 @@ const Services = () => {
               alt="Image évènements"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Mariage, fiançaille
             </div>
@@ -300,7 +300,7 @@ const Services = () => {
               alt="Image évènements"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Anniversaire
             </div>
@@ -321,7 +321,7 @@ const Services = () => {
               alt="Image apéritifs"
             />
           </div>
-          <div className="px-6 py-3">
+          <div className="px-3 py-3">
             <div className="font-bold text-pink font-sans-recursive underline text-3xl mb-2">
               Soirées
             </div>
@@ -334,14 +334,14 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="image-bg border-t py-5 px-6">
+      <div className="image-bg border-t py-5 px-3">
         <div className="px-12 mt-12 mb-16 text-pink font-sans-recursive text-3xl text-center font-extrabold">
           Téléchargez le flyer de Sarah ainsi que sa carte de visite en un clic
           !
           <div className="flex justify-center">
             <a href="/resume/cdvfyr.png" download>
               <span className="sr-only">Download flyer</span>
-              <button className="bg-e9c2c2 mt-5 shadow-md border text-white px-6 py-2 rounded-3xl hover:bg-f3dbc3">
+              <button className="bg-e9c2c2 mt-5 shadow-md border text-white px-3 py-2 rounded-3xl hover:bg-f3dbc3">
                 <MdOutlineFileDownload className="text-white text-3xl" />
               </button>
             </a>

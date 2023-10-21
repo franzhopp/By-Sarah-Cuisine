@@ -11,6 +11,12 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+@layer utilities {
+    .h-my-screen {
+        height: 60dvh;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -162,18 +168,14 @@ body {
     }
 }
 
-/* 
-.h {
-    height: 41rem;
-}
-
-.w {
-    width: 71rem;
-} */
-
 .image-bg {
     background-image: url('./assets/Background.png');
     height: auto;
     max-width: 100%;
     display: block;
+}
+
+.stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00000040;
 }

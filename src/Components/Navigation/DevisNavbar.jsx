@@ -89,10 +89,10 @@ const NavbarDevis = () => {
           scrollNavbar ? "bg-white" : ""
         } font-sans-serif fixed bg-transparent transition duration-300 ease-in-out w-full top-0 left-0 shadow-md z-max`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-3 lg:px-8">
           <div className="flex items-center justify-center h-24">
             <div className="md:left-0 md:inline md:absolute">
-              <NavLink href="/" className="text-gray-900 text-lg font-semibold">
+              <NavLink to="/" className="text-gray-900 text-lg font-semibold">
                 <img className="mt-10" src={Image} alt="Icône de Sarah" />
               </NavLink>
             </div>
@@ -101,7 +101,7 @@ const NavbarDevis = () => {
                 to="/"
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                } px-6 py-2 text-base font-extrabold uppercase`}
+                } px-3 py-2 text-base font-extrabold uppercase`}
               >
                 Accueil
               </NavLink>
@@ -110,7 +110,7 @@ const NavbarDevis = () => {
                 href="about"
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                }  px-6 py-2 text-base font-extrabold uppercase`}
+                }  px-4 py-2 text-base font-extrabold uppercase`}
               >
                 À propos
               </NavLink>
@@ -118,7 +118,7 @@ const NavbarDevis = () => {
                 to="/services"
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                }  px-6 py-2 text-base font-extrabold`}
+                } py-2 text-base font-extrabold`}
               >
                 <li className="relative group list-none text-center">
                   <NavLink
@@ -127,46 +127,44 @@ const NavbarDevis = () => {
                   >
                     <p className="uppercase">Services</p>
                   </NavLink>
-
-                  {/* Sous-liste */}
-                  <ul className="absolute w-28 py-4 hidden group-hover:block bg-white shadow-md rounded-md">
-                    {pages.map((page, index) => (
-                      <li key={index}>
+                  <div className="flex justify-center">
+                    <ul className="absolute w-32 py-5 px-5 hidden group-hover:block bg-white shadow-md rounded-md">
+                      {pages.map((page, index) => (
+                        <li key={index}>
+                          <NavLink
+                            to={page.link}
+                            onMouseEnter={handleMouseEnterSubmenu}
+                            onMouseLeave={handleMouseLeaveParent}
+                            className="block py-1 text-pink"
+                          >
+                            <p>{page.name}</p>
+                          </NavLink>
+                        </li>
+                      ))}
+                      <li>
                         <NavLink
-                          to={page.link}
-                          onMouseEnter={handleMouseEnterSubmenu}
-                          onMouseLeave={handleMouseLeaveParent}
-                          className="block py-2 text-pink"
+                          to="/services"
+                          className="underline font-extrabold text-pink"
                         >
-                          <p>{page.name}</p>
+                          Tous les services
                         </NavLink>
                       </li>
-                    ))}
-                    <li>
-                      <NavLink
-                        to="/services"
-                        href="services"
-                        className="underline font-extrabold text-pink"
-                      >
-                        Tous les services
-                      </NavLink>
-                    </li>
-                  </ul>
+                    </ul>
+                  </div>
                 </li>
               </NavLink>
 
               <NavLink
                 to="/"
-                href="contact"
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
-                } px-6 py-2 text-base font-extrabold uppercase`}
+                } px-4 py-2 text-base font-extrabold uppercase`}
               >
                 Contact
               </NavLink>
             </div>
             <NavLink
-              to="/devisgratuit"
+              to="/devis"
               className="bg-f3dbc3 mr-4 shadow-md px-6 py-2 border rounded-3xl text-white md:block md:absolute md:right-0 hover:bg-e9c2c2"
             >
               <p className="font-extrabold">DEVIS GRATUIT</p>
@@ -174,10 +172,7 @@ const NavbarDevis = () => {
           </div>
         </div>
       </nav>
-
-      {/* Navigation mobile */}
       <nav className="fixed w-full font-sans-serif text-center top-0 left-0 shadow-md xl:hidden bg-white z-max ">
-        {/* 2 items */}
         <div className="px-4 h-28 flex items-center justify-between">
           <NavLink to="/">
             <img className="w-44 mb-2" src={ImageMobile} alt="Icône de Sarah" />
@@ -198,8 +193,6 @@ const NavbarDevis = () => {
             </button>
           </div>
         </div>
-
-        {/* end 2 items */}
         <ul
           className={`toggle-menu ${
             toggleMenu ? "block" : "hidden"
@@ -210,10 +203,6 @@ const NavbarDevis = () => {
               <NavLink
                 to="/"
                 onClick={closeMobileMenu}
-                // onClick={() => {
-                //   window.location.href = "/";
-                //   window.scrollTo(0, 0);
-                // }}
                 className="text-black mt-3 block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Accueil
@@ -222,11 +211,6 @@ const NavbarDevis = () => {
             <li>
               <NavLink
                 to="/"
-                href="about"
-                // onClick={() => {
-                //   window.location.href = "/";
-                //   window.scrollTo(0, 0);
-                // }}
                 className="text-black block px-3 py-2 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 À propos
@@ -250,13 +234,7 @@ const NavbarDevis = () => {
                 >
                   {pages.map((page, index) => (
                     <li key={index}>
-                      <NavLink
-                        // onClick={() => {
-                        //   window.location.href = "/";
-                        //   window.scrollTo(0, 0);
-                        // }}
-                        to={page.link}
-                      >
+                      <NavLink to={page.link}>
                         <p className="text-pink mt-2 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300">
                           {page.name}
                         </p>
@@ -266,11 +244,6 @@ const NavbarDevis = () => {
                   <li>
                     <NavLink
                       to="/services"
-                      href="services"
-                      // onClick={() => {
-                      //   window.location.href = "/";
-                      //   window.scrollTo(0, 0);
-                      // }}
                       className="underline text-pink p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
                     >
                       Tous les services
@@ -283,11 +256,6 @@ const NavbarDevis = () => {
             <li>
               <NavLink
                 to="/"
-                href="contact"
-                // onClick={() => {
-                //   window.location.href = "/";
-                //   window.scrollTo(0, 0);
-                // }}
                 className="text-black p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Contact
@@ -296,12 +264,8 @@ const NavbarDevis = () => {
 
             <li>
               <NavLink
-                to="/devisgratuit"
+                to="/devis"
                 onClick={closeMobileMenu}
-                // onClick={() => {
-                //   window.location.href = "/";
-                //   window.scrollTo(0, 0);
-                // }}
                 className="text-black mb-3 p-2 block px-3 rounded-md text-base font-extrabold hover:bg-f3dbc3 hover:text-white transition duration-300"
               >
                 Devis gratuit
@@ -315,7 +279,7 @@ const NavbarDevis = () => {
           <img
             data-aos="fade-down-right"
             src={ImageTitle}
-            alt="Image name"
+            alt="Icône bysarahcuisine"
             className="px-16 mt-14 mb-12 sm:mb-10 sm:mt-4"
           />
         </div>
@@ -323,9 +287,9 @@ const NavbarDevis = () => {
           Un évènement ? Faites un devis sur-mesure.
           <div className="mt-5 flex justify-center">
             <NavLink
-              to="/devisgratuit"
+              to="/devis"
               onClick={SectionToScrollDevis}
-              className="bg-e9c2c2 shadow-md px-6 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
+              className="bg-e9c2c2 shadow-md px-3 py-2 border rounded-3xl text-white hover:bg-f3dbc3"
             >
               <p className="flex flex-row font-extrabold">
                 Commencer <MdOutlineEditNote className="ml-2 mt-1" />

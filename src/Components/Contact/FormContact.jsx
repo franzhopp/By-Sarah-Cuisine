@@ -103,7 +103,7 @@ const Form = () => {
     <section className="image-blur-by-sarah-cuisine">
       <div
         data-aos="fade-in"
-        className="max-w-4xl mx-auto px-4 sm:py-20 sm:px-6 lg:px-8"
+        className="max-w-4xl mx-auto px-4 sm:py-20 sm:px-3 lg:px-8"
       >
         <span className="flex flex-col text-center">
           <p className="font-sans-serif text-2xl font-extrabold text-white mb-5 mt-10">
@@ -237,7 +237,7 @@ const Form = () => {
               <button
                 onClick={handleSubmit}
                 type="submit"
-                className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-6 py-2 border rounded-3xl text-white cursor-pointer"
+                className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-3 py-2 border rounded-3xl text-white cursor-pointer"
                 value="Envoyer"
               >
                 {isLoading ? (

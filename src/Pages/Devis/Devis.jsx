@@ -138,7 +138,7 @@ const Devis = () => {
         <section>
           <div
             data-aos="fade-in"
-            className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8"
+            className="mx-auto max-w-4xl px-4 py-12 sm:px-3 lg:px-8"
           >
             <div className="flex justify-center">
               <div className="w-full">
@@ -343,7 +343,7 @@ const Devis = () => {
                     <button
                       onClick={handleSubmit}
                       type="submit"
-                      className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-6 py-2 border rounded-3xl text-white cursor-pointer"
+                      className="bg-f3dbc3 font-sans-serif font-extrabold shadow-md px-3 py-2 border rounded-3xl text-white cursor-pointer"
                       value="Envoyer"
                     >
                       {isLoading ? (
@@ -368,16 +368,12 @@ const Devis = () => {
             <div className="mt-12 text-base text-black text-center font-sans-serif font-extrabold">
               <div className="flex justify-center">
                 Pour découvrir tous les réseaux sociaux de Sarah, vous les
-                trouverez en bas des pages !
+                trouverez ci-dessous !
               </div>
               <div className="mt-5 flex justify-center">
                 <NavLink
                   to="/"
-                  // onClick={() => {
-                  //   window.location.href = "/";
-                  //   window.scrollTo(0, 0);
-                  // }}
-                  className=" bg-pink text-white shadow-md px-6 py-2 border rounded-3xl transition-transform transform hover:scale-105"
+                  className=" bg-pink text-white shadow-md px-3 py-2 border rounded-3xl transition-transform transform hover:scale-105"
                 >
                   <p className="flex flex-row font-extrabold">
                     {`Retournez à la page d'accueil`}
