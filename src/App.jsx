@@ -14,6 +14,7 @@ import PagePrivacy from "./Components/Privacy/PagePrivacy.jsx";
 import PageConditions from "./Components/Conditions/PagesConditions.jsx";
 import PageMentions from "./Components/Mentions/PageMentions.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 const App = () => {
   return (
