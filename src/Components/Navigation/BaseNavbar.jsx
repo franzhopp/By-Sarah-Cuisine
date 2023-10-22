@@ -114,6 +114,7 @@ const Navbar = () => {
 
             <div className="flex items-center">
               <NavLink
+                to="/"
                 onClick={SectionToScrollHome}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
@@ -122,6 +123,7 @@ const Navbar = () => {
                 Accueil
               </NavLink>
               <NavLink
+                to="/"
                 onClick={SectionToScrollAbout}
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"

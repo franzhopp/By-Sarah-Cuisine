@@ -108,6 +108,7 @@ const NavbarServices = () => {
 
             <div className="flex items-center">
               <NavLink
+                to="/"
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 } px-3 py-2 text-base font-extrabold uppercase`}
@@ -115,6 +116,7 @@ const NavbarServices = () => {
                 Accueil
               </NavLink>
               <NavLink
+                to="/"
                 className={`${
                   scrollNavbar ? "text-pink" : "text-white"
                 }  px-4 py-2 text-base font-extrabold uppercase`}
